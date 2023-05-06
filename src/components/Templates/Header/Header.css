@@ -1,0 +1,62 @@
+.header-language {
+    display: flex;
+    gap: 10px;
+    margin-right: 20px;
+}
+
+.header-logo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
+    height: 100px;
+}
+
+.header-logo__telephone {
+    display: flex;
+}
+
+.header-logo__telephone-picture {
+    width: 20px;
+}
+
+.header-logo__telephone-image {
+    width: 100%;
+}
+
+.header-logo__option {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.header-logo__picture {
+    width: 50px;
+
+}
+
+.header-logo__image {
+    width: 100%;
+}
+
+.header-logo__burger {
+    display: flex;
+    gap: 20px;
+}
+
+.burger-search__picture {
+    width: 30px;
+}
+
+.burger-search__image {
+    width: 100%;
+}
+
+.header-category {
+    background-color: green;
+    height: 100px;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
