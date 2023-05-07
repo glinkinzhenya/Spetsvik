@@ -1,8 +1,33 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Header.css';
 
 export default function Header() {
 
+  const [selectedAddress, setSelectedAddress] = useState('');
+  const [selectedPhone, setSelectedPhone] = useState('');
+  const addresses = [
+    {
+      address: 'м. Запоріжжя, бульвар Шевченка, 16',
+      phone: '067 634 23 34'
+    },
+    {
+      address: 'м. Запоріжжя, вул. Поштова, 141е',
+      phone: '063 123 45 67'
+    },
+    {
+      address: 'м. Запоріжжя, бульвар Шевченка, 78',
+      phone: '066 987 65 43'
+    }
+  ];
+
+  const handleSelectChange = (event) => {
+    const selectedOption = event.target.value;
+    const selectedPhone = addresses.find(a => a.address === selectedOption)?.phone || '';
+    setSelectedAddress(selectedOption);
+    setSelectedPhone(selectedPhone);
+  };
+
+  const defaultPhone = addresses[0].phone;
 
   return (
     <div className='header'>
@@ -15,11 +40,12 @@ export default function Header() {
           <div className='header-logo__telephone-picture'>
             <img className='header-logo__telephone-image' src="./img/logo-telephone.svg" alt="logo-telephone" />
           </div>
-          <div>
-            <select>
-              <option value="option1">м. Запоріжжя, бульвар Шевченка, 16</option>
-              <option value="option2">м. Запоріжжя, вул. Поштова, 141е</option>
-              <option value="option3">м. Запоріжжя, бульвар Шевченка, 16</option>
+          <div className='header-logo__choice'>
+            <div className='header-logo__choice-number'>{(selectedPhone) ? selectedPhone : defaultPhone}</div>
+            <select className='header-logo__choice-select' onChange={handleSelectChange} value={selectedAddress}>
+              {addresses.map(a => (
+                <option key={a.address} value={a.address}>{a.address}</option>
+              ))}
             </select>
           </div>
         </div>
