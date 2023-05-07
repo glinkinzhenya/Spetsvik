@@ -28,10 +28,12 @@ export default function ImageCarousel() {
           </div>
         </div>
       </div>
-      
+
       <div className='image-carousel__picture'>
         <img className='image-carousel__img' src={images[currentImageIndex]} alt="" />
       </div>
+
+      <div className='image-carousel__bg'></div>
 
       <div className='image-carousel__contact'>
         <div className='image-carousel__address'>вул. Поштова 139</div>
