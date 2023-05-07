@@ -1,15 +1,22 @@
+.header {
+    height: 30vh;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+
 .header-language {
     display: flex;
     gap: 10px;
     margin-right: 20px;
+    color: white;
 }
 
 .header-logo {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     gap: 50px;
     height: 100px;
+    padding: 20px 20px 0 20px;
 }
 
 .header-logo__telephone {
@@ -31,7 +38,7 @@
 }
 
 .header-logo__picture {
-    width: 50px;
+    width: 140px;
 
 }
 
@@ -53,10 +60,10 @@
 }
 
 .header-category {
-    background-color: green;
     height: 100px;
     display: flex;
     gap: 30px;
     justify-content: center;
     align-items: center;
+    color: white;
 }

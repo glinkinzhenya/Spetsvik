@@ -4,13 +4,6 @@ import Header from '../../components/Templates/Header/Header';
 import Footer from '../../components/Templates/Footer/Footer';
 import './GridContainer.css';
 
-const HeaderWrapper = styled(Box)(() => ({
-  background: 'red',
-}));
-
-const BodyWrapper = styled(Box)(() => ({
-  backgroundColor: 'blue',
-}));
 
 const FooterWrapper = styled(Box)(() => ({
   height: '10vh',
@@ -28,14 +21,10 @@ export default function GridContainer({ children }) {
     <div className='GridTemplate'>
       <Grid container>
         <Grid item xs={12} md={12} lg={12}>
-          <HeaderWrapper>
-            <Header />
-          </HeaderWrapper>
+          <Header />
         </Grid>
         <Grid item xs={12} sm={12} md={12} lg={12}>
-          <BodyWrapper>
-            {children}
-          </BodyWrapper>
+          {children}
         </Grid>
         <Grid item xs={12} md={12} lg={12}>
           <FooterWrapper>

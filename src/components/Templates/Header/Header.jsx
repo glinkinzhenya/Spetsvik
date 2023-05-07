@@ -5,7 +5,7 @@ export default function Header() {
 
 
   return (
-    <>
+    <div className='header'>
       <div className='header-logo'>
         <div className='header-logo__telephone'>
           <div className='header-language'>
@@ -47,6 +47,6 @@ export default function Header() {
         <div>Тканини</div>
         <div>Полювання та прігоди</div>
       </nav>
-    </>
+    </div>
   );
 }
