@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Header.css';
+import Burger from './ComponentHeader/Burger';
 
 export default function Header() {
 
@@ -44,7 +45,7 @@ export default function Header() {
             <div className='header-logo__choice-number'>{(selectedPhone) ? selectedPhone : defaultPhone}</div>
             <select className='header-logo__choice-select' onChange={handleSelectChange} value={selectedAddress}>
               {addresses.map(a => (
-                <option key={a.address} value={a.address}>{a.address}</option>
+                <option className='header-logo__choice-option' key={a.address} value={a.address}>{a.address}</option>
               ))}
             </select>
           </div>
@@ -59,9 +60,7 @@ export default function Header() {
           <div className='burger-search__picture'>
             <img className='burger-search__image' src="./img/logo-basket.svg" alt="logo-telephone" />
           </div>
-          <div className='burger-search__picture'>
-            <img className='burger-search__image' src="./img/logo-telephone.svg" alt="logo-telephone" />
-          </div>
+          <Burger />
         </div>
       </div>
       <nav className='header-category'>

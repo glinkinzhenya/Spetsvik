@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState  } from 'react';
 import './ImageCarousel.css';
 
 export default function ImageCarousel() {
@@ -13,7 +13,6 @@ export default function ImageCarousel() {
         : (currentImageIndex + 1) % images.length;
     setCurrentImageIndex(newIndex);
   };
-
 
   return (
 

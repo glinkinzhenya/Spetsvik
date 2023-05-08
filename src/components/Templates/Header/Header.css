@@ -26,7 +26,7 @@
     align-items: center;
     gap: 50px;
     height: 100px;
-    padding: 20px 20px 0 20px;
+    padding: 20px 60px 0 60px;
 }
 
 .header-logo__telephone {
@@ -44,24 +44,32 @@
     width: 100%;
 }
 
-.header-logo__choice {
-
-}
+.header-logo__choice {}
 
 .header-logo__choice-number {
-color: #e28130;
-font-size: 20px;
-font-weight: 500;
+    color: #e28130;
+    font-size: 20px;
+    font-weight: 500;
 }
 
 .header-logo__choice-select {
-color: white;
-background-color: rgba(0, 0, 0, 0);
-border: none;
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    /* background-color: orange; */
+    border: none;
+
+}
+
+.header-logo__choice-option {
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    background-color: black;
+    border: none;
+
 }
 
 .header-logo__picture {
-    width: 140px;
+    width: 100px;
 
 }
 
@@ -74,6 +82,7 @@ border: none;
     gap: 30px;
     min-width: 400px;
     justify-content: flex-end;
+    align-items: center;
 }
 
 .burger-search__picture {
