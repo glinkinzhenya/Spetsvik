@@ -13,14 +13,21 @@ import { Link } from 'react-router-dom';
 
 export default function Burger() {
   const [open, setOpen] = useState(false);
-  const pages = ['Головна', 'Вибір тренувань', 'Наші тренери'];
+  const pages = ['Головна', 'Про нас', 'Товари', 'Послуги', 'Новини та акції', 'Контакти'];
   const links = ['/', '/trainings', '/trainers'];
 
   return (
     <nav>
       <Button
         onClick={() => setOpen(true)}
-        sx={{ color: 'white' }}
+        sx={{
+          color: '#e28130',
+          width: '50px',
+          height: '50px',
+          '& svg': {
+            fontSize: '42px', // измените размер SVG-изображения на свое усмотрение
+          },
+        }}
       >
         <MenuIcon />
       </Button>
@@ -36,6 +43,7 @@ export default function Burger() {
           sx={{
             height: '100%',
             backgroundColor: 'var(--secondary)',
+            
             color: 'var(--secondary-alt)',
           }}
         >

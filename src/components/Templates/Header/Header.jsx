@@ -1,27 +1,52 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Header.css';
+import Burger from './ComponentHeader/Burger';
 
 export default function Header() {
 
+  const [selectedAddress, setSelectedAddress] = useState('');
+  const [selectedPhone, setSelectedPhone] = useState('');
+  const addresses = [
+    {
+      address: 'м. Запоріжжя, бульвар Шевченка, 16',
+      phone: '067 634 23 34'
+    },
+    {
+      address: 'м. Запоріжжя, вул. Поштова, 141е',
+      phone: '063 123 45 67'
+    },
+    {
+      address: 'м. Запоріжжя, бульвар Шевченка, 78',
+      phone: '066 987 65 43'
+    }
+  ];
+
+  const handleSelectChange = (event) => {
+    const selectedOption = event.target.value;
+    const selectedPhone = addresses.find(a => a.address === selectedOption)?.phone || '';
+    setSelectedAddress(selectedOption);
+    setSelectedPhone(selectedPhone);
+  };
+
+  const defaultPhone = addresses[0].phone;
 
   return (
-    <>
+    <div className='header'>
       <div className='header-logo'>
         <div className='header-logo__telephone'>
           <div className='header-language'>
-            <div>UA</div>
-            <div>EN</div>
+            <div className='header-language__active'>UA</div>
+            <div className='header-language__en' >EN</div>
           </div>
           <div className='header-logo__telephone-picture'>
             <img className='header-logo__telephone-image' src="./img/logo-telephone.svg" alt="logo-telephone" />
           </div>
-          <div>
-            <select>
-              <option className='header-logo__option' value="option1">067 613 28 81</option>
-              <option value="option2">067 613 28 82</option>
-              <option value="option3">067 613 28 83</option>
-              <option value="option4">067 613 28 84</option>
-              <option value="option5">067 613 28 85</option>
+          <div className='header-logo__choice'>
+            <div className='header-logo__choice-number'>{(selectedPhone) ? selectedPhone : defaultPhone}</div>
+            <select className='header-logo__choice-select' onChange={handleSelectChange} value={selectedAddress}>
+              {addresses.map(a => (
+                <option className='header-logo__choice-option' key={a.address} value={a.address}>{a.address}</option>
+              ))}
             </select>
           </div>
         </div>
@@ -35,18 +60,16 @@ export default function Header() {
           <div className='burger-search__picture'>
             <img className='burger-search__image' src="./img/logo-basket.svg" alt="logo-telephone" />
           </div>
-          <div className='burger-search__picture'>
-            <img className='burger-search__image' src="./img/logo-telephone.svg" alt="logo-telephone" />
-          </div>
+          <Burger />
         </div>
       </div>
       <nav className='header-category'>
-        <div>Спецодяг</div>
-        <div>Пожежна продукція</div>
-        <div>Війскова екіпіровка</div>
-        <div>Тканини</div>
-        <div>Полювання та прігоди</div>
+        <div>СПЕЦОДЯГ</div>
+        <div>ПОЖЕЖНА ПРОДУКЦІЯ</div>
+        <div>ВІЙСЬКОВА</div>
+        <div>ТКАНИНИ</div>
+        <div>ПОЛЮВАННЯ ТА ПРИГОДИ</div>
       </nav>
-    </>
+    </div>
   );
 }
