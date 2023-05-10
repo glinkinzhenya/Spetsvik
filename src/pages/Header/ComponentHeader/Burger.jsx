@@ -25,7 +25,7 @@ export default function Burger() {
           width: '50px',
           height: '50px',
           '& svg': {
-            fontSize: '42px', // измените размер SVG-изображения на свое усмотрение
+            fontSize: '42px',
           },
         }}
       >
