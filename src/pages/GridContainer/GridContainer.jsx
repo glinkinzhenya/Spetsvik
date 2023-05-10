@@ -1,7 +1,7 @@
 import React from 'react';
 import { Box, Grid, styled } from '@mui/material';
 import Header from '../Header/Header';
-import Footer from '../../components/Templates/Footer/Footer';
+import Footer from '../Footer/Footer';
 import './GridContainer.css';
 
 
