@@ -16,16 +16,20 @@ export default function News() {
 
             <div className='news-map'>
               <div className='news-map__item'>
-                <div>Ціна тижня Берці</div>
+                <div className='news-map__item-text'>Ціна тижня Берці</div>
+                <div className='news-map__item-description'>м. Харків <span>вул. Різдвяна 21</span></div>
               </div>
               <div className='news-map__item'>
-                <div>Ціна тижня Берці</div>
+                <div className='news-map__item-text'>Ціна тижня Берці</div>
+                <div className='news-map__item-description'>м. Харків <span>вул. Різдвяна 21</span></div>
               </div>
               <div className='news-map__item'>
-                <div>Ціна тижня Берці</div>
+                <div className='news-map__item-text'>Ціна тижня Берці</div>
+                <div className='news-map__item-description'>м. Харків <span>вул. Різдвяна 21</span></div>
               </div>
               <div className='news-map__item'>
-                <div>Ціна тижня Берці</div>
+                <div className='news-map__item-text'>Ціна тижня Берці</div>
+                <div className='news-map__item-description'>м. Харків <span>вул. Різдвяна 21</span></div>
               </div>
             </div>
 
