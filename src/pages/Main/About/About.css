@@ -1,0 +1,10 @@
+.about {
+height: 60vh;
+background-color: black;
+}
+
+
+.about-title {
+    text-align: center;
+    color: white;
+}

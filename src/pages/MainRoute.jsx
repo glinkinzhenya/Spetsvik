@@ -2,6 +2,8 @@ import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import Grid from './GridContainer/GridContainer';
 import Main from './Main/Main';
+import News from './Main/News/News';
+import About from './Main/About/About';
 // import Trainings from './Trainings/Trainings';
 // import SportPage from './SportPage/SportPage';
 // import Trainers from './Trainers/Trainers';
@@ -15,6 +17,7 @@ export default function MainRoute() {
     <Grid>
       <Routes>
         <Route path='/' element={<Main />} />
+        <Route path='/about' element={<About />} />
         {/* /edit фиксированный элемент */}
         {/* <Route path='/trainings' element={<Trainings />} />
         <Route path='/trainers' element={<Trainers />} />

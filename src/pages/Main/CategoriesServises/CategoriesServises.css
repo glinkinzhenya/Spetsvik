@@ -97,7 +97,7 @@
     height: 300px;
     display: flex;
     align-items: flex-end;
-    background-image: url(../../../../public/img/blanket.png); 
+    background-image: url(../../../../public/img/services.png); 
     background-size: cover;
     background-position: center center;
 }

@@ -14,7 +14,7 @@ import { Link } from 'react-router-dom';
 export default function Burger() {
   const [open, setOpen] = useState(false);
   const pages = ['Головна', 'Про нас', 'Товари', 'Послуги', 'Новини та акції', 'Контакти'];
-  const links = ['/', '/trainings', '/trainers'];
+  const links = ['/', '/about', '/trainers'];
 
   return (
     <nav>
