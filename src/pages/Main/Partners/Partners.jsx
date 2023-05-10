@@ -4,7 +4,7 @@ import './Partners.css';
 export default function Partners() {
 
   return (
-    <div className='partners container'>
+    <div className='partners'>
       <h3 className='partners-title'>НАШІ ПАРТНЕРИ</h3>
 
       <div className='partners-wrapper'>

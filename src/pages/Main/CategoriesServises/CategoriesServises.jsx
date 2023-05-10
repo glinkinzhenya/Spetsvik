@@ -4,7 +4,6 @@ import './CategoriesServises.css';
 export default function CategoriesServises() {
 
   return (
-    <div className='categoriesServises'>
       <div className='categoriesServises container'>
 
         <div className='categories'>
@@ -42,7 +41,6 @@ export default function CategoriesServises() {
             <div className='servises-text'>ПОСЛУГИ</div>
           </div>
         </div>
-      </div>
     </div>
   );
 }

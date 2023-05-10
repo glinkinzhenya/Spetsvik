@@ -1,36 +1,24 @@
 .partners {
     padding-top: 100px;
     padding-bottom: 100px;
-}
-
-.news {
-width: 100%;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 20px;
+    padding-left: 20px;
 }
 
 .partners-title {
     color: white;
     margin-bottom: 20px;
-    margin-left: 23px;
+    margin-left: 32px;
     font-size: 30px;
-}
-
-.news-title span {
-    color: #e28130;
 }
 
 .partners-wrapper {
     display: flex;
     align-items: center;
     gap: 20px;
-    width: 100%;
-}
-
-.news-arrow__picture {
-    width: 15px;
-    cursor: pointer;
-}
-
-.news-arrow__img {
     width: 100%;
 }
 
@@ -51,24 +39,4 @@ width: 100%;
     background-image: url(../../../../public/img/compass.png); 
     background-size: cover;
     background-position: center center;
-}
-
-.news-map__item-text {
-    color: white;
-    font-size: 30px;
-    font-weight: 600;
-    text-align: center;
-}
-
-.news-map__item-description {
-    color: white;
-    font-size: 20px;
-    font-weight: 600;
-    text-align: center;
-
-}
-
-.news-map__item-description span {
-    color: red;
-
 }

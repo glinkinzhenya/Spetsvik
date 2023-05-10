@@ -5,7 +5,7 @@ export default function News() {
 
   return (
     <div className='news-bg'>
-      <div className='news container'>
+      <div className='news'>
         <h3 className='news-title'>НОВИНИ ТА <span>АКЦІЇ</span></h3>
 
         <div className='news-wrapper'>
