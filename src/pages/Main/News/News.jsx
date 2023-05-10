@@ -5,28 +5,28 @@ export default function News() {
   const [index, setIndex] = useState(0);
   const news = [
     {
-      title: '1',
-      description: 'frfrvfvffr',
-      image: './img/blanket.png'
+      title: 'Ціна тижня Берці',
+      description: '',
+      image: './img/err1.png'
     },
     {
-      title: '2',
-      description: 'frvfvfrfr',
-      image: './img/backpack.jpg'
+      title: 'Нова адреса',
+      description: 'м. Харків вул. Різдвяна 21',
+      image: './img/harkiv.jpg'
     },
     {
-      title: '3',
-      description: 'frvfvffrfr',
-      image: './img/compass.png'
+      title: 'Великий контрнаступ',
+      description: 'Весняної колекції 2023',
+      image: './img/zsu.png'
     },
     {
-      title: '4',
-      description: 'frfrfvfr',
+      title: 'Шеврони на замовлення',
+      description: 'Реалізовуємо дудь-який принт',
       image: './img/body-armor.jpeg'
     },
     {
-      title: '5',
-      description: 'frfrfvvfr',
+      title: 'Новина 5',
+      description: 'Тут буде щось новеньке',
       image: './img/fire-extinguisher.png'
     },
   ];

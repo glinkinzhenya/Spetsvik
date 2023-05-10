@@ -79,15 +79,12 @@ export default function Footer() {
 
       <div className='footer-secondary'>
         <div className='footer-secondary__social'>
-          <a href='https://www.instagram.com'>
-            <img className='footer-secondary__social-image' src='./img/facebook.svg' alt='' />
-          </a>
           <a href='https://www.facebook.com'>
-            <img className='footer-secondary__social-image' src='./img/facebook.svg' alt='' />
+            <img className='footer-secondary__social-image' src='./img/facebook.png' alt='' />
           </a>
-          {/* <a href='https://web.telegram.org/z/'>
-            <img className='footer-secondary__social-image' src='./img/logo-telephone.svg' alt='' />
-          </a> */}
+          <a href='https://www.instagram.com'>
+            <img className='footer-secondary__social-image' src='./img/instagram.png' alt='' />
+          </a>
         </div>
 
         <div className='footer-secondary__telephone'>
