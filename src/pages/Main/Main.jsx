@@ -3,6 +3,7 @@ import './Main.css';
 import ImageCarousel from './ImageCarousel/ImageCarousel';
 import News from './News/News';
 import CategoriesServises from './CategoriesServises/CategoriesServises';
+import Partners from './Partners/Partners';
 
 export default function Main() {
 
@@ -11,6 +12,7 @@ export default function Main() {
       <ImageCarousel />
       <CategoriesServises />
       <News />
+      <Partners />
     </main>
   );
 }

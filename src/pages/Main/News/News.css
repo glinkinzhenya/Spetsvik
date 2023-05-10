@@ -1,18 +1,22 @@
 .news-bg {
-    height: 60vh;
+    /* height: 60vh; */
     background-color: black;
     display: flex;
     justify-content: center;
     padding-top: 100px;
     padding-bottom: 100px;
+
+
 }
 
-.news {}
+.news {
+
+}
 
 .news-title {
     color: white;
     margin-bottom: 20px;
-    margin-left: 23px;
+    margin-left: 32px;
     font-size: 30px;
 }
 

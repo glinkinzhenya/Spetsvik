@@ -44,10 +44,9 @@ export default function News() {
   const newNews = [...news.slice(index, news.length), ...news.slice(0, index)];
   console.log(newNews);
   return (
-    <>
-      <div className='news-bg'>
-        <div className='news container'>
-          <h3 className='news-title'>НОВИНИ ТА <span>АКЦІЇ</span></h3>
+    <div className='news-bg'>
+      <div className='news'>
+        <h3 className='news-title'>НОВИНИ ТА <span>АКЦІЇ</span></h3>
 
           <div className='news-wrapper'>
             <div className='news-arrow__picture' onClick={handleClickLeft}>
@@ -69,7 +68,10 @@ export default function News() {
             <div className='news-arrow__picture' onClick={handleClickRight}>
               <img className='news-arrow__img' src="./img/arrow-right.svg" alt="" />
             </div>
+          </div>
 
+          <div className='news-arrow__picture'>
+            <img className='news-arrow__img' src="./img/arrow-right.svg" alt="" />
           </div>
         </div>
       </div >
