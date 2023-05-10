@@ -12,22 +12,22 @@ export default function News() {
     {
       title: '2',
       description: 'frvfvfrfr',
-      image: './img/blanket.png'
+      image: './img/backpack.jpg'
     },
     {
       title: '3',
       description: 'frvfvffrfr',
-      image: './img/blanket.png'
+      image: './img/compass.png'
     },
     {
       title: '4',
       description: 'frfrfvfr',
-      image: './img/blanket.png'
+      image: './img/body-armor.jpeg'
     },
     {
       title: '5',
       description: 'frfrfvvfr',
-      image: './img/blanket.png'
+      image: './img/fire-extinguisher.png'
     },
   ];
 
@@ -42,7 +42,7 @@ export default function News() {
   };
 
   const newNews = [...news.slice(index, news.length), ...news.slice(0, index)];
-  console.log(newNews);
+
   return (
     <div className='news-bg'>
       <div className='news'>

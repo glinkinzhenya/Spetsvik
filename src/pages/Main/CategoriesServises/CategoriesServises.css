@@ -15,6 +15,17 @@
     width: 500px;
     display: flex;
     align-items: flex-end;
+    cursor: pointer;
+}
+
+.categories-overalls:hover {
+    filter: brightness(60%);
+    transition: filter 0.3s ease-in-out;
+}
+
+.categories-overalls:not(:hover) {
+    filter: brightness(100%);
+    transition: filter 0.3s ease-in-out;
 }
 
 .categories-overalls__bg,
@@ -44,13 +55,23 @@
 }
 
 .categories-box__item {
-    background-color: yellow;
     height: 250px;
     display: flex;
     align-items: flex-end;
     background-image: url(../../../../public/img/fire-extinguisher.png);
     background-size: cover;
     background-position: center center;
+    cursor: pointer;
+}
+
+.categories-box__item:hover {
+    filter: brightness(60%);
+    transition: filter 0.3s ease-in-out;
+}
+
+.categories-box__item:not(:hover) {
+    filter: brightness(100%);
+    transition: filter 0.3s ease-in-out;
 }
 
 .item1 {
@@ -79,6 +100,16 @@
     background-image: url(../../../../public/img/blanket.png); 
     background-size: cover;
     background-position: center center;
+}
+
+.servises:hover {
+    filter: brightness(60%);
+    transition: filter 0.3s ease-in-out;
+}
+
+.servises:not(:hover) {
+    filter: brightness(100%);
+    transition: filter 0.3s ease-in-out;
 }
 
 .servises-bg {
