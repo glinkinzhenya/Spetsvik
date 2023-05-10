@@ -24,13 +24,14 @@
 
 .partners-map {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(5, 230px);
     gap: 30px;
     width: 100%;
+    justify-content: space-between;
 }
 
 .partners-map__item {
-    height: 150px;
+    height: 135px;
     background-color: green;
     display: flex;
     flex-direction: column;
