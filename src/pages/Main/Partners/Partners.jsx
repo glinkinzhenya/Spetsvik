@@ -17,6 +17,7 @@ export default function Partners() {
           <div className='partners-map__item'></div>
           <div className='partners-map__item'></div>
           <div className='partners-map__item'></div>
+          <div className='partners-map__item'></div>
         </div>
 
         <div className='news-arrow__picture'>
