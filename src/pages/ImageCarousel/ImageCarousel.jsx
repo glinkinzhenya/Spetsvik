@@ -3,7 +3,7 @@ import './ImageCarousel.css';
 
 export default function ImageCarousel() {
 
-  const images = ['./img/backpack.jpg', './img/blanket.png', './img/body-armor.jpeg', './img/compass.png', './img/fire-extinguisher.png', './img/flashlight.jpeg', './img/jackets.jpg' ];
+  const images = ['./img/backpack.jpg', './img/blanket.png', './img/body-armor.jpeg', './img/compass.png', './img/fire-extinguisher.png', './img/flashlight.jpeg', './img/jackets.jpg'];
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const handleArrowClick = (direction) => {
@@ -13,9 +13,6 @@ export default function ImageCarousel() {
         : (currentImageIndex + 1) % images.length;
     setCurrentImageIndex(newIndex);
   };
-
-  const phone = localStorage.getItem("phone");
-  console.log(phone);
 
   return (
     <>
@@ -34,12 +31,17 @@ export default function ImageCarousel() {
         <img className='image-carousel__img' src={images[currentImageIndex]} alt="" />
       </div>
 
-      <div className='image-carousel__bg'></div>
-
-      <div className='image-carousel__contact'>
-        <div className='image-carousel__address'>вул. Поштова 139</div>
-        <div className='image-carousel__telephone'>067 613 28 01</div>
+      <div className='image-carousel__pagination'>
+        {images.map((image, index) => (
+          <div
+            key={index}
+            className={`image-carousel__pagination-circle ${index === currentImageIndex ? 'image-carousel__pagination-circle--active' : ''}`}
+            onClick={() => setCurrentImageIndex(index)}
+          ></div>
+        ))}
       </div>
+
+      <div className='image-carousel__bg'></div>
     </>
   );
 }
