@@ -11,7 +11,6 @@
 }
 
 .footer-left {
-    /* background-color: red; */
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -32,7 +31,6 @@
 
 .footer-catalog,
 .footer-info {
-    /* background-color: green; */
     padding-top: 10px;
     padding-bottom: 10px;
     color: white;
@@ -55,7 +53,6 @@
 }
 
 .footer-right {
-    /* background-color: violet; */
     padding-top: 10px;
     padding-bottom: 10px;
     display: flex;
@@ -100,11 +97,9 @@
 
 
 .footer-secondary__social {
-    /* background-color: rgb(0, 255, 255); */
     display: flex;
     align-items: center;
     gap: 15px;
-        /* width: 100%; */
 }
 
 .footer-secondary__social-image {
@@ -112,7 +107,6 @@
 }
 
 .footer-secondary__telephone {
-    /* background-color: rgb(17, 0, 255); */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -127,7 +121,6 @@
 .footer-secondary__telephone-image {
 width: 30px;
 margin-right: 10px;
-/* height: auto; */
 }
 
 
@@ -138,7 +131,6 @@ margin-right: 10px;
 }
 
 .footer-secondary__info {
-    /* background-color: rgb(0, 255, 21); */
     display: flex;
     align-items: center;
     color: white;
