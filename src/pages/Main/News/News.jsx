@@ -6,7 +6,7 @@ export default function News() {
   return (
     <>
       <div className='news-bg'>
-        <div className='news-container'>
+        <div className='news container'>
           <h3 className='news-title'>НОВИНИ ТА <span>АКЦІЇ</span></h3>
 
           <div className='news-wrapper'>
@@ -15,7 +15,6 @@ export default function News() {
             </div>
 
             <div className='news-map'>
-
               <div className='news-map__item'>
                 <div>Ціна тижня Берці</div>
               </div>
@@ -28,7 +27,6 @@ export default function News() {
               <div className='news-map__item'>
                 <div>Ціна тижня Берці</div>
               </div>
-
             </div>
 
             <div className='news-arrow__picture'>

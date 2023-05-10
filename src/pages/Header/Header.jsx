@@ -32,7 +32,7 @@ export default function Header() {
 
   return (
     <div className='header'>
-      <div className='header-logo'>
+      <div className='header-logo container'>
         <div className='header-logo__telephone'>
           <div className='header-language'>
             <div className='header-language__active'>UA</div>

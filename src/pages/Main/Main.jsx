@@ -1,7 +1,7 @@
 import React from 'react';
 import './Main.css';
-import ImageCarousel from '../ImageCarousel/ImageCarousel';
-import News from '../News/News';
+import ImageCarousel from './ImageCarousel/ImageCarousel';
+import News from './News/News';
 import CategoriesServises from './CategoriesServises/CategoriesServises';
 
 export default function Main() {
