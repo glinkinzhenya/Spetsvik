@@ -69,12 +69,7 @@ export default function News() {
               <img className='news-arrow__img' src="./img/arrow-right.svg" alt="" />
             </div>
           </div>
-
-          <div className='news-arrow__picture'>
-            <img className='news-arrow__img' src="./img/arrow-right.svg" alt="" />
-          </div>
         </div>
       </div >
-    </>
   );
 }
