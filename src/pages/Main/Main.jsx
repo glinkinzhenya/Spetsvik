@@ -1,14 +1,15 @@
 import React from 'react';
 import './Main.css';
 import ImageCarousel from '../ImageCarousel/ImageCarousel';
-import Categories from '../Categories/Categories';
+import CategoriesServises from './CategoriesServises/CategoriesServises';
 
 export default function Main() {
 
   return (
-    <>
+  
+    <main>
       <ImageCarousel />
-      <Categories />
-    </>
+      <CategoriesServises />
+    </main>
   );
 }
