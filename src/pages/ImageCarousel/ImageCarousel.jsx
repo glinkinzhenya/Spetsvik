@@ -1,4 +1,4 @@
-import React, { useState  } from 'react';
+import React, { useState } from 'react';
 import './ImageCarousel.css';
 
 export default function ImageCarousel() {
@@ -14,8 +14,10 @@ export default function ImageCarousel() {
     setCurrentImageIndex(newIndex);
   };
 
-  return (
+  const phone = localStorage.getItem("phone");
+  console.log(phone);
 
+  return (
     <>
       <div className='image-carousel'>
         <div className='image-carousel__arrow'>

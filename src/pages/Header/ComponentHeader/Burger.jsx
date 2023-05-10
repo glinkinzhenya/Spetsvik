@@ -42,14 +42,13 @@ export default function Burger() {
           onKeyDown={() => setOpen(false)}
           sx={{
             height: '100%',
-            backgroundColor: 'var(--secondary)',
-            
-            color: 'var(--secondary-alt)',
+            width: '220px',
+            backgroundColor: 'rgb(60, 60, 58);',
           }}
         >
           <List>
             {pages.map((page, index) => (
-              <Link key={page} to={links[index]} >
+              <Link key={page} to={links[index]} style={{ textDecoration: 'none', color: 'white' }}>
                 <ListItem disablePadding>
                   <ListItemButton>
                     <ListItemText primary={page}/>

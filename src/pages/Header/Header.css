@@ -63,7 +63,7 @@
 .header-logo__choice-option {
     color: white;
     background-color: rgba(0, 0, 0, 0);
-    background-color: black;
+    background-color: red;
     border: none;
 
 }
