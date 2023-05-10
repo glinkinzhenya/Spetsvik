@@ -20,7 +20,7 @@ export default function CallBack() {
   };
 
   return (
-    <div>
+    <div className='callBack'>
       <Button sx={{ width: '70%' }} variant="outlined" onClick={handleClickOpen}>
         <Typography sx={{ fontSize: '70%' }} color="white"> Ми Вам зателефонуємо</Typography>
       </Button>
