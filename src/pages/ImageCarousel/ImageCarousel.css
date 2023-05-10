@@ -54,14 +54,25 @@
     width: 100%;
 }
 
-.image-carousel__contact {
-    position: absolute;
-    bottom: 10%;
-    right: 10%;
-    color: white;
-    font-size: 35px;
-    font-weight: 700;
+.image-carousel__pagination {
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+    justify-content: center;
+    margin-top: 20px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 30px;
+}
+
+.image-carousel__pagination-circle {
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    border-radius: 50%;
+    background-color: #6d6d6dd3;
+    cursor: pointer;
+}
+
+.image-carousel__pagination-circle--active {
+    background-color: white;
 }
