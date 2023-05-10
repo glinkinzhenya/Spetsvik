@@ -1,3 +1,8 @@
+.footer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
 .footer-primary {
     display: grid;
     grid-template-columns: 350px 235px 235px 350px;
@@ -72,14 +77,14 @@
 .footer-right__item-address {
     font-size: 15px;
     font-weight: 400;
-    color: orange;
+    color: #F07C00;
 
 }
 
 .footer-right__item-telephone {
     font-size: 15px;
     font-weight: 400;
-    color: orange;
+    color: #F07C00;
 }
 
 .footer-right__item-image {
@@ -98,7 +103,8 @@
     /* background-color: rgb(0, 255, 255); */
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
+        /* width: 100%; */
 }
 
 .footer-secondary__social-image {
@@ -119,9 +125,11 @@
 }
 
 .footer-secondary__telephone-image {
-width: 20px;
+width: 30px;
 margin-right: 10px;
+/* height: auto; */
 }
+
 
 .footer-secondary__telephone-grafic {
     font-size: 15px;

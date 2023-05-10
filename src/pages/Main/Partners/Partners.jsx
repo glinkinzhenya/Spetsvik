@@ -48,25 +48,27 @@ export default function Partners() {
   // const newPartners = [...partners.slice(index, partners.length), ...partners.slice(0, index)];
 
   return (
-    <div className='partners container'>
-      <h3 className='partners-title'>НАШІ ПАРТНЕРИ</h3>
+    <div className='partners'>
+      <div className='partners-container container'>
+        <h3 className='partners-title'>НАШІ ПАРТНЕРИ</h3>
 
-      <div className='partners-wrapper'>
-        {/* <div className='news-arrow__picture' onClick={handleClickLeft}>
+        <div className='partners-wrapper'>
+          {/* <div className='news-arrow__picture' onClick={handleClickLeft}>
           <img className='news-arrow__img' src="./img/arrow-left.svg" alt="" />
         </div> */}
-        <div className='partners-map'>
-          {partners.map((item, index) => (
-            <div key={index} className='partners-map__item'>
-              <div className='partners-map__item-picture'>
-                <img className='partners-map__item-image' src={item.image} alt="" />
+          <div className='partners-map'>
+            {partners.map((item, index) => (
+              <div key={index} className='partners-map__item'>
+                <div className='partners-map__item-picture'>
+                  <img className='partners-map__item-image' src={item.image} alt="" />
+                </div>
               </div>
-            </div>
-          ))}
-        </div>
-        {/* <div className='news-arrow__picture' onClick={handleClickRight}>
+            ))}
+          </div>
+          {/* <div className='news-arrow__picture' onClick={handleClickRight}>
           <img className='news-arrow__img' src="./img/arrow-right.svg" alt="" />
         </div> */}
+        </div>
       </div>
     </div>
   );
