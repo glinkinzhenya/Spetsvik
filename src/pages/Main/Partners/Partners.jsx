@@ -48,7 +48,7 @@ export default function Partners() {
   // const newPartners = [...partners.slice(index, partners.length), ...partners.slice(0, index)];
 
   return (
-    <div className='partners'>
+    <div className='partners container'>
       <h3 className='partners-title'>НАШІ ПАРТНЕРИ</h3>
 
       <div className='partners-wrapper'>

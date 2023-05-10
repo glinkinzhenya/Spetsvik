@@ -96,7 +96,7 @@ export default function Footer() {
                 099 000 11 22
           </a>
           <div className='footer-secondary__telephone-grafic'>Пн-Пт: 8:30 - 15:30</div>
-          <CallBack />
+          {/* <CallBack /> */}
         </div>
 
         <div className='footer-secondary__info'>© СПЕЦВІК – 2023.</div>
