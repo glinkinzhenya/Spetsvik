@@ -12,37 +12,38 @@
 }
 
 .services-wripper {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 70px;
     padding-top: 100px;
-    /* padding-bottom: 150px; */
 }
 
-.services-wripper--md {
-    flex-direction: row-reverse;
+.services-text {
+/* background-color: red; */
 }
 
 .services-text__title {
-    width: 700px;
     font-size: 35px;
     margin-bottom: 20px;
 }
 
 .services-text__description {
-    width: 700px;
     font-weight: 400;
     font-size: 25px;
     margin-bottom: 20px;
 }
 
 .services-picture {
-    width: 400px;
-    height: 500px;
-    /* margin-top: -58px; */
+    height: 100%;
+    overflow-y: hidden;
+}
+
+.services-picture--md {
+order: -1;
 }
 
 .services-image {
-    width: 100%;
+    height: 100%;
 }
 
 .services-button {

@@ -32,7 +32,7 @@ export default function Services() {
           </div>
         </div>
 
-        <div className='services-wripper services-wripper--md'>
+        <div className='services-wripper'>
           <div className='services-text'>
             <h3 className='services-text__title'>ПОШИВ СПЕЦОДЯГУ</h3>
             <div className='services-text__description'>
@@ -52,7 +52,7 @@ export default function Services() {
                         <button className='services-button'>ЗАМОВИТИ</button>
 
           </div>
-          <div className='services-picture'>
+          <div className='services-picture services-picture--md'>
             <img className='services-image' src="../img/jackets.jpg" alt="" />
           </div>
         </div>
