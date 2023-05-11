@@ -55,7 +55,6 @@
 .header-logo__choice-select {
     color: white;
     background-color: rgba(0, 0, 0, 0);
-    /* background-color: orange; */
     border: none;
 
 }
@@ -63,9 +62,8 @@
 .header-logo__choice-option {
     color: white;
     background-color: rgba(0, 0, 0, 0);
-    background-color: red;
+    background-color: black;
     border: none;
-
 }
 
 .header-logo__picture {

@@ -18,20 +18,42 @@ export default function Services() {
               СОТ, карусельний верстат для нанесення логотипів тощо),
               до складу фабрик входять підготовчі, розкрійні,
               експериментальні та виробничі цехи, а також складський
-              комплекс.
-            </div>
-
-            <div className='services-text__description'>
+              комплекс.<br/><br/>
               Наші професіонали – конструктор та технолог допоможуть
               Вам втілити в реальність усі Ваші моделі будь-якої
               складності!
             </div>
 
-            <button></button>
+                        <button className='services-button'>ЗАМОВИТИ</button>
 
           </div>
-          <div className='about-picture'>
-            <img className='about-image' src="../img/about-spetsvik.png" alt="" />
+          <div className='services-picture'>
+            <img className='services-image' src="../img/jackets.jpg" alt="" />
+          </div>
+        </div>
+
+        <div className='services-wripper services-wripper--md'>
+          <div className='services-text'>
+            <h3 className='services-text__title'>ПОШИВ СПЕЦОДЯГУ</h3>
+            <div className='services-text__description'>
+              СПЕЦВІК пропонує свої послуги з пошиття спецодягу на
+              давальницькій основі (з матеріалів замовника). На
+              сьогоднішній день виробничі потужності підприємства
+              оснащені сучасним обладнанням (швейні машини Siruba,
+              СОТ, карусельний верстат для нанесення логотипів тощо),
+              до складу фабрик входять підготовчі, розкрійні,
+              експериментальні та виробничі цехи, а також складський
+              комплекс.<br/><br/>
+              Наші професіонали – конструктор та технолог допоможуть
+              Вам втілити в реальність усі Ваші моделі будь-якої
+              складності!
+            </div>
+
+                        <button className='services-button'>ЗАМОВИТИ</button>
+
+          </div>
+          <div className='services-picture'>
+            <img className='services-image' src="../img/jackets.jpg" alt="" />
           </div>
         </div>
       </div>
