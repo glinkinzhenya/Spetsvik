@@ -8,36 +8,29 @@ export default function Footer() {
       <div className='footer-primary'>
         <div className='footer-left'>
           <div className='footer-left__picture'>
-            <a href=""></a>
-            <img className='footer-left__image' src="./img/logo-spetsvik.svg" alt="" />
+            <a href="/">
+              <img className='footer-left__image' src="./img/logo-spetsvik.svg" alt="" />
+            </a>
           </div>
           <div className='footer-left__text'>Спецвік - магазин спецодягу та іншого екіпірування</div>
         </div>
+        
         <div className='footer-catalog'>
           <div className='footer-catalog__title'>Каталог</div>
-          <div className='footer-catalog__item'>Спецодяг</div>
-          <div className='footer-catalog__item'>Тканини</div>
-          <div className='footer-catalog__item'>Пожежна продукція</div>
-          <div className='footer-catalog__item'>Військове екіпірування</div>
-          <div className='footer-catalog__item'>Полювання та пригоди</div>
+          <a className='footer-catalog__item' href="">Спецодяг</a>
+          <a className='footer-catalog__item' href="">Тканини</a>
+          <a className='footer-catalog__item' href="">Пожежна продукція</a>
+          <a className='footer-catalog__item' href="">Військове екіпірування</a>
+          <a className='footer-catalog__item' href="">Полювання та пригоди</a>
         </div>
+
         <div className='footer-info'>
           <div className='footer-info__title'>Інфо</div>
-          <div className='footer-catalog__item'>
-            <a href="/about">Про нас</a>
-          </div>
-          <div className='footer-catalog__item'>
-            <a href="/trainers">Товари</a>
-          </div>
-          <div className='footer-catalog__item'>
-            <a href="/services">Пошив спецодягу</a>
-          </div>
-          <div className='footer-catalog__item'>
-            <a href="/news">Новини та акціі</a>
-          </div>
-          <div className='footer-catalog__item'>
-            <a href="/contacts">Контакти</a>
-          </div>
+          <a className='footer-info__item' href="/about">Про нас</a>
+          <a className='footer-info__item' href="/trainers">Товари</a>
+          <a className='footer-info__item' href="/services">Пошив спецодягу</a>
+          <a className='footer-info__item' href="/news">Новини та акціі</a>
+          <a className='footer-info__item' href="/contacts">Контакти</a>
         </div>
 
         <div className='footer-right'>
