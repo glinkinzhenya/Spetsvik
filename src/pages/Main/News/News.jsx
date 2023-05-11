@@ -7,7 +7,7 @@ export default function News() {
     {
       title: 'Ціна тижня Берці',
       description: '',
-      image: './img/err1.png'
+      image: './img/err1.jpg'
     },
     {
       title: 'Нова адреса',

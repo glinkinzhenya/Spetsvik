@@ -4,7 +4,7 @@ import './Footer.css';
 
 export default function Footer() {
   return (
-    <footer className='footer container'>
+    <footer id="contacts" className='footer container'>
       <div className='footer-primary'>
         <div className='footer-left'>
           <div className='footer-left__picture'>
@@ -88,10 +88,10 @@ export default function Footer() {
         </div>
 
         <div className='footer-secondary__telephone'>
-          <a className='footer-secondary__telephone-link' href="">
+          {/* <a className='footer-secondary__telephone-link' href="">
           <img className='footer-secondary__telephone-image' src="./img/logo-telephone.svg" alt="" />
                 099 000 11 22
-          </a>
+          </a> */}
           <div className='footer-secondary__telephone-grafic'>Пн-Пт: 8:30 - 15:30</div>
           {/* <CallBack /> */}
         </div>

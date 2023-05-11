@@ -1,10 +1,38 @@
 .about {
-height: 60vh;
-background-color: black;
+    background-color: black;
 }
 
 
 .about-title {
     text-align: center;
     color: white;
+    padding-top: 50px;
+    font-size: 35px;
+}
+
+.about-wripper {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 100px;
+    padding-bottom: 150px;
+}
+
+.about-text {
+    color: white;
+    width: 700px;
+    font-weight: 400;
+    font-size: 25px;
+}
+
+.about-text span {
+    font-weight: 700;
+}
+
+.about-picture {
+    width: 400px;
+    margin-top: -58px;
+}
+
+.about-image {
+    width: 100%;
 }

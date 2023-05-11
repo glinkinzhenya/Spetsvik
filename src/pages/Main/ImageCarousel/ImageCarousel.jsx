@@ -1,18 +1,30 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './ImageCarousel.css';
 
 export default function ImageCarousel() {
 
   const images = ['./img/backpack.jpg', './img/blanket.png', './img/body-armor.jpeg', './img/compass.png', './img/fire-extinguisher.png', './img/flashlight.jpeg', './img/jackets.jpg'];
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [isTimerActive, setIsTimerActive] = useState(true);
 
   const handleArrowClick = (direction) => {
+    setIsTimerActive(false);
     const newIndex =
       direction === 'left'
         ? (currentImageIndex + images.length - 1) % images.length
         : (currentImageIndex + 1) % images.length;
     setCurrentImageIndex(newIndex);
   };
+
+  useEffect(() => {
+    let timer;
+    if (isTimerActive) {
+      timer = setInterval(() => {
+        setCurrentImageIndex((currentImageIndex + 1) % images.length);
+      }, 4000);
+    }
+    return () => clearInterval(timer);
+  });
 
   return (
     <>
@@ -36,7 +48,10 @@ export default function ImageCarousel() {
           <div
             key={index}
             className={`image-carousel__pagination-circle ${index === currentImageIndex ? 'image-carousel__pagination-circle--active' : ''}`}
-            onClick={() => setCurrentImageIndex(index)}
+            onClick={() => {
+              setCurrentImageIndex(index);
+              setIsTimerActive(false);
+            }}
           ></div>
         ))}
       </div>

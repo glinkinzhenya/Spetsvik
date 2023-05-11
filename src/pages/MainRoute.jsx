@@ -18,6 +18,7 @@ export default function MainRoute() {
       <Routes>
         <Route path='/' element={<Main />} />
         <Route path='/about' element={<About />} />
+        <Route path='/news' element={<News />} />
         {/* /edit фиксированный элемент */}
         {/* <Route path='/trainings' element={<Trainings />} />
         <Route path='/trainers' element={<Trainers />} />
