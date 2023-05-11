@@ -47,10 +47,17 @@
 }
 
 .footer-catalog__item,
-.footer-catalog__item {
+.footer-info__item {
     font-size: 15px;
     font-weight: 400;
 }
+
+.footer-catalog__item:hover,
+.footer-info__item:hover {
+    color: #F07C00;
+}
+
+
 
 .footer-right {
     padding-top: 10px;
@@ -75,7 +82,11 @@
     font-size: 15px;
     font-weight: 400;
     color: #F07C00;
+}
 
+.footer-right__item-address:hover,
+.footer-right__item-telephone:hover {
+    color: white;
 }
 
 .footer-right__item-telephone {
@@ -93,8 +104,8 @@
     display: flex;
     gap: 20px;
     justify-content: space-between;
+    align-items: center;
 }
-
 
 .footer-secondary__social {
     display: flex;
@@ -131,8 +142,8 @@ margin-right: 10px;
 }
 
 .footer-secondary__info {
-    display: flex;
-    align-items: center;
+    /* display: flex;
+    align-items: center; */
     color: white;
 }
 

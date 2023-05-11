@@ -51,7 +51,10 @@ export default function Header() {
           </div>
         </div>
         <div className='header-logo__picture'>
-          <img className='header-logo__image' src="./img/logo-spetsvik.svg" alt="logo-spetsvik" />
+          <a href="/">
+  <img className='header-logo__image' src="./img/logo-spetsvik.svg" alt="logo-spetsvik" />
+          </a>
+        
         </div>
         <div className='header-logo__burger'>
           <div className='burger-search__picture'>

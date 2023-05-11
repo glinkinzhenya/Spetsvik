@@ -8,6 +8,7 @@ export default function Footer() {
       <div className='footer-primary'>
         <div className='footer-left'>
           <div className='footer-left__picture'>
+            <a href=""></a>
             <img className='footer-left__image' src="./img/logo-spetsvik.svg" alt="" />
           </div>
           <div className='footer-left__text'>Спецвік - магазин спецодягу та іншого екіпірування</div>
@@ -22,26 +23,36 @@ export default function Footer() {
         </div>
         <div className='footer-info'>
           <div className='footer-info__title'>Інфо</div>
-          <div className='footer-catalog__item'>Про нас</div>
-          <div className='footer-catalog__item'>Товари</div>
-          <div className='footer-catalog__item'>Пошив спецодягу</div>
-          <div className='footer-catalog__item'>Новини та акціі</div>
-          <div className='footer-catalog__item'>Контакти</div>
+          <div className='footer-catalog__item'>
+            <a href="/about">Про нас</a>
+          </div>
+          <div className='footer-catalog__item'>
+            <a href="/trainers">Товари</a>
+          </div>
+          <div className='footer-catalog__item'>
+            <a href="/services">Пошив спецодягу</a>
+          </div>
+          <div className='footer-catalog__item'>
+            <a href="/news">Новини та акціі</a>
+          </div>
+          <div className='footer-catalog__item'>
+            <a href="/contacts">Контакти</a>
+          </div>
         </div>
 
         <div className='footer-right'>
           <div className='footer-right__title'>Адреси магазинів</div>
           <div className='footer-right__item'>
-            <a className='footer-right__item-address' href="https://goo.gl/maps/M15piEtkSmjsYDWz9">м. Запоріжжя вул. Поштова 141 Е</a>
-            <a className='footer-right__item-telephone' href="">
+            <a className='footer-right__item-address' target='_blank' href="https://goo.gl/maps/ci2DPZvv62PQytH9A">м. Запоріжжя вул. Поштова 141 Е</a>
+            <a className='footer-right__item-telephone' href="tel:+380990001122">
               <img className='footer-right__item-image' src="./img/logo-telephone.svg" alt="" />
               099 000 11 22</a>
           </div>
 
           <div className='footer-right'>
             <div className='footer-right__item'>
-              <a className='footer-right__item-address' href="">м. Запоріжжя вул. Бульвар Шевченко 16</a>
-              <a className='footer-right__item-telephone' href="">
+              <a className='footer-right__item-address' target='_blank' href="https://goo.gl/maps/untzH82HCHdjzH4i7">м. Запоріжжя вул. Бульвар Шевченко 16</a>
+              <a className='footer-right__item-telephone' href="tel:+380990001122">
                 <img className='footer-right__item-image' src="./img/logo-telephone.svg" alt="" />
                 099 000 11 22</a>
             </div>
@@ -49,9 +60,9 @@ export default function Footer() {
 
           <div className='footer-right'>
             <div className='footer-right__item'>
-              <a className='footer-right__item-address' href="">м. Лазове (Харьківська область) вул. Богданівська 35
+              <a className='footer-right__item-address' target='_blank' href="">м. Лазове (Харьківська область) вул. Богданівська 35
                 (біля магазину СПАР)</a>
-              <a className='footer-right__item-telephone' href="">
+              <a className='footer-right__item-telephone' href="tel:+380990001122">
                 <img className='footer-right__item-image' src="./img/logo-telephone.svg" alt="" />
                 099 000 11 22</a>
             </div>
@@ -59,8 +70,8 @@ export default function Footer() {
 
           <div className='footer-right__item'>
             <div className='footer-right__item'>
-              <a className='footer-right__item-address' href="">м. Харьків вул. Різдвяна, 21</a>
-              <a className='footer-right__item-telephone' href="">
+              <a className='footer-right__item-address' target='_blank' href="">м. Харьків вул. Різдвяна, 21</a>
+              <a className='footer-right__item-telephone' href="tel:+380990001122">
                 <img className='footer-right__item-image' src="./img/logo-telephone.svg" alt="" />
                 099 000 11 22</a>
             </div>
@@ -68,8 +79,8 @@ export default function Footer() {
 
           <div className='footer-right__item'>
             <div className='footer-right__item'>
-              <a className='footer-right__item-address' href=""> м. Городок (Хмельнцицька область) вул. Грушевського 84/2</a>
-              <a className='footer-right__item-telephone' href="">
+              <a className='footer-right__item-address' target='_blank' href=""> м. Городок (Хмельницька область) вул. Грушевського 84/2</a>
+              <a className='footer-right__item-telephone' href="tel:+380990001122">
                 <img className='footer-right__item-image' src="./img/logo-telephone.svg" alt="" />
                 099 000 11 22</a>
             </div>
