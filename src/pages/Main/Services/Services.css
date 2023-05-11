@@ -14,7 +14,7 @@
 .services-wripper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 70px;
+    gap: 80px;
     padding-top: 100px;
 }
 
