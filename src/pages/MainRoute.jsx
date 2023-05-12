@@ -5,6 +5,7 @@ import Main from './Main/Main';
 import News from './Main/News/News';
 import About from './Main/About/About';
 import Services from './Main/Services/Services';
+import Products from './Main/Products/Products';
 // import Trainings from './Trainings/Trainings';
 // import SportPage from './SportPage/SportPage';
 // import Trainers from './Trainers/Trainers';
@@ -19,6 +20,7 @@ export default function MainRoute() {
       <Routes>
         <Route path='/' element={<Main />} />
         <Route path='/about' element={<About />} />
+        <Route path='/products' element={<Products />} />
         <Route path='/services' element={<Services />} />
         <Route path='/news' element={<News />} />
         {/* /edit фиксированный элемент */}

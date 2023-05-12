@@ -16,7 +16,7 @@ import './Burger.css';
 export default function Burger() {
   const [open, setOpen] = useState(false);
   const pages = ['Головна', 'Про нас', 'Товари', 'Послуги', 'Новини та акції', 'Контакти'];
-  const links = ['/', '/about', '/trainers', '/services', '/news', '/contacts'];
+  const links = ['/', '/about', '/products', '/services', '/news', '/contacts'];
 
   return (
     <nav>
