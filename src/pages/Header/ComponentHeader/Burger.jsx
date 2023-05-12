@@ -11,6 +11,8 @@ import {
 import MenuIcon from '@mui/icons-material/Menu';
 import { Link } from 'react-router-dom';
 
+import './Burger.css';
+
 export default function Burger() {
   const [open, setOpen] = useState(false);
   const pages = ['Головна', 'Про нас', 'Товари', 'Послуги', 'Новини та акції', 'Контакти'];
@@ -48,7 +50,7 @@ export default function Burger() {
         >
           <List>
             {pages.map((page, index) => (
-              <Link key={page} to={links[index]} style={{ textDecoration: 'none', color: 'white' }}>
+              <Link className='link' key={page} to={links[index]} style={{ textDecoration: 'none'}}>
                 <ListItem disablePadding>
                   <ListItemButton>
                     <ListItemText primary={page}/>
