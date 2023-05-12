@@ -18,7 +18,7 @@ export default function Footer() {
           <div className='footer-catalog__title'>Каталог</div>
           <a className='footer-catalog__item' href="">Спецодяг</a>
           <a className='footer-catalog__item' href="">Тканини</a>
-          <a className='footer-catalog__item' href="">Пожежна продукція</a>
+          <a className='footer-catalog__item' href="/fire-safety">Пожежна продукція</a>
           <a className='footer-catalog__item' href="">Військове екіпірування</a>
           <a className='footer-catalog__item' href="">Полювання та пригоди</a>
           <a className='footer-catalog__item' href="/services">Послуги</a>

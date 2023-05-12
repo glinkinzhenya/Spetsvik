@@ -68,7 +68,7 @@ export default function Header() {
       </div>
       <nav className='header-category'>
         <a className='header-category__item action' href="/">ГОЛОВНА</a>
-        <a className='header-category__item' href="/">СПЕЦОДЯГ</a>
+        <a className='header-category__item' href="/fire-safety">СПЕЦОДЯГ</a>
         <a className='header-category__item' href="/">ПОЖЕЖНА ПРОДУКЦІЯ</a>
         <a className='header-category__item' href="/">ВІЙСЬКОВА</a>
         <a className='header-category__item' href="/">ТКАНИНИ</a>
