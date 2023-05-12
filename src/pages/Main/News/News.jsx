@@ -22,7 +22,7 @@ export default function News() {
     {
       title: 'Шеврони на замовлення',
       description: 'Реалізовуємо дудь-який принт',
-      image: './img/body-armor.jpeg'
+      image: './img/body-armor.jpg'
     },
     {
       title: 'Новина 5',
