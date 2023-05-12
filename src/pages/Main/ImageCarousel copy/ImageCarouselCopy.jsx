@@ -1,31 +1,39 @@
 import React from 'react';
-// import { Carousel } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './ImageCarouselCopy.css';
 
 export default function ImageCarouselCopy() {
 
-  const images = ['./img/backpack.jpg', './img/blanket.png', './img/body-armor.jpeg', './img/compass.png', './img/fire-extinguisher.png', './img/flashlight.jpeg', './img/jackets.jpg'];
+  const images = ['./img/backpack.jpg', './img/blanket.png', './img/body-armor.jpg', './img/compass.png', './img/fire-extinguisher.png', './img/flashlight.jpeg', './img/jackets.jpg'];
 
   return (
     <div className='imageCarouselCopy'>
       <div className='image-carousel__bootstrap'>
         <div id="carouselExampleIndicators" className="carousel slide">
           <div className="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+
+
+            {images.map((image, index) => (
+              (index === 0) ? <button key={index} type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
+                : <button key={index} type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to={index} aria-label={index + 1}></button>
+            ))}
+
           </div>
           <div className="carousel-inner">
-            <div className="carousel-item active image-carousel__picture">
-              <img src={images[0]} className="d-block image-carousel__img" alt="..." />
-            </div>
-            <div className="carousel-item image-carousel__picture">
-              <img src={images[1]} className="d-block image-carousel__img" alt="..." />
-            </div>
-            <div className="carousel-item image-carousel__picture">
-              <img src={images[2]} className="d-block image-carousel__img" alt="..." />
-            </div>
+
+            {images.map((image, index) => (
+              (index === 0) ?
+                <div key={index} className="carousel-item active image-carousel__picture">
+                  <img src={image} className="d-block image-carousel__img" alt="..." />
+                </div> :
+                <div key={index} className={`carousel-item image-carousel__picture`}
+                >
+                  <img src={image} className="d-block image-carousel__img" alt="..." />
+                </div>
+
+
+            ))}
+
           </div>
           <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
             <span className="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -37,6 +45,7 @@ export default function ImageCarouselCopy() {
           </button>
         </div>
       </div>
+      <div className='image-carousel__bg'></div>
     </div>
   );
 }

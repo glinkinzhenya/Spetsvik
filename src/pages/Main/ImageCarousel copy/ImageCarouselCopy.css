@@ -4,6 +4,7 @@
     position: relative;
     top: -30vh;
     bottom: 0;
+    z-index: 0;
 }
 
 .image-carousel__bootstrap {}
@@ -17,6 +18,28 @@
 }
 
 .image-carousel__img {
-    height: 100%;
-    width: auto;
+    height: auto;
+    width: 100%;
+}
+
+.carousel-control-next-icon {
+    background-image: url('../../../../public/img/arrow-right.svg');
+    width: 40px;
+    cursor: pointer;
+}
+
+.carousel-control-prev-icon {
+    background-image: url('../../../../public/img/arrow-left.svg');
+    width: 40px;
+    cursor: pointer;
+}
+
+.image-carousel__bg {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
 }
