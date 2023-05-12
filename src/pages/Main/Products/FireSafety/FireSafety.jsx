@@ -21,20 +21,65 @@ export default function FireSafety() {
 
       </div>
 
-      <div className='fireSafety-baner'></div>
+      <div className='fireSafety-baner'>
+        <img className='fireSafety-baner__image' src="./img/backpack.jpg" alt="" />
+
+      </div>
 
       <div className='fireSafety-container container'>
-      <h3 className='fireSafety-secondaryTitle'>Основні категорії</h3>
-        
+        <h3 className='fireSafety-secondaryTitle'>Основні категорії</h3>
+
         <div className='fireSafety-box'>
-          <div className='fireSafety-box__item'></div>
-          <div className='fireSafety-box__item'></div>
-          <div className='fireSafety-box__item'></div>
-          <div className='fireSafety-box__item'></div>
-          <div className='fireSafety-box__item'></div>
-          <div className='fireSafety-box__item'></div>
-          <div className='fireSafety-box__item'></div>
-          <div className='fireSafety-box__item'></div>
+
+          <div className='fireSafety-box__item'>
+            <div className='fireSafety-box__item-bg'>
+              <div className='fireSafety-box__item-text'>ХАЛАТИ РОБОЧІ</div>
+            </div>
+          </div>
+
+          <div className='fireSafety-box__item'>
+            <div className='fireSafety-box__item-bg'>
+              <div className='fireSafety-box__item-text'>МЕДИЧНИЙ, КУХАРСЬКИЙ,
+КЛІНІНГОВИЙ ОДЯГ</div>
+            </div>
+          </div>
+
+          <div className='fireSafety-box__item'>
+            <div className='fireSafety-box__item-bg'>
+              <div className='fireSafety-box__item-text'>УТЕПЛЕНИЙ СПЕЦОДЯГ</div>
+            </div>
+          </div>
+
+          <div className='fireSafety-box__item'>
+            <div className='fireSafety-box__item-bg'>
+              <div className='fireSafety-box__item-text'>КОСТЮМИ РОБОЧІ</div>
+            </div>
+          </div>
+
+          <div className='fireSafety-box__item'>
+            <div className='fireSafety-box__item-bg'>
+              <div className='fireSafety-box__item-text'>ЗАХИСНИЙ СПЕЦОДЯГ</div>
+            </div>
+          </div>
+
+          <div className='fireSafety-box__item'>
+            <div className='fireSafety-box__item-bg'>
+              <div className='fireSafety-box__item-text'>ФАРТУХИ РОБОЧІ</div>
+            </div>
+          </div>
+
+          <div className='fireSafety-box__item'>
+            <div className='fireSafety-box__item-bg'>
+              <div className='fireSafety-box__item-text'>ГОЛОВНІ УБОРИ</div>
+            </div>
+          </div>
+
+          <div className='fireSafety-box__item'>
+            <div className='fireSafety-box__item-bg'>
+              <div className='fireSafety-box__item-text'>ЗАСОБИ ІНДИВІДУАЛЬНОГО
+ЗАХИСТУ</div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
