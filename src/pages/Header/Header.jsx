@@ -52,9 +52,9 @@ export default function Header() {
         </div>
         <div className='header-logo__picture'>
           <a href="/">
-  <img className='header-logo__image' src="./img/logo-spetsvik.svg" alt="logo-spetsvik" />
+            <img className='header-logo__image' src="./img/logo-spetsvik.svg" alt="logo-spetsvik" />
           </a>
-        
+
         </div>
         <div className='header-logo__burger'>
           <div className='burger-search__picture'>
@@ -67,11 +67,13 @@ export default function Header() {
         </div>
       </div>
       <nav className='header-category'>
-        <div>СПЕЦОДЯГ</div>
-        <div>ПОЖЕЖНА ПРОДУКЦІЯ</div>
-        <div>ВІЙСЬКОВА</div>
-        <div>ТКАНИНИ</div>
-        <div>ПОЛЮВАННЯ ТА ПРИГОДИ</div>
+        <a className='header-category__item' href="/">ГОЛОВНА</a>
+        <a className='header-category__item' href="/">СПЕЦОДЯГ</a>
+        <a className='header-category__item' href="/">ПОЖЕЖНА ПРОДУКЦІЯ</a>
+        <a className='header-category__item' href="/">ВІЙСЬКОВА</a>
+        <a className='header-category__item' href="/">ТКАНИНИ</a>
+        <a className='header-category__item' href="/">ПОЛЮВАННЯ ТА ПРИГОДИ</a>
+        <a className='header-category__item' href="/">ПОСЛУГИ</a>
       </nav>
     </div>
   );

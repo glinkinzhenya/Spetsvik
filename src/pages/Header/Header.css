@@ -101,3 +101,11 @@
     font-size: 17px;
     font-weight: 600;
 }
+
+.header-category__item {
+
+}
+
+.header-category__item:hover {
+    color: #F07C00;
+}

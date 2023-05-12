@@ -21,10 +21,12 @@ export default function Footer() {
           <a className='footer-catalog__item' href="">Пожежна продукція</a>
           <a className='footer-catalog__item' href="">Військове екіпірування</a>
           <a className='footer-catalog__item' href="">Полювання та пригоди</a>
+          <a className='footer-catalog__item' href="/services">Послуги</a>
         </div>
 
         <div className='footer-info'>
           <div className='footer-info__title'>Інфо</div>
+          <a className='footer-info__item' href="/">Головна</a>
           <a className='footer-info__item' href="/about">Про нас</a>
           <a className='footer-info__item' href="/trainers">Товари</a>
           <a className='footer-info__item' href="/services">Пошив спецодягу</a>
