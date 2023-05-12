@@ -1,61 +1,50 @@
 .fireSafety {
     background-color: red;
     color: white;
-    /* padding-top: 50px; */
-    /* padding-bottom: 150px; */
+    /* padding-top: 100px; */
+    padding-bottom: 100px;
 }
 
-.services-title {
-    text-align: center;
+.boxPath {
+    background-color: #232323;
+height: 50px;
+display: flex;
+align-items: center;
+}
+
+.boxPath-container {
+    display: flex;
+gap: 10px;
+}
+
+.fireSafety-mainTitle {
     padding-top: 50px;
-    font-size: 35px;
+    font-size: 45px;
+    font-weight: 700;
+    padding-bottom: 50px;
 }
 
-.services-wripper {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 80px;
+.fireSafety-baner {
+    height: 550px;
+    background-color: blue;
+}
+
+.fireSafety-secondaryTitle {
+    font-size: 45px;
+    font-weight: 700;
     padding-top: 100px;
+    padding-bottom: 70px;
 }
 
-.services-text {
-/* background-color: red; */
+.fireSafety-box {
+    display: grid;
+    gap: 100px 35px;
+    grid-template-columns: repeat(4, 1fr);
 }
 
-.services-text__title {
-    font-size: 35px;
-    margin-bottom: 20px;
+.fireSafety-box__item {
+    height: 450px;
+    background-color: green;
 }
 
-.services-text__description {
-    font-weight: 400;
-    font-size: 25px;
-    margin-bottom: 20px;
-}
 
-.services-picture {
-    height: 100%;
-    overflow-y: hidden;
-}
-
-.services-picture--md {
-order: -1;
-}
-
-.services-image {
-    height: 100%;
-}
-
-.services-button {
-    background-color: transparent;
-padding: 10px 20px;
-border: 2px solid orange;
-border-radius: 15px;
-cursor: pointer;
-color: white;
-width: 180px;
-height: 45px;
-font-weight: 500;
-font-size: 18px;
-margin-top: 30px;
-}
