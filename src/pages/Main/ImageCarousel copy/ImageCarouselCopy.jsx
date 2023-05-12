@@ -9,7 +9,7 @@ export default function ImageCarouselCopy() {
   return (
     <div className='imageCarouselCopy'>
       <div className='image-carousel__bootstrap'>
-        <div id="carouselExampleIndicators" className="carousel slide">
+        <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
           <div className="carousel-indicators">
 
 
@@ -30,7 +30,6 @@ export default function ImageCarouselCopy() {
                 >
                   <img src={image} className="d-block image-carousel__img" alt="..." />
                 </div>
-
 
             ))}
 
