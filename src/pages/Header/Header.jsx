@@ -67,13 +67,13 @@ export default function Header() {
         </div>
       </div>
       <nav className='header-category'>
-        <a className='header-category__item' href="/">ГОЛОВНА</a>
+        <a className='header-category__item action' href="/">ГОЛОВНА</a>
         <a className='header-category__item' href="/">СПЕЦОДЯГ</a>
         <a className='header-category__item' href="/">ПОЖЕЖНА ПРОДУКЦІЯ</a>
         <a className='header-category__item' href="/">ВІЙСЬКОВА</a>
         <a className='header-category__item' href="/">ТКАНИНИ</a>
         <a className='header-category__item' href="/">ПОЛЮВАННЯ ТА ПРИГОДИ</a>
-        <a className='header-category__item' href="/">ПОСЛУГИ</a>
+        <a className='header-category__item' href="/services">ПОСЛУГИ</a>
       </nav>
     </div>
   );

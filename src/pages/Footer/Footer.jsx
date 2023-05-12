@@ -97,7 +97,7 @@ export default function Footer() {
           <img className='footer-secondary__telephone-image' src="./img/logo-telephone.svg" alt="" />
                 099 000 11 22
           </a> */}
-          <div className='footer-secondary__telephone-grafic'>Пн-Пт: 8:30 - 15:30</div>
+          <div className='footer-secondary__telephone-grafic'>Ми працюємо: Пн-Пт: 8:30-15:30</div>
           {/* <CallBack /> */}
         </div>
 

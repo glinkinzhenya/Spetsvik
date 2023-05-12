@@ -64,6 +64,10 @@
     cursor: pointer;
 }
 
+.categories-box__item-bg {
+    width: 100%;
+}
+
 .categories-box__item:hover {
     filter: brightness(60%);
     transition: filter 0.3s ease-in-out;

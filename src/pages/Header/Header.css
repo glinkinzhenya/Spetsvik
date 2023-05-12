@@ -111,3 +111,11 @@
 .header-category__item:hover {
     color: #F07C00 !important;
 }
+
+.action {
+    color: #F07C00 !important;
+}
+
+.action:hover {
+    color: white !important;
+}
