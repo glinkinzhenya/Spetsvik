@@ -52,7 +52,7 @@
 
 .services-button {
     background-color: transparent;
-    padding: 5px 20px;
+    padding: 5px 20px!important;
     border: 2px solid #F07C00;
     border-radius: 15px;
     cursor: pointer;
