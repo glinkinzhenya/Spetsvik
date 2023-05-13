@@ -1,0 +1,81 @@
+.fireSafety {
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    background-color: #0C0C0C;
+}
+
+.boxPath {
+    /* margin-top: 50px; */
+    background-color: #232323;
+height: 50px;
+display: flex;
+align-items: center;
+}
+
+.boxPath-container {
+    display: flex;
+gap: 10px;
+}
+
+.fireSafety-mainTitle {
+    padding-top: 50px;
+    font-size: 45px;
+    font-weight: 700;
+    padding-bottom: 50px;
+}
+
+.fireSafety-baner {
+    height: 550px;
+}
+
+.fireSafety-baner__image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.fireSafety-secondaryTitle {
+    font-size: 45px;
+    font-weight: 700;
+    padding-top: 100px;
+    padding-bottom: 70px;
+}
+
+.fireSafety-box {
+    display: grid;
+    gap: 100px 35px;
+    grid-template-columns: 335px 335px 335px 335px;
+}
+
+.fireSafety-box__item {
+    height: 450px;
+    background-color: green;
+    background-image: url(../../../../../public/img/jackets.jpg);
+    background-size: cover;
+    background-position: center center;
+    cursor: pointer;
+    display: flex;
+    align-items: flex-end;
+}
+
+.fireSafety-box__item-bg {
+
+    background-color: rgba(0, 0, 0, 0.654);
+    width: 100%;
+    height: 135px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.fireSafety-box__item-text {
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    /* width: 265px; */
+    text-align: center;
+}
+
+

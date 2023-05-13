@@ -1,6 +1,6 @@
 .footer {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .footer-primary {
@@ -54,7 +54,7 @@
 
 .footer-catalog__item:hover,
 .footer-info__item:hover {
-    color: #F07C00;
+    color: #F07C00 !important;
 }
 
 /* <CategoriesServises /> */
@@ -81,18 +81,19 @@
 .footer-right__item-address {
     font-size: 15px;
     font-weight: 400;
-    color: #F07C00;
+
+    color: #F07C00 !important;
 }
 
 .footer-right__item-address:hover,
 .footer-right__item-telephone:hover {
-    color: white;
+    color: white !important;
 }
 
 .footer-right__item-telephone {
     font-size: 15px;
     font-weight: 400;
-    color: #F07C00;
+    color: #F07C00 !important;
 }
 
 .footer-right__item-image {
@@ -142,8 +143,6 @@ margin-right: 10px;
 }
 
 .footer-secondary__info {
-    /* display: flex;
-    align-items: center; */
     color: white;
 }
 

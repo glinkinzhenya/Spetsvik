@@ -13,11 +13,13 @@ export default function CategoriesServises() {
           </div>
         </div>
         <div className='categories-box'>
-          <div className='categories-box__item item'>
-            <div className='categories-box__item-bg'>
-              <div className='categories-box__item-text'>ПОЖЕЖНА ПРОДУКЦІЯ</div>
-            </div>
-          </div>
+
+            <a className='categories-box__item item' href="/fire-safety">
+              <div className='categories-box__item-bg'>
+                <div className='categories-box__item-text'>ПОЖЕЖНА ПРОДУКЦІЯ</div>
+              </div>
+            </a>
+
           <div className='categories-box__item item2'>
             <div className='categories-box__item-bg'>
               <div className='categories-box__item-text'>ВІЙСЬКОВА ЕКІПІРОВКА</div>

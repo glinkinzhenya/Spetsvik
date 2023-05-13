@@ -18,7 +18,7 @@ export default function Footer() {
           <div className='footer-catalog__title'>Каталог</div>
           <a className='footer-catalog__item' href="">Спецодяг</a>
           <a className='footer-catalog__item' href="">Тканини</a>
-          <a className='footer-catalog__item' href="">Пожежна продукція</a>
+          <a className='footer-catalog__item' href="/fire-safety">Пожежна продукція</a>
           <a className='footer-catalog__item' href="">Військове екіпірування</a>
           <a className='footer-catalog__item' href="">Полювання та пригоди</a>
           <a className='footer-catalog__item' href="/services">Послуги</a>
@@ -37,46 +37,46 @@ export default function Footer() {
         <div className='footer-right'>
           <div className='footer-right__title'>Адреси магазинів</div>
           <div className='footer-right__item'>
-            <a className='footer-right__item-address' target='_blank' href="https://goo.gl/maps/ci2DPZvv62PQytH9A">м. Запоріжжя вул. Поштова 141 Е</a>
-            <a className='footer-right__item-telephone' href="tel:+380990001122">
+            <a className='footer-right__item-address' target='_blank' href="https://goo.gl/maps/ci2DPZvv62PQytH9A">м. Запоріжжя, вул. Поштова 141-Е</a>
+            <a className='footer-right__item-telephone' href="tel:+380676120366">
               <img className='footer-right__item-image' src="./img/logo-telephone.svg" alt="" />
-              099 000 11 22</a>
+              067 612 03 66</a>
           </div>
 
           <div className='footer-right'>
             <div className='footer-right__item'>
-              <a className='footer-right__item-address' target='_blank' href="https://goo.gl/maps/untzH82HCHdjzH4i7">м. Запоріжжя вул. Бульвар Шевченко 16</a>
-              <a className='footer-right__item-telephone' href="tel:+380990001122">
+              <a className='footer-right__item-address' target='_blank' href="https://goo.gl/maps/untzH82HCHdjzH4i7">м. Запоріжжя, Бульвар Шевченка 16</a>
+              <a className='footer-right__item-telephone' href="tel:+380981807080">
                 <img className='footer-right__item-image' src="./img/logo-telephone.svg" alt="" />
-                099 000 11 22</a>
+                098 180 70 80</a>
             </div>
           </div>
 
           <div className='footer-right'>
             <div className='footer-right__item'>
-              <a className='footer-right__item-address' target='_blank' href="">м. Лазове (Харьківська область) вул. Богданівська 35
+              <a className='footer-right__item-address' target='_blank' href="https://goo.gl/maps/hT7zgvGWuNVq3gEY8">м. Лозова (Харківська область), вул. Богданівська 35
                 (біля магазину СПАР)</a>
-              <a className='footer-right__item-telephone' href="tel:+380990001122">
+              <a className='footer-right__item-telephone' href="tel:+380676132880">
                 <img className='footer-right__item-image' src="./img/logo-telephone.svg" alt="" />
-                099 000 11 22</a>
+                067 613 28 80</a>
             </div>
           </div>
 
           <div className='footer-right__item'>
             <div className='footer-right__item'>
-              <a className='footer-right__item-address' target='_blank' href="">м. Харьків вул. Різдвяна, 21</a>
-              <a className='footer-right__item-telephone' href="tel:+380990001122">
+              <a className='footer-right__item-address' target='_blank' href="https://goo.gl/maps/3bmo4t72UDWPVEzW7">м. Харьків, вул. Різдвяна 21</a>
+              <a className='footer-right__item-telephone' href="tel:+380676121958">
                 <img className='footer-right__item-image' src="./img/logo-telephone.svg" alt="" />
-                099 000 11 22</a>
+                067 612 19 58</a>
             </div>
           </div>
 
           <div className='footer-right__item'>
             <div className='footer-right__item'>
-              <a className='footer-right__item-address' target='_blank' href=""> м. Городок (Хмельницька область) вул. Грушевського 84/2</a>
-              <a className='footer-right__item-telephone' href="tel:+380990001122">
+              <a className='footer-right__item-address' target='_blank' href="https://goo.gl/maps/pmMV6SjztNN585nq9">м. Городок (Хмельницька область), вул. Грушевського 84/2</a>
+              <a className='footer-right__item-telephone' href="tel:+380974058748">
                 <img className='footer-right__item-image' src="./img/logo-telephone.svg" alt="" />
-                099 000 11 22</a>
+                098 405 87 48</a>
             </div>
           </div>
         </div>
@@ -97,7 +97,7 @@ export default function Footer() {
           <img className='footer-secondary__telephone-image' src="./img/logo-telephone.svg" alt="" />
                 099 000 11 22
           </a> */}
-          <div className='footer-secondary__telephone-grafic'>Пн-Пт: 8:30 - 15:30</div>
+          <div className='footer-secondary__telephone-grafic'>Ми працюємо: Пн-Пт: 8:30-15:30</div>
           {/* <CallBack /> */}
         </div>
 
