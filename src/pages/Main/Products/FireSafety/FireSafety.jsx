@@ -37,7 +37,7 @@ export default function FireSafety() {
           <div className='fireSafety-box'>
             <div className='fireSafety-box__item'>
               <div className='fireSafety-box__item-picture'>
-                <img className='fireSafety-box__item-image' src="./img/body-armor.jpg" alt="" />
+                <img className='fireSafety-box__item-image' src="./img/stock_portrait.jpeg" alt="" />
               </div>
               <div className='fireSafety-box__item-bg'>
                 <div className='fireSafety-box__item-text'>ХАЛАТИ РОБОЧІ</div>
@@ -46,7 +46,7 @@ export default function FireSafety() {
 
             <div className='fireSafety-box__item'>
             <div className='fireSafety-box__item-picture'>
-                <img className='fireSafety-box__item-image' src="./img/body-armor.jpg" alt="" />
+                <img className='fireSafety-box__item-image' src="./img/stock_medical.jpeg" alt="" />
               </div>
               <div className='fireSafety-box__item-bg'>
                 <div className='fireSafety-box__item-text'>МЕДИЧНИЙ, КУХАРСЬКИЙ,
@@ -56,7 +56,7 @@ export default function FireSafety() {
 
             <div className='fireSafety-box__item'>
             <div className='fireSafety-box__item-picture'>
-                <img className='fireSafety-box__item-image' src="./img/body-armor.jpg" alt="" />
+                <img className='fireSafety-box__item-image' src="./img/stock_spets.jpg" alt="" />
               </div>
               <div className='fireSafety-box__item-bg'>
                 <div className='fireSafety-box__item-text'>УТЕПЛЕНИЙ СПЕЦОДЯГ</div>
@@ -65,7 +65,7 @@ export default function FireSafety() {
 
             <div className='fireSafety-box__item'>
             <div className='fireSafety-box__item-picture'>
-                <img className='fireSafety-box__item-image' src="./img/body-armor.jpg" alt="" />
+                <img className='fireSafety-box__item-image' src="./img/stock_worker.jpeg" alt="" />
               </div>
               <div className='fireSafety-box__item-bg'>
                 <div className='fireSafety-box__item-text'>КОСТЮМИ РОБОЧІ</div>
@@ -83,7 +83,7 @@ export default function FireSafety() {
 
             <div className='fireSafety-box__item'>
             <div className='fireSafety-box__item-picture'>
-                <img className='fireSafety-box__item-image' src="./img/body-armor.jpg" alt="" />
+                <img className='fireSafety-box__item-image' src="./img/stock_optimistic.jpeg" alt="" />
               </div>
               <div className='fireSafety-box__item-bg'>
                 <div className='fireSafety-box__item-text'>ФАРТУХИ РОБОЧІ</div>
@@ -92,7 +92,7 @@ export default function FireSafety() {
 
             <div className='fireSafety-box__item'>
             <div className='fireSafety-box__item-picture'>
-                <img className='fireSafety-box__item-image' src="./img/body-armor.jpg" alt="" />
+                <img className='fireSafety-box__item-image' src="./img/stock_baseball_cap.jpeg" alt="" />
               </div>
               <div className='fireSafety-box__item-bg'>
                 <div className='fireSafety-box__item-text'>ГОЛОВНІ УБОРИ</div>
@@ -101,7 +101,7 @@ export default function FireSafety() {
 
             <div className='fireSafety-box__item'>
             <div className='fireSafety-box__item-picture'>
-                <img className='fireSafety-box__item-image' src="./img/body-armor.jpg" alt="" />
+                <img className='fireSafety-box__item-image' src="./img/stock_working.jpeg" alt="" />
               </div>
               <div className='fireSafety-box__item-bg'>
                 <div className='fireSafety-box__item-text'>ЗАСОБИ ІНДИВІДУАЛЬНОГО ЗАХИСТУ</div>
