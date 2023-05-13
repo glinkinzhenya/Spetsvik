@@ -129,7 +129,7 @@
     border: none;
     background: #F07C00;
     position: fixed;
-    bottom: 50px;
+    bottom: 120px;
     left: 50px;
     cursor: pointer;
     z-index: 13;
@@ -216,8 +216,8 @@
 
 .pulse-button-icon {
     position: fixed;
-    bottom: 140px;
-    left: 57px;
+    bottom: 210px;
+    left: 60px;
     display: flex;
     flex-direction: column;
     gap: 10px;
