@@ -30,6 +30,16 @@ export default function Header() {
 
   const defaultPhone = addresses[0].phone;
 
+  const [isPulseButtonActive, setIsPulseButtonActive] = useState(false);
+
+  const handlePulseButtonClick = () => {
+    setIsPulseButtonActive(!isPulseButtonActive);
+  };
+
+  const pulseButtonImageClasses = `pulse-button-image ${isPulseButtonActive ? 'rotate opacity-image' : ''}`;
+  const pulseButtonImage2Classes = `pulse-button-image2 ${isPulseButtonActive ? '' : 'opacity-image rotate '}`;
+  const pulseButtonIconClasses = `pulse-button-icon ${isPulseButtonActive ? '' : 'pulse-button-icon_bottom opacity-image'}`;
+
   return (
     <div className='header'>
       <div className='header-logo container'>
@@ -75,6 +85,23 @@ export default function Header() {
         <a className='header-category__item' href="/">ПОЛЮВАННЯ ТА ПРИГОДИ</a>
         <a className='header-category__item' href="/">ПОСЛУГИ</a>
       </nav>
+
+
+      <div onClick={handlePulseButtonClick} className="pulse-button">
+        <img className={pulseButtonImageClasses} src="./img/chat.png" alt="" />
+        <img className={pulseButtonImage2Classes} src="./img/image-icon.png" alt="" />
+
+        <span className="pulse-button__rings"></span>
+        <span className="pulse-button__rings"></span>
+        <span className="pulse-button__rings"></span>
+      </div>
+
+      <div className={pulseButtonIconClasses}>
+        <img className="pulse-button-icon_image" src="./img/chat.png" alt="" />
+        <img className="pulse-button-icon_image" src="./img/chat.png" alt="" />
+        <img className="pulse-button-icon_image" src="./img/chat.png" alt="" />
+      </div>
+
     </div>
   );
 }
