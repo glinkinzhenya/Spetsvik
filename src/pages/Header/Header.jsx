@@ -47,9 +47,10 @@ export default function Header() {
       <div className='header-logo container'>
         <div className='header-logo__telephone'>
           <div className='header-language'>
-            <div className='header-language__active'>UA</div>
-            <div className='header-language__en' >EN</div>
+            <a className='header-language__active' href="">UA</a>
+            <a className='header-language__en' href="">EN</a>
           </div>
+          
           <div className='header-logo__telephone-picture'>
             <img className='header-logo__telephone-image' src="./img/logo-telephone.svg" alt="logo-telephone" />
           </div>
