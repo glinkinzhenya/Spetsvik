@@ -1,9 +1,12 @@
 import React from 'react';
 import './FireSafety.css';
+import PopularGoods from '../PopularGoods/PopularGoods';
 
 export default function FireSafety() {
 
   return (
+    <>
+   
     <div className='fireSafety'>
       <div className='boxPath'>
         <div className='boxPath-container container'>
@@ -40,7 +43,7 @@ export default function FireSafety() {
           <div className='fireSafety-box__item'>
             <div className='fireSafety-box__item-bg'>
               <div className='fireSafety-box__item-text'>МЕДИЧНИЙ, КУХАРСЬКИЙ,
-КЛІНІНГОВИЙ ОДЯГ</div>
+                КЛІНІНГОВИЙ ОДЯГ</div>
             </div>
           </div>
 
@@ -77,11 +80,13 @@ export default function FireSafety() {
           <div className='fireSafety-box__item'>
             <div className='fireSafety-box__item-bg'>
               <div className='fireSafety-box__item-text'>ЗАСОБИ ІНДИВІДУАЛЬНОГО
-ЗАХИСТУ</div>
+                ЗАХИСТУ</div>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <PopularGoods />
+    </>
   );
 }

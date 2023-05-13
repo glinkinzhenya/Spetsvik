@@ -1,0 +1,62 @@
+.popularGoods {
+    color: white;
+    padding-bottom: 100px;
+    background-color: #0C0C0C;
+}
+
+.popularGoods-secondaryTitle {
+    font-size: 45px;
+    font-weight: 700;
+    padding-bottom: 70px;
+}
+
+.popularGoods-box {
+    display: grid;
+    gap: 100px 35px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.popularGoods-box__item {
+    max-width: 300px;
+    cursor: pointer;
+}
+
+.popularGoods-box__item-picture {
+width: 100%;   
+height: 375px;
+}
+
+.popularGoods-box__item-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.popularGoods-box__item-bg {
+    background-color: #232323;
+    width: 100%;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.popularGoods-box__item-name {
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.popularGoods-box__item-price {
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+
+
+
+

@@ -16,11 +16,14 @@
     padding: 5px;
 }
 
+.header-language__en:hover {
+    color: #e28130 !important;
+}
+
 .header-language__active {
     background-color: #e28130;
     padding: 5px;
 }
-
 
 .header-logo {
     display: flex;
@@ -58,7 +61,6 @@
     color: white;
     background-color: rgba(0, 0, 0, 0);
     border: none;
-
 }
 
 .header-logo__choice-option {
@@ -70,7 +72,6 @@
 
 .header-logo__picture {
     width: 100px;
-
 }
 
 .header-logo__image {
@@ -104,9 +105,7 @@
     font-weight: 600;
 }
 
-.header-category__item {
-
-}
+.header-category__item {}
 
 .header-category__item:hover {
     color: #F07C00 !important;
