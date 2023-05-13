@@ -82,7 +82,7 @@ export default function Header() {
       <nav className='header-category'>
         <a className='header-category__item action' href="/">ГОЛОВНА</a>
         <a className='header-category__item' href="/fire-safety">СПЕЦОДЯГ</a>
-        <a className='header-category__item' href="/">ПОЖЕЖНА ПРОДУКЦІЯ</a>
+        <a className='header-category__item' href="/fire-safety">ПОЖЕЖНА ПРОДУКЦІЯ</a>
         <a className='header-category__item' href="/">ВІЙСЬКОВА</a>
         <a className='header-category__item' href="/">ТКАНИНИ</a>
         <a className='header-category__item' href="/">ПОЛЮВАННЯ ТА ПРИГОДИ</a>
