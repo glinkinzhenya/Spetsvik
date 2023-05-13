@@ -19,7 +19,7 @@
 }
 
 .services-text {
-/* background-color: red; */
+    /* background-color: red; */
 }
 
 .services-text__title {
@@ -34,12 +34,16 @@
 }
 
 .services-picture {
-    height: 100%;
+    /* height: 100%; */
     /* overflow-y: hidden; */
+    width: 100%;
+    height: 100%;
+    /* filter: brightness(40%); */
+    object-fit: cover;
 }
 
 .services-picture--md {
-order: -1;
+    order: -1;
 }
 
 .services-image {
@@ -48,14 +52,20 @@ order: -1;
 
 .services-button {
     background-color: transparent;
-padding: 10px 20px;
-border: 2px solid orange;
-border-radius: 15px;
-cursor: pointer;
-color: white;
-width: 180px;
-height: 45px;
-font-weight: 500;
-font-size: 18px;
-margin-top: 30px;
+    padding: 5px 20px;
+    border: 2px solid #F07C00;
+    border-radius: 15px;
+    cursor: pointer;
+    color: white;
+    width: 180px;
+    height: 45px;
+    font-weight: 500;
+    font-size: 18px;
+    margin-top: 30px;
+    transition: 0.5s;
+}
+
+.services-button:hover {
+    border: 2px solid white;
+    color: #F07C00;
 }
