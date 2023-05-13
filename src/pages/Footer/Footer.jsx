@@ -28,7 +28,7 @@ export default function Footer() {
           <div className='footer-info__title'>Інфо</div>
           <a className='footer-info__item' href="/">Головна</a>
           <a className='footer-info__item' href="/about">Про нас</a>
-          <a className='footer-info__item' href="/trainers">Товари</a>
+          <a className='footer-info__item' href="/products">Товари</a>
           <a className='footer-info__item' href="/services">Пошив спецодягу</a>
           <a className='footer-info__item' href="/news">Новини та акціі</a>
           <a className='footer-info__item' href="/contacts">Контакти</a>

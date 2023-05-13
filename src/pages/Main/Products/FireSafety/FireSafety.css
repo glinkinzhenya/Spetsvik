@@ -17,6 +17,18 @@
     gap: 10px;
 }
 
+.boxPath-container__text {
+   
+}
+
+.boxPath-container__arrow {
+   width: 7px;
+}
+
+.boxPath-container__arrow-image {
+   width: 100%;    
+}
+
 .fireSafety-mainTitle {
     padding-top: 50px;
     font-size: 45px;
@@ -50,13 +62,22 @@
 .fireSafety-box__item {
     height: 400px;
     max-width: 300px;
-    background-color: green;
-    /* background-image: url(../../../../../public/img/jackets.jpg);
-    background-size: cover;
-    background-position: center center; */
     cursor: pointer;
     display: flex;
     align-items: flex-end;
+    position: relative;
+    transition: background-image 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+.fireSafety-box__item:hover {
+    filter: brightness(80%);
+    transition: filter 0.3s ease-in-out;
+}
+
+.fireSafety-box__item:not(:hover) {
+    filter: brightness(100%);
+    transition: filter 0.3s ease-in-out;
 }
 
 .fireSafety-box__item-picture {
@@ -78,7 +99,6 @@ position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 .fireSafety-box__item-text {
