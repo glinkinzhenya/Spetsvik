@@ -234,3 +234,21 @@
 .pulse-button-icon_bottom {
     bottom: 100px;
 }
+
+.header-black {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(10px);
+    z-index: 11;
+    opacity: 0;
+    transition: opacity .5s;
+    pointer-events: none;
+}
+
+.header-black__active {
+    opacity: 1;
+    pointer-events: auto;
+}
