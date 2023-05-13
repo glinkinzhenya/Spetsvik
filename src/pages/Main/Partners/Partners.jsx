@@ -18,6 +18,9 @@ export default function Partners() {
     {
       image: './img/brand5.png'
     },
+    {
+      image: './img/brand6.png'
+    },
   ];
 
   return (
