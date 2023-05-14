@@ -53,7 +53,7 @@ export default function Services() {
 
           </div>
           <div className='services-picture services-picture--md'>
-            <img className='services-image' src="../img/blanket.png" alt="" />
+            <img className='services-image' src="../img/services-logo.jpg" alt="" />
           </div>
         </div>
       </div>

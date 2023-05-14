@@ -8,6 +8,7 @@ import Services from './Main/Services/Services';
 import Products from './Main/Products/Products';
 import FireSafety from './Main/Products/FireSafety/FireSafety';
 import SpetsCloth from './Main/Products/SpetsCloth/SpetsCloth';
+import IndividualProtection from './Main/Products/IndividualProtection/IndividualProtection';
 // import Trainings from './Trainings/Trainings';
 // import SportPage from './SportPage/SportPage';
 // import Trainers from './Trainers/Trainers';
@@ -24,6 +25,7 @@ export default function MainRoute() {
         <Route path='/about' element={<About />} />
         <Route path='/products' element={<Products />} />
         <Route path='/spets-cloth' element={<SpetsCloth />} />
+        <Route path='/individual-protection' element={<IndividualProtection />} />
         <Route path='/fire-safety' element={<FireSafety />} />
         <Route path='/services' element={<Services />} />
         <Route path='/news' element={<News />} />

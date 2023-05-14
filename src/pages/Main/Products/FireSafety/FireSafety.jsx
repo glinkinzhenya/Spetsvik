@@ -38,7 +38,7 @@ export default function FireSafety() {
           <div className='fireSafety-box'>
             <div className='fireSafety-box__item'>
               <div className='fireSafety-box__item-picture'>
-                <img className='fireSafety-box__item-image' src="./img/fire-extinguisher.png" alt="" />
+                <img className='fireSafety-box__item-image' src="./img/fire-main.jpg" alt="" />
               </div>
               <div className='fireSafety-box__item-bg'>
                 <div className='fireSafety-box__item-text'>ВОГНЕГАСНИКИ</div>
