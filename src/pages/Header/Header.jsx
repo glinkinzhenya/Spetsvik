@@ -8,16 +8,24 @@ export default function Header() {
   const [selectedPhone, setSelectedPhone] = useState('');
   const addresses = [
     {
-      address: 'м. Запоріжжя, бульвар Шевченка, 16',
-      phone: '067 634 23 34'
+      address: 'м. Запоріжжя, вул. Поштова 141-Е',
+      phone: '067 612 03 66'
     },
     {
-      address: 'м. Запоріжжя, вул. Поштова, 141е',
-      phone: '063 123 45 67'
+      address: 'м. Запоріжжя, Бульвар Шевченка 16',
+      phone: '098 180 70 80'
     },
     {
-      address: 'м. Запоріжжя, бульвар Шевченка, 78',
-      phone: '066 987 65 43'
+      address: 'м. Лозова, вул. Богданівська 35',
+      phone: '067 613 28 80'
+    },
+    {
+      address: 'м. Харьків, вул. Різдвяна 21',
+      phone: '067 612 19 58'
+    },
+    {
+      address: 'м. Городок, вул. Грушевського 84/2',
+      phone: '098 405 87 48'
     }
   ];
 
@@ -81,10 +89,10 @@ export default function Header() {
       </div>
       <nav className='header-category'>
         <a className='header-category__item action' href="/">ГОЛОВНА</a>
-        <a className='header-category__item' href="/fire-safety">СПЕЦОДЯГ</a>
+        <a className='header-category__item' href="/spets-cloth">СПЕЦОДЯГ</a>
         <a className='header-category__item' href="/fire-safety">ПОЖЕЖНА ПРОДУКЦІЯ</a>
         <a className='header-category__item' href="/">ВІЙСЬКОВА ЕКІПІРОВКА</a>
-        <a className='header-category__item' href="/">ТКАНИНИ</a>
+        <a className='header-category__item' href="/fabrics">ТКАНИНИ</a>
         <a className='header-category__item' href="/">ПОЛЮВАННЯ ТА ПРИГОДИ</a>
         <a className='header-category__item' href="/services">ПОСЛУГИ</a>
       </nav>
