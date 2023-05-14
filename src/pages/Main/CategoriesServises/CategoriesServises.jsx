@@ -9,7 +9,7 @@ export default function CategoriesServises() {
       <div className='categories'>
 
 
-        
+
         <a className='categories-overalls' href="/spets-cloth">
           <div className='categories-overalls__bg'>
             <div className='categories-overalls__text'>СПЕЦОДЯГ</div>
@@ -29,11 +29,14 @@ export default function CategoriesServises() {
               <div className='categories-box__item-text'>ВІЙСЬКОВА ЕКІПІРОВКА</div>
             </div>
           </div>
-          <div className='categories-box__item item3'>
+
+          
+          <a className='categories-box__item item3' href="/fabrics">
             <div className='categories-box__item-bg'>
               <div className='categories-box__item-text'>ТКАНИНИ</div>
             </div>
-          </div>
+          </a>
+
           <div className='categories-box__item item4'>
             <div className='categories-box__item-bg'>
               <div className='categories-box__item-text'>ПОЛЮВАННЯ ТА ПРИГОДИ</div>
