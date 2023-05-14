@@ -50,22 +50,6 @@
     height: 100%;
 }
 
-.services-button {
-    background-color: transparent;
-    padding: 5px 20px!important;
-    border: 2px solid #F07C00;
-    border-radius: 15px;
-    cursor: pointer;
-    color: white;
-    width: 180px;
-    height: 45px;
-    font-weight: 500;
-    font-size: 18px;
-    margin-top: 30px;
-    transition: 0.5s;
-}
-
-.services-button:hover {
-    border: 2px solid white;
-    color: #F07C00;
+.services-call__back {
+width: 180px;
 }

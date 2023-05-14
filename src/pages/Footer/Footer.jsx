@@ -1,5 +1,5 @@
 import React from 'react';
-import CallBack from './ComponentFooter/CallBack';
+import CallBack from '../../components/CallBack';
 import './Footer.css';
 
 export default function Footer() {
@@ -97,7 +97,7 @@ export default function Footer() {
           <img className='footer-secondary__telephone-image' src="./img/logo-telephone.svg" alt="" />
                 099 000 11 22
           </a> */}
-          <CallBack />
+          <CallBack buttonText="Ми Вам зателефонуємо" dialogTitle="Введіть Ваш номер телефону" dialogText="Ми зателефонуємо як найшвідше та відповемо на всі ваші питання" confirmText="Надіслати" cancelText="Відміна" fontSize="12px" />
           <div className='footer-secondary__telephone-grafic'>Працюємо: Пн-Пт: 8:30-15:30</div>
         </div>
 

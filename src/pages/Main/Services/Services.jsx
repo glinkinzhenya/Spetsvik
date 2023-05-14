@@ -1,5 +1,6 @@
 import React from 'react';
 import './Services.css';
+import CallBack from '../../../components/CallBack';
 
 export default function Services() {
 
@@ -24,8 +25,9 @@ export default function Services() {
               складності!
             </div>
 
-            <button className='services-button'>ЗАМОВИТИ</button>
-
+            <div className='services-call__back'>
+              <CallBack buttonText="ЗАМОВИТИ" dialogTitle="Введіть Ваш номер телефону" dialogText="Ми зателефонуємо як найшвідше та відповемо на всі ваші питання" confirmText="Надіслати" cancelText="Відміна" fontSize="18px" />
+            </div>
           </div>
           <div className='services-picture'>
             <img className='services-image' src="../img/jackets.jpg" alt="" />
@@ -49,8 +51,10 @@ export default function Services() {
               бажанням замовника.
             </div>
 
-            <button className='services-button'>ЗАМОВИТИ</button>
-
+            <div className='services-call__back'>
+              <CallBack buttonText="ЗАМОВИТИ" dialogTitle="Введіть Ваш номер телефону" dialogText="Ми зателефонуємо як найшвідше та відповемо на всі ваші питання" confirmText="Надіслати" cancelText="Відміна" fontSize="18px" />
+            </div>
+            
           </div>
           <div className='services-picture services-picture--md'>
             <img className='services-image' src="../img/blanket.png" alt="" />
