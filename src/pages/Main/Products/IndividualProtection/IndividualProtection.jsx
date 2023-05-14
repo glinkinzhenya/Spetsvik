@@ -1,7 +1,7 @@
 import React from 'react';
 import './IndividualProtection.css';
 import News from '../../News/News';
-import PopularGoodsFireSafety from '../PopularGoodsFireSafety/PopularGoodsFireSafety';
+import PopularGoodsIndividual from '../PopularGoodsIndividual/PopularGoodsIndividual';
 
 export default function IndividualProtection() {
 
@@ -34,7 +34,7 @@ export default function IndividualProtection() {
         </div>
 
         <div className='individualProtection-baner'>
-          <img className='individualProtection-baner__image' src="./img/fire-extinguisher.png" alt="" />
+          <img className='individualProtection-baner__image' src="./img/individual_2.jpeg" alt="" />
         </div>
 
         <div className='individualProtection-container container'>
@@ -43,7 +43,7 @@ export default function IndividualProtection() {
           <div className='individualProtection-box'>
             <div className='individualProtection-box__item'>
               <div className='individualProtection-box__item-picture'>
-                <img className='individualProtection-box__item-image' src="./img/fire-extinguisher.png" alt="" />
+                <img className='individualProtection-box__item-image' src="./img/individual_1.jpeg" alt="" />
               </div>
               <div className='individualProtection-box__item-bg'>
                 <div className='individualProtection-box__item-text'>ЗАСОБИ ЗАХИСТУ РУК</div>
@@ -52,7 +52,7 @@ export default function IndividualProtection() {
 
             <div className='individualProtection-box__item'>
               <div className='individualProtection-box__item-picture'>
-                <img className='individualProtection-box__item-image' src="./img/stock_building_fire.jpeg" alt="" />
+                <img className='individualProtection-box__item-image' src="./img/individual_2.jpeg" alt="" />
               </div>
               <div className='individualProtection-box__item-bg'>
                 <div className='individualProtection-box__item-text'>ЗАСОБИ ЗАХИСТУ ОЧЕЙ, ОБЛИЧЧЯ, ГОЛОВИ</div>
@@ -61,7 +61,7 @@ export default function IndividualProtection() {
 
             <div className='individualProtection-box__item'>
               <div className='individualProtection-box__item-picture'>
-                <img className='individualProtection-box__item-image' src="./img/stock_rukav_fire.jpg" alt="" />
+                <img className='individualProtection-box__item-image' src="./img/individual_3.jpeg" alt="" />
               </div>
               <div className='individualProtection-box__item-bg'>
                 <div className='individualProtection-box__item-text'>ЗАСОБИ ЗАХИСТУ ОРГАНІВ ДИХАННЯ</div>
@@ -70,7 +70,7 @@ export default function IndividualProtection() {
 
             <div className='individualProtection-box__item'>
               <div className='individualProtection-box__item-picture'>
-                <img className='individualProtection-box__item-image' src="./img/stock_rukav_fire.jpg" alt="" />
+                <img className='individualProtection-box__item-image' src="./img/individual_4.jpeg" alt="" />
               </div>
               <div className='individualProtection-box__item-bg'>
                 <div className='individualProtection-box__item-text'>СИГНАЛЬНА ПРОДУКЦІЯ</div>
@@ -79,7 +79,7 @@ export default function IndividualProtection() {
           </div>
         </div>
       </div>
-      <PopularGoodsFireSafety />
+      <PopularGoodsIndividual />
       <News />
     </>
   );
