@@ -1,7 +1,8 @@
 import React from 'react';
 import './FireSafety.css';
-import PopularGoods from '../PopularGoods/PopularGoods';
-import Stock from '../Stock/Stock';
+import News from '../../News/News';
+import PopularGoodsFireSafety from '../PopularGoodsFireSafety/PopularGoodsFireSafety';
+// import Stock from '../Stock/Stock';
 
 export default function FireSafety() {
 
@@ -19,7 +20,7 @@ export default function FireSafety() {
               <img className='boxPath-container__arrow-image' src="./img/arrow-right.svg" alt="" />
             </div>
 
-              <a className='boxPath-container__text' href="/fire-safety">Пожежна продукція</a>
+            <a className='boxPath-container__text' href="/fire-safety">Пожежна продукція</a>
           </div>
 
         </div>
@@ -28,7 +29,7 @@ export default function FireSafety() {
         </div>
 
         <div className='fireSafety-baner'>
-          <img className='fireSafety-baner__image' src="./img/backpack.jpg" alt="" />
+          <img className='fireSafety-baner__image' src="./img/fire-extinguisher.png" alt="" />
         </div>
 
         <div className='fireSafety-container container'>
@@ -37,81 +38,36 @@ export default function FireSafety() {
           <div className='fireSafety-box'>
             <div className='fireSafety-box__item'>
               <div className='fireSafety-box__item-picture'>
-                <img className='fireSafety-box__item-image' src="./img/stock_portrait.jpeg" alt="" />
+                <img className='fireSafety-box__item-image' src="./img/fire-extinguisher.png" alt="" />
               </div>
               <div className='fireSafety-box__item-bg'>
-                <div className='fireSafety-box__item-text'>ХАЛАТИ РОБОЧІ</div>
+                <div className='fireSafety-box__item-text'>ВОГНЕГАСНИКИ</div>
               </div>
             </div>
 
             <div className='fireSafety-box__item'>
-            <div className='fireSafety-box__item-picture'>
-                <img className='fireSafety-box__item-image' src="./img/stock_medical.jpeg" alt="" />
+              <div className='fireSafety-box__item-picture'>
+                <img className='fireSafety-box__item-image' src="./img/stock_building_fire.jpeg" alt="" />
               </div>
               <div className='fireSafety-box__item-bg'>
-                <div className='fireSafety-box__item-text'>МЕДИЧНИЙ, КУХАРСЬКИЙ,
-                  КЛІНІНГОВИЙ ОДЯГ</div>
+                <div className='fireSafety-box__item-text'>ПОЖЕЖНІ ШАФИ, ЩИТИ, СТЕНДИ</div>
               </div>
             </div>
 
             <div className='fireSafety-box__item'>
-            <div className='fireSafety-box__item-picture'>
-                <img className='fireSafety-box__item-image' src="./img/stock_spets.jpg" alt="" />
+              <div className='fireSafety-box__item-picture'>
+                <img className='fireSafety-box__item-image' src="./img/stock_rukav_fire.jpg" alt="" />
               </div>
               <div className='fireSafety-box__item-bg'>
-                <div className='fireSafety-box__item-text'>УТЕПЛЕНИЙ СПЕЦОДЯГ</div>
-              </div>
-            </div>
-
-            <div className='fireSafety-box__item'>
-            <div className='fireSafety-box__item-picture'>
-                <img className='fireSafety-box__item-image' src="./img/stock_worker.jpeg" alt="" />
-              </div>
-              <div className='fireSafety-box__item-bg'>
-                <div className='fireSafety-box__item-text'>КОСТЮМИ РОБОЧІ</div>
-              </div>
-            </div>
-
-            <div className='fireSafety-box__item'>
-            <div className='fireSafety-box__item-picture'>
-                <img className='fireSafety-box__item-image' src="./img/body-armor.jpg" alt="" />
-              </div>
-              <div className='fireSafety-box__item-bg'>
-                <div className='fireSafety-box__item-text'>ЗАХИСНИЙ СПЕЦОДЯГ</div>
-              </div>
-            </div>
-
-            <div className='fireSafety-box__item'>
-            <div className='fireSafety-box__item-picture'>
-                <img className='fireSafety-box__item-image' src="./img/stock_optimistic.jpeg" alt="" />
-              </div>
-              <div className='fireSafety-box__item-bg'>
-                <div className='fireSafety-box__item-text'>ФАРТУХИ РОБОЧІ</div>
-              </div>
-            </div>
-
-            <div className='fireSafety-box__item'>
-            <div className='fireSafety-box__item-picture'>
-                <img className='fireSafety-box__item-image' src="./img/stock_baseball_cap.jpeg" alt="" />
-              </div>
-              <div className='fireSafety-box__item-bg'>
-                <div className='fireSafety-box__item-text'>ГОЛОВНІ УБОРИ</div>
-              </div>
-            </div>
-
-            <div className='fireSafety-box__item'>
-            <div className='fireSafety-box__item-picture'>
-                <img className='fireSafety-box__item-image' src="./img/stock_working.jpeg" alt="" />
-              </div>
-              <div className='fireSafety-box__item-bg'>
-                <div className='fireSafety-box__item-text'>ЗАСОБИ ІНДИВІДУАЛЬНОГО ЗАХИСТУ</div>
+                <div className='fireSafety-box__item-text'>ПОЖЕЖНІ РУКАВИ, КРАНИ, ГІДРАНТИ, МОТОПОМПИ</div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <PopularGoods />
-      <Stock />
+      <PopularGoodsFireSafety />
+      {/* <Stock /> */}
+      <News />
     </>
   );
 }
