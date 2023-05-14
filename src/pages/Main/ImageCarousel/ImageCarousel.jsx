@@ -8,37 +8,37 @@ export default function ImageCarousel() {
     {
       image: './img/backpack.jpg',
       title: 'Заголовок 1',
-      description: 'якись текст'
+      description: 'якийсь текст'
     },
     {
       image: './img/blanket.png',
       title: 'Заголовок 2',
-      description: 'якись текст'
+      description: 'якийсь текст'
     },
     {
       image: './img/body-armor.jpg',
       title: 'Заголовок 3',
-      description: 'якись текст'
+      description: 'якийсь текст'
     },
     {
       image: './img/compass.png',
       title: 'Заголовок 4',
-      description: 'якись текст'
+      description: 'якийсь текст'
     },
     {
       image: './img/fire-extinguisher.png',
       title: 'Заголовок 5',
-      description: 'якись текст'
+      description: 'якийсь текст'
     },
     {
       image: './img/flashlight.jpeg',
       title: 'Заголовок 6',
-      description: 'якись текст'
+      description: 'якийсь текст'
     },
     {
       image: './img/jackets.jpg',
       title: 'Заголовок 7',
-      description: 'якись текст'
+      description: 'якийсь текст'
     },
   ];
 
