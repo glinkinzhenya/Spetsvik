@@ -38,7 +38,7 @@ export default function ImageCarousel() {
     {
       image: './img/jackets.jpg',
       title: 'Заголовок 7',
-      description: 'якись текст'
+      description: 'якийсь текст'
     },
   ];
 
