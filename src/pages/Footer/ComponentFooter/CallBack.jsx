@@ -21,14 +21,15 @@ export default function CallBack() {
 
   return (
     <div className='callBack'>
-      <Button sx={{ width: '70%' }} variant="outlined" onClick={handleClickOpen}>
-        <Typography sx={{ fontSize: '70%' }} color="white"> Ми Вам зателефонуємо</Typography>
+      <Button sx={{
+        width: '100%', color: '#F07C00', borderColor: '#F07C00', ':hover': { borderColor: 'white'} }} variant="outlined" onClick={handleClickOpen}>
+        <Typography sx={{ fontSize: '100%' }} color="white"> Ми Вам зателефонуємо</Typography>
       </Button>
       <Dialog open={open} onClose={handleClose}>
         <DialogTitle>Введіть Ваш номер телефону</DialogTitle>
         <DialogContent>
           <DialogContentText >
-            Ми зателефонуємо як найшвідше та відповемо на всі ваші пітання
+            Ми зателефонуємо як найшвідше та відповемо на всі ваші питання
           </DialogContentText>
           <TextField
             autoFocus
@@ -41,8 +42,8 @@ export default function CallBack() {
           />
         </DialogContent>
         <DialogActions>
-          <Button onClick={handleClose}>Відмінити</Button>
-          <Button onClick={handleClose}>Підтвердити</Button>
+          <Button sx={{ color: 'black' }} onClick={handleClose}>Відмінити</Button>
+          <Button sx={{ color: '#F07C00' }} onClick={handleClose}>Підтвердити</Button>
         </DialogActions>
       </Dialog>
     </div>

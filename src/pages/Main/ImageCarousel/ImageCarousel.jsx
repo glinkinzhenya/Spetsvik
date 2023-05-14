@@ -1,63 +1,95 @@
-import React, { useState, useEffect } from 'react';
-// import { Carousel } from 'react-bootstrap';
+import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './ImageCarousel.css';
 
 export default function ImageCarousel() {
 
-  const images = ['./img/backpack.jpg', './img/blanket.png', './img/body-armor.jpeg', './img/compass.png', './img/fire-extinguisher.png', './img/flashlight.jpeg', './img/jackets.jpg'];
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const [isTimerActive, setIsTimerActive] = useState(true);
+  const images = [
+    {
+      image: './img/backpack.jpg',
+      title: 'Заголовок 1',
+      description: 'якись текст'
+    },
+    {
+      image: './img/blanket.png',
+      title: 'Заголовок 2',
+      description: 'якись текст'
+    },
+    {
+      image: './img/body-armor.jpg',
+      title: 'Заголовок 3',
+      description: 'якись текст'
+    },
+    {
+      image: './img/compass.png',
+      title: 'Заголовок 4',
+      description: 'якись текст'
+    },
+    {
+      image: './img/fire-extinguisher.png',
+      title: 'Заголовок 5',
+      description: 'якись текст'
+    },
+    {
+      image: './img/flashlight.jpeg',
+      title: 'Заголовок 6',
+      description: 'якись текст'
+    },
+    {
+      image: './img/jackets.jpg',
+      title: 'Заголовок 7',
+      description: 'якись текст'
+    },
+  ];
 
-  const handleArrowClick = (direction) => {
-    setIsTimerActive(false);
-    const newIndex =
-      direction === 'left'
-        ? (currentImageIndex + images.length - 1) % images.length
-        : (currentImageIndex + 1) % images.length;
-    setCurrentImageIndex(newIndex);
-  };
-
-  useEffect(() => {
-    let timer;
-    if (isTimerActive) {
-      timer = setInterval(() => {
-        setCurrentImageIndex((currentImageIndex + 1) % images.length);
-      }, 4000);
-    }
-    return () => clearInterval(timer);
-  });
 
   return (
-    <>
-      <div className='image-carousel'>
-        <div className='image-carousel__arrow'>
-          <div className='image-carousel__arrow-picture' onClick={() => handleArrowClick('left')}>
-            <img className='image-carousel__arrow-img' src="./img/arrow-left.svg" alt="" />
+    <div className='imageCarouselCopy'>
+      <div className='image-carousel__bootstrap'>
+        <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+          <div className="carousel-indicators">
+
+
+            {images.map((item, index) => (
+              (index === 0) ? <button key={index} type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
+                : <button key={index} type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to={index} aria-label={index + 1}></button>
+            ))}
+
           </div>
-          <div className='image-carousel__arrow-picture' onClick={() => handleArrowClick('right')}>
-            <img className='image-carousel__arrow-img' src="./img/arrow-right.svg" alt="" />
+          <div className="carousel-inner">
+
+            {images.map((item, index) => (
+              (index === 0) ?
+                <div key={index} className="carousel-item active image-carousel__picture">
+                  <img src={item.image} className="d-block image-carousel__img" alt="..." />
+                  <div className="carousel-caption d-none d-md-block">
+                    <h5 className='carousel-item__title'>{item.title}</h5>
+                    <p className='carousel-item__description'>{item.description}</p>
+                  </div>
+                </div> :
+                <div key={index} className={`carousel-item image-carousel__picture`}
+                >
+                  <img src={item.image} className="d-block image-carousel__img" alt="..." />
+                  <div className="carousel-caption d-none d-md-block">
+                    <h5 className='carousel-item__title'>{item.title}</h5>
+                    <p className='carousel-item__description'>{item.description}</p>
+                  </div>
+                </div>
+
+            ))}
+
           </div>
+          <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span className="visually-hidden">Previous</span>
+          </button>
+          <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span className="carousel-control-next-icon" aria-hidden="true"></span>
+            <span className="visually-hidden">Next</span>
+          </button>
         </div>
       </div>
-
-      <div className='image-carousel__picture'>
-        <img className='image-carousel__img' src={images[currentImageIndex]} alt="" />
-      </div>
-
-      <div className='image-carousel__pagination'>
-        {images.map((image, index) => (
-          <div
-            key={index}
-            className={`image-carousel__pagination-circle ${index === currentImageIndex ? 'image-carousel__pagination-circle--active' : ''}`}
-            onClick={() => {
-              setCurrentImageIndex(index);
-              setIsTimerActive(false);
-            }}
-          ></div>
-        ))}
-      </div>
-
       <div className='image-carousel__bg'></div>
-    </>
+    </div>
   );
 }
