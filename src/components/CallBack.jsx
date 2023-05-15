@@ -9,6 +9,8 @@ import DialogTitle from '@mui/material/DialogTitle';
 import Snackbar from '@mui/material/Snackbar';
 import MuiAlert from '@mui/material/Alert';
 import { Typography } from '@mui/material';
+import CircularProgress from '@mui/material/CircularProgress';
+import Box from '@mui/material/Box';
 
 export default function CallBack(props) {
   const { buttonText, dialogTitle, dialogText, confirmText, cancelText, fontSize } = props;
@@ -17,6 +19,7 @@ export default function CallBack(props) {
   const [formName, setformName] = useState('');
   const [formText, setformText] = useState('');
   const [successOpen, setSuccessOpen] = useState(false);
+  const [isLoading, setLoading] = useState(false);
 
   const handleClickOpen = () => {
     setOpen(true);
@@ -31,6 +34,7 @@ export default function CallBack(props) {
   };
 
   const handleConfirm = () => {
+    setLoading(true); // Set loading state to true
     fetch('https://formspree.io/f/mbjebaod', {
       method: 'POST',
       headers: {
@@ -44,10 +48,12 @@ export default function CallBack(props) {
         } else {
           console.log('Ошибка отправки данных');
         }
+        setLoading(false); // Set loading state back to false
         handleClose();
       })
       .catch(error => {
         console.log('Ошибка отправки данных:', error);
+        setLoading(false); // Set loading state back to false
         handleClose();
       });
   };
@@ -57,11 +63,11 @@ export default function CallBack(props) {
   };
 
   const handleformNameChange = (event) => {
-    setformName(event.target.value)
+    setformName(event.target.value);
   };
 
   const handleformTextChange = (event) => {
-    setformText(event.target.value)
+    setformText(event.target.value);
   };
 
   return (
@@ -69,47 +75,55 @@ export default function CallBack(props) {
       <Button sx={{ width: '100%', color: '#F07C00', borderColor: '#F07C00', ':hover': { borderColor: 'white' } }} variant="outlined" onClick={handleClickOpen}>
         <Typography sx={{ fontSize }} color="white">{buttonText}</Typography>
       </Button>
-      <Dialog open={open} onClose={handleClose}>
+      <Dialog sx={{ backdropFilter: 'blur(10px)' }} open={open} onClose={handleClose}>
         <DialogTitle>{dialogTitle}</DialogTitle>
         <DialogContent>
           <DialogContentText>{dialogText}</DialogContentText>
           <TextField
             autoFocus
             margin="dense"
-            id="nam"
             label="Ім'я"
             type="text"
             fullWidth
-            variant="standard"
+            variant="outlined"
             value={formName}
             onChange={handleformNameChange}
           />
           <TextField
             autoFocus
             margin="dense"
-            id="number"
             label="Номер"
             type="number"
             fullWidth
-            variant="standard"
+            variant="outlined"
             value={phoneNumber}
             onChange={handlePhoneNumberChange}
           />
           <TextField
             autoFocus
             margin="dense"
-            id="nam"
             label="Коментар"
             type="text"
+            multiline
+            rows={4}
             fullWidth
-            variant="standard"
+            variant="outlined"
             value={formText}
             onChange={handleformTextChange}
           />
         </DialogContent>
         <DialogActions>
           <Button sx={{ color: 'black' }} onClick={handleClose}>{cancelText}</Button>
-          <Button sx={{ color: '#F07C00' }} onClick={handleConfirm}>{confirmText}</Button>
+          {isLoading ? (
+            <Box sx={{ display: 'flex', alignItems: 'center' }}>
+              <CircularProgress size={24} />
+              <Button sx={{ color: '#F07C00', marginLeft: 1 }} disabled>
+                {confirmText}
+              </Button>
+            </Box>
+          ) : (
+            <Button sx={{ color: '#F07C00' }} onClick={handleConfirm}>{confirmText}</Button>
+          )}
         </DialogActions>
       </Dialog>
       <Snackbar
