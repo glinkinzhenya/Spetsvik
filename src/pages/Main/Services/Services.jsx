@@ -26,7 +26,7 @@ export default function Services() {
             </div>
 
             <div className='services-call__back'>
-              <CallBack buttonText="ЗАМОВИТИ" dialogTitle="Введіть Ваш номер телефону" dialogText="Ми зателефонуємо як найшвідше та відповемо на всі ваші питання" confirmText="Надіслати" cancelText="Відміна" fontSize="18px" />
+              <CallBack buttonText="ЗАМОВИТИ" dialogTitle="Введіть Ваш номер телефону та коментар" dialogText="Ми зателефонуємо як найшвідше та відповемо на всі ваші питання" confirmText="Надіслати" cancelText="Відміна" fontSize="18px" />
             </div>
           </div>
           <div className='services-picture'>
@@ -52,7 +52,7 @@ export default function Services() {
             </div>
 
             <div className='services-call__back'>
-              <CallBack buttonText="ЗАМОВИТИ" dialogTitle="Введіть Ваш номер телефону" dialogText="Ми зателефонуємо як найшвідше та відповемо на всі ваші питання" confirmText="Надіслати" cancelText="Відміна" fontSize="18px" />
+              <CallBack buttonText="ЗАМОВИТИ" dialogTitle="Введіть Ваш номер телефону та коментар" dialogText="Ми зателефонуємо як найшвідше та відповемо на всі ваші питання" confirmText="Надіслати" cancelText="Відміна" fontSize="18px" />
             </div>
             
           </div>
