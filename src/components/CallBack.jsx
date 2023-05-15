@@ -11,6 +11,8 @@ import MuiAlert from '@mui/material/Alert';
 import { Typography } from '@mui/material';
 import CircularProgress from '@mui/material/CircularProgress';
 import Box from '@mui/material/Box';
+import { createTheme } from '@mui/material/styles';
+import { ThemeProvider } from '@mui/system';
 
 export default function CallBack(props) {
   const { buttonText, dialogTitle, dialogText, confirmText, cancelText, fontSize } = props;
@@ -70,6 +72,14 @@ export default function CallBack(props) {
     setformText(event.target.value);
   };
 
+  const theme = createTheme({
+    palette: {
+      secondary: {
+        main: '#f07c00'
+      },
+    },
+  });
+
   return (
     <div className='callBack'>
       <Button sx={{ width: '100%', color: '#F07C00', borderColor: '#F07C00', ':hover': { borderColor: 'white' } }} variant="outlined" onClick={handleClickOpen}>
@@ -115,12 +125,14 @@ export default function CallBack(props) {
         <DialogActions>
           <Button sx={{ color: 'black' }} onClick={handleClose}>{cancelText}</Button>
           {isLoading ? (
-            <Box sx={{ display: 'flex', alignItems: 'center' }}>
-              <CircularProgress size={24} />
-              <Button sx={{ color: '#F07C00', marginLeft: 1 }} disabled>
-                {confirmText}
-              </Button>
-            </Box>
+            <ThemeProvider theme={theme}>
+              <Box sx={{ display: 'flex', alignItems: 'center' }}>
+              <CircularProgress size={24} color="secondary"/>
+                <Button sx={{ color: '#F07C00', marginLeft: 1 }} disabled>
+                  {confirmText}
+                </Button>
+              </Box>
+            </ThemeProvider>
           ) : (
             <Button sx={{ color: '#F07C00' }} onClick={handleConfirm}>{confirmText}</Button>
           )}
