@@ -49,6 +49,9 @@ export default function Header() {
   const pulseButtonIconClasses = `pulse-button-icon ${isPulseButtonActive ? '' : 'pulse-button-icon_bottom opacity-image'}`;
   const headerBlack = `header-black ${isPulseButtonActive ? 'header-black__active' : ''}`;
 
+  const dataNumber = (selectedPhone) ? selectedPhone : defaultPhone;
+  const newDataNumber = `tel:+38${dataNumber.replaceAll(' ', '')}`;
+
   return (
     <div className='header'>
       <div onClick={handlePulseButtonClick} className={headerBlack}></div>
@@ -58,12 +61,15 @@ export default function Header() {
             <a className='header-language__active' href="">UA</a>
             <a className='header-language__en' href="">EN</a>
           </div>
-          
+
           <div className='header-logo__telephone-picture'>
             <img className='header-logo__telephone-image' src="./img/logo-telephone.svg" alt="logo-telephone" />
           </div>
           <div className='header-logo__choice'>
-            <div className='header-logo__choice-number'>{(selectedPhone) ? selectedPhone : defaultPhone}</div>
+
+            <div className='header-logo__choice-number'>
+              <a className='header-logo__choice-link' href={newDataNumber}>{(selectedPhone) ? selectedPhone : defaultPhone}</a>
+            </div>
             <select className='header-logo__choice-select' onChange={handleSelectChange} value={selectedAddress}>
               {addresses.map(a => (
                 <option className='header-logo__choice-option' key={a.address} value={a.address}>{a.address}</option>
@@ -113,6 +119,6 @@ export default function Header() {
         <img className="pulse-button-icon_image" src="./img/viber-color.svg" alt="" />
       </div>
 
-    </div>
+    </div >
   );
 }
