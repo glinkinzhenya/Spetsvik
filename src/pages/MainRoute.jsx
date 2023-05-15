@@ -13,7 +13,7 @@ import Fabrics from './Main/Products/Fabrics/Fabrics';
 // import Trainings from './Trainings/Trainings';
 // import SportPage from './SportPage/SportPage';
 // import Trainers from './Trainers/Trainers';
-// import Admin from './Admin/Admin';
+import Admin from './Admin/Admin';
 // import AddForm from './AddForm/AddForm';
 // import NotFound from './NotFound/NotFound';
 // import Start from './Start/Start';
@@ -23,6 +23,7 @@ export default function MainRoute() {
     <Grid>
       <Routes>
         <Route path='/' element={<Main />} />
+        <Route path='/admin' element={<Admin />} />
         <Route path='/about' element={<About />} />
         <Route path='/products' element={<Products />} />
         <Route path='/spets-cloth' element={<SpetsCloth />} />

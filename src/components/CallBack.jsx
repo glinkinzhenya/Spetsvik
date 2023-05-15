@@ -15,11 +15,12 @@ import { createTheme } from '@mui/material/styles';
 import { ThemeProvider } from '@mui/system';
 
 export default function CallBack(props) {
-  const { buttonText, dialogTitle, dialogText, confirmText, cancelText, fontSize } = props;
+  const { buttonText, dialogTitle, dialogText, confirmText, cancelText, fontSize, from } = props;
   const [open, setOpen] = useState(false);
   const [phoneNumber, setPhoneNumber] = useState('');
   const [formName, setformName] = useState('');
   const [formText, setformText] = useState('');
+  const [formMail, setformMail] = useState('');
   const [successOpen, setSuccessOpen] = useState(false);
   const [isLoading, setLoading] = useState(false);
 
@@ -42,7 +43,7 @@ export default function CallBack(props) {
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify({ formName, phoneNumber, formText }),
+      body: JSON.stringify({ formName, phoneNumber, formText, formMail, from }),
     })
       .then(response => {
         if (response.ok) {
@@ -72,6 +73,10 @@ export default function CallBack(props) {
     setformText(event.target.value);
   };
 
+  const handleformMailChange = (event) => {
+    setformMail(event.target.value);
+  };
+
   const theme = createTheme({
     palette: {
       secondary: {
@@ -98,6 +103,16 @@ export default function CallBack(props) {
             variant="outlined"
             value={formName}
             onChange={handleformNameChange}
+          />
+          <TextField
+            autoFocus
+            margin="dense"
+            label="Пошта"
+            type="text"
+            fullWidth
+            variant="outlined"
+            value={formMail}
+            onChange={handleformMailChange}
           />
           <TextField
             autoFocus

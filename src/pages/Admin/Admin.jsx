@@ -15,7 +15,7 @@ export default function Admin() {
   };
 
   return (
-    <div className='admin-wrapper'>
+    <div className='admin'>
       <div className='form-wrapper'>
         <InputText
           control={control}
@@ -32,6 +32,7 @@ export default function Admin() {
           rules={adminRules.password}
         />
         <Button
+          sx={{ color: '#F07C00' }}
           size='large'
           onClick={handleSubmit(onSubmit)}
         >Війти
