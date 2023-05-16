@@ -96,12 +96,6 @@ export default function CallBack(props) {
         <DialogContent>
           <DialogContentText>{dialogText}</DialogContentText>
           <TextField
-            inputProps={{
-              style: { borderColor: 'red !important' },
-            }}
-            InputProps={{
-              style: { borderColor: 'red !important' },
-            }}
             autoFocus
             margin="dense"
             label="Ім'я"
