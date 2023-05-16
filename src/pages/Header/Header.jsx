@@ -29,7 +29,6 @@ export default function Header() {
           ]}
           phoneNumbers={['+380676120366', '+380981807080']}
         />
-
         <BasicMenu
           city="м. Лозова"
           addresses={[
@@ -37,7 +36,6 @@ export default function Header() {
           ]}
           phoneNumbers={['+380676132880']}
         />
-
         <BasicMenu
           city="м. Харьків"
           addresses={[
@@ -45,7 +43,6 @@ export default function Header() {
           ]}
           phoneNumbers={['+380676121958']}
         />
-
         <BasicMenu
           city="м. Городок"
           addresses={[
@@ -53,7 +50,6 @@ export default function Header() {
           ]}
           phoneNumbers={['+380974058748']}
         />
-
       </div>
 
       <div className='header-logo container'>

@@ -1,6 +1,6 @@
 import React from 'react';
 import './Services.css';
-import CallBack from '../../../components/CallBack';
+import CallBack from '../../../components/CallBack/CallBack';
 
 export default function Services() {
 

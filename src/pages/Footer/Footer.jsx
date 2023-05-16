@@ -1,5 +1,5 @@
 import React from 'react';
-import CallBack from '../../components/CallBack';
+import CallBack from '../../components/CallBack/CallBack';
 import './Footer.css';
 
 export default function Footer() {

@@ -62,18 +62,18 @@ export default function ImageCarousel() {
               (index === 0) ?
                 <div key={index} className="carousel-item active image-carousel__picture">
                   <img src={item.image} className="d-block image-carousel__img" alt="..." />
-                  <div className="carousel-caption d-none d-md-block">
+                  {/* <div className="carousel-caption d-none d-md-block">
                     <h5 className='carousel-item__title'>{item.title}</h5>
                     <p className='carousel-item__description'>{item.description}</p>
-                  </div>
+                  </div> */}
                 </div> :
                 <div key={index} className={`carousel-item image-carousel__picture`}
                 >
                   <img src={item.image} className="d-block image-carousel__img" alt="..." />
-                  <div className="carousel-caption d-none d-md-block">
+                  {/* <div className="carousel-caption d-none d-md-block">
                     <h5 className='carousel-item__title'>{item.title}</h5>
                     <p className='carousel-item__description'>{item.description}</p>
-                  </div>
+                  </div> */}
                 </div>
 
             ))}

@@ -13,6 +13,7 @@ import CircularProgress from '@mui/material/CircularProgress';
 import Box from '@mui/material/Box';
 import { createTheme } from '@mui/material/styles';
 import { ThemeProvider } from '@mui/system';
+import './CallBack.css';
 
 export default function CallBack(props) {
   const { buttonText, dialogTitle, dialogText, confirmText, cancelText, fontSize, from } = props;
@@ -95,6 +96,12 @@ export default function CallBack(props) {
         <DialogContent>
           <DialogContentText>{dialogText}</DialogContentText>
           <TextField
+            inputProps={{
+              style: { borderColor: 'red !important' },
+            }}
+            InputProps={{
+              style: { borderColor: 'red !important' },
+            }}
             autoFocus
             margin="dense"
             label="Ім'я"

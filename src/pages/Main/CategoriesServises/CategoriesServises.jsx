@@ -8,10 +8,6 @@ export default function CategoriesServises() {
 
       <div className='categories'>
 
-
-
-
-
         <div className='categories-box'>
 
           <a className='categories-overalls' href="/spets-cloth">
