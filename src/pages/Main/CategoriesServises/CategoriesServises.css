@@ -4,15 +4,16 @@
 }
 
 .categories {
-    display: flex;
-    gap: 30px;
+    /* display: flex;
+    gap: 30px; */
 }
 
 .categories-overalls {
+    grid-area: overalls;
     background-image: url(../../../../public/img/jackets.jpg);
     background-size: cover;
     background-position: center center;
-    width: 500px;
+    /* width: 420px; */
     display: flex;
     align-items: flex-end;
     cursor: pointer;
@@ -49,13 +50,17 @@
 
 .categories-box {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+        "overalls item1 item2"
+        "overalls item3 item4"
+        "servises1 servises2 servises3";
     width: 100%;
     gap: 30px;
 }
 
 .categories-box__item {
-    height: 250px;
+    height: 300px;
     display: flex;
     align-items: flex-end;
     background-image: url(../../../../public/img/fire-extinguisher.png);
@@ -79,31 +84,50 @@
 }
 
 .item1 {
+    grid-area: item1;
     background-image: url(../../../../public/img/fire-extinguisher.png); 
 }
 
 .item2 {
+    grid-area: item2;
     background-image: url(../../../../public/img/backpack.jpg); 
 }
 
 .item3 {
+    grid-area: item3;
     background-image: url(../../../../public/img/blanket.png); 
 }
 
 .item4 {
+    grid-area: item4;
     background-image: url(../../../../public/img/compass.png); 
 }
 
 
 .servises {
-    margin-top: 30px;
+    /* margin-top: 30px; */
     background-color: green;
     height: 300px;
     display: flex;
     align-items: flex-end;
-    background-image: url(../../../../public/img/services.png); 
+
     background-size: cover;
     background-position: center center;
+}
+
+.servises1 {
+    grid-area: servises1;
+    background-image: url(../../../../public/img/militaryShoes.JPG); 
+}
+
+.servises2 {
+    grid-area: servises2;
+    background-image: url(../../../../public/img/shevrons.JPG); 
+}
+
+.servises3 {
+    grid-area: servises3;
+    background-image: url(../../../../public/img/services.png); 
 }
 
 .servises:hover {

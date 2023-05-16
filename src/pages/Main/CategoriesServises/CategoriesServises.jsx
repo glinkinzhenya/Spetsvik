@@ -10,15 +10,17 @@ export default function CategoriesServises() {
 
 
 
-        <a className='categories-overalls' href="/spets-cloth">
-          <div className='categories-overalls__bg'>
-            <div className='categories-overalls__text'>СПЕЦОДЯГ</div>
-          </div>
-        </a>
+
 
         <div className='categories-box'>
 
-          <a className='categories-box__item item' href="/fire-safety">
+          <a className='categories-overalls' href="/spets-cloth">
+            <div className='categories-overalls__bg'>
+              <div className='categories-overalls__text'>СПЕЦОДЯГ</div>
+            </div>
+          </a>
+
+          <a className='categories-box__item item1' href="/fire-safety">
             <div className='categories-box__item-bg'>
               <div className='categories-box__item-text'>ПОЖЕЖНА ПРОДУКЦІЯ</div>
             </div>
@@ -30,7 +32,7 @@ export default function CategoriesServises() {
             </div>
           </div>
 
-          
+
           <a className='categories-box__item item3' href="/fabrics">
             <div className='categories-box__item-bg'>
               <div className='categories-box__item-text'>ТКАНИНИ</div>
@@ -42,16 +44,27 @@ export default function CategoriesServises() {
               <div className='categories-box__item-text'>ПОЛЮВАННЯ ТА ПРИГОДИ</div>
             </div>
           </div>
+
+
+          <a className='servises servises1' href="/shoes">
+            <div className='servises-bg'>
+              <div className='servises-text'>ВЗУТТЯ</div>
+            </div>
+          </a>
+
+          <a className='servises servises2' href="/shevrons">
+            <div className='servises-bg'>
+              <div className='servises-text'>ШЕВРОНИ</div>
+            </div>
+          </a>
+
+          <a className='servises servises3' href="/services">
+            <div className='servises-bg'>
+              <div className='servises-text'>ПОСЛУГИ</div>
+            </div>
+          </a>
         </div>
       </div>
-      <a href="/services">
-        <div className='servises'>
-          <div className='servises-bg'>
-            <div className='servises-text'>ПОСЛУГИ</div>
-          </div>
-        </div>
-      </a>
-
     </div>
   );
 }
