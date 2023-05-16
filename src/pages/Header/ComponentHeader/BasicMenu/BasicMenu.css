@@ -1,0 +1,22 @@
+.basic-menu__flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.basic-menu__flex-link {
+    color: black !important;
+}
+
+.basic-menu__flex-link-image {
+    width: 20px;
+    padding-right: 5px;
+}
+
+#basic-button {
+    color: white;
+}
+
+.basic-button__flex {
+    display: flex;
+    justify-content: center;
+}
