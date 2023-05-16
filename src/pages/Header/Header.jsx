@@ -60,6 +60,7 @@ export default function Header() {
           <div className='header-language'>
             <a className='header-language__active' href="">UA</a>
             <a className='header-language__en' href="">EN</a>
+            <a className='header-language__en' href="">DE</a>
           </div>
 
           <div className='header-logo__telephone-picture'>
@@ -94,10 +95,12 @@ export default function Header() {
         </div>
       </div>
       <nav className='header-category'>
-        <a className='header-category__item action' href="/">ГОЛОВНА</a>
+        {/* <a className='header-category__item action' href="/">ГОЛОВНА</a> */}
         <a className='header-category__item' href="/spets-cloth">СПЕЦОДЯГ</a>
+        <a className='header-category__item' href="/spets-cloth">ВЗУТТЯ</a>
         <a className='header-category__item' href="/fire-safety">ПОЖЕЖНА ПРОДУКЦІЯ</a>
         <a className='header-category__item' href="/">ВІЙСЬКОВА ЕКІПІРОВКА</a>
+        <a className='header-category__item' href="/services">ШЕВРОНИ</a>
         <a className='header-category__item' href="/fabrics">ТКАНИНИ</a>
         <a className='header-category__item' href="/">ПОЛЮВАННЯ ТА ПРИГОДИ</a>
         <a className='header-category__item' href="/services">ПОСЛУГИ</a>
