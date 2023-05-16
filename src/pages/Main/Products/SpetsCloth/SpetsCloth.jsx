@@ -102,12 +102,20 @@ export default function SpetsCloth() {
             
 
             <a className='spetsCloth-box__item' href="/individual-protection">
-
               <div className='spetsCloth-box__item-picture'>
                 <img className='spetsCloth-box__item-image' src="./img/stock_working.jpeg" alt="" />
               </div>
               <div className='spetsCloth-box__item-bg'>
                 <div className='spetsCloth-box__item-text'>ЗАСОБИ ІНДИВІДУАЛЬНОГО ЗАХИСТУ</div>
+              </div>
+            </a>
+
+            <a className='spetsCloth-box__item' href="/shoes">
+              <div className='spetsCloth-box__item-picture'>
+                <img className='spetsCloth-box__item-image' src="./img/spetsShoes.jpg" alt="" />
+              </div>
+              <div className='spetsCloth-box__item-bg'>
+                <div className='spetsCloth-box__item-text'>ВЗУТТЯ</div>
               </div>
             </a>
 

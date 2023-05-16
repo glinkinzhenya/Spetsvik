@@ -28,7 +28,7 @@ export default function Fabrics() {
         </div>
 
         <div className='fabrics-baner'>
-          <img className='fabrics-baner__image' src="./img/blanket.png" alt="" />
+          <img className='fabrics-baner__image' src="./img/fabrics.jpg" alt="" />
         </div>
 
         <div className='fabrics-container container'>
