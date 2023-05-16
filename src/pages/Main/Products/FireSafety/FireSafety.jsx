@@ -1,7 +1,7 @@
 import React from 'react';
 import './FireSafety.css';
 import News from '../../News/News';
-import PopularGoodsFireSafety from '../PopularGoodsFireSafety/PopularGoodsFireSafety';
+import PopularGoodsFireSafety from './PopularGoodsFireSafety/PopularGoodsFireSafety';
 // import Stock from '../Stock/Stock';
 
 export default function FireSafety() {

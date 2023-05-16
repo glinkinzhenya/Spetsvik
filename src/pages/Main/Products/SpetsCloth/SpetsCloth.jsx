@@ -1,7 +1,7 @@
 import React from 'react';
 import './SpetsCloth.css';
 import News from '../../News/News';
-import PopularGoodsSpetsCloth from '../PopularGoodsSpetsCloth/PopularGoodsSpetsCloth';
+import PopularGoodsSpetsCloth from './PopularGoodsSpetsCloth/PopularGoodsSpetsCloth';
 
 export default function SpetsCloth() {
 
