@@ -4,7 +4,7 @@
 }
 
 .basic-menu__flex-link {
-    color: black !important;
+    color: white !important;
 }
 
 .basic-menu__flex-link-image {
@@ -19,4 +19,8 @@
 .basic-button__flex {
     display: flex;
     justify-content: center;
+}
+
+.css-6hp17o-MuiList-root-MuiMenu-list {
+    background-color: rgb(50, 49, 49);
 }
