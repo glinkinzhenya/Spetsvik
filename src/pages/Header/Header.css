@@ -7,40 +7,72 @@
 
 .header-contacts {
     padding-top: 10px;
-/* background-color: red; */
-/* height: 50px; */
-display: grid;
-gap: 20px;
-grid-template-columns: repeat(5, 1fr);
+    /* background-color: red; */
+
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .header-contacts__item {
-/* background-color: green; */
-display: flex;
-flex-direction: column;
+    /* background-color: green; */
+    /* height: 50px; */
+    display: flex;
+    flex-direction: column;
 }
 
-.header-contacts__item-address {
-    font-size: 14px;
-    font-weight: 400;
-    color: white !important;
-    text-align: center;
-}
-
-/* .header-contacts__item-address:hover {
-    color: #F07C00 !important;
-} */
-
-.header-contacts__item-telephone {
+.header-contacts__item-name {
+    /* background-color: yellow; */
+    cursor: pointer;
     font-size: 20px;
     font-weight: 500;
-    color: #F07C00 !important;
+    text-align: center;
+    color: white !important;
+}
+
+.header-contacts__item-city {
     display: flex;
+    gap: 10px;
+    align-items: center;
     justify-content: center;
 }
 
-.header-contacts__item-telephone:hover {
+.header-contacts__item-city-active {
+    /* background-color: blue; */
+    cursor: pointer;
+}
 
+.header-contacts__item-address {
+    font-size: 15px;
+    font-weight: 400;
+    color: #F07C00 !important;
+    text-align: center;
+    display: none;
+}
+
+.header-contacts__item-address-active {
+    display: block;
+}
+
+.header-contacts__item-address:hover {
+    color: white !important;
+}
+
+.header-contacts__item-telephone {
+    font-size: 15px;
+    font-weight: 400;
+    color: #F07C00 !important;
+    /* display: flex; */
+    /* justify-content: center; */
+    text-align: center;
+    display: none;
+}
+
+.header-contacts__item-telephone-active {
+    display: block;
+}
+
+.header-contacts__item-telephone:hover {
     color: white !important;
 }
 

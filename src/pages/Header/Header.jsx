@@ -52,44 +52,68 @@ export default function Header() {
   const dataNumber = (selectedPhone) ? selectedPhone : defaultPhone;
   const newDataNumber = `tel:+38${dataNumber.replaceAll(' ', '')}`;
 
+
+  const [isCityButtonActive, setIsCityButtonActive] = useState(false);
+
+  const clickCity = () => {
+    console.log(555);
+    setIsCityButtonActive(!isCityButtonActive);
+  }
+
+  const city1 = `header-contacts__item-address ${isCityButtonActive ? 'header-contacts__item-address-active' : ''}`;
+  const telephone1 = `header-contacts__item-telephone ${isCityButtonActive ? 'header-contacts__item-telephone-active' : ''}`;
+
   return (
     <div className='header'>
       <div onClick={handlePulseButtonClick} className={headerBlack}></div>
 
-      <div className='header-contacts container'>
+      <div onClick={clickCity} className='header-contacts container'>
+
         <div className='header-contacts__item'>
-          <a className='header-contacts__item-address' target='_blank' href="https://goo.gl/maps/ci2DPZvv62PQytH9A">м. Запоріжжя, вул. Поштова 141-Е</a>
-          <a className='header-contacts__item-telephone' href="tel:+380676120366">
-            <img className='header-contacts__item-image' src="./img/logo-telephone.svg" alt="" />
-            067 612 03 66</a>
+          <div className='header-contacts__item-name'>м. Запоріжжя</div>
+          <div className='header-contacts__item-city'>
+            <a className={city1} target='_blank' href="https://goo.gl/maps/ci2DPZvv62PQytH9A">вул. Поштова 141-Е</a>
+            <a className={telephone1} href="tel:+380676120366">
+              <img className='header-contacts__item-image' src="./img/logo-telephone.svg" alt="" />
+              067 612 03 66</a>
+          </div>
+
+          <div className='header-contacts__item-city'>
+            <a className={city1} target='_blank' href="https://goo.gl/maps/untzH82HCHdjzH4i7">Бульвар Шевченка 16</a>
+            <a className={telephone1} href="tel:+380981807080">
+              <img className='header-contacts__item-image' src="./img/logo-telephone.svg" alt="" />
+              098 180 70 80</a>
+          </div>
         </div>
 
         <div className='header-contacts__item'>
-          <a className='header-contacts__item-address' target='_blank' href="https://goo.gl/maps/untzH82HCHdjzH4i7">м. Запоріжжя, Бульвар Шевченка 16</a>
-          <a className='header-contacts__item-telephone' href="tel:+380981807080">
-            <img className='header-contacts__item-image' src="./img/logo-telephone.svg" alt="" />
-            098 180 70 80</a>
+          <div className='header-contacts__item-name'>м. Лозова</div>
+          <div className='header-contacts__item-city'>
+            <a className={city1} target='_blank' href="https://goo.gl/maps/hT7zgvGWuNVq3gEY8">вул. Богданівська 35</a>
+            <a className={telephone1} href="tel:+380676132880">
+              <img className='header-contacts__item-image' src="./img/logo-telephone.svg" alt="" />
+              067 613 28 80</a>
+          </div>
         </div>
 
         <div className='header-contacts__item'>
-          <a className='header-contacts__item-address' target='_blank' href="https://goo.gl/maps/hT7zgvGWuNVq3gEY8">м. Лозова, вул. Богданівська 35</a>
-          <a className='header-contacts__item-telephone' href="tel:+380676132880">
-            <img className='header-contacts__item-image' src="./img/logo-telephone.svg" alt="" />
-            067 613 28 80</a>
+          <div className='header-contacts__item-name'>м. Харьків</div>
+          <div className='header-contacts__item-city'>
+            <a className={city1} target='_blank' href="https://goo.gl/maps/3bmo4t72UDWPVEzW7">вул. Різдвяна 21</a>
+            <a className={telephone1} href="tel:+380676121958">
+              <img className='header-contacts__item-image' src="./img/logo-telephone.svg" alt="" />
+              067 612 19 58</a>
+          </div>
         </div>
 
         <div className='header-contacts__item'>
-          <a className='header-contacts__item-address' target='_blank' href="https://goo.gl/maps/3bmo4t72UDWPVEzW7">м. Харьків, вул. Різдвяна 21</a>
-          <a className='header-contacts__item-telephone' href="tel:+380676121958">
-            <img className='header-contacts__item-image' src="./img/logo-telephone.svg" alt="" />
-            067 612 19 58</a>
-        </div>
-
-        <div className='header-contacts__item'>
-          <a className='header-contacts__item-address' target='_blank' href="https://goo.gl/maps/pmMV6SjztNN585nq9">м. Городок, вул. Грушевського 84/2</a>
-          <a className='header-contacts__item-telephone' href="tel:+380974058748">
-            <img className='header-contacts__item-image' src="./img/logo-telephone.svg" alt="" />
-            098 405 87 48</a>
+          <div className='header-contacts__item-name'>м. Городок</div>
+          <div className='header-contacts__item-city'>
+            <a className={city1} target='_blank' href="https://goo.gl/maps/pmMV6SjztNN585nq9">вул. Грушевського 84/2</a>
+            <a className={telephone1} href="tel:+380974058748">
+              <img className='header-contacts__item-image' src="./img/logo-telephone.svg" alt="" />
+              098 405 87 48</a>
+          </div>
         </div>
       </div>
 
