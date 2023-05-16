@@ -55,6 +55,44 @@ export default function Header() {
   return (
     <div className='header'>
       <div onClick={handlePulseButtonClick} className={headerBlack}></div>
+
+      <div className='header-contacts container'>
+        <div className='header-contacts__item'>
+          <a className='header-contacts__item-address' target='_blank' href="https://goo.gl/maps/ci2DPZvv62PQytH9A">м. Запоріжжя, вул. Поштова 141-Е</a>
+          <a className='header-contacts__item-telephone' href="tel:+380676120366">
+            <img className='header-contacts__item-image' src="./img/logo-telephone.svg" alt="" />
+            067 612 03 66</a>
+        </div>
+
+        <div className='header-contacts__item'>
+          <a className='header-contacts__item-address' target='_blank' href="https://goo.gl/maps/untzH82HCHdjzH4i7">м. Запоріжжя, Бульвар Шевченка 16</a>
+          <a className='header-contacts__item-telephone' href="tel:+380981807080">
+            <img className='header-contacts__item-image' src="./img/logo-telephone.svg" alt="" />
+            098 180 70 80</a>
+        </div>
+
+        <div className='header-contacts__item'>
+          <a className='header-contacts__item-address' target='_blank' href="https://goo.gl/maps/hT7zgvGWuNVq3gEY8">м. Лозова, вул. Богданівська 35</a>
+          <a className='header-contacts__item-telephone' href="tel:+380676132880">
+            <img className='header-contacts__item-image' src="./img/logo-telephone.svg" alt="" />
+            067 613 28 80</a>
+        </div>
+
+        <div className='header-contacts__item'>
+          <a className='header-contacts__item-address' target='_blank' href="https://goo.gl/maps/3bmo4t72UDWPVEzW7">м. Харьків, вул. Різдвяна 21</a>
+          <a className='header-contacts__item-telephone' href="tel:+380676121958">
+            <img className='header-contacts__item-image' src="./img/logo-telephone.svg" alt="" />
+            067 612 19 58</a>
+        </div>
+
+        <div className='header-contacts__item'>
+          <a className='header-contacts__item-address' target='_blank' href="https://goo.gl/maps/pmMV6SjztNN585nq9">м. Городок, вул. Грушевського 84/2</a>
+          <a className='header-contacts__item-telephone' href="tel:+380974058748">
+            <img className='header-contacts__item-image' src="./img/logo-telephone.svg" alt="" />
+            098 405 87 48</a>
+        </div>
+      </div>
+
       <div className='header-logo container'>
         <div className='header-logo__telephone'>
           <div className='header-language'>
@@ -63,10 +101,10 @@ export default function Header() {
             <a className='header-language__en' href="">DE</a>
           </div>
 
-          <div className='header-logo__telephone-picture'>
+          {/* <div className='header-logo__telephone-picture'>
             <img className='header-logo__telephone-image' src="./img/logo-telephone.svg" alt="logo-telephone" />
-          </div>
-          <div className='header-logo__choice'>
+          </div> */}
+          {/* <div className='header-logo__choice'>
 
             <div className='header-logo__choice-number'>
               <a className='header-logo__choice-link' href={newDataNumber}>{(selectedPhone) ? selectedPhone : defaultPhone}</a>
@@ -76,7 +114,7 @@ export default function Header() {
                 <option className='header-logo__choice-option' key={a.address} value={a.address}>{a.address}</option>
               ))}
             </select>
-          </div>
+          </div> */}
         </div>
         <div className='header-logo__picture'>
           <a href="/">

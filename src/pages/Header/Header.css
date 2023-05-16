@@ -5,6 +5,51 @@
     height: 200px;
 }
 
+.header-contacts {
+    padding-top: 10px;
+/* background-color: red; */
+/* height: 50px; */
+display: grid;
+gap: 20px;
+grid-template-columns: repeat(5, 1fr);
+}
+
+.header-contacts__item {
+/* background-color: green; */
+display: flex;
+flex-direction: column;
+}
+
+.header-contacts__item-address {
+    font-size: 14px;
+    font-weight: 400;
+    color: white !important;
+    text-align: center;
+}
+
+/* .header-contacts__item-address:hover {
+    color: #F07C00 !important;
+} */
+
+.header-contacts__item-telephone {
+    font-size: 20px;
+    font-weight: 500;
+    color: #F07C00 !important;
+    display: flex;
+    justify-content: center;
+}
+
+.header-contacts__item-telephone:hover {
+
+    color: white !important;
+}
+
+.header-contacts__item-image {
+    width: 20px;
+    padding-right: 5px;
+}
+
+
 .header-language {
     display: flex;
     margin-right: 20px;
