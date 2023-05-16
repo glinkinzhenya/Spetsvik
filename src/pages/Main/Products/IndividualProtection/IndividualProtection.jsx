@@ -1,7 +1,7 @@
 import React from 'react';
 import './IndividualProtection.css';
 import News from '../../News/News';
-import PopularGoodsIndividual from '../PopularGoodsIndividual/PopularGoodsIndividual';
+import PopularGoodsIndividual from './PopularGoodsIndividual/PopularGoodsIndividual';
 
 export default function IndividualProtection() {
 
