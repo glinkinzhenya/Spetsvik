@@ -1,42 +1,9 @@
 import React, { useState } from 'react';
 import './Header.css';
-import Burger from './ComponentHeader/Burger';
+import Burger from './ComponentHeader/Burger/Burger';
+import BasicMenu from './ComponentHeader/BasicMenu/BasicMenu';
 
 export default function Header() {
-
-  const [selectedAddress, setSelectedAddress] = useState('');
-  const [selectedPhone, setSelectedPhone] = useState('');
-  const addresses = [
-    {
-      address: 'м. Запоріжжя, вул. Поштова 141-Е',
-      phone: '067 612 03 66'
-    },
-    {
-      address: 'м. Запоріжжя, Бульвар Шевченка 16',
-      phone: '098 180 70 80'
-    },
-    {
-      address: 'м. Лозова, вул. Богданівська 35',
-      phone: '067 613 28 80'
-    },
-    {
-      address: 'м. Харьків, вул. Різдвяна 21',
-      phone: '067 612 19 58'
-    },
-    {
-      address: 'м. Городок, вул. Грушевського 84/2',
-      phone: '098 405 87 48'
-    }
-  ];
-
-  const handleSelectChange = (event) => {
-    const selectedOption = event.target.value;
-    const selectedPhone = addresses.find(a => a.address === selectedOption)?.phone || '';
-    setSelectedAddress(selectedOption);
-    setSelectedPhone(selectedPhone);
-  };
-
-  const defaultPhone = addresses[0].phone;
 
   const [isPulseButtonActive, setIsPulseButtonActive] = useState(false);
 
@@ -49,72 +16,44 @@ export default function Header() {
   const pulseButtonIconClasses = `pulse-button-icon ${isPulseButtonActive ? '' : 'pulse-button-icon_bottom opacity-image'}`;
   const headerBlack = `header-black ${isPulseButtonActive ? 'header-black__active' : ''}`;
 
-  const dataNumber = (selectedPhone) ? selectedPhone : defaultPhone;
-  const newDataNumber = `tel:+38${dataNumber.replaceAll(' ', '')}`;
-
-
-  const [isCityButtonActive, setIsCityButtonActive] = useState(false);
-
-  const clickCity = () => {
-    console.log(555);
-    setIsCityButtonActive(!isCityButtonActive);
-  }
-
-  const city1 = `header-contacts__item-address ${isCityButtonActive ? 'header-contacts__item-address-active' : ''}`;
-  const telephone1 = `header-contacts__item-telephone ${isCityButtonActive ? 'header-contacts__item-telephone-active' : ''}`;
-
   return (
     <div className='header'>
       <div onClick={handlePulseButtonClick} className={headerBlack}></div>
 
-      <div onClick={clickCity} className='header-contacts container'>
+      <div className='header-contacts container'>
+        <BasicMenu
+          city="м. Запоріжжя"
+          addresses={[
+            { label: 'вул. Поштова 141-Е', url: 'https://goo.gl/maps/ci2DPZvv62PQytH9A' },
+            { label: 'Бульвар Шевченка 16', url: 'https://goo.gl/maps/untzH82HCHdjzH4i7' },
+          ]}
+          phoneNumbers={['+380676120366', '+380981807080']}
+        />
 
-        <div className='header-contacts__item'>
-          <div className='header-contacts__item-name'>м. Запоріжжя</div>
-          <div className='header-contacts__item-city'>
-            <a className={city1} target='_blank' href="https://goo.gl/maps/ci2DPZvv62PQytH9A">вул. Поштова 141-Е</a>
-            <a className={telephone1} href="tel:+380676120366">
-              <img className='header-contacts__item-image' src="./img/logo-telephone.svg" alt="" />
-              067 612 03 66</a>
-          </div>
+        <BasicMenu
+          city="м. Лозова"
+          addresses={[
+            { label: 'вул. Богданівська 35', url: 'https://goo.gl/maps/hT7zgvGWuNVq3gEY8' }
+          ]}
+          phoneNumbers={['+380676132880']}
+        />
 
-          <div className='header-contacts__item-city'>
-            <a className={city1} target='_blank' href="https://goo.gl/maps/untzH82HCHdjzH4i7">Бульвар Шевченка 16</a>
-            <a className={telephone1} href="tel:+380981807080">
-              <img className='header-contacts__item-image' src="./img/logo-telephone.svg" alt="" />
-              098 180 70 80</a>
-          </div>
-        </div>
+        <BasicMenu
+          city="м. Харьків"
+          addresses={[
+            { label: 'вул. Різдвяна 21', url: 'https://goo.gl/maps/3bmo4t72UDWPVEzW7' }
+          ]}
+          phoneNumbers={['+380676121958']}
+        />
 
-        <div className='header-contacts__item'>
-          <div className='header-contacts__item-name'>м. Лозова</div>
-          <div className='header-contacts__item-city'>
-            <a className={city1} target='_blank' href="https://goo.gl/maps/hT7zgvGWuNVq3gEY8">вул. Богданівська 35</a>
-            <a className={telephone1} href="tel:+380676132880">
-              <img className='header-contacts__item-image' src="./img/logo-telephone.svg" alt="" />
-              067 613 28 80</a>
-          </div>
-        </div>
+        <BasicMenu
+          city="м. Городок"
+          addresses={[
+            { label: 'вул. Грушевського 84/2', url: 'https://goo.gl/maps/pmMV6SjztNN585nq9' }
+          ]}
+          phoneNumbers={['+380974058748']}
+        />
 
-        <div className='header-contacts__item'>
-          <div className='header-contacts__item-name'>м. Харьків</div>
-          <div className='header-contacts__item-city'>
-            <a className={city1} target='_blank' href="https://goo.gl/maps/3bmo4t72UDWPVEzW7">вул. Різдвяна 21</a>
-            <a className={telephone1} href="tel:+380676121958">
-              <img className='header-contacts__item-image' src="./img/logo-telephone.svg" alt="" />
-              067 612 19 58</a>
-          </div>
-        </div>
-
-        <div className='header-contacts__item'>
-          <div className='header-contacts__item-name'>м. Городок</div>
-          <div className='header-contacts__item-city'>
-            <a className={city1} target='_blank' href="https://goo.gl/maps/pmMV6SjztNN585nq9">вул. Грушевського 84/2</a>
-            <a className={telephone1} href="tel:+380974058748">
-              <img className='header-contacts__item-image' src="./img/logo-telephone.svg" alt="" />
-              098 405 87 48</a>
-          </div>
-        </div>
       </div>
 
       <div className='header-logo container'>

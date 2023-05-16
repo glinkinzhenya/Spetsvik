@@ -1,6 +1,5 @@
 import React from 'react';
 import './SpetsCloth.css';
-import Stock from '../Stock/Stock';
 import News from '../../News/News';
 import PopularGoodsSpetsCloth from '../PopularGoodsSpetsCloth/PopularGoodsSpetsCloth';
 
