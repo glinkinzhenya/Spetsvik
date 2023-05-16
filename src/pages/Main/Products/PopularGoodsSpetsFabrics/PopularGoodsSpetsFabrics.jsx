@@ -12,7 +12,7 @@ export default function PopularGoodsSpetsFabrics() {
 
           <div className='popularGoods-box__item'>
             <div className='popularGoods-box__item-picture'>
-              <img className='popularGoods-box__item-image' src="./img/blanket.png" alt="" />
+              <img className='popularGoods-box__item-image' src="./img/fabrics.jpg" alt="" />
             </div>
             <div className='popularGoods-box__item-bg'>
               <div className='popularGoods-box__item-name'>ТКАНИНА "ТКАНИНА"</div>
@@ -22,7 +22,7 @@ export default function PopularGoodsSpetsFabrics() {
 
           <div className='popularGoods-box__item'>
             <div className='popularGoods-box__item-picture'>
-              <img className='popularGoods-box__item-image' src="./img/blanket.png" alt="" />
+              <img className='popularGoods-box__item-image' src="./img/fabrics1.jpg" alt="" />
             </div>
             <div className='popularGoods-box__item-bg'>
               <div className='popularGoods-box__item-name'>ТКАНИНА "ТКАНИНА"</div>
@@ -32,7 +32,7 @@ export default function PopularGoodsSpetsFabrics() {
 
           <div className='popularGoods-box__item'>
             <div className='popularGoods-box__item-picture'>
-              <img className='popularGoods-box__item-image' src="./img/blanket.png" alt="" />
+              <img className='popularGoods-box__item-image' src="./img/fabrics.jpg" alt="" />
             </div>
             <div className='popularGoods-box__item-bg'>
               <div className='popularGoods-box__item-name'>ТКАНИНА "ТКАНИНА"</div>
@@ -42,7 +42,7 @@ export default function PopularGoodsSpetsFabrics() {
 
           <div className='popularGoods-box__item'>
             <div className='popularGoods-box__item-picture'>
-              <img className='popularGoods-box__item-image' src="./img/blanket.png" alt="" />
+              <img className='popularGoods-box__item-image' src="./img/fabrics1.jpg" alt="" />
             </div>
             <div className='popularGoods-box__item-bg'>
               <div className='popularGoods-box__item-name'>ТКАНИНА "ТКАНИНА"</div>

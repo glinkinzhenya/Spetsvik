@@ -14,6 +14,8 @@ import Fabrics from './Main/Products/Fabrics/Fabrics';
 // import SportPage from './SportPage/SportPage';
 // import Trainers from './Trainers/Trainers';
 import Admin from './Admin/Admin';
+import Shoes from './Main/Products/Shoes/Shoes';
+import Shevrons from './Main/Products/Shevrons/Shevrons';
 // import AddForm from './AddForm/AddForm';
 // import NotFound from './NotFound/NotFound';
 // import Start from './Start/Start';
@@ -27,9 +29,11 @@ export default function MainRoute() {
         <Route path='/about' element={<About />} />
         <Route path='/products' element={<Products />} />
         <Route path='/spets-cloth' element={<SpetsCloth />} />
+        <Route path='/shoes' element={<Shoes />} />
         <Route path='/individual-protection' element={<IndividualProtection />} />
         <Route path='/fire-safety' element={<FireSafety />} />
         <Route path='/fabrics' element={<Fabrics />} />
+        <Route path='/shevrons' element={<Shevrons />} />
         <Route path='/services' element={<Services />} />
         <Route path='/news' element={<News />} />
         {/* /edit фиксированный элемент */}

@@ -19,7 +19,7 @@ export default function Fabrics() {
               <img className='boxPath-container__arrow-image' src="./img/arrow-right.svg" alt="" />
             </div>
 
-            <a className='boxPath-container__text' href="/spets-cloth">Тканини</a>
+            <a className='boxPath-container__text' href="/fabrics">Тканини</a>
           </div>
 
         </div>
@@ -36,8 +36,8 @@ export default function Fabrics() {
 
           <div className='fabrics-box'>
             <div className='fabrics-box__item'>
-              <div className='fabrics-box__item-picture1'>
-                {/* <img className='fabrics-box__item-image' src="./img/stock_portrait.jpeg" alt="" /> */}
+              <div className='fabrics-box__item-picture'>
+                <img className='fabrics-box__item-image' src="./img/fabrics1.jpg" alt="" />
               </div>
               <div className='fabrics-box__item-bg'>
                 <div className='fabrics-box__item-text'>ТКАНИНА № 1</div>
@@ -45,8 +45,8 @@ export default function Fabrics() {
             </div>
 
             <div className='fabrics-box__item'>
-              <div className='fabrics-box__item-picture2'>
-                {/* <img className='fabrics-box__item-image' src="./img/stock_medical.jpeg" alt="" /> */}
+              <div className='fabrics-box__item-picture'>
+                <img className='fabrics-box__item-image' src="./img/fabrics.jpg" alt="" />
               </div>
               <div className='fabrics-box__item-bg'>
                 <div className='fabrics-box__item-text'>ТКАНИНА № 2</div>
