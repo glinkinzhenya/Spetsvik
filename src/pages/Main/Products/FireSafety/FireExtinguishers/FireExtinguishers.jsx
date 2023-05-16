@@ -19,12 +19,12 @@ export default function FireExtinguishers() {
               <img className='boxPath-container__arrow-image' src="./img/arrow-right.svg" alt="" />
             </div>
 
-            <a className='boxPath-container__text' href="/shoes">Взуття</a>
+            <a className='boxPath-container__text' href="/shoes">Вогнегасники</a>
           </div>
 
         </div>
         <div className='shoes-container container'>
-          <h2 className='shoes-mainTitle'>ВЗУТТЯ</h2>
+          <h2 className='shoes-mainTitle'>ВОГНЕГАСНИКИ</h2>
         </div>
 
         <div className='shoes-baner'>
