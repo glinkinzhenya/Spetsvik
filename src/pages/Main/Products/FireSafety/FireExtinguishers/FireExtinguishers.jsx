@@ -1,13 +1,13 @@
 import React from 'react';
-import './Shoes.css';
+import './FireExtinguishers.css';
 import News from '../../News/News';
-import PopularGoodsShoes from './PopularGoodsShoes/PopularGoodsShoes';
+// import PopularGoodsShoes from '../PopularGoodsShoes/PopularGoodsShoes';
 
-export default function Shoes() {
+export default function FireExtinguishers() {
 
   return (
     <>
-      <div className='shoes'>
+      <div className='fireExtinguishers'>
         <div className='boxPath'>
           <div className='boxPath-container container'>
             <a className='boxPath-container__text' href="/">Головна</a>
@@ -55,7 +55,7 @@ export default function Shoes() {
           </div>
         </div>
       </div>
-      <PopularGoodsShoes />
+      {/* <PopularGoodsShoes /> */}
       <News />
     </>
   );
