@@ -4,8 +4,8 @@ import { Button } from '@mui/material';
 import { useForm } from 'react-hook-form';
 import { InputText } from '../../components/Forms/InputText';
 import { adminRules } from '../../constans/rules';
-import './Admin.css';
 import { useNavigate } from 'react-router-dom';
+import './Admin.css';
 
 export default function Admin() {
   const { control, handleSubmit, getValues } = useForm();
@@ -15,7 +15,7 @@ export default function Admin() {
     try {
       const { login, password } = getValues();
       await auth.signInWithEmailAndPassword(login, password);
-      navigate('/admin/admin-test');
+      navigate('/setting');
     } catch (error) {
       console.error('Ошибка аутентификации:', error);
     }

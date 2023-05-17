@@ -14,6 +14,7 @@ import Fabrics from './Main/Products/Fabrics/Fabrics';
 // import SportPage from './SportPage/SportPage';
 // import Trainers from './Trainers/Trainers';
 import Admin from './Admin/Admin';
+import Setting from './Admin/Setting/Setting';
 import Shoes from './Main/Products/Shoes/Shoes';
 import Shevrons from './Main/Products/Shevrons/Shevrons';
 import FireExtinguishers from './Main/Products/FireSafety/FireExtinguishers/FireExtinguishers';
@@ -29,6 +30,7 @@ export default function MainRoute() {
       <Routes>
         <Route path='/' element={<Main />} />
         <Route path='/admin' element={<Admin />} />
+        <Route path='/setting' element={<Setting />} />
         <Route path='/about' element={<About />} />
         <Route path='/products' element={<Products />} />
         <Route path='/spets-cloth' element={<SpetsCloth />} />
