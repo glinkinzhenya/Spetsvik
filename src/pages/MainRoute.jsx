@@ -16,7 +16,7 @@ import Fabrics from './Main/Products/Fabrics/Fabrics';
 import Admin from './Admin/Admin';
 import Shoes from './Main/Products/Shoes/Shoes';
 import Shevrons from './Main/Products/Shevrons/Shevrons';
-import AdminTest from './Admin/Setting/Setting';
+import FireExtinguishers from './Main/Products/FireSafety/FireExtinguishers/FireExtinguishers';
 import MyComponent from './test2/MyComponent';
 // import FireExtinguishers from './Main/Products/FireSafety/FireExtinguishers/FireExtinguishers';
 // import AddForm from './AddForm/AddForm';
@@ -35,13 +35,13 @@ export default function MainRoute() {
         <Route path='/shoes' element={<Shoes />} />
         <Route path='/individual-protection' element={<IndividualProtection />} />
         <Route path='/fire-safety' element={<FireSafety />} />
-        {/* <Route path='/fire-extinguishers' element={<FireExtinguishers />} /> */}
+        <Route path='/fire-extinguishers' element={<FireExtinguishers />} />
         <Route path='/fabrics' element={<Fabrics />} />
         <Route path='/shevrons' element={<Shevrons />} />
         <Route path='/services' element={<Services />} />
         <Route path='/news' element={<News />} />
         <Route path='/test' element={<MyComponent />} />
-        <Route path='/admin/admin-test' element={<AdminTest />} />
+        {/* <Route path='/admin/admin-test' element={<AdminTest />} /> */}
         {/* // /edit фиксированный элемент */}
         {/* <Route path='/trainings' element={<Trainings />} />
         <Route path='/trainers' element={<Trainers />} />
