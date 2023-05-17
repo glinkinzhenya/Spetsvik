@@ -16,7 +16,6 @@ import Fabrics from './Main/Products/Fabrics/Fabrics';
 import Admin from './Admin/Admin';
 import Shoes from './Main/Products/Shoes/Shoes';
 import Shevrons from './Main/Products/Shevrons/Shevrons';
-import FireExtinguishers from './Main/Products/FireSafety/FireExtinguishers/FireExtinguishers';
 // import FireExtinguishers from './Main/Products/FireSafety/FireExtinguishers/FireExtinguishers';
 // import AddForm from './AddForm/AddForm';
 // import NotFound from './NotFound/NotFound';
@@ -39,11 +38,11 @@ export default function MainRoute() {
         <Route path='/shevrons' element={<Shevrons />} />
         <Route path='/services' element={<Services />} />
         <Route path='/news' element={<News />} />
-        {/* /edit фиксированный элемент */}
+        <Route path='/admin/admin-test' element={<AdminTest />} />
+        {/* // /edit фиксированный элемент */}
         {/* <Route path='/trainings' element={<Trainings />} />
         <Route path='/trainers' element={<Trainers />} />
-        <Route path='/admin' element={<Admin />} />
-        <Route path='/admin/4hg874hg8h45g85hg848g47gh4hyth4ythvy4thg8yh5g784h578heyubvyurbvubs' element={<AddForm />} />
+        <Route path='/admin' element={<Admin />} /> */}
         {/* /:name плавающий элемент */}
         {/* <Route path='/trainings/:name' element={<SportPage />} />
         <Route path='/*' element={<NotFound />} /> */}

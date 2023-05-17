@@ -1,18 +1,26 @@
 import React from 'react';
+import { auth } from '../../firebase';
 import { Button } from '@mui/material';
 import { useForm } from 'react-hook-form';
 import { InputText } from '../../components/Forms/InputText';
 import { adminRules } from '../../constans/rules';
 import './Admin.css';
+import { useNavigate } from 'react-router-dom';
 
 export default function Admin() {
   const { control, handleSubmit, getValues } = useForm();
+  const navigate = useNavigate();
 
-  const onSubmit = () => {
-    if (getValues().login === 'admin' && getValues().password === 'qwerty') {
-      window.location.href = '/admin/4hg874hg8h45g85hg848g47gh4hyth4ythvy4thg8yh5g784h578heyubvyurbvubs';
+  const onSubmit = async () => {
+    try {
+      const { login, password } = getValues();
+      await auth.signInWithEmailAndPassword(login, password);
+      navigate('/admin/admin-test');
+    } catch (error) {
+      console.error('Ошибка аутентификации:', error);
     }
   };
+
 
   return (
     <div className='admin'>
