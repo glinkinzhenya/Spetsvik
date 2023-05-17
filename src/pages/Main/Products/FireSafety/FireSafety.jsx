@@ -19,7 +19,6 @@ export default function FireSafety() {
             <div className='boxPath-container__arrow'>
               <img className='boxPath-container__arrow-image' src="./img/arrow-right.svg" alt="" />
             </div>
-
             <a className='boxPath-container__text' href="/fire-safety">Пожежна продукція</a>
           </div>
 
@@ -36,14 +35,14 @@ export default function FireSafety() {
           <h3 className='fireSafety-secondaryTitle'>Основні категорії</h3>
 
           <div className='fireSafety-box'>
-            <div className='fireSafety-box__item'>
+            <a className='fireSafety-box__item' href="/fire-extinguishers">
               <div className='fireSafety-box__item-picture'>
                 <img className='fireSafety-box__item-image' src="./img/fire-main.jpg" alt="" />
               </div>
               <div className='fireSafety-box__item-bg'>
                 <div className='fireSafety-box__item-text'>ВОГНЕГАСНИКИ</div>
               </div>
-            </div>
+            </a>
 
             <div className='fireSafety-box__item'>
               <div className='fireSafety-box__item-picture'>

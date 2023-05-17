@@ -1,6 +1,7 @@
 import React from 'react';
 import './FireExtinguishers.css';
-import News from '../../News/News';
+import News from '../../../News/News';
+// import News from '../../News/News';
 // import PopularGoodsShoes from '../PopularGoodsShoes/PopularGoodsShoes';
 
 export default function FireExtinguishers() {
@@ -18,7 +19,10 @@ export default function FireExtinguishers() {
             <div className='boxPath-container__arrow'>
               <img className='boxPath-container__arrow-image' src="./img/arrow-right.svg" alt="" />
             </div>
-
+            <a className='boxPath-container__text' href="/shoes">Пожежна продукція</a>
+            <div className='boxPath-container__arrow'>
+              <img className='boxPath-container__arrow-image' src="./img/arrow-right.svg" alt="" />
+            </div>
             <a className='boxPath-container__text' href="/shoes">Вогнегасники</a>
           </div>
 
