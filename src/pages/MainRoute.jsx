@@ -17,6 +17,7 @@ import Admin from './Admin/Admin';
 import Shoes from './Main/Products/Shoes/Shoes';
 import Shevrons from './Main/Products/Shevrons/Shevrons';
 import AdminTest from './Admin/Setting/Setting';
+import MyComponent from './test2/MyComponent';
 // import FireExtinguishers from './Main/Products/FireSafety/FireExtinguishers/FireExtinguishers';
 // import AddForm from './AddForm/AddForm';
 // import NotFound from './NotFound/NotFound';
@@ -39,6 +40,7 @@ export default function MainRoute() {
         <Route path='/shevrons' element={<Shevrons />} />
         <Route path='/services' element={<Services />} />
         <Route path='/news' element={<News />} />
+        <Route path='/test' element={<MyComponent />} />
         <Route path='/admin/admin-test' element={<AdminTest />} />
         {/* // /edit фиксированный элемент */}
         {/* <Route path='/trainings' element={<Trainings />} />
