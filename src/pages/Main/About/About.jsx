@@ -1,7 +1,11 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { Context } from '../../../Contex';
 import './About.css';
 
 export default function About() {
+  const { test1 } = useContext(Context);
+
+console.log(test1);
 
   return (
     <div className='about'>
