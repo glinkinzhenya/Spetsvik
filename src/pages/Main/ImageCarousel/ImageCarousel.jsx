@@ -6,60 +6,13 @@ import './ImageCarousel.css';
 export default function ImageCarousel() {
 
   const { mainData } = useContext(Context);
-
-  // console.log(mainData[0].carousel);
   const [mainData2, setMainData] = useState([]);
 
   useEffect(() => {
     if (mainData) {
-
       setMainData(mainData[0].carousel);
-
-      // console.log(images);
     }
-
   });
-  console.log(mainData2);
-
-  // let images = [
-  //   {
-  //     image: './img/backpack.jpg',
-  //     title: 'Заголовок 1',
-  //     description: 'якийсь текст'
-  //   },
-  //   {
-  //     image: './img/blanket.png',
-  //     title: 'Заголовок 2',
-  //     description: 'якийсь текст'
-  //   },
-  //   {
-  //     image: './img/body-armor.jpg',
-  //     title: 'Заголовок 3',
-  //     description: 'якийсь текст'
-  //   },
-  //   {
-  //     image: './img/compass.png',
-  //     title: 'Заголовок 4',
-  //     description: 'якийсь текст'
-  //   },
-  //   {
-  //     image: './img/fire-extinguisher.png',
-  //     title: 'Заголовок 5',
-  //     description: 'якийсь текст'
-  //   },
-  //   {
-  //     image: './img/flashlight.jpeg',
-  //     title: 'Заголовок 6',
-  //     description: 'якийсь текст'
-  //   },
-  //   {
-  //     image: './img/jackets.jpg',
-  //     title: 'Заголовок 7',
-  //     description: 'якийсь текст'
-  //   },
-  // ];
-
-  //images = mainData[0].carousel;
 
 
   return (
