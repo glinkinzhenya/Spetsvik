@@ -37,7 +37,7 @@ export default function Header() {
           phoneNumbers={['+380676132880']}
         />
         <BasicMenu
-          city="м. Харьків"
+          city="м. Харків"
           addresses={[
             { label: 'вул. Різдвяна 21', url: 'https://goo.gl/maps/3bmo4t72UDWPVEzW7' }
           ]}

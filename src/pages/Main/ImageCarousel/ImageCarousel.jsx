@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { Context } from '../../../Contex';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './ImageCarousel.css';
@@ -7,47 +7,59 @@ export default function ImageCarousel() {
 
   const { mainData } = useContext(Context);
 
-  console.log(mainData);
+  // console.log(mainData[0].carousel);
+  const [mainData2, setMainData] = useState([]);
 
+  useEffect(() => {
+    if (mainData) {
 
+      setMainData(mainData[0].carousel);
 
-  const images = [
-    {
-      image: './img/backpack.jpg',
-      title: 'Заголовок 1',
-      description: 'якийсь текст'
-    },
-    {
-      image: './img/blanket.png',
-      title: 'Заголовок 2',
-      description: 'якийсь текст'
-    },
-    {
-      image: './img/body-armor.jpg',
-      title: 'Заголовок 3',
-      description: 'якийсь текст'
-    },
-    {
-      image: './img/compass.png',
-      title: 'Заголовок 4',
-      description: 'якийсь текст'
-    },
-    {
-      image: './img/fire-extinguisher.png',
-      title: 'Заголовок 5',
-      description: 'якийсь текст'
-    },
-    {
-      image: './img/flashlight.jpeg',
-      title: 'Заголовок 6',
-      description: 'якийсь текст'
-    },
-    {
-      image: './img/jackets.jpg',
-      title: 'Заголовок 7',
-      description: 'якийсь текст'
-    },
-  ];
+      // console.log(images);
+    }
+
+  });
+  console.log(mainData2);
+
+  // let images = [
+  //   {
+  //     image: './img/backpack.jpg',
+  //     title: 'Заголовок 1',
+  //     description: 'якийсь текст'
+  //   },
+  //   {
+  //     image: './img/blanket.png',
+  //     title: 'Заголовок 2',
+  //     description: 'якийсь текст'
+  //   },
+  //   {
+  //     image: './img/body-armor.jpg',
+  //     title: 'Заголовок 3',
+  //     description: 'якийсь текст'
+  //   },
+  //   {
+  //     image: './img/compass.png',
+  //     title: 'Заголовок 4',
+  //     description: 'якийсь текст'
+  //   },
+  //   {
+  //     image: './img/fire-extinguisher.png',
+  //     title: 'Заголовок 5',
+  //     description: 'якийсь текст'
+  //   },
+  //   {
+  //     image: './img/flashlight.jpeg',
+  //     title: 'Заголовок 6',
+  //     description: 'якийсь текст'
+  //   },
+  //   {
+  //     image: './img/jackets.jpg',
+  //     title: 'Заголовок 7',
+  //     description: 'якийсь текст'
+  //   },
+  // ];
+
+  //images = mainData[0].carousel;
 
 
   return (
@@ -57,7 +69,7 @@ export default function ImageCarousel() {
           <div className="carousel-indicators">
 
 
-            {images.map((item, index) => (
+            {mainData2.map((item, index) => (
               (index === 0) ? <button key={index} type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
                 : <button key={index} type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to={index} aria-label={index + 1}></button>
             ))}
@@ -65,10 +77,10 @@ export default function ImageCarousel() {
           </div>
           <div className="carousel-inner">
 
-            {images.map((item, index) => (
+            {mainData2.map((item, index) => (
               (index === 0) ?
                 <div key={index} className="carousel-item active image-carousel__picture">
-                  <img src={item.image} className="d-block image-carousel__img" alt="..." />
+                  <img src={item} className="d-block image-carousel__img" alt="..." />
                   {/* <div className="carousel-caption d-none d-md-block">
                     <h5 className='carousel-item__title'>{item.title}</h5>
                     <p className='carousel-item__description'>{item.description}</p>
@@ -76,13 +88,12 @@ export default function ImageCarousel() {
                 </div> :
                 <div key={index} className={`carousel-item image-carousel__picture`}
                 >
-                  <img src={item.image} className="d-block image-carousel__img" alt="..." />
+                  <img src={item} className="d-block image-carousel__img" alt="..." />
                   {/* <div className="carousel-caption d-none d-md-block">
                     <h5 className='carousel-item__title'>{item.title}</h5>
                     <p className='carousel-item__description'>{item.description}</p>
                   </div> */}
                 </div>
-
             ))}
 
           </div>

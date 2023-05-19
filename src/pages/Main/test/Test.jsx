@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { storage } from '../../../firebase'; // Импортируйте модуль storage из вашего файла firebase
+import './Test.css';
 
-function ImageUploader() {
+export default function Test() {
   const [image, setImage] = useState(null);
 
   // Обработчик выбора файла
@@ -43,11 +44,9 @@ function ImageUploader() {
   };
 
   return (
-    <div>
+    <div className='test-position'>
       <input type="file" onChange={handleFileChange} />
       <button onClick={handleUpload}>Upload</button>
     </div>
   );
 }
-
-export default ImageUploader;

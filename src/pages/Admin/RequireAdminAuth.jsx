@@ -10,6 +10,7 @@ const RequireAdminAuth = ({ children }) => {
             try {
                 // Проверяем текущего пользователя
                 const user = auth.currentUser;
+                console.log(user);
                 if (!user) {
                     // Если пользователь не аутентифицирован, перенаправляем на страницу входа
                     navigate('/admin');

@@ -8,7 +8,7 @@ export default function App() {
   const [data2, setData] = useState(null);
 
   useEffect(() => {
-    firestore.collection("test").get()
+    firestore.collection("data").get()
       .then((querySnapshot) => {
         const data = [];
         querySnapshot.forEach((doc) => {

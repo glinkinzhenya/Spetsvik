@@ -1,0 +1,7 @@
+.test-position {
+position: absolute;
+bottom: 100px;
+right: 100px;
+background-color: rgb(98, 96, 96);
+height: 200px;
+}
