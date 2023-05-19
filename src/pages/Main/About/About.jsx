@@ -3,9 +3,9 @@ import { Context } from '../../../Contex';
 import './About.css';
 
 export default function About() {
-  const { test1 } = useContext(Context);
+  const { mainData } = useContext(Context);
 
-console.log(test1);
+  console.log(mainData);
 
   return (
     <div className='about'>

@@ -5,9 +5,7 @@ import { Context } from './Contex';
 import { firestore } from './firebase';
 
 export default function App() {
-  let test1 = '';
   const [data2, setData] = useState(null);
-
 
   useEffect(() => {
     firestore.collection("test").get()
@@ -15,12 +13,8 @@ export default function App() {
         const data = [];
         querySnapshot.forEach((doc) => {
           data.push(doc.data());
-
         });
-        // Обработка полученных данных
         setData(data);
-        console.log(data);
-
       })
       .catch((error) => {
         // Обработка ошибок
@@ -28,18 +22,15 @@ export default function App() {
         throw error;
       });
   }, []);
-  test1 = data2;
-
+  const mainData = data2;
 
   return (
-    <Context.Provider value={{ test1 }}>
-      <div className='App'>
+    <Context.Provider value={{ mainData }}>
         <BrowserRouter>
           <Routes>
             <Route path='/*' element={<MainRoute />} />
           </Routes>
         </BrowserRouter>
-      </div>
     </Context.Provider>
   );
 }
