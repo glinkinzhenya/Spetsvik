@@ -1,8 +1,15 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { Context } from '../../../Contex';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './ImageCarousel.css';
 
 export default function ImageCarousel() {
+
+  const { mainData } = useContext(Context);
+
+  console.log(mainData);
+
+
 
   const images = [
     {
