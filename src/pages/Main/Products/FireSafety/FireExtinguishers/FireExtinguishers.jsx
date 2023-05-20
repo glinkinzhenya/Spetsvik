@@ -1,8 +1,7 @@
 import React from 'react';
 import './FireExtinguishers.css';
 import News from '../../../News/News';
-// import News from '../../News/News';
-// import PopularGoodsShoes from '../PopularGoodsShoes/PopularGoodsShoes';
+import PopularGoodsFireExtinguishers from './PopularGoodsFireExtinguishers/PopularGoodsFireExtinguishers';
 
 export default function FireExtinguishers() {
 
@@ -19,47 +18,65 @@ export default function FireExtinguishers() {
             <div className='boxPath-container__arrow'>
               <img className='boxPath-container__arrow-image' src="./img/arrow-right.svg" alt="" />
             </div>
-            <a className='boxPath-container__text' href="/shoes">Пожежна продукція</a>
+            <a className='boxPath-container__text' href="/fire-safety">Пожежна продукція</a>
             <div className='boxPath-container__arrow'>
               <img className='boxPath-container__arrow-image' src="./img/arrow-right.svg" alt="" />
             </div>
-            <a className='boxPath-container__text' href="/shoes">Вогнегасники</a>
+            <a className='boxPath-container__text' href="/fire-extinguishers">Вогнегасники</a>
           </div>
 
         </div>
-        <div className='shoes-container container'>
-          <h2 className='shoes-mainTitle'>ВОГНЕГАСНИКИ</h2>
+        <div className='fireExtinguishers-container container'>
+          <h2 className='fireExtinguishers-mainTitle'>ВОГНЕГАСНИКИ</h2>
         </div>
 
-        <div className='shoes-baner'>
-          <img className='shoes-baner__image' src="./img/militaryShoes2.JPG" alt="" />
+        <div className='fireExtinguishers-baner'>
+          <img className='fireExtinguishers-baner__image' src="./img/fire-main.jpg" alt="" />
         </div>
 
-        <div className='shoes-container container'>
-          <h3 className='shoes-secondaryTitle'>Основні категорії</h3>
+        <div className='fireExtinguishers-container container'>
+          <h3 className='fireExtinguishers-secondaryTitle'>Основні категорії</h3>
 
-          <div className='shoes-box'>
-            <div className='shoes-box__item'>
-              <div className='shoes-box__item-picture'>
-                <img className='shoes-box__item-image' src="./img/spetsShoes.jpg" alt="" />
+          <div className='fireExtinguishers-box'>
+            <div className='fireExtinguishers-box__item'>
+              <div className='fireExtinguishers-box__item-picture'>
+                <img className='fireExtinguishers-box__item-image' src="./img/fire-main.jpg" alt="" />
               </div>
-              <div className='shoes-box__item-bg'>
-                <div className='shoes-box__item-text'>СПЕЦВЗУТТЯ</div>
+              <div className='fireExtinguishers-box__item-bg'>
+                <div className='fireExtinguishers-box__item-text'>ВОГНЕГАСНИКИ ПОРОШКОВІ</div>
               </div>
             </div>
 
-            <div className='shoes-box__item'>
-              <div className='shoes-box__item-picture'>
-                <img className='shoes-box__item-image' src="./img/militaryShoes.jpg" alt="" />
+            <div className='fireExtinguishers-box__item'>
+              <div className='fireExtinguishers-box__item-picture'>
+                <img className='fireExtinguishers-box__item-image' src="./img/fire-main.jpg" alt="" />
               </div>
-              <div className='shoes-box__item-bg'>
-                <div className='shoes-box__item-text'>ВІЙСЬКОВЕ ВЗУТТЯ</div>
+              <div className='fireExtinguishers-box__item-bg'>
+                <div className='fireExtinguishers-box__item-text'>ВОГНЕГАСНИКИ ВУГЛЕКИСЛОТНІ</div>
+              </div>
+            </div>
+
+            <div className='fireExtinguishers-box__item'>
+              <div className='fireExtinguishers-box__item-picture'>
+                <img className='fireExtinguishers-box__item-image' src="./img/fire-main.jpg" alt="" />
+              </div>
+              <div className='fireExtinguishers-box__item-bg'>
+                <div className='fireExtinguishers-box__item-text'>ПІДСТАВКИ ТА КРІПЛЕННЯ ПІД ВОГНЕГАСНИКИ</div>
+              </div>
+            </div>
+
+            <div className='fireExtinguishers-box__item'>
+              <div className='fireExtinguishers-box__item-picture'>
+                <img className='fireExtinguishers-box__item-image' src="./img/fire-main.jpg" alt="" />
+              </div>
+              <div className='fireExtinguishers-box__item-bg'>
+                <div className='fireExtinguishers-box__item-text'>ВОГНЕГАСНИКИ ВУГЛЕКИСЛОТНІ</div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      {/* <PopularGoodsShoes /> */}
+      <PopularGoodsFireExtinguishers />
       <News />
     </>
   );
