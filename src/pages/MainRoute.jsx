@@ -10,19 +10,12 @@ import FireSafety from './Main/Products/FireSafety/FireSafety';
 import SpetsCloth from './Main/Products/SpetsCloth/SpetsCloth';
 import IndividualProtection from './Main/Products/IndividualProtection/IndividualProtection';
 import Fabrics from './Main/Products/Fabrics/Fabrics';
-// import Trainings from './Trainings/Trainings';
-// import SportPage from './SportPage/SportPage';
-// import Trainers from './Trainers/Trainers';
 import Admin from './Admin/Admin';
 import Setting from './Admin/Setting/Setting';
 import Shoes from './Main/Products/Shoes/Shoes';
 import Shevrons from './Main/Products/Shevrons/Shevrons';
 import FireExtinguishers from './Main/Products/FireSafety/FireExtinguishers/FireExtinguishers';
 import Test from './Main/test/Test';
-// import FireExtinguishers from './Main/Products/FireSafety/FireExtinguishers/FireExtinguishers';
-// import AddForm from './AddForm/AddForm';
-// import NotFound from './NotFound/NotFound';
-// import Start from './Start/Start';
 
 export default function MainRoute() {
   return (
