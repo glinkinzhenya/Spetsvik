@@ -23,6 +23,7 @@ export default function Setting() {
     }
   };
 
+
   const handleUpload = () => {
     if (image) {
       const uploadTask = storage.ref(`carousel/${image.name}`).put(image);
@@ -50,7 +51,10 @@ export default function Setting() {
                   carousel: [...mainData2, url],
                 })
                 .then(() => {
-                  setProgress('Файл додано, на головній сторінці його вже можна побачити');
+                  setProgress('Файл додано');
+                  setTimeout(() => {
+                    window.location.reload();
+                  }, 2000);
                   console.log('URL сохранен в Firestore');
                 })
                 .catch((error) => {
@@ -69,6 +73,9 @@ export default function Setting() {
       .delete()
       .then(() => {
         setProgress('Зображення видалено');
+        setTimeout(() => {
+          window.location.reload();
+        }, 2000);
         console.log('Изображение удалено из хранилища');
       })
       .catch((error) => {
@@ -91,6 +98,8 @@ export default function Setting() {
       });
   };
 
+
+
   return (
     <RequireAdminAuth>
       <div className="setting">
@@ -105,14 +114,29 @@ export default function Setting() {
             ))}
           </div>
 
-
           <div className="setting-upload">
             <input type="file" onChange={handleFileChange} />
             <button onClick={handleUpload} className="setting-upload__button">Додати зображення</button>
           </div>
           {progress ? <div className="setting-carusel__progress">{progress}</div> : <div></div>}
-          {progress ? <div className="setting-carusel__progress">Побачити оновлені дані можно буде після перезавантаження сторінки</div> : <div></div>}
         </div>
+
+        <div className="setting-news">
+          <p className="setting-carusel__title">Новини на головній сторінці</p>
+
+          <div className="setting-carusel__box">
+            {mainData2.map((item, index) => (
+              <div key={index} className="setting-carusel__item">
+                <img src={item} className="setting-carusel__item-image" alt="..." />
+                <button className="setting-carusel__item-delete" onClick={() => handleDelete(item)}>Видалити</button>
+              </div>
+            ))}
+          </div>
+
+
+        </div>
+
+
       </div>
     </RequireAdminAuth>
   );

@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import MainRoute from './pages/MainRoute';
 import { Context } from './Contex';
 import { firestore } from './firebase';
+import DeleteButton from './pages/Admin/DeleteAdmin';
 
 export default function App() {
   const [data2, setData] = useState(null);
@@ -24,13 +25,16 @@ export default function App() {
   }, []);
   const mainData = data2;
 
+  const hasAuth = localStorage.getItem('auth') !== null;
+
   return (
     <Context.Provider value={{ mainData }}>
-        <BrowserRouter>
-          <Routes>
-            <Route path='/*' element={<MainRoute />} />
-          </Routes>
-        </BrowserRouter>
+      <BrowserRouter>
+        <Routes>
+          <Route path='/*' element={<MainRoute />} />
+        </Routes>
+        {hasAuth && <DeleteButton />}
+      </BrowserRouter>
     </Context.Provider>
   );
 }

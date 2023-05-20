@@ -1,11 +1,12 @@
 .setting {
-position: relative;
-z-index: 100;
+    position: relative;
+    z-index: 100;
 }
 
 .setting-carusel {
     background-color: rgb(170, 161, 161);
-    height: 500px;
+    padding: 20px;
+    margin-bottom: 10px;
 }
 
 .setting-carusel__title {
@@ -17,7 +18,7 @@ z-index: 100;
 .setting-carusel__box {
     display: flex;
     flex-wrap: wrap;
-        gap: 10px;
+    gap: 10px;
 }
 
 .setting-carusel__item {
@@ -36,7 +37,7 @@ z-index: 100;
 .setting-carusel__item-delete {
     background-color: rgb(113, 12, 12);
     border: none;
-    border-radius: 15px;
+    border-radius: 8px;
     font-size: 13px;
     padding: 5px 15px;
     color: rgb(230, 216, 216);
@@ -54,10 +55,16 @@ z-index: 100;
     padding: 5px 15px;
     color: rgb(230, 216, 216);
     border: none;
-    border-radius: 15px;
+    border-radius: 7px;
     font-size: 13px;
 }
 
 .setting-carusel__progress {
     margin-left: 20px;
+}
+
+.setting-news {
+    height: 600px;
+    padding: 20px;
+    background-color: rgb(170, 161, 161);
 }

@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { auth } from '../../firebase';
 
 const RequireAdminAuth = ({ children }) => {
     const navigate = useNavigate();
@@ -8,11 +7,10 @@ const RequireAdminAuth = ({ children }) => {
     useEffect(() => {
         const checkAdminAuth = async () => {
             try {
-                // Проверяем текущего пользователя
-                const user = auth.currentUser;
-                console.log(user);
-                if (!user) {
-                    // Если пользователь не аутентифицирован, перенаправляем на страницу входа
+                // Проверяем наличие информации об авторизации в памяти браузера
+                const isAuth = localStorage.getItem('auth');
+                if (isAuth !== 'true') {
+                    // Если пользователь не авторизован, перенаправляем на страницу входа
                     navigate('/admin');
                 }
                 // Здесь вы также можете добавить дополнительные проверки для уровня доступа администратора, если необходимо

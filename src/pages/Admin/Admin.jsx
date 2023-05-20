@@ -15,6 +15,7 @@ export default function Admin() {
     try {
       const { login, password } = getValues();
       await auth.signInWithEmailAndPassword(login, password);
+      localStorage.setItem('auth', 'true');
       navigate('/setting');
     } catch (error) {
       console.error('Ошибка аутентификации:', error);
