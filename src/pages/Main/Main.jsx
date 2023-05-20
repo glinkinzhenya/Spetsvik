@@ -10,9 +10,9 @@ export default function Main() {
   return (
     <main>
       <ImageCarousel />
-      {/* <CategoriesServises />
+      <CategoriesServises />
       <News />
-      <Partners /> */}
+      <Partners />
     </main>
   );
 }

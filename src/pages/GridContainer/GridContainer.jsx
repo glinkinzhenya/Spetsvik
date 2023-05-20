@@ -15,7 +15,7 @@ export default function GridContainer({ children }) {
           {children}
         </Grid>
         <Grid item xs={12} md={12} lg={12}>
-          {/* <Footer /> */}
+          <Footer />
         </Grid>
       </Grid>
     </div>
