@@ -14,7 +14,6 @@ export default function ImageCarousel() {
     }
   });
 
-
   return (
     <div className='imageCarouselCopy'>
       <div className='image-carousel__bootstrap'>
