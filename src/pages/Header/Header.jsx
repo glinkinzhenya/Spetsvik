@@ -91,7 +91,7 @@ export default function Header() {
           <Burger />
         </div>
       </div>
-      <nav className='header-category'>
+      <nav className='header-category container'>
         {/* <a className='header-category__item action' href="/">ГОЛОВНА</a> */}
         <a className='header-category__item' href="/spets-cloth">СПЕЦОДЯГ</a>
         <a className='header-category__item' href="/shoes">ВЗУТТЯ</a>
