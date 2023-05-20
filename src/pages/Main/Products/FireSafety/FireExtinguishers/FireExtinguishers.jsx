@@ -70,7 +70,7 @@ export default function FireExtinguishers() {
                 <img className='fireExtinguishers-box__item-image' src="./img/fire-main.jpg" alt="" />
               </div>
               <div className='fireExtinguishers-box__item-bg'>
-                <div className='fireExtinguishers-box__item-text'>ВОГНЕГАСНИКИ ВУГЛЕКИСЛОТНІ</div>
+                <div className='fireExtinguishers-box__item-text'>КОМПЛЕКТУЮЧІ ДО ВОГНЕГАСНИКІВ</div>
               </div>
             </div>
           </div>
