@@ -1,4 +1,7 @@
-.setting {}
+.setting {
+position: relative;
+z-index: 100;
+}
 
 .setting-carusel {
     background-color: rgb(170, 161, 161);
