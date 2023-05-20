@@ -343,7 +343,7 @@
 
 @media (max-width: 768.8px) {
     .header-category {
-        /* display: none !important; */
+        display: none !important;
         background-color: red;
     }
 }
