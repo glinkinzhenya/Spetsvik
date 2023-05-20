@@ -107,6 +107,7 @@
     justify-content: space-between;
     align-items: center;
     gap: 50px;
+    width: 100%;
     /* height: 100px; */
     /* padding-top: 20px; */
 }
@@ -184,6 +185,7 @@
 .header-category {
     height: 100px;
     display: flex;
+    flex-wrap: wrap;
     gap: 40px;
     justify-content: center;
     align-items: center;
@@ -337,4 +339,18 @@
 .header-black__active {
     opacity: 1;
     pointer-events: auto;
+}
+
+@media (max-width: 768.8px) {
+    .header-category {
+        /* display: none !important; */
+        background-color: red;
+    }
+}
+
+@media (max-width: 576.8px) {
+    .header-title {
+        /* font-size: 25px; */
+    }
+
 }
