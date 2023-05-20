@@ -1,4 +1,7 @@
-.setting {}
+.setting {
+position: relative;
+z-index: 100;
+}
 
 .setting-carusel {
     background-color: rgb(170, 161, 161);
@@ -14,18 +17,19 @@
 .setting-carusel__box {
     display: flex;
     flex-wrap: wrap;
+        gap: 10px;
 }
 
 .setting-carusel__item {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 10px;
 }
 
 .setting-carusel__item-image {
     width: auto;
     height: 100px;
-    padding: 10px;
     cursor: pointer;
 }
 
