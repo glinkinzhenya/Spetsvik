@@ -1,6 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { Context } from '../../../Contex';
 import { storage, firestore } from '../../../firebase';
+import RequireAdminAuth from '../RequireAdminAuth';
 import './Setting.css';
 
 export default function Setting() {
@@ -49,7 +50,7 @@ export default function Setting() {
                   carousel: [...mainData2, url],
                 })
                 .then(() => {
-                  setProgress('Файл додано, скоро його можна буде побачити');
+                  setProgress('Файл додано, на головній сторінці його вже можна побачити');
                   console.log('URL сохранен в Firestore');
                 })
                 .catch((error) => {
@@ -91,25 +92,28 @@ export default function Setting() {
   };
 
   return (
-    <div className="setting">
-      <div className="setting-carusel">
-        <p className="setting-carusel__title">Зображення на головній сторінці</p>
-        <div className="setting-carusel__box">
-          {mainData2.map((item, index) => (
-            <div key={index} className="setting-carusel__item">
-              <img src={item} className="setting-carusel__item-image" alt="..." />
-              <button className="setting-carusel__item-delete" onClick={() => handleDelete(item)}>Видалити</button>
-            </div>
-          ))}
-        </div>
+    <RequireAdminAuth>
+      <div className="setting">
+        <div className="setting-carusel">
+          <p className="setting-carusel__title">Зображення на головній сторінці</p>
+          <div className="setting-carusel__box">
+            {mainData2.map((item, index) => (
+              <div key={index} className="setting-carusel__item">
+                <img src={item} className="setting-carusel__item-image" alt="..." />
+                <button className="setting-carusel__item-delete" onClick={() => handleDelete(item)}>Видалити</button>
+              </div>
+            ))}
+          </div>
 
 
-        <div className="setting-upload">
-          <input type="file" onChange={handleFileChange} />
-          <button onClick={handleUpload} className="setting-upload__button">Додати зображення</button>
+          <div className="setting-upload">
+            <input type="file" onChange={handleFileChange} />
+            <button onClick={handleUpload} className="setting-upload__button">Додати зображення</button>
+          </div>
+          {progress ? <div className="setting-carusel__progress">{progress}</div> : <div></div>}
+          {progress ? <div className="setting-carusel__progress">Побачити оновлені дані можно буде після перезавантаження сторінки</div> : <div></div>}
         </div>
-        {progress ? <div className="setting-carusel__progress">{progress}</div> : ""} {/* Отображение прогресса */}
       </div>
-    </div>
+    </RequireAdminAuth>
   );
 }
