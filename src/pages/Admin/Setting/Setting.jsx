@@ -66,7 +66,7 @@ export default function Setting() {
                   setProgress('Файл добавлен');
                   setTimeout(() => {
                     window.location.reload();
-                  }, 2000);
+                  }, 1000);
                   console.log('URL сохранен в Firestore');
                 })
                 .catch((error) => {
@@ -87,7 +87,7 @@ export default function Setting() {
         setProgress('Изображение удалено');
         setTimeout(() => {
           window.location.reload();
-        }, 2000);
+        }, 1000);
         console.log('Изображение удалено из хранилища');
       })
       .catch((error) => {

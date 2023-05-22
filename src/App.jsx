@@ -15,6 +15,7 @@ export default function App() {
         querySnapshot.forEach((doc) => {
           data.push(doc.data());
         });
+        console.log(data);
         setData(data);
       })
       .catch((error) => {
