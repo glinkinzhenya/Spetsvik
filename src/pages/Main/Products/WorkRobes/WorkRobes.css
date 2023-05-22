@@ -1,0 +1,108 @@
+.workRobes {
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    background-color: #0C0C0C;
+}
+
+.boxPath {
+    background-color: #232323;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.boxPath-container {
+    display: flex;
+    gap: 10px;
+}
+
+.boxPath-container__text {
+   
+}
+
+.boxPath-container__arrow {
+   width: 7px;
+}
+
+.boxPath-container__arrow-image {
+   width: 100%;    
+}
+
+.workRobes-mainTitle {
+    padding-top: 50px;
+    font-size: 45px;
+    font-weight: 700;
+    padding-bottom: 50px;
+}
+
+.workRobes-baner {
+    height: 550px;
+}
+
+.workRobes-baner__image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.workRobes-secondaryTitle {
+    font-size: 45px;
+    font-weight: 700;
+    padding-top: 100px;
+    padding-bottom: 70px;
+}
+
+.workRobes-box {
+    display: flex;
+height: 100vh;
+    background-color: red;
+}
+
+.workRobes-box__left {
+    background-color: blue;
+   width: 20%;
+}
+
+.workRobes-box__right {
+    padding: 20px;
+    background-color: green;
+    display: grid;
+    gap: 100px 35px;
+    grid-template-columns: repeat(4, 1fr);
+    overflow-y: auto;
+}
+
+.workRobes-box__right-item {
+    max-width: 300px;
+    background-color: yellow;
+}
+
+/* .workRobes-box__item:hover {
+    filter: brightness(80%);
+    transition: filter 0.3s ease-in-out;
+}
+
+.workRobes-box__item:not(:hover) {
+    filter: brightness(100%);
+    transition: filter 0.3s ease-in-out;
+} */
+
+.workRobes-box__right-picture {
+    /* width: 100%; */
+    /* height: 100%; */
+}
+
+.workRobes-box__right-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.workRobes-box__right-name {
+
+}
+
+.workRobes-box__right-price {
+
+}

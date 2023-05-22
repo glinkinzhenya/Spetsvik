@@ -16,6 +16,7 @@ import Shoes from './Main/Products/Shoes/Shoes';
 import Shevrons from './Main/Products/Shevrons/Shevrons';
 import FireExtinguishers from './Main/Products/FireSafety/FireExtinguishers/FireExtinguishers';
 import Test from './Main/test/Test';
+import WorkRobes from './Main/Products/WorkRobes/WorkRobes';
 
 export default function MainRoute() {
   return (
@@ -27,6 +28,7 @@ export default function MainRoute() {
         <Route path='/about' element={<About />} />
         <Route path='/products' element={<Products />} />
         <Route path='/spets-cloth' element={<SpetsCloth />} />
+        <Route path='/work-robes' element={<WorkRobes />} />
         <Route path='/shoes' element={<Shoes />} />
         <Route path='/individual-protection' element={<IndividualProtection />} />
         <Route path='/fire-safety' element={<FireSafety />} />

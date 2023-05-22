@@ -35,14 +35,17 @@ export default function SpetsCloth() {
           <h3 className='spetsCloth-secondaryTitle'>Основні категорії</h3>
 
           <div className='spetsCloth-box'>
-            <div className='spetsCloth-box__item'>
+
+            
+          <a className='spetsCloth-box__item' href="/work-robes">
               <div className='spetsCloth-box__item-picture'>
                 <img className='spetsCloth-box__item-image' src="./img/stock_portrait.jpeg" alt="" />
               </div>
               <div className='spetsCloth-box__item-bg'>
                 <div className='spetsCloth-box__item-text'>ХАЛАТИ РОБОЧІ</div>
               </div>
-            </div>
+
+            </a>
 
             <div className='spetsCloth-box__item'>
               <div className='spetsCloth-box__item-picture'>
