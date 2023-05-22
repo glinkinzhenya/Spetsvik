@@ -6,16 +6,19 @@ import './Setting.css';
 
 export default function Setting() {
   const { mainData } = useContext(Context);
-  const [mainData2, setMainData] = useState([]);
-  const [progress, setProgress] = useState(false); // Добавлено состояние для прогресса
+  const [arrayCarousel, setArrayCarousel] = useState([]);
+  const [arrayNews, setArrayNews] = useState([]);
+  const [progress, setProgress] = useState(false);
+  const [progressNews, setProgressNews] = useState(false);
+  const [progressCarousel, setProgressCarousel] = useState(false);
+  const [image, setImage] = useState(null);
 
   useEffect(() => {
     if (mainData) {
-      setMainData(mainData[0].carousel);
+      setArrayCarousel(mainData[0].carousel);
+      setArrayNews(mainData[0].news);
     }
   }, [mainData]);
-
-  const [image, setImage] = useState(null);
 
   const handleFileChange = (e) => {
     if (e.target.files[0]) {
@@ -23,15 +26,24 @@ export default function Setting() {
     }
   };
 
+  const handleUploadClick = () => {
+    handleUpload('carousel', arrayCarousel, setArrayCarousel);
+    setProgressCarousel(true);
+  };
+  
+  const handleUploadNewsClick = () => {
+    handleUpload('news', arrayNews, setArrayNews);
+    setProgressNews(true);
+  };
 
-  const handleUpload = () => {
+  const handleUpload = (folderPath, array) => {
     if (image) {
-      const uploadTask = storage.ref(`carousel/${image.name}`).put(image);
+      const uploadTask = storage.ref(`${folderPath}/${image.name}`).put(image);
       uploadTask.on(
         'state_changed',
         (snapshot) => {
           const progress = Math.round((snapshot.bytesTransferred / snapshot.totalBytes) * 100);
-          setProgress(progress); // Обновление состояния прогресса
+          setProgress(progress);
           console.log(`Progress: ${progress}%`);
         },
         (error) => {
@@ -39,7 +51,7 @@ export default function Setting() {
         },
         () => {
           storage
-            .ref('carousel')
+            .ref(folderPath)
             .child(image.name)
             .getDownloadURL()
             .then((url) => {
@@ -48,10 +60,10 @@ export default function Setting() {
                 .collection('data')
                 .doc('RvwOmHHKyWpAChE4gdTQ')
                 .update({
-                  carousel: [...mainData2, url],
+                  [folderPath]: [...array, url],
                 })
                 .then(() => {
-                  setProgress('Файл додано');
+                  setProgress('Файл добавлен');
                   setTimeout(() => {
                     window.location.reload();
                   }, 2000);
@@ -59,7 +71,7 @@ export default function Setting() {
                 })
                 .catch((error) => {
                   console.log('Ошибка сохранения URL:', error);
-                  setProgress('Помилка додавання');
+                  setProgress('Ошибка добавления файла');
                 });
             });
         }
@@ -67,12 +79,12 @@ export default function Setting() {
     }
   };
 
-  const handleDelete = (url) => {
+  const handleDelete = (url, folderPath, array) => {
     const imageRef = storage.refFromURL(url);
     imageRef
       .delete()
       .then(() => {
-        setProgress('Зображення видалено');
+        setProgress('Изображение удалено');
         setTimeout(() => {
           window.location.reload();
         }, 2000);
@@ -80,15 +92,15 @@ export default function Setting() {
       })
       .catch((error) => {
         console.log('Ошибка удаления изображения из хранилища:', error);
-        setProgress('Помилка видалення зображення');
+        setProgress('Ошибка удаления изображения');
       });
 
-    const updatedCarousel = mainData2.filter((item) => item !== url);
+    const updatedArray = array.filter((item) => item !== url);
     firestore
       .collection('data')
       .doc('RvwOmHHKyWpAChE4gdTQ')
       .update({
-        carousel: updatedCarousel,
+        [folderPath]: updatedArray,
       })
       .then(() => {
         console.log('Изображение удалено из массива в Firebase');
@@ -98,45 +110,46 @@ export default function Setting() {
       });
   };
 
-
-
   return (
     <RequireAdminAuth>
       <div className="setting">
         <div className="setting-carusel">
           <p className="setting-carusel__title">Зображення на головній сторінці</p>
           <div className="setting-carusel__box">
-            {mainData2.map((item, index) => (
+            {arrayCarousel.map((item, index) => (
               <div key={index} className="setting-carusel__item">
                 <img src={item} className="setting-carusel__item-image" alt="..." />
-                <button className="setting-carusel__item-delete" onClick={() => handleDelete(item)}>Видалити</button>
+                <button className="setting-carusel__item-delete" onClick={() => handleDelete(item, 'carousel', arrayCarousel, setArrayCarousel, setProgressCarousel(true))}>Видалити</button>
               </div>
             ))}
           </div>
 
           <div className="setting-upload">
             <input type="file" onChange={handleFileChange} />
-            <button onClick={handleUpload} className="setting-upload__button">Додати зображення</button>
+            <button onClick={handleUploadClick} className="setting-upload__button">Додати зображення</button>
           </div>
-          {progress ? <div className="setting-carusel__progress">{progress}</div> : <div></div>}
+          {progressCarousel ? <div className="setting-carusel__progress">{progress}</div> : null}
         </div>
 
         <div className="setting-news">
           <p className="setting-carusel__title">Новини на головній сторінці</p>
 
           <div className="setting-carusel__box">
-            {mainData2.map((item, index) => (
+            {arrayNews.map((item, index) => (
               <div key={index} className="setting-carusel__item">
                 <img src={item} className="setting-carusel__item-image" alt="..." />
-                <button className="setting-carusel__item-delete" onClick={() => handleDelete(item)}>Видалити</button>
+                <button className="setting-carusel__item-delete" onClick={() => handleDelete(item, 'news', arrayNews, setArrayNews, setProgressNews(true))}>Видалити</button>
               </div>
             ))}
           </div>
 
+          <div className="setting-upload">
+            <input type="file" onChange={handleFileChange} />
+            <button onClick={handleUploadNewsClick} className="setting-upload__button">Додати зображення</button>
+          </div>
+          {progressNews ? <div className="setting-carusel__progress">{progress}</div> : null}
 
         </div>
-
-
       </div>
     </RequireAdminAuth>
   );

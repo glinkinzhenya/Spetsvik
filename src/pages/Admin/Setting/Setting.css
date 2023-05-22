@@ -6,7 +6,7 @@
 .setting-carusel {
     background-color: rgb(170, 161, 161);
     padding: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .setting-carusel__title {
@@ -59,12 +59,8 @@
     font-size: 13px;
 }
 
-.setting-carusel__progress {
-    margin-left: 20px;
-}
-
 .setting-news {
     height: 600px;
     padding: 20px;
-    background-color: rgb(170, 161, 161);
+    background-color: rgb(184, 177, 177);
 }

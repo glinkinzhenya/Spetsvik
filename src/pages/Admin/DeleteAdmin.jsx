@@ -21,7 +21,7 @@ const DeleteAdmin = () => {
       <Button
             sx={{
                 position: 'fixed',
-                zIndex: '100',
+                zIndex: '99',
                 right: '20px',
                 bottom: '80px',
                 backgroundColor: 'black',
