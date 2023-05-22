@@ -12,6 +12,7 @@ export default function Setting() {
   const [progress, setProgress] = useState(false);
   const [progressNews, setProgressNews] = useState(false);
   const [progressCarousel, setProgressCarousel] = useState(false);
+  const [progressProduct, setProgressProduct] = useState(false);
   const [image, setImage] = useState(null);
 
   const [product, setProduct] = useState({
@@ -60,6 +61,7 @@ export default function Setting() {
   // клик продукта
   const handleUploadProductsClick = () => {
     handleUpload('product', arrayProduct, product);
+    setProgressProduct(true);
   };
 
   const handleUpload = (folderPath, array, product) => {
@@ -196,7 +198,7 @@ export default function Setting() {
                     <div className='setting-product__box-item-info__category'>{item.category}</div>
                   </div>
                 </div>
-                <button className="setting-carusel__item-delete" onClick={() => handleDelete(item.img, 'product', arrayProduct, setProgressNews(true))}>Видалити</button>
+                <button className="setting-carusel__item-delete" onClick={() => handleDelete(item.img, 'product', arrayProduct, setProgressProduct(true))}>Видалити</button>
               </div>
             ))}
           </div>
@@ -215,7 +217,7 @@ export default function Setting() {
             </select>
             <button onClick={handleUploadProductsClick} className="setting-product__button">Додати товар</button>
           </div>
-          {progressNews ? <div className="setting-carusel__progress">{progress}</div> : null}
+          {progressProduct ? <div className="setting-carusel__progress">{progress}</div> : null}
 
         </div>
 
