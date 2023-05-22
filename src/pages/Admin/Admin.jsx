@@ -4,19 +4,17 @@ import { Button } from '@mui/material';
 import { useForm } from 'react-hook-form';
 import { InputText } from '../../components/Forms/InputText';
 import { adminRules } from '../../constans/rules';
-import { useNavigate } from 'react-router-dom';
 import './Admin.css';
 
 export default function Admin() {
   const { control, handleSubmit, getValues } = useForm();
-  const navigate = useNavigate();
 
   const onSubmit = async () => {
     try {
       const { login, password } = getValues();
       await auth.signInWithEmailAndPassword(login, password);
       localStorage.setItem('auth', 'true');
-      navigate('/setting');
+      window.location.href = '/setting';
     } catch (error) {
       console.error('Ошибка аутентификации:', error);
     }
