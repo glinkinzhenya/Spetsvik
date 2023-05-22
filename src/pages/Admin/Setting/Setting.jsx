@@ -124,7 +124,7 @@ export default function Setting() {
         setProgress('Ошибка удаления изображения');
       });
 
-    const updatedArray = array.filter((item) => item !== url);
+    const updatedArray = array.filter((item) => item.img !== url);
     firestore
       .collection('data')
       .doc('RvwOmHHKyWpAChE4gdTQ')
@@ -196,7 +196,7 @@ export default function Setting() {
                     <div className='setting-product__box-item-info__category'>{item.category}</div>
                   </div>
                 </div>
-                <button className="setting-carusel__item-delete" onClick={() => handleDelete(item, 'product', arrayProduct, setProgressNews(true))}>Видалити</button>
+                <button className="setting-carusel__item-delete" onClick={() => handleDelete(item.img, 'product', arrayProduct, setProgressNews(true))}>Видалити</button>
               </div>
             ))}
           </div>
