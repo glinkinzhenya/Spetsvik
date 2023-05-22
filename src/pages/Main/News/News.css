@@ -53,6 +53,7 @@
 }
 
 .news-map__item-picture {
+    height: 300px;
 }
 
 .news-map__item-image {
