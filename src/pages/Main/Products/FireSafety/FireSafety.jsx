@@ -44,14 +44,14 @@ export default function FireSafety() {
               </div>
             </a>
 
-            <div className='fireSafety-box__item'>
+            <a className='fireSafety-box__item' href=" /fire-cabinets">
               <div className='fireSafety-box__item-picture'>
                 <img className='fireSafety-box__item-image' src="./img/stock_building_fire.jpeg" alt="" />
               </div>
               <div className='fireSafety-box__item-bg'>
                 <div className='fireSafety-box__item-text'>ПОЖЕЖНІ ШАФИ, ЩИТИ, СТЕНДИ</div>
               </div>
-            </div>
+            </a>
 
             <div className='fireSafety-box__item'>
               <div className='fireSafety-box__item-picture'>

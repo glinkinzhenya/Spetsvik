@@ -17,6 +17,7 @@ import Shevrons from './Main/Products/Shevrons/Shevrons';
 import FireExtinguishers from './Main/Products/FireSafety/FireExtinguishers/FireExtinguishers';
 import Test from './Main/test/Test';
 import WorkRobes from './Main/Products/WorkRobes/WorkRobes';
+import FireCabinets from './Main/Products/FireSafety/FireCabinets/FireCabinets';
 
 export default function MainRoute() {
   return (
@@ -33,6 +34,7 @@ export default function MainRoute() {
         <Route path='/individual-protection' element={<IndividualProtection />} />
         <Route path='/fire-safety' element={<FireSafety />} />
         <Route path='/fire-extinguishers' element={<FireExtinguishers />} />
+        <Route path='/fire-cabinets' element={<FireCabinets />} />
         <Route path='/fabrics' element={<Fabrics />} />
         <Route path='/shevrons' element={<Shevrons />} />
         <Route path='/services' element={<Services />} />

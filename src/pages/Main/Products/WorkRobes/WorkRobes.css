@@ -17,23 +17,21 @@
     gap: 10px;
 }
 
-.boxPath-container__text {
-   
-}
+/* .boxPath-container__text {} */
 
 .boxPath-container__arrow {
-   width: 7px;
+    width: 7px;
 }
 
 .boxPath-container__arrow-image {
-   width: 100%;    
+    width: 100%;
 }
 
 .workRobes-mainTitle {
-    padding-top: 50px;
-    font-size: 45px;
+    font-size: 30px;
     font-weight: 700;
-    padding-bottom: 50px;
+    padding-top: 25px;
+    padding-bottom: 35px;
 }
 
 .workRobes-baner {
@@ -49,19 +47,29 @@
 .workRobes-secondaryTitle {
     font-size: 45px;
     font-weight: 700;
-    padding-top: 100px;
+    padding-top: 50px;
     padding-bottom: 70px;
 }
 
 .workRobes-box {
     display: flex;
-height: 100vh;
+    height: 100vh;
     background-color: red;
 }
 
 .workRobes-box__left {
     background-color: blue;
-   width: 20%;
+    width: 20%;
+    display: flex;
+    /* gap: 100px; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.workRobes-box__left-item {
+    font-size: 20px;
+    background-color: red;
 }
 
 .workRobes-box__right {
@@ -103,11 +111,13 @@ height: 100vh;
 }
 
 .workRobes-box__right-name {
-color: black;
-background-color: violet;
+    color: black;
+    background-color: violet;
+    text-align: center;
 }
 
 .workRobes-box__right-price {
     color: black;
     background-color: red;
+    text-align: center;
 }
