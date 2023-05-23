@@ -19,16 +19,17 @@ export default function Setting() {
     title: '',
     description: '',
     category: '',
+    popular: 'ні',
   });
 
   console.log(product);
-
 
   useEffect(() => {
     if (mainData) {
       setArrayCarousel(mainData[0].carousel);
       setArrayNews(mainData[0].news);
       setArrayProduct(mainData[0].product);
+      // setFilterValue(mainData[0].product)
     }
   }, [mainData]);
 
@@ -38,11 +39,23 @@ export default function Setting() {
     }
   };
 
+
+
   // добавление информации о товаре
   const handleInputChange = (event) => {
-    const { name, value } = event.target;
-    setProduct((prevProduct) => ({ ...prevProduct, [name]: value }));
+    const { name, value, type, checked } = event.target;
+
+    if (type === 'checkbox') {
+      setProduct((prevProduct) => ({ ...prevProduct, [name]: checked ? 'так' : 'ні' }));
+    } else {
+      setProduct((prevProduct) => ({ ...prevProduct, [name]: value }));
+    }
   };
+  // добавление информации о товаре (старая)
+  // const handleInputChange = (event) => {
+  //   const { name, value } = event.target;
+  //   setProduct((prevProduct) => ({ ...prevProduct, [name]: value }));
+  // };
 
 
 
@@ -141,6 +154,32 @@ export default function Setting() {
       });
   };
 
+
+  // фильт для отображения товаров
+  const [selectedCategory, setSelectedCategory] = useState('Всі товари');
+  const [showPopular, setShowPopular] = useState(false);
+
+  const handleChangeCategory = (event) => {
+    setSelectedCategory(event.target.value);
+  };
+
+  const handleChangeShowPopular = (event) => {
+    setShowPopular(event.target.checked);
+  };
+
+  const filteredProducts = arrayProduct.filter((item) => {
+    if (selectedCategory === 'Всі товари') {
+      return true;
+    } else {
+      return item.category === selectedCategory;
+    }
+  });
+
+  const displayedProducts = showPopular
+    ? filteredProducts.filter((item) => item.popular === 'так' && item.category === selectedCategory)
+    : filteredProducts;
+
+
   return (
     <RequireAdminAuth>
       <div className="setting">
@@ -183,19 +222,41 @@ export default function Setting() {
         </div>
 
         <div className="setting-product">
-          <p className="setting-carusel__title">Товар</p>
+
+          <div className='setting-product__flex'>
+
+            <p className="setting-carusel__title">Товар</p>
+            <select className='setting-product__select' onChange={handleChangeCategory}>
+              <option>Всі товари</option>
+              <option>Зеленый</option>
+              <option>Желтый</option>
+              <option>Красный</option>
+              <option>Оранжевый</option>
+              <option>Черный</option>
+            </select>
+
+            <label className='setting-product__change'>
+              <input name="popular" type="checkbox" onChange={handleChangeShowPopular} disabled={selectedCategory === 'Всі товари'} />
+              Показати популярні
+            </label>
+
+          </div>
+
+
+
 
           <div className="setting-product__box">
-            {arrayProduct.map((item, index) => (
+            {displayedProducts.map((item, index) => (
               <div key={index} className="setting-product__box-items">
                 <div className="setting-product__box-item">
                   <div className='setting-product__box-item__picture'>
-                    <img className='setting-product__box-item__img' src={item.img} alt="..." />
+                    <img className='setting-product__box-item__img' src={item.img} alt={item.img} />
                   </div>
                   <div className='setting-product__box-item-info'>
                     <div className='setting-product__box-item-info__title'>{item.title}</div>
                     <div className='setting-product__box-item-info__description'>{item.description}</div>
                     <div className='setting-product__box-item-info__category'>{item.category}</div>
+                    <div className='setting-product__box-item-info__popular'>Популярні: {item.popular}</div>
                   </div>
                 </div>
                 <button className="setting-carusel__item-delete" onClick={() => handleDelete(item.img, 'product', arrayProduct, setProgressProduct(true))}>Видалити</button>
@@ -208,13 +269,17 @@ export default function Setting() {
             <input className="setting-product__input" name="title" onChange={handleInputChange} value={product.title} type="text" placeholder='Назва товару' />
             <input className="setting-product__input" name="description" onChange={handleInputChange} value={product.description} type="text" placeholder='Ціна' />
             <select onChange={handleInputChange} name="category" value={product.category}>
-              <option value="Взуття">Взуття</option>
-              <option value="2">Зеленый</option>
-              <option value="3">Желтый</option>
-              <option value="4">Красный</option>
-              <option value="5">Оранжевый</option>
-              <option value="6">Черный</option>
+              <option>Обрати категорію</option>
+              <option>Зеленый</option>
+              <option>Желтый</option>
+              <option>Красный</option>
+              <option>Оранжевый</option>
+              <option>Черный</option>
             </select>
+            <label>
+              <input name="popular" type="checkbox" onChange={handleInputChange} value={product.popular} />
+              Додати у популярні
+            </label>
             <button onClick={handleUploadProductsClick} className="setting-product__button">Додати товар</button>
           </div>
           {progressProduct ? <div className="setting-carusel__progress">{progress}</div> : null}

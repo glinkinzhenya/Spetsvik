@@ -64,6 +64,7 @@
     height: 400px;
     padding: 20px;
     background-color: rgb(184, 177, 177);
+    margin-bottom: 5px;
 }
 
 .setting-product {
@@ -140,4 +141,22 @@
     color: white;
     font-size: 10px;
     padding: 3px;
+}
+
+.setting-product__box-item-info__popular {
+    color: white;
+}
+
+.setting-product__flex {
+    display: flex;
+    gap: 10px;
+}
+
+.setting-product__select {
+    height: 33px;
+    margin-top: 11px;
+}
+
+.setting-product__change {
+margin-top: 16px;
 }
