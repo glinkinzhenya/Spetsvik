@@ -36,7 +36,7 @@ export default function WorkRobes() {
           <h3 className='workRobes-secondaryTitle'>Халати робочі</h3>
 
           <div className='workRobes-box'>
-            <div className='workRobes-box__left'></div>
+            <div className='workRobes-box__left'>ФИЛЬТРЫ</div>
 
             <div className='workRobes-box__right'>
               <div className='workRobes-box__right-item'>
@@ -44,7 +44,7 @@ export default function WorkRobes() {
                   <img className='workRobes-box__right-image' src="./img/stock_portrait.jpeg" alt="" />
                 </div>
                 <div className='workRobes-box__right-name'>Халати робочі</div>
-                 <div className='workRobes-box__right-price'>999 грн</div>
+                <div className='workRobes-box__right-price'>999 грн</div>
               </div>
 
               <div className='workRobes-box__right-item'>
@@ -52,7 +52,7 @@ export default function WorkRobes() {
                   <img className='workRobes-box__right-image' src="./img/stock_portrait.jpeg" alt="" />
                 </div>
                 <div className='workRobes-box__right-name'>Халати робочі</div>
-                 <div className='workRobes-box__right-price'>999 грн</div>
+                <div className='workRobes-box__right-price'>999 грн</div>
               </div>
 
               <div className='workRobes-box__right-item'>
@@ -60,7 +60,7 @@ export default function WorkRobes() {
                   <img className='workRobes-box__right-image' src="./img/stock_portrait.jpeg" alt="" />
                 </div>
                 <div className='workRobes-box__right-name'>Халати робочі</div>
-                 <div className='workRobes-box__right-price'>999 грн</div>
+                <div className='workRobes-box__right-price'>999 грн</div>
               </div>
 
               <div className='workRobes-box__right-item'>
@@ -68,7 +68,7 @@ export default function WorkRobes() {
                   <img className='workRobes-box__right-image' src="./img/stock_portrait.jpeg" alt="" />
                 </div>
                 <div className='workRobes-box__right-name'>Халати робочі</div>
-                 <div className='workRobes-box__right-price'>999 грн</div>
+                <div className='workRobes-box__right-price'>999 грн</div>
               </div>
 
               <div className='workRobes-box__right-item'>
@@ -76,7 +76,7 @@ export default function WorkRobes() {
                   <img className='workRobes-box__right-image' src="./img/stock_portrait.jpeg" alt="" />
                 </div>
                 <div className='workRobes-box__right-name'>Халати робочі</div>
-                 <div className='workRobes-box__right-price'>999 грн</div>
+                <div className='workRobes-box__right-price'>999 грн</div>
               </div>
 
               <div className='workRobes-box__right-item'>
@@ -84,7 +84,7 @@ export default function WorkRobes() {
                   <img className='workRobes-box__right-image' src="./img/stock_portrait.jpeg" alt="" />
                 </div>
                 <div className='workRobes-box__right-name'>Халати робочі</div>
-                 <div className='workRobes-box__right-price'>999 грн</div>
+                <div className='workRobes-box__right-price'>999 грн</div>
               </div>
 
               <div className='workRobes-box__right-item'>
@@ -92,7 +92,7 @@ export default function WorkRobes() {
                   <img className='workRobes-box__right-image' src="./img/stock_portrait.jpeg" alt="" />
                 </div>
                 <div className='workRobes-box__right-name'>Халати робочі</div>
-                 <div className='workRobes-box__right-price'>999 грн</div>
+                <div className='workRobes-box__right-price'>999 грн</div>
               </div>
 
               <div className='workRobes-box__right-item'>
@@ -100,7 +100,7 @@ export default function WorkRobes() {
                   <img className='workRobes-box__right-image' src="./img/stock_portrait.jpeg" alt="" />
                 </div>
                 <div className='workRobes-box__right-name'>Халати робочі</div>
-                 <div className='workRobes-box__right-price'>999 грн</div>
+                <div className='workRobes-box__right-price'>999 грн</div>
               </div>
 
               <div className='workRobes-box__right-item'>
@@ -108,7 +108,7 @@ export default function WorkRobes() {
                   <img className='workRobes-box__right-image' src="./img/stock_portrait.jpeg" alt="" />
                 </div>
                 <div className='workRobes-box__right-name'>Халати робочі</div>
-                 <div className='workRobes-box__right-price'>999 грн</div>
+                <div className='workRobes-box__right-price'>999 грн</div>
               </div>
 
               <div className='workRobes-box__right-item'>
@@ -116,7 +116,7 @@ export default function WorkRobes() {
                   <img className='workRobes-box__right-image' src="./img/stock_portrait.jpeg" alt="" />
                 </div>
                 <div className='workRobes-box__right-name'>Халати робочі</div>
-                 <div className='workRobes-box__right-price'>999 грн</div>
+                <div className='workRobes-box__right-price'>999 грн</div>
               </div>
 
               <div className='workRobes-box__right-item'>
@@ -124,7 +124,7 @@ export default function WorkRobes() {
                   <img className='workRobes-box__right-image' src="./img/stock_portrait.jpeg" alt="" />
                 </div>
                 <div className='workRobes-box__right-name'>Халати робочі</div>
-                 <div className='workRobes-box__right-price'>999 грн</div>
+                <div className='workRobes-box__right-price'>999 грн</div>
               </div>
 
               <div className='workRobes-box__right-item'>
@@ -132,7 +132,39 @@ export default function WorkRobes() {
                   <img className='workRobes-box__right-image' src="./img/stock_portrait.jpeg" alt="" />
                 </div>
                 <div className='workRobes-box__right-name'>Халати робочі</div>
-                 <div className='workRobes-box__right-price'>999 грн</div>
+                <div className='workRobes-box__right-price'>999 грн</div>
+              </div>
+
+              <div className='workRobes-box__right-item'>
+                <div className='workRobes-box__right-picture'>
+                  <img className='workRobes-box__right-image' src="./img/stock_portrait.jpeg" alt="" />
+                </div>
+                <div className='workRobes-box__right-name'>Халати робочі</div>
+                <div className='workRobes-box__right-price'>999 грн</div>
+              </div>
+
+              <div className='workRobes-box__right-item'>
+                <div className='workRobes-box__right-picture'>
+                  <img className='workRobes-box__right-image' src="./img/stock_portrait.jpeg" alt="" />
+                </div>
+                <div className='workRobes-box__right-name'>Халати робочі</div>
+                <div className='workRobes-box__right-price'>999 грн</div>
+              </div>
+
+              <div className='workRobes-box__right-item'>
+                <div className='workRobes-box__right-picture'>
+                  <img className='workRobes-box__right-image' src="./img/stock_portrait.jpeg" alt="" />
+                </div>
+                <div className='workRobes-box__right-name'>Халати робочі</div>
+                <div className='workRobes-box__right-price'>999 грн</div>
+              </div>
+
+              <div className='workRobes-box__right-item'>
+                <div className='workRobes-box__right-picture'>
+                  <img className='workRobes-box__right-image' src="./img/stock_portrait.jpeg" alt="" />
+                </div>
+                <div className='workRobes-box__right-name'>Халати робочі</div>
+                <div className='workRobes-box__right-price'>999 грн</div>
               </div>
             </div>
 
