@@ -36,7 +36,18 @@ export default function WorkRobes() {
           <h3 className='workRobes-secondaryTitle'>Халати робочі</h3>
 
           <div className='workRobes-box'>
-            <div className='workRobes-box__left'>ФИЛЬТРЫ</div>
+            <div className='workRobes-box__left'>
+              <div className='workRobes-box__left-item'>ФИЛЬТРЫ 1</div>
+              <div className='workRobes-box__left-item'>ФИЛЬТРЫ 2</div>
+              <div className='workRobes-box__left-item'>ФИЛЬТРЫ 3</div>
+              <div className='workRobes-box__left-item'>ФИЛЬТРЫ 4</div>
+              <div className='workRobes-box__left-item'>ФИЛЬТРЫ 5</div>
+              <div className='workRobes-box__left-item'>ФИЛЬТРЫ 6</div>
+              <div className='workRobes-box__left-item'>ФИЛЬТРЫ 7</div>
+              <div className='workRobes-box__left-item'>ФИЛЬТРЫ 8</div>
+              <div className='workRobes-box__left-item'>ФИЛЬТРЫ 9</div>
+              <div className='workRobes-box__left-item'>ФИЛЬТРЫ 10</div>
+              </div>
 
             <div className='workRobes-box__right'>
               <div className='workRobes-box__right-item'>
