@@ -15,6 +15,16 @@ export default function Setting() {
   const [progressProduct, setProgressProduct] = useState(false);
   const [image, setImage] = useState(null);
 
+  const categoryArray = [
+    'халати рабочі',
+    'медичний, кухарський, клінінговий одяг',
+    'теплий спецодяг',
+    'костюми робочі',
+    'головні убори',
+    'фартухи робочі',
+  ]
+
+
   const [product, setProduct] = useState({
     title: '',
     description: '',
@@ -39,8 +49,6 @@ export default function Setting() {
     }
   };
 
-
-
   // добавление информации о товаре
   const handleInputChange = (event) => {
     const { name, value, type, checked } = event.target;
@@ -51,13 +59,6 @@ export default function Setting() {
       setProduct((prevProduct) => ({ ...prevProduct, [name]: value }));
     }
   };
-  // добавление информации о товаре (старая)
-  // const handleInputChange = (event) => {
-  //   const { name, value } = event.target;
-  //   setProduct((prevProduct) => ({ ...prevProduct, [name]: value }));
-  // };
-
-
 
   // клик карусели
   const handleUploadClick = () => {
@@ -228,11 +229,9 @@ export default function Setting() {
             <p className="setting-carusel__title">Товар</p>
             <select className='setting-product__select' onChange={handleChangeCategory}>
               <option>Всі товари</option>
-              <option>Зеленый</option>
-              <option>Желтый</option>
-              <option>Красный</option>
-              <option>Оранжевый</option>
-              <option>Черный</option>
+              {categoryArray.map((item) => (
+                <option>{item}</option>
+              ))}
             </select>
 
             <label className='setting-product__change'>
@@ -270,11 +269,9 @@ export default function Setting() {
             <input className="setting-product__input" name="description" onChange={handleInputChange} value={product.description} type="text" placeholder='Ціна' />
             <select onChange={handleInputChange} name="category" value={product.category}>
               <option>Обрати категорію</option>
-              <option>Зеленый</option>
-              <option>Желтый</option>
-              <option>Красный</option>
-              <option>Оранжевый</option>
-              <option>Черный</option>
+              {categoryArray.map((item) => (
+                <option>{item}</option>
+              ))}
             </select>
             <label>
               <input name="popular" type="checkbox" onChange={handleInputChange} value={product.popular} />
