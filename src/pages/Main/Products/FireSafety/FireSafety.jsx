@@ -53,14 +53,15 @@ export default function FireSafety() {
               </div>
             </a>
 
-            <div className='fireSafety-box__item'>
-              <div className='fireSafety-box__item-picture'>
-                <img className='fireSafety-box__item-image' src="./img/stock_rukav_fire.jpg" alt="" />
-              </div>
-              <div className='fireSafety-box__item-bg'>
-                <div className='fireSafety-box__item-text'>ПОЖЕЖНІ РУКАВИ, КРАНИ, ГІДРАНТИ, МОТОПОМПИ</div>
-              </div>
-            </div>
+            <a className='fireSafety-box__item' href="/fire-hoses">
+                <div className='fireSafety-box__item-picture'>
+                  <img className='fireSafety-box__item-image' src="./img/stock_rukav_fire.jpg" alt="" />
+                </div>
+                <div className='fireSafety-box__item-bg'>
+                  <div className='fireSafety-box__item-text'>ПОЖЕЖНІ РУКАВИ, КРАНИ, ГІДРАНТИ, МОТОПОМПИ</div>
+                </div>
+            </a>
+
           </div>
         </div>
       </div>

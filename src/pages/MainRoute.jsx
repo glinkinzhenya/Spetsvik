@@ -18,6 +18,7 @@ import FireExtinguishers from './Main/Products/FireSafety/FireExtinguishers/Fire
 import Test from './Main/test/Test';
 import WorkRobes from './Main/Products/WorkRobes/WorkRobes';
 import FireCabinets from './Main/Products/FireSafety/FireCabinets/FireCabinets';
+import FireHoses from './Main/Products/FireSafety/FireHoses/FireHoses';
 
 export default function MainRoute() {
   return (
@@ -32,9 +33,12 @@ export default function MainRoute() {
         <Route path='/work-robes' element={<WorkRobes />} />
         <Route path='/shoes' element={<Shoes />} />
         <Route path='/individual-protection' element={<IndividualProtection />} />
+
         <Route path='/fire-safety' element={<FireSafety />} />
         <Route path='/fire-extinguishers' element={<FireExtinguishers />} />
         <Route path='/fire-cabinets' element={<FireCabinets />} />
+        <Route path='/fire-hoses' element={<FireHoses />} />
+
         <Route path='/fabrics' element={<Fabrics />} />
         <Route path='/shevrons' element={<Shevrons />} />
         <Route path='/services' element={<Services />} />
