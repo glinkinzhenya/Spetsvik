@@ -28,7 +28,7 @@ export default function Shevrons() {
         </div>
 
         <div className='shevrons-baner'>
-          <img className='shevrons-baner__image' src="./img/shevrons.jpg" alt="" />
+          <img className='shevrons-baner__image' src="./img/shevronspng.png" alt="" />
         </div>
 
         <div className='shevrons-container container'>
@@ -37,7 +37,7 @@ export default function Shevrons() {
           <div className='shevrons-box'>
             <div className='shevrons-box__item'>
               <div className='shevrons-box__item-picture'>
-                <img className='shevrons-box__item-image' src="./img/shevrons.jpg" alt="" />
+                <img className='shevrons-box__item-image' src="./img/shevronspng.png" alt="" />
               </div>
               <div className='shevrons-box__item-bg'>
                 <div className='shevrons-box__item-text'>ШЕВРОНИ</div>
