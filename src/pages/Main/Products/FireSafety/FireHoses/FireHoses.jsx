@@ -31,7 +31,7 @@ export default function FireHoses() {
         </div>
 
         <div className='fireHoses-baner'>
-          <img className='fireHoses-baner__image' src="./img/stock_rukav_fire.jpg" alt="" />
+          <img className='fireHoses-baner__image' src="./img/stock-rukav.jpg" alt="" />
         </div>
 
         <div className='fireHoses-container container'>
@@ -58,7 +58,7 @@ export default function FireHoses() {
 
             <div className='fireHoses-box__item'>
               <div className='fireHoses-box__item-picture'>
-                <img className='fireHoses-box__item-image' src="./img/fireHoses1.jpeg" alt="" />
+                <img className='fireHoses-box__item-image' src="./img/fire-hoses7.jpeg" alt="" />
               </div>
               <div className='fireHoses-box__item-bg'>
                 <div className='fireHoses-box__item-text'>ГОЛОВКИ ПОЖЕЖНІ З'ЄДНУАЛЬНІ</div>
@@ -85,7 +85,7 @@ export default function FireHoses() {
 
             <div className='fireHoses-box__item'>
               <div className='fireHoses-box__item-picture'>
-                <img className='fireHoses-box__item-image' src="./img/fireHoses2.png" alt="" />
+                <img className='fireHoses-box__item-image' src="./img/fire-hoses6.png" alt="" />
               </div>
               <div className='fireHoses-box__item-bg'>
                 <div className='fireHoses-box__item-text'>ПІДСТАВКИ ДЛЯ ГІДРАНТА ПОЖЕЖНОГО</div>

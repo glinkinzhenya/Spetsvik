@@ -34,7 +34,7 @@ export default function IndividualProtection() {
         </div>
 
         <div className='individualProtection-baner'>
-          <img className='individualProtection-baner__image' src="./img/individual_2.jpeg" alt="" />
+          <img className='individualProtection-baner__image' src="./img/individual2.jpeg" alt="" />
         </div>
 
         <div className='individualProtection-container container'>
@@ -52,7 +52,7 @@ export default function IndividualProtection() {
 
             <div className='individualProtection-box__item'>
               <div className='individualProtection-box__item-picture'>
-                <img className='individualProtection-box__item-image' src="./img/individual_2.jpeg" alt="" />
+                <img className='individualProtection-box__item-image' src="./img/individual2.jpeg" alt="" />
               </div>
               <div className='individualProtection-box__item-bg'>
                 <div className='individualProtection-box__item-text'>ЗАСОБИ ЗАХИСТУ ОЧЕЙ, ОБЛИЧЧЯ, ГОЛОВИ</div>

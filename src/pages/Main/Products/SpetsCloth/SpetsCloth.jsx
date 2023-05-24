@@ -114,7 +114,7 @@ export default function SpetsCloth() {
 
             <a className='spetsCloth-box__item' href="/shoes">
               <div className='spetsCloth-box__item-picture'>
-                <img className='spetsCloth-box__item-image' src="./img/militaryShoes.jpg" alt="" />
+                <img className='spetsCloth-box__item-image' src="./img/militaryShoes.png" alt="" />
               </div>
               <div className='spetsCloth-box__item-bg'>
                 <div className='spetsCloth-box__item-text'>ВЗУТТЯ</div>
