@@ -23,6 +23,6 @@
 }
 
 .css-6hp17o-MuiList-root-MuiMenu-list {
-    background-color: rgb(50, 49, 49);
+    background-color: rgb(50, 49, 49) !important;
     /* background-color: white; */
 }

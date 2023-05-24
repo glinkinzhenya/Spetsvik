@@ -40,7 +40,7 @@ export default function FireCabinets() {
           <div className='fireCabinets-box'>
             <div className='fireCabinets-box__item'>
               <div className='fireCabinets-box__item-picture'>
-                <img className='fireCabinets-box__item-image' src="./img/stock_building_fire.jpeg" alt="" />
+                <img className='fireCabinets-box__item-image' src="./img/fire-cabinets1.jpg" alt="" />
               </div>
               <div className='fireCabinets-box__item-bg'>
                 <div className='fireCabinets-box__item-text'>ШАФИ ПОЖЕЖНІ</div>
@@ -49,7 +49,7 @@ export default function FireCabinets() {
 
             <div className='fireCabinets-box__item'>
               <div className='fireCabinets-box__item-picture'>
-                <img className='fireCabinets-box__item-image' src="./img/stock_building_fire.jpeg" alt="" />
+                <img className='fireCabinets-box__item-image' src="./img/fire-cabinets2.jpeg" alt="" />
               </div>
               <div className='fireCabinets-box__item-bg'>
                 <div className='fireCabinets-box__item-text'>ПОЖЕЖНІ ЩИТИ І СТЕНДИ</div>
@@ -58,7 +58,7 @@ export default function FireCabinets() {
 
             <div className='fireCabinets-box__item'>
               <div className='fireCabinets-box__item-picture'>
-                <img className='fireCabinets-box__item-image' src="./img/stock_building_fire.jpeg" alt="" />
+                <img className='fireCabinets-box__item-image' src="./img/fire-cabinets3.jpeg" alt="" />
               </div>
               <div className='fireCabinets-box__item-bg'>
                 <div className='fireCabinets-box__item-text'>ПОЖЕЖНИЙ ІНВЕНТАР</div>
@@ -67,7 +67,7 @@ export default function FireCabinets() {
 
             <div className='fireCabinets-box__item'>
               <div className='fireCabinets-box__item-picture'>
-                <img className='fireCabinets-box__item-image' src="./img/stock_building_fire.jpeg" alt="" />
+                <img className='fireCabinets-box__item-image' src="./img/help.jpg" alt="" />
               </div>
               <div className='fireCabinets-box__item-bg'>
                 <div className='fireCabinets-box__item-text'>ЯЩИКИ ПОЖЕЖНІ</div>
