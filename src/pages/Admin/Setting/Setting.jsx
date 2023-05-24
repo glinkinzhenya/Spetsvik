@@ -355,6 +355,7 @@ export default function Setting() {
                   <option key={item}>{item}</option>
                 ))}
               </select>
+              
               <button className="setting-product__edit-button" onClick={() => handleEditProduct(editProduct)}>Зберегти</button>
             </div>
           )}
@@ -362,20 +363,45 @@ export default function Setting() {
 
 
           <div className="setting-product__inputs">
-            <input type="file" onChange={handleFileChange} />
-            <input className="setting-product__input" name="title" onChange={handleInputChange} value={product.title} type="text" placeholder='Назва товару' />
-            <input className="setting-product__input" name="description" onChange={handleInputChange} value={product.description} type="text" placeholder='Ціна' />
-            <select onChange={handleInputChange} name="category" value={product.category}>
-              <option>Обрати категорію</option>
-              {categoryArray.map((item, index) => (
-                <option key={index}>{item}</option>
-              ))}
-            </select>
+            {editProduct ? '' : <input type="file" onChange={handleFileChange} />}
+            {editProduct
+              ?
+              <input className="setting-product__input" name="title" onChange={(e) => handleEditInputChange(e, editProduct)} value={editProduct.title} type="text" placeholder="Назва товару" />
+              :
+              <input className="setting-product__input" name="title" onChange={handleInputChange} value={product.title} type="text" placeholder='Назва товару' />}
+
+            {editProduct
+              ?
+              <input className="setting-product__input" name="description" onChange={(e) => handleEditInputChange(e, editProduct)} value={editProduct.description} type="text" placeholder="Ціна" />
+              :
+              <input className="setting-product__input" name="description" onChange={handleInputChange} value={product.description} type="text" placeholder='Ціна' />}
+
+            {editProduct
+              ?
+              <select onChange={(e) => handleEditInputChange(e, editProduct)} name="category" value={editProduct.category}>
+                <option>Обрати категорію</option>
+                {categoryArray.map((item) => (
+                  <option key={item}>{item}</option>
+                ))}
+              </select>
+              :
+              <select onChange={handleInputChange} name="category" value={product.category}>
+                <option>Обрати категорію</option>
+                {categoryArray.map((item, index) => (
+                  <option key={index}>{item}</option>
+                ))}
+              </select>}
+
             <label>
               <input name="popular" type="checkbox" onChange={handleInputChange} value={product.popular} />
               Додати у популярні
             </label>
-            <button onClick={handleUploadProductsClick} className="setting-product__button">Додати товар</button>
+
+            
+            {editProduct ?
+              <button className="setting-product__button" onClick={() => handleEditProduct(editProduct)}>Зберегти</button>
+              :
+              <button onClick={handleUploadProductsClick} className="setting-product__button">Додати товар</button>}
           </div>
           {progressProduct ? <div className="setting-carusel__progress">{progress}</div> : null}
 
