@@ -198,20 +198,21 @@ export default function Setting() {
   console.log(editProduct);
   // Функция обработки изменений в полях ввода редактирования товара
   const handleEditInputChange = (e, editProduct) => {
-    const { name, value, checked } = e.target;
-    if (checked === false || checked === true) {
+    const { name, type, value, checked } = e.target;
+    if (type === 'checkbox') {
       setEditProduct({ ...editProduct, [name]: checked })
-      console.log(checked);
-    } else {
+      console.log(value);
+    } else  {
       setEditProduct({ ...editProduct, [name]: value });
+      console.log(checked);
     }
-
   };
 
   // Функция обработки сохранения изменений в товаре
   const handleEditProduct = (editProduct) => {
     // Здесь вы можете выполнить необходимую логику сохранения изменений
     // Например, отправить запрос на сервер для обновления товара
+    setProgressProduct(true);
     const updatedArray = arrayProduct.map((item) => {
       if (item === editProductOrigin) {
         return {
@@ -230,7 +231,7 @@ export default function Setting() {
       .doc('RvwOmHHKyWpAChE4gdTQ')
       .update({ 'product': updatedArray })
       .then(() => {
-        setProgress('Файл добавлен');
+        setProgress('Товар оновлено');
         setTimeout(() => {
           window.location.reload();
         }, 1000);
@@ -330,7 +331,7 @@ export default function Setting() {
               </div>
             ))}
           </div>
-          
+
           {editProduct && <p className="setting-carusel__title">Редагування товару</p>}
           {/* {editProduct && (
             <div className="setting-product__edit">
