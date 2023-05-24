@@ -54,8 +54,8 @@ export default function FireSafety() {
 
             <a className='fireSafety-box__item' href="/fire-hoses">
               <div className='fireSafety-box__item-picture'>
-                <img className='fireSafety-box__item-image' src="./img/stock_rukav.jpg" alt="" />
-                {/* <img className='fireSafety-box__item-image' src="./img/fireExtinguishers1.jpg" alt="" /> */}
+                {/* <img className='fireSafety-box__item-image' src="./img/stock_rukav.jpg" alt="" /> */}
+                <img className='fireSafety-box__item-image' src="./img/rukav.png" alt="" />
               </div>
               <div className='fireSafety-box__item-bg'>
                 <div className='fireSafety-box__item-text'>ПОЖЕЖНІ РУКАВИ, КРАНИ, ГІДРАНТИ, МОТОПОМПИ</div>

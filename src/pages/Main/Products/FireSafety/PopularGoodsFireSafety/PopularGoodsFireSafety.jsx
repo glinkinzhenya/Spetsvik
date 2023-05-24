@@ -22,7 +22,7 @@ export default function PopularGoodsFireSafety() {
 
           <div className='popularGoods-box__item'>
             <div className='popularGoods-box__item-picture'>
-              <img className='popularGoods-box__item-image' src="./img/stock_building_fire.jpeg" alt="" />
+              <img className='popularGoods-box__item-image' src="./img/rukav.png" alt="" />
             </div>
             <div className='popularGoods-box__item-bg'>
               <div className='popularGoods-box__item-name'>РУКАВ "РУКАВ"</div>
@@ -42,7 +42,7 @@ export default function PopularGoodsFireSafety() {
 
           <div className='popularGoods-box__item'>
             <div className='popularGoods-box__item-picture'>
-              <img className='popularGoods-box__item-image' src="./img/stock_building_fire.jpeg" alt="" />
+              <img className='popularGoods-box__item-image' src="./img/rukav.png" alt="" />
             </div>
             <div className='popularGoods-box__item-bg'>
               <div className='popularGoods-box__item-name'>РУКАВ "РУКАВ"</div>
