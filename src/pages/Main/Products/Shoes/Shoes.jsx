@@ -37,7 +37,7 @@ export default function Shoes() {
           <div className='shoes-box'>
             <div className='shoes-box__item'>
               <div className='shoes-box__item-picture'>
-                <img className='shoes-box__item-image' src="./img/spetsShoes.jpg" alt="" />
+                <img className='shoes-box__item-image' src="./img/spetsShoespng.png" alt="" />
               </div>
               <div className='shoes-box__item-bg'>
                 <div className='shoes-box__item-text'>СПЕЦВЗУТТЯ</div>
@@ -46,7 +46,7 @@ export default function Shoes() {
 
             <div className='shoes-box__item'>
               <div className='shoes-box__item-picture'>
-                <img className='shoes-box__item-image' src="./img/militaryShoes.jpg" alt="" />
+                <img className='shoes-box__item-image' src="./img/militaryShoes.png" alt="" />
               </div>
               <div className='shoes-box__item-bg'>
                 <div className='shoes-box__item-text'>ВІЙСЬКОВЕ ВЗУТТЯ</div>

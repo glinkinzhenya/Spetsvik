@@ -12,7 +12,7 @@ export default function PopularGoodsShevrons() {
 
           <div className='popularGoods-box__item'>
             <div className='popularGoods-box__item-picture'>
-              <img className='popularGoods-box__item-image' src="./img/shevrons.jpg" alt="" />
+              <img className='popularGoods-box__item-image' src="./img/shevronspng.png" alt="" />
             </div>
             <div className='popularGoods-box__item-bg'>
               <div className='popularGoods-box__item-name'>ШЕВРОНИ "ШЕВРОНИ"</div>
@@ -22,7 +22,7 @@ export default function PopularGoodsShevrons() {
 
           <div className='popularGoods-box__item'>
             <div className='popularGoods-box__item-picture'>
-              <img className='popularGoods-box__item-image' src="./img/shevrons.jpg" alt="" />
+              <img className='popularGoods-box__item-image' src="./img/shevronspng.png" alt="" />
             </div>
             <div className='popularGoods-box__item-bg'>
               <div className='popularGoods-box__item-name'>ШЕВРОНИ "ШЕВРОНИ"</div>
@@ -32,7 +32,7 @@ export default function PopularGoodsShevrons() {
 
           <div className='popularGoods-box__item'>
             <div className='popularGoods-box__item-picture'>
-              <img className='popularGoods-box__item-image' src="./img/shevrons.jpg" alt="" />
+              <img className='popularGoods-box__item-image' src="./img/shevronspng.png" alt="" />
             </div>
             <div className='popularGoods-box__item-bg'>
               <div className='popularGoods-box__item-name'>ШЕВРОНИ "ШЕВРОНИ"</div>
@@ -42,7 +42,7 @@ export default function PopularGoodsShevrons() {
 
           <div className='popularGoods-box__item'>
             <div className='popularGoods-box__item-picture'>
-              <img className='popularGoods-box__item-image' src="./img/shevrons.jpg" alt="" />
+              <img className='popularGoods-box__item-image' src="./img/shevronspng.png" alt="" />
             </div>
             <div className='popularGoods-box__item-bg'>
               <div className='popularGoods-box__item-name'>ШЕВРОНИ "ШЕВРОНИ"</div>

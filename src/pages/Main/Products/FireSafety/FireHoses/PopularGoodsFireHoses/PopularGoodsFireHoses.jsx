@@ -12,7 +12,7 @@ export default function PopularGoodsFireHoses() {
 
           <div className='popularGoods-box__item'>
             <div className='popularGoods-box__item-picture'>
-              <img className='popularGoods-box__item-image' src="./img/stock_rukav_fire.jpg" alt="" />
+              <img className='popularGoods-box__item-image' src="./img/stock-rukav.jpg" alt="" />
             </div>
             <div className='popularGoods-box__item-bg'>
               <div className='popularGoods-box__item-name'>ПОЖЕЖНІ "РУКАВА"</div>
@@ -22,7 +22,7 @@ export default function PopularGoodsFireHoses() {
 
           <div className='popularGoods-box__item'>
             <div className='popularGoods-box__item-picture'>
-              <img className='popularGoods-box__item-image' src="./img/stock_rukav_fire.jpg" alt="" />
+              <img className='popularGoods-box__item-image' src="./img/stock-rukav.jpg" alt="" />
             </div>
             <div className='popularGoods-box__item-bg'>
               <div className='popularGoods-box__item-name'>ПОЖЕЖНІ "РУКАВА"</div>
@@ -32,7 +32,7 @@ export default function PopularGoodsFireHoses() {
 
           <div className='popularGoods-box__item'>
             <div className='popularGoods-box__item-picture'>
-              <img className='popularGoods-box__item-image' src="./img/stock_rukav_fire.jpg" alt="" />
+              <img className='popularGoods-box__item-image' src="./img/stock-rukav.jpg" alt="" />
             </div>
             <div className='popularGoods-box__item-bg'>
               <div className='popularGoods-box__item-name'>ПОЖЕЖНІ "РУКАВА"</div>
@@ -42,7 +42,7 @@ export default function PopularGoodsFireHoses() {
 
           <div className='popularGoods-box__item'>
             <div className='popularGoods-box__item-picture'>
-              <img className='popularGoods-box__item-image' src="./img/stock_rukav_fire.jpg" alt="" />
+              <img className='popularGoods-box__item-image' src="./img/stock-rukav.jpg" alt="" />
             </div>
             <div className='popularGoods-box__item-bg'>
               <div className='popularGoods-box__item-name'>ПОЖЕЖНІ "РУКАВА"</div>
