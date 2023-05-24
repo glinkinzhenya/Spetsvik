@@ -160,6 +160,7 @@
 
 .header-logo__picture {
     width: 100px;
+    /* height: 68px !important; */
 }
 
 .header-logo__image {
@@ -192,6 +193,7 @@
     color: white;
     font-size: 17px;
     font-weight: 600;
+    padding-top: 25px;
 }
 
 .header-category__item {}
@@ -341,12 +343,23 @@
     pointer-events: auto;
 }
 
-@media (max-width: 768.8px) {
-    .header-category {
+@media (max-width: 992px) {
+
+        .header-category {
+         
         display: none !important;
         background-color: red;
     }
+ .header-contacts {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
+
+
+/* @media (max-width: 768px) {
+
+   
+} */
 
 @media (max-width: 576.8px) {
     .header-title {
