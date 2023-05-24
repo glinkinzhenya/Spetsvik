@@ -40,7 +40,7 @@ export default function FireHoses() {
           <div className='fireHoses-box'>
             <div className='fireHoses-box__item'>
               <div className='fireHoses-box__item-picture'>
-                <img className='fireHoses-box__item-image' src="./img/stock_rukav_fire.jpg" alt="" />
+                <img className='fireHoses-box__item-image' src="./img/fire-hoses1.jpeg" alt="" />
               </div>
               <div className='fireHoses-box__item-bg'>
                 <div className='fireHoses-box__item-text'>РУКАВА ПОЖЕЖНІ НАПІРНІ</div>
@@ -49,7 +49,7 @@ export default function FireHoses() {
 
             <div className='fireHoses-box__item'>
               <div className='fireHoses-box__item-picture'>
-                <img className='fireHoses-box__item-image' src="./img/stock_rukav_fire.jpg" alt="" />
+                <img className='fireHoses-box__item-image' src="./img/fire-hoses2.jpeg" alt="" />
               </div>
               <div className='fireHoses-box__item-bg'>
                 <div className='fireHoses-box__item-text'>СТВОЛИ ПОЖЕЖНІ</div>
@@ -58,7 +58,7 @@ export default function FireHoses() {
 
             <div className='fireHoses-box__item'>
               <div className='fireHoses-box__item-picture'>
-                <img className='fireHoses-box__item-image' src="./img/stock_rukav_fire.jpg" alt="" />
+                <img className='fireHoses-box__item-image' src="./img/fireHoses1.jpeg" alt="" />
               </div>
               <div className='fireHoses-box__item-bg'>
                 <div className='fireHoses-box__item-text'>ГОЛОВКИ ПОЖЕЖНІ З'ЄДНУАЛЬНІ</div>
@@ -67,7 +67,7 @@ export default function FireHoses() {
 
             <div className='fireHoses-box__item'>
               <div className='fireHoses-box__item-picture'>
-                <img className='fireHoses-box__item-image' src="./img/stock_rukav_fire.jpg" alt="" />
+                <img className='fireHoses-box__item-image' src="./img/fire-hoses3.jpeg" alt="" />
               </div>
               <div className='fireHoses-box__item-bg'>
                 <div className='fireHoses-box__item-text'>КРАНИ ПОЖЕЖНІ, КЛАПАНИ ПОЖЕЖНІ, ВЕНТИЛІ ПОЖЕЖНОГО КРАНУ</div>
@@ -76,7 +76,7 @@ export default function FireHoses() {
 
             <div className='fireHoses-box__item'>
               <div className='fireHoses-box__item-picture'>
-                <img className='fireHoses-box__item-image' src="./img/stock_rukav_fire.jpg" alt="" />
+                <img className='fireHoses-box__item-image' src="./img/fire-hoses4.jpeg" alt="" />
               </div>
               <div className='fireHoses-box__item-bg'>
                 <div className='fireHoses-box__item-text'>ПОЖЕЖНІ КОЛОНКИ І ГІДРАНТИ ПОЖЕЖНІ</div>
@@ -85,7 +85,7 @@ export default function FireHoses() {
 
             <div className='fireHoses-box__item'>
               <div className='fireHoses-box__item-picture'>
-                <img className='fireHoses-box__item-image' src="./img/stock_rukav_fire.jpg" alt="" />
+                <img className='fireHoses-box__item-image' src="./img/fireHoses2.png" alt="" />
               </div>
               <div className='fireHoses-box__item-bg'>
                 <div className='fireHoses-box__item-text'>ПІДСТАВКИ ДЛЯ ГІДРАНТА ПОЖЕЖНОГО</div>

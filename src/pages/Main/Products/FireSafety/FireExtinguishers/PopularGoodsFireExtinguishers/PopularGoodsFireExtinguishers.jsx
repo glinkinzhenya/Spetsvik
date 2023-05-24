@@ -12,7 +12,7 @@ export default function PopularGoodsFireExtinguishers() {
 
           <div className='popularGoods-box__item'>
             <div className='popularGoods-box__item-picture'>
-              <img className='popularGoods-box__item-image' src="./img/fire-main.jpg" alt="" />
+              <img className='popularGoods-box__item-image' src="./img/fireExtinguishers1.jpg" alt="" />
             </div>
             <div className='popularGoods-box__item-bg'>
               <div className='popularGoods-box__item-name'>ВОГНЕГАСНИК "ВОГНЕГАСНИК"</div>
@@ -22,7 +22,7 @@ export default function PopularGoodsFireExtinguishers() {
 
           <div className='popularGoods-box__item'>
             <div className='popularGoods-box__item-picture'>
-              <img className='popularGoods-box__item-image' src="./img/fire-main.jpg" alt="" />
+              <img className='popularGoods-box__item-image' src="./img/fireExtinguishers1.jpg" alt="" />
             </div>
             <div className='popularGoods-box__item-bg'>
               <div className='popularGoods-box__item-name'>РУКАВ "РУКАВ"</div>
@@ -32,7 +32,7 @@ export default function PopularGoodsFireExtinguishers() {
 
           <div className='popularGoods-box__item'>
             <div className='popularGoods-box__item-picture'>
-              <img className='popularGoods-box__item-image' src="./img/fire-main.jpg" alt="" />
+              <img className='popularGoods-box__item-image' src="./img/fireExtinguishers1.jpg" alt="" />
             </div>
             <div className='popularGoods-box__item-bg'>
               <div className='popularGoods-box__item-name'>ВОГНЕГАСНИК "ВОГНЕГАСНИК"</div>
@@ -42,7 +42,7 @@ export default function PopularGoodsFireExtinguishers() {
 
           <div className='popularGoods-box__item'>
             <div className='popularGoods-box__item-picture'>
-              <img className='popularGoods-box__item-image' src="./img/fire-main.jpg" alt="" />
+              <img className='popularGoods-box__item-image' src="./img/fireExtinguishers1.jpg" alt="" />
             </div>
             <div className='popularGoods-box__item-bg'>
               <div className='popularGoods-box__item-name'>РУКАВ "РУКАВ"</div>
