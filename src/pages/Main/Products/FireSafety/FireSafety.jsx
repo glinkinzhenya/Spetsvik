@@ -2,7 +2,6 @@ import React from 'react';
 import './FireSafety.css';
 import News from '../../News/News';
 import PopularGoodsFireSafety from './PopularGoodsFireSafety/PopularGoodsFireSafety';
-// import Stock from '../Stock/Stock';
 
 export default function FireSafety() {
 
@@ -44,7 +43,7 @@ export default function FireSafety() {
               </div>
             </a>
 
-            <a className='fireSafety-box__item' href=" /fire-cabinets">
+            <a className='fireSafety-box__item' href="/fire-cabinets">
               <div className='fireSafety-box__item-picture'>
                 <img className='fireSafety-box__item-image' src="./img/stock_building_fire.jpeg" alt="" />
               </div>
@@ -54,19 +53,19 @@ export default function FireSafety() {
             </a>
 
             <a className='fireSafety-box__item' href="/fire-hoses">
-                <div className='fireSafety-box__item-picture'>
-                  <img className='fireSafety-box__item-image' src="./img/stock_rukavpng.png" alt="" />
-                </div>
-                <div className='fireSafety-box__item-bg'>
-                  <div className='fireSafety-box__item-text'>ПОЖЕЖНІ РУКАВИ, КРАНИ, ГІДРАНТИ, МОТОПОМПИ</div>
-                </div>
+              <div className='fireSafety-box__item-picture'>
+                <img className='fireSafety-box__item-image' src="./img/stock_rukav.jpg" alt="" />
+                {/* <img className='fireSafety-box__item-image' src="./img/fireExtinguishers1.jpg" alt="" /> */}
+              </div>
+              <div className='fireSafety-box__item-bg'>
+                <div className='fireSafety-box__item-text'>ПОЖЕЖНІ РУКАВИ, КРАНИ, ГІДРАНТИ, МОТОПОМПИ</div>
+              </div>
             </a>
 
           </div>
         </div>
       </div>
       <PopularGoodsFireSafety />
-      {/* <Stock /> */}
       <News />
     </>
   );
