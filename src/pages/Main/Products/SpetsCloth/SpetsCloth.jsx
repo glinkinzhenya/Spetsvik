@@ -77,7 +77,7 @@ export default function SpetsCloth() {
 
             <div className='spetsCloth-box__item'>
               <div className='spetsCloth-box__item-picture'>
-                <img className='spetsCloth-box__item-image' src="./img/help.jpg" alt="" />
+                <img className='spetsCloth-box__item-image' src="./img/spets-cloth1.jpg" alt="" />
               </div>
               <div className='spetsCloth-box__item-bg'>
                 <div className='spetsCloth-box__item-text'>ЗАХИСНИЙ СПЕЦОДЯГ</div>

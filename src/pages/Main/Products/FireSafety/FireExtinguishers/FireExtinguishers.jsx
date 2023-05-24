@@ -31,7 +31,7 @@ export default function FireExtinguishers() {
         </div>
 
         <div className='fireExtinguishers-baner'>
-          <img className='fireExtinguishers-baner__image' src="./img/fire-main.jpg" alt="" />
+          <img className='fireExtinguishers-baner__image' src="./img/fireExtinguishers1.jpg" alt="" />
         </div>
 
         <div className='fireExtinguishers-container container'>
@@ -40,7 +40,7 @@ export default function FireExtinguishers() {
           <div className='fireExtinguishers-box'>
             <div className='fireExtinguishers-box__item'>
               <div className='fireExtinguishers-box__item-picture'>
-                <img className='fireExtinguishers-box__item-image' src="./img/fire-main.jpg" alt="" />
+                <img className='fireExtinguishers-box__item-image' src="./img/fireExtinguishers1.jpg" alt="" />
               </div>
               <div className='fireExtinguishers-box__item-bg'>
                 <div className='fireExtinguishers-box__item-text'>ВОГНЕГАСНИКИ ПОРОШКОВІ</div>
@@ -49,7 +49,7 @@ export default function FireExtinguishers() {
 
             <div className='fireExtinguishers-box__item'>
               <div className='fireExtinguishers-box__item-picture'>
-                <img className='fireExtinguishers-box__item-image' src="./img/help.jpg" alt="" />
+                <img className='fireExtinguishers-box__item-image' src="./img/fireExtinguishers2.jpeg" alt="" />
               </div>
               <div className='fireExtinguishers-box__item-bg'>
                 <div className='fireExtinguishers-box__item-text'>ВОГНЕГАСНИКИ ВУГЛЕКИСЛОТНІ</div>
@@ -58,7 +58,7 @@ export default function FireExtinguishers() {
 
             <div className='fireExtinguishers-box__item'>
               <div className='fireExtinguishers-box__item-picture'>
-                <img className='fireExtinguishers-box__item-image' src="./img/help.jpg" alt="" />
+                <img className='fireExtinguishers-box__item-image' src="./img/fireExtinguishers3.jpg" alt="" />
               </div>
               <div className='fireExtinguishers-box__item-bg'>
                 <div className='fireExtinguishers-box__item-text'>ПІДСТАВКИ ТА КРІПЛЕННЯ ПІД ВОГНЕГАСНИКИ</div>
@@ -67,7 +67,7 @@ export default function FireExtinguishers() {
 
             <div className='fireExtinguishers-box__item'>
               <div className='fireExtinguishers-box__item-picture'>
-                <img className='fireExtinguishers-box__item-image' src="./img/help.jpg" alt="" />
+                <img className='fireExtinguishers-box__item-image' src="./img/fireExtinguishers4.jpg" alt="" />
               </div>
               <div className='fireExtinguishers-box__item-bg'>
                 <div className='fireExtinguishers-box__item-text'>КОМПЛЕКТУЮЧІ ДО ВОГНЕГАСНИКІВ</div>

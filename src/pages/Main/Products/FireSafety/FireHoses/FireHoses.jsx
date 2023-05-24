@@ -58,7 +58,7 @@ export default function FireHoses() {
 
             <div className='fireHoses-box__item'>
               <div className='fireHoses-box__item-picture'>
-                <img className='fireHoses-box__item-image' src="./img/help.jpg" alt="" />
+                <img className='fireHoses-box__item-image' src="./img/fireHoses1.jpeg" alt="" />
               </div>
               <div className='fireHoses-box__item-bg'>
                 <div className='fireHoses-box__item-text'>ГОЛОВКИ ПОЖЕЖНІ З'ЄДНУАЛЬНІ</div>
@@ -85,7 +85,7 @@ export default function FireHoses() {
 
             <div className='fireHoses-box__item'>
               <div className='fireHoses-box__item-picture'>
-                <img className='fireHoses-box__item-image' src="./img/help.jpg" alt="" />
+                <img className='fireHoses-box__item-image' src="./img/fireHoses2.png" alt="" />
               </div>
               <div className='fireHoses-box__item-bg'>
                 <div className='fireHoses-box__item-text'>ПІДСТАВКИ ДЛЯ ГІДРАНТА ПОЖЕЖНОГО</div>

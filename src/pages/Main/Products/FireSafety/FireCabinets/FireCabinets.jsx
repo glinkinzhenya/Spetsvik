@@ -67,7 +67,7 @@ export default function FireCabinets() {
 
             <div className='fireCabinets-box__item'>
               <div className='fireCabinets-box__item-picture'>
-                <img className='fireCabinets-box__item-image' src="./img/help.jpg" alt="" />
+                <img className='fireCabinets-box__item-image' src="./img/fireCabinets1.png" alt="" />
               </div>
               <div className='fireCabinets-box__item-bg'>
                 <div className='fireCabinets-box__item-text'>ЯЩИКИ ПОЖЕЖНІ</div>
