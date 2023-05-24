@@ -29,7 +29,7 @@ export default function Setting() {
     title: '',
     description: '',
     category: '',
-    popular: 'ні',
+    popular: false,
   });
 
   useEffect(() => {
@@ -63,7 +63,7 @@ export default function Setting() {
 
     if (!editProduct) {
       if (type === 'checkbox') {
-        setProduct((prevProduct) => ({ ...prevProduct, [name]: checked ? 'так' : 'ні' }));
+        setProduct((prevProduct) => ({ ...prevProduct, [name]: checked }));
       } else {
         setProduct((prevProduct) => ({ ...prevProduct, [name]: value }));
       }
@@ -188,18 +188,24 @@ export default function Setting() {
   });
 
   const displayedProducts = showPopular
-    ? filteredProducts.filter((item) => item.popular === 'так' && item.category === selectedCategory)
+    ? filteredProducts.filter((item) => item.popular === true && item.category === selectedCategory)
     : filteredProducts;
 
 
   // Редактирование товара
   const [editProduct, setEditProduct] = useState(null);
   const [editProductOrigin, setEditProductOrigin] = useState(null);
-
+  console.log(editProduct);
   // Функция обработки изменений в полях ввода редактирования товара
   const handleEditInputChange = (e, editProduct) => {
-    const { name, value } = e.target;
-    setEditProduct({ ...editProduct, [name]: value });
+    const { name, value, checked } = e.target;
+    if (checked === false || checked === true) {
+      setEditProduct({ ...editProduct, [name]: checked })
+      console.log(checked);
+    } else {
+      setEditProduct({ ...editProduct, [name]: value });
+    }
+
   };
 
   // Функция обработки сохранения изменений в товаре
@@ -324,8 +330,9 @@ export default function Setting() {
               </div>
             ))}
           </div>
-
-          {editProduct && (
+          
+          {editProduct && <p className="setting-carusel__title">Редагування товару</p>}
+          {/* {editProduct && (
             <div className="setting-product__edit">
               <p className="setting-carusel__title">Редагування товару</p>
               <input
@@ -355,10 +362,15 @@ export default function Setting() {
                   <option key={item}>{item}</option>
                 ))}
               </select>
-              
+
+              <label>
+                <input name="popular" type="checkbox" onChange={(e) => handleEditInputChange(e, editProduct)} checked={editProduct.popular} value={editProduct.popular} />
+                Додати у популярні
+              </label>
+
               <button className="setting-product__edit-button" onClick={() => handleEditProduct(editProduct)}>Зберегти</button>
             </div>
-          )}
+          )} */}
 
 
 
@@ -392,12 +404,21 @@ export default function Setting() {
                 ))}
               </select>}
 
-            <label>
-              <input name="popular" type="checkbox" onChange={handleInputChange} value={product.popular} />
-              Додати у популярні
-            </label>
 
-            
+            {editProduct
+              ?
+              <label>
+                <input name="popular" type="checkbox" onChange={(e) => handleEditInputChange(e, editProduct)} checked={editProduct.popular} value={editProduct.popular} />
+                Додати у популярні
+              </label>
+              :
+              <label>
+                <input name="popular" type="checkbox" onChange={handleInputChange} value={product.popular} />
+                Додати у популярні
+              </label>}
+
+
+
             {editProduct ?
               <button className="setting-product__button" onClick={() => handleEditProduct(editProduct)}>Зберегти</button>
               :
