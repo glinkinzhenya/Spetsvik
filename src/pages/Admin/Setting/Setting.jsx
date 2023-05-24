@@ -32,8 +32,6 @@ export default function Setting() {
     popular: 'ні',
   });
 
-  console.log(product);
-
   useEffect(() => {
     if (mainData) {
       setArrayCarousel(mainData[0].carousel);
@@ -50,15 +48,28 @@ export default function Setting() {
   };
 
   // добавление информации о товаре
+  // const handleInputChange = (event) => {
+  //   const { name, value, type, checked } = event.target;
+
+  //   if (type === 'checkbox') {
+  //     setProduct((prevProduct) => ({ ...prevProduct, [name]: checked ? 'так' : 'ні' }));
+  //   } else {
+  //     setProduct((prevProduct) => ({ ...prevProduct, [name]: value }));
+  //   }
+  // };
+
   const handleInputChange = (event) => {
     const { name, value, type, checked } = event.target;
 
-    if (type === 'checkbox') {
-      setProduct((prevProduct) => ({ ...prevProduct, [name]: checked ? 'так' : 'ні' }));
-    } else {
-      setProduct((prevProduct) => ({ ...prevProduct, [name]: value }));
+    if (!editProduct) {
+      if (type === 'checkbox') {
+        setProduct((prevProduct) => ({ ...prevProduct, [name]: checked ? 'так' : 'ні' }));
+      } else {
+        setProduct((prevProduct) => ({ ...prevProduct, [name]: value }));
+      }
     }
   };
+
 
   // клик карусели
   const handleUploadClick = () => {
@@ -181,6 +192,56 @@ export default function Setting() {
     : filteredProducts;
 
 
+  // Редактирование товара
+  const [editProduct, setEditProduct] = useState(null);
+  const [editProductOrigin, setEditProductOrigin] = useState(null);
+
+  // Функция обработки изменений в полях ввода редактирования товара
+  const handleEditInputChange = (e, editProduct) => {
+    const { name, value } = e.target;
+    setEditProduct({ ...editProduct, [name]: value });
+  };
+
+  // Функция обработки сохранения изменений в товаре
+  const handleEditProduct = (editProduct) => {
+    // Здесь вы можете выполнить необходимую логику сохранения изменений
+    // Например, отправить запрос на сервер для обновления товара
+    const updatedArray = arrayProduct.map((item) => {
+      if (item === editProductOrigin) {
+        return {
+          ...item,
+          title: editProduct.title,
+          description: editProduct.description,
+          category: editProduct.category,
+          popular: editProduct.popular
+        };
+      }
+      return item;
+    });
+
+    firestore
+      .collection('data')
+      .doc('RvwOmHHKyWpAChE4gdTQ')
+      .update({ 'product': updatedArray })
+      .then(() => {
+        setProgress('Файл добавлен');
+        setTimeout(() => {
+          window.location.reload();
+        }, 1000);
+        console.log('URL сохранен в Firestore');
+      })
+      .catch((error) => {
+        console.log('Ошибка сохранения URL:', error);
+        setProgress('Ошибка добавления файла');
+      });
+
+
+    console.log(updatedArray);
+    // handleUpload('product', updatedArray);
+    // setEditProduct(null);
+    // После сохранения изменений, можно сбросить editProduct или выполнить другие необходимые действия
+  };
+
   return (
     <RequireAdminAuth>
       <div className="setting">
@@ -229,8 +290,8 @@ export default function Setting() {
             <p className="setting-carusel__title">Товар</p>
             <select className='setting-product__select' onChange={handleChangeCategory}>
               <option>Всі товари</option>
-              {categoryArray.map((item) => (
-                <option>{item}</option>
+              {categoryArray.map((item, index) => (
+                <option key={index}>{item}</option>
               ))}
             </select>
 
@@ -258,10 +319,47 @@ export default function Setting() {
                     <div className='setting-product__box-item-info__popular'>Популярні: {item.popular}</div>
                   </div>
                 </div>
+                <button className="setting-carusel__item-edit" onClick={() => setEditProduct(item, setEditProductOrigin(item))}>Редагувати</button>
                 <button className="setting-carusel__item-delete" onClick={() => handleDelete(item.img, 'product', arrayProduct, setProgressProduct(true))}>Видалити</button>
               </div>
             ))}
           </div>
+
+          {editProduct && (
+            <div className="setting-product__edit">
+              <p className="setting-carusel__title">Редагування товару</p>
+              <input
+                className="setting-product__input"
+                name="title"
+                onChange={(e) => handleEditInputChange(e, editProduct)}
+                value={editProduct.title}
+                type="text"
+                placeholder="Назва товару"
+              />
+              <input
+                className="setting-product__input"
+                name="description"
+                onChange={(e) => handleEditInputChange(e, editProduct)}
+                value={editProduct.description}
+                type="text"
+                placeholder="Ціна"
+              />
+              <select
+                className="setting-product__select"
+                onChange={(e) => handleEditInputChange(e, editProduct)}
+                name="category"
+                value={editProduct.category}
+              >
+                <option>Обрати категорію</option>
+                {categoryArray.map((item) => (
+                  <option key={item}>{item}</option>
+                ))}
+              </select>
+              <button className="setting-product__edit-button" onClick={() => handleEditProduct(editProduct)}>Зберегти</button>
+            </div>
+          )}
+
+
 
           <div className="setting-product__inputs">
             <input type="file" onChange={handleFileChange} />
@@ -269,8 +367,8 @@ export default function Setting() {
             <input className="setting-product__input" name="description" onChange={handleInputChange} value={product.description} type="text" placeholder='Ціна' />
             <select onChange={handleInputChange} name="category" value={product.category}>
               <option>Обрати категорію</option>
-              {categoryArray.map((item) => (
-                <option>{item}</option>
+              {categoryArray.map((item, index) => (
+                <option key={index}>{item}</option>
               ))}
             </select>
             <label>
