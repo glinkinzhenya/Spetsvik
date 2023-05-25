@@ -40,7 +40,7 @@ export default function Fabrics() {
                 <img className='fabrics-box__item-image' src="./img/fabrics1.jpg" alt="" />
               </div>
               <div className='fabrics-box__item-bg'>
-                <div className='fabrics-box__item-text'>ТКАНИНА № 1</div>
+                <div className='fabrics-box__item-text'>ТЕХНІЧНІ</div>
               </div>
             </div>
 
@@ -49,7 +49,7 @@ export default function Fabrics() {
                 <img className='fabrics-box__item-image' src="./img/fabrics.jpg" alt="" />
               </div>
               <div className='fabrics-box__item-bg'>
-                <div className='fabrics-box__item-text'>ТКАНИНА № 2</div>
+                <div className='fabrics-box__item-text'>СУВОРІ ФІЛЬТРУВАЛЬНІ</div>
               </div>
             </div>
           </div>
