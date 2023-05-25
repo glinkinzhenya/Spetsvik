@@ -4,21 +4,27 @@ import { Context } from '../Contex';
 
 import './ProductsMap.css';
 
-export default function ProductsMap() {
+export default function ProductsMap(category) {
+    console.log(category);
     const [arrayProduct, setArrayProduct] = useState([]);
     const { mainData } = useContext(Context);
-
+    const array = [];
     useEffect(() => {
         if (mainData) {
             setArrayProduct(mainData[0].product);
+            mainData[0].product.forEach((item, index) => {
+                if (item.category === category) {
+                    // array.push(item);
+                    console.log('huy');
+                }
+            });
         }
     }, [mainData]);
 
-    console.log(arrayProduct);
 
     return (
         <div className='productsMap-box'>
-            {arrayProduct.map((item, index) => (
+            {array.map((item, index) => (
 
                 <div className='productsMap-box-item'>
                     <div className='productsMap-box__picture'>

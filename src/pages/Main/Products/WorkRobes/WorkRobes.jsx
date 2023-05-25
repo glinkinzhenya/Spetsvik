@@ -52,7 +52,9 @@ export default function WorkRobes() {
             </div>
 
             {/* <div className='workRobes-box__right'> */}
-            <ProductsMap />
+            <ProductsMap
+              category='халати робочі'
+            />
 
 
             {/* <div className='workRobes-box__right-item'>
