@@ -25,7 +25,6 @@ export default function Setting() {
     'фартухи робочі',
   ]
 
-
   const [product, setProduct] = useState({
     title: '',
     price: '',
@@ -40,7 +39,6 @@ export default function Setting() {
       setArrayCarousel(mainData[0].carousel);
       setArrayNews(mainData[0].news);
       setArrayProduct(mainData[0].product);
-      // setFilterValue(mainData[0].product)
     }
   }, [mainData]);
 
@@ -49,17 +47,6 @@ export default function Setting() {
       setImage(e.target.files[0]);
     }
   };
-
-  // добавление информации о товаре
-  // const handleInputChange = (event) => {
-  //   const { name, value, type, checked } = event.target;
-
-  //   if (type === 'checkbox') {
-  //     setProduct((prevProduct) => ({ ...prevProduct, [name]: checked ? 'так' : 'ні' }));
-  //   } else {
-  //     setProduct((prevProduct) => ({ ...prevProduct, [name]: value }));
-  //   }
-  // };
 
   const handleInputChange = (event) => {
     const { name, value, type, checked } = event.target;
@@ -153,8 +140,13 @@ export default function Setting() {
         console.log('Ошибка удаления изображения из хранилища:', error);
         setProgress('Ошибка удаления изображения');
       });
+    let updatedArray = null
+    if (folderPath !== 'product') {
+     updatedArray = array.filter((item) => item !== url);
+    } else {
+     updatedArray = array.filter((item) => item.img !== url);
+    }
 
-    const updatedArray = array.filter((item) => item.img !== url);
     firestore
       .collection('data')
       .doc('RvwOmHHKyWpAChE4gdTQ')
@@ -418,9 +410,9 @@ export default function Setting() {
               <input className="setting-product__input" name="description" onChange={handleInputChange} value={product.description} type="text" placeholder='Опис товару' />}
             {editProduct
               ?
-              <input className="setting-product__input" name="article" onChange={(e) => handleEditInputChange(e, editProduct)} value={editProduct.article} type="text" placeholder="Артікль" />
+              <input className="setting-product__input" name="article" onChange={(e) => handleEditInputChange(e, editProduct)} value={editProduct.article} type="text" placeholder="Код товару" />
               :
-              <input className="setting-product__input" name="article" onChange={handleInputChange} value={product.article} type="text" placeholder='Артікль' />}
+              <input className="setting-product__input" name="article" onChange={handleInputChange} value={product.article} type="text" placeholder='Код товару' />}
             {editProduct
               ?
               <select onChange={(e) => handleEditInputChange(e, editProduct)} name="category" value={editProduct.category}>
