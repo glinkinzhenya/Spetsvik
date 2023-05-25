@@ -96,7 +96,7 @@ export default function Header() {
         <a className='header-category__item' href="/spets-cloth">СПЕЦОДЯГ</a>
         <a className='header-category__item' href="/shoes">ВЗУТТЯ</a>
         <a className='header-category__item' href="/fire-safety">ПОЖЕЖНА ПРОДУКЦІЯ</a>
-        <a className='header-category__item' href="/">ВІЙСЬКОВА ЕКІПІРОВКА</a>
+        <a className='header-category__item' href="/military-equipment">ВІЙСЬКОВА ЕКІПІРОВКА</a>
         <a className='header-category__item' href="/shevrons">ШЕВРОНИ</a>
         <a className='header-category__item' href="/fabrics">ТКАНИНИ</a>
         <a className='header-category__item' href="/">ПОЛЮВАННЯ ТА ПРИГОДИ</a>

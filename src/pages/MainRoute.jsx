@@ -19,6 +19,7 @@ import Test from './Main/test/Test';
 import WorkRobes from './Main/Products/WorkRobes/WorkRobes';
 import FireCabinets from './Main/Products/FireSafety/FireCabinets/FireCabinets';
 import FireHoses from './Main/Products/FireSafety/FireHoses/FireHoses';
+import MilitaryEquipment from './Main/Products/MilitaryEquipment/MilitaryEquipment';
 
 export default function MainRoute() {
   return (
@@ -39,8 +40,11 @@ export default function MainRoute() {
         <Route path='/fire-cabinets' element={<FireCabinets />} />
         <Route path='/fire-hoses' element={<FireHoses />} />
 
-        <Route path='/fabrics' element={<Fabrics />} />
+        <Route path='/military-equipment' element={<MilitaryEquipment />} />
+
+
         <Route path='/shevrons' element={<Shevrons />} />
+        <Route path='/fabrics' element={<Fabrics />} />
         <Route path='/services' element={<Services />} />
         <Route path='/news' element={<News />} />
         <Route path='/test' element={<Test />} />
