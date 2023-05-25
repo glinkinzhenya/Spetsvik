@@ -54,9 +54,12 @@
 }
 
 .spetsCloth-box {
-    display: grid;
+    /* display: grid; */
     gap: 100px 35px;
-    grid-template-columns: repeat(4, 1fr);
+    /* grid-template-columns: repeat(4, 1fr); */
+    display: flex !important;
+    flex-wrap: wrap;
+    justify-content: center !important;
 }
 
 .spetsCloth-box__item {
