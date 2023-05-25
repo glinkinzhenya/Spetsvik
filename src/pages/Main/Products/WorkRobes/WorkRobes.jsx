@@ -51,24 +51,7 @@ export default function WorkRobes() {
               <div className='workRobes-box__left-item'>ФИЛЬТРЫ 10</div>
             </div>
 
-            {/* <div className='workRobes-box__right'> */}
-            <ProductsMap
-              category='халати робочі'
-            />
-
-
-            {/* <div className='workRobes-box__right-item'>
-                <div className='workRobes-box__right-picture'>
-                  <img className='workRobes-box__right-image' src="./img/stock_portrait.jpeg" alt="" />
-                </div>
-                <div className='workRobes-box__right-name'>Халати робочі</div>
-                <div className='workRobes-box__right-price'>999 грн</div>
-              </div> */}
-
-
-
-
-            {/* </div> */}
+            <ProductsMap category='халати робочі' />
 
           </div>
         </div>

@@ -17,7 +17,7 @@ export default function Setting() {
   const [selectedFiles, setSelectedFiles] = useState([]);
 
   const categoryArray = [
-    'халати рабочі',
+    'халати робочі',
     'медичний, кухарський, клінінговий одяг',
     'теплий спецодяг',
     'костюми робочі',
