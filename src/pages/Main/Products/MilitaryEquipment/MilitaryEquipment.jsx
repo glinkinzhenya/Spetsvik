@@ -32,29 +32,37 @@ export default function MilitaryEquipment() {
           <div className='fireSafety-box'>
             <a className='fireSafety-box__item' href="/fire-extinguishers">
               <div className='fireSafety-box__item-picture'>
-                <img className='fireSafety-box__item-image' src="./img/fireExtinguishers1.jpg" alt="" />
+                <img className='fireSafety-box__item-image' src="./img/MilitaryEquipment1.png" alt="" />
               </div>
               <div className='fireSafety-box__item-bg'>
-                <div className='fireSafety-box__item-text'>ВОГНЕГАСНИКИ</div>
+                <div className='fireSafety-box__item-text'>ДОЩОВИКИ</div>
               </div>
             </a>
 
             <a className='fireSafety-box__item' href="/fire-cabinets">
               <div className='fireSafety-box__item-picture'>
-                <img className='fireSafety-box__item-image' src="./img/stock_building_fire.jpeg" alt="" />
+                <img className='fireSafety-box__item-image' src="./img/MilitaryEquipment2.png" alt="" />
               </div>
               <div className='fireSafety-box__item-bg'>
-                <div className='fireSafety-box__item-text'>ПОЖЕЖНІ ШАФИ, ЩИТИ, СТЕНДИ</div>
+                <div className='fireSafety-box__item-text'>ЖИЛЕТИ</div>
               </div>
             </a>
 
             <a className='fireSafety-box__item' href="/fire-hoses">
               <div className='fireSafety-box__item-picture'>
-                {/* <img className='fireSafety-box__item-image' src="./img/stock_rukav.jpg" alt="" /> */}
-                <img className='fireSafety-box__item-image' src="./img/rukav.png" alt="" />
+                <img className='fireSafety-box__item-image' src="./img/MilitaryEquipment3.png" alt="" />
               </div>
               <div className='fireSafety-box__item-bg'>
-                <div className='fireSafety-box__item-text'>ПОЖЕЖНІ РУКАВИ, КРАНИ, ГІДРАНТИ, МОТОПОМПИ</div>
+                <div className='fireSafety-box__item-text'>ЗБРОЙОВІ РЕМЕНІ</div>
+              </div>
+            </a>
+
+            <a className='fireSafety-box__item' href="/fire-hoses">
+              <div className='fireSafety-box__item-picture'>
+                <img className='fireSafety-box__item-image' src="./img/MilitaryEquipment4.png" alt="" />
+              </div>
+              <div className='fireSafety-box__item-bg'>
+                <div className='fireSafety-box__item-text'>КОМПЛЕКТИ УНІФОРМИ</div>
               </div>
             </a>
 
