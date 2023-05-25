@@ -46,7 +46,7 @@ export default function Shoes() {
 
             <div className='shoes-box__item'>
               <div className='shoes-box__item-picture'>
-                <img className='shoes-box__item-image' src="./img/militaryShoes.png" alt="" />
+                <img className='shoes-box__item-image' src="./img/militaryShoes2_1.JPG" alt="" />
               </div>
               <div className='shoes-box__item-bg'>
                 <div className='shoes-box__item-text'>ВІЙСЬКОВЕ ВЗУТТЯ</div>

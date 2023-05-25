@@ -22,12 +22,11 @@ export default function CategoriesServises() {
             </div>
           </a>
 
-          <div className='categories-box__item item2'>
+          <a className='categories-box__item item2' href="/military-equipment">
             <div className='categories-box__item-bg'>
               <div className='categories-box__item-text'>ВІЙСЬКОВА ЕКІПІРОВКА</div>
             </div>
-          </div>
-
+          </a>
 
           <a className='categories-box__item item3' href="/fabrics">
             <div className='categories-box__item-bg'>
@@ -35,12 +34,11 @@ export default function CategoriesServises() {
             </div>
           </a>
 
-          <div className='categories-box__item item4'>
+          <a className='categories-box__item item4' href="/">
             <div className='categories-box__item-bg'>
               <div className='categories-box__item-text'>ПОЛЮВАННЯ ТА ПРИГОДИ</div>
             </div>
-          </div>
-
+          </a>
 
           <a className='servises servises1' href="/shoes">
             <div className='servises-bg'>

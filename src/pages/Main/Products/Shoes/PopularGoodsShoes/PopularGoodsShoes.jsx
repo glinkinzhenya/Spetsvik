@@ -12,7 +12,7 @@ export default function PopularGoodsShoes() {
 
           <div className='popularGoods-box__item'>
             <div className='popularGoods-box__item-picture'>
-              <img className='popularGoods-box__item-image' src="./img/militaryShoes.png" alt="" />
+              <img className='popularGoods-box__item-image' src="./img/militaryShoes2_1.JPG" alt="" />
             </div>
             <div className='popularGoods-box__item-bg'>
               <div className='popularGoods-box__item-name'>ВЗУТТЯ "ВЗУТТЯ"</div>
@@ -32,7 +32,7 @@ export default function PopularGoodsShoes() {
 
           <div className='popularGoods-box__item'>
             <div className='popularGoods-box__item-picture'>
-              <img className='popularGoods-box__item-image' src="./img/militaryShoes.png" alt="" />
+              <img className='popularGoods-box__item-image' src="./img/militaryShoes2_1.JPG" alt="" />
             </div>
             <div className='popularGoods-box__item-bg'>
               <div className='popularGoods-box__item-name'>ВЗУТТЯ "ВЗУТТЯ"</div>

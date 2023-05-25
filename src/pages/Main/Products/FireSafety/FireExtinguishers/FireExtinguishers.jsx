@@ -31,7 +31,7 @@ export default function FireExtinguishers() {
         </div>
 
         <div className='fireExtinguishers-baner'>
-          <img className='fireExtinguishers-baner__image' src="./img/fireExtinguishers1.jpg" alt="" />
+          <img className='fireExtinguishers-baner__image' src="./img/fireExtinguishers1_1.jpg" alt="" />
         </div>
 
         <div className='fireExtinguishers-container container'>
