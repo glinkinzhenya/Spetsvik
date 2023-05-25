@@ -27,8 +27,10 @@ export default function Setting() {
 
   const [product, setProduct] = useState({
     title: '',
+    price: '',
     description: '',
     category: '',
+    article: '',
     popular: false,
   });
 
@@ -202,7 +204,7 @@ export default function Setting() {
     if (type === 'checkbox') {
       setEditProduct({ ...editProduct, [name]: checked })
       console.log(value);
-    } else  {
+    } else {
       setEditProduct({ ...editProduct, [name]: value });
       console.log(checked);
     }
@@ -218,8 +220,10 @@ export default function Setting() {
         return {
           ...item,
           title: editProduct.title,
+          price: editProduct.price,
           description: editProduct.description,
           category: editProduct.category,
+          article: editProduct.article,
           popular: editProduct.popular
         };
       }
@@ -307,6 +311,8 @@ export default function Setting() {
               Показати популярні
             </label>
 
+            <input className='setting-product__search' type="text" name="search" placeholder='Пошук товара/артікля'/>
+
           </div>
 
 
@@ -321,9 +327,11 @@ export default function Setting() {
                   </div>
                   <div className='setting-product__box-item-info'>
                     <div className='setting-product__box-item-info__title'>{item.title}</div>
+                    <div className='setting-product__box-item-info__description'>{item.price}</div>
                     <div className='setting-product__box-item-info__description'>{item.description}</div>
                     <div className='setting-product__box-item-info__category'>{item.category}</div>
-                    <div className='setting-product__box-item-info__popular'>Популярні: {item.popular}</div>
+                    <div className='setting-product__box-item-info__article'>{item.article}</div>
+                    <div className='setting-product__box-item-info__popular'>Популярні: {item.popular ? 'Так' : 'Ні'}</div>
                   </div>
                 </div>
                 <button className="setting-carusel__item-edit" onClick={() => setEditProduct(item, setEditProductOrigin(item))}>Редагувати</button>
@@ -382,13 +390,21 @@ export default function Setting() {
               <input className="setting-product__input" name="title" onChange={(e) => handleEditInputChange(e, editProduct)} value={editProduct.title} type="text" placeholder="Назва товару" />
               :
               <input className="setting-product__input" name="title" onChange={handleInputChange} value={product.title} type="text" placeholder='Назва товару' />}
-
             {editProduct
               ?
-              <input className="setting-product__input" name="description" onChange={(e) => handleEditInputChange(e, editProduct)} value={editProduct.description} type="text" placeholder="Ціна" />
+              <input className="setting-product__input" name="price" onChange={(e) => handleEditInputChange(e, editProduct)} value={editProduct.price} type="text" placeholder="Ціна" />
               :
-              <input className="setting-product__input" name="description" onChange={handleInputChange} value={product.description} type="text" placeholder='Ціна' />}
-
+              <input className="setting-product__input" name="price" onChange={handleInputChange} value={product.price} type="text" placeholder='Ціна' />}
+            {editProduct
+              ?
+              <input className="setting-product__input" name="description" onChange={(e) => handleEditInputChange(e, editProduct)} value={editProduct.description} type="text" placeholder="Опис товару" />
+              :
+              <input className="setting-product__input" name="description" onChange={handleInputChange} value={product.description} type="text" placeholder='Опис товару' />}
+            {editProduct
+              ?
+              <input className="setting-product__input" name="article" onChange={(e) => handleEditInputChange(e, editProduct)} value={editProduct.article} type="text" placeholder="Артікль" />
+              :
+              <input className="setting-product__input" name="article" onChange={handleInputChange} value={product.article} type="text" placeholder='Артікль' />}
             {editProduct
               ?
               <select onChange={(e) => handleEditInputChange(e, editProduct)} name="category" value={editProduct.category}>
