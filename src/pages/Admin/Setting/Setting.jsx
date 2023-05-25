@@ -13,8 +13,8 @@ export default function Setting() {
   const [progressNews, setProgressNews] = useState(false);
   const [progressCarousel, setProgressCarousel] = useState(false);
   const [progressProduct, setProgressProduct] = useState(false);
-  const [image, setImage] = useState(null);
   const [searchQuery, setSearchQuery] = useState('');
+  const [selectedFiles, setSelectedFiles] = useState([]);
 
   const categoryArray = [
     'халати рабочі',
@@ -43,8 +43,14 @@ export default function Setting() {
   }, [mainData]);
 
   const handleFileChange = (e) => {
-    if (e.target.files[0]) {
-      setImage(e.target.files[0]);
+
+    // if (e.target.files[0]) {
+    //   // e.preventDefault();
+    //   setImage(e.target.files[0]);
+    // }
+    if (e.target.files.length > 0) {
+      const filesArray = Array.from(e.target.files);
+      setSelectedFiles(filesArray);
     }
   };
 
@@ -61,92 +67,205 @@ export default function Setting() {
   };
 
 
-  // клик карусели
+  // // клик карусели
+  // const handleUploadClick = () => {
+  //   handleUpload('carousel', arrayCarousel);
+  //   setProgressCarousel(true);
+  // };
+
+  // // клик новостей
+  // const handleUploadNewsClick = () => {
+  //   handleUpload('news', arrayNews);
+  //   setProgressNews(true);
+  // };
+
+  // // клик продукта
+  // const handleUploadProductsClick = () => {
+  //   handleUpload('product', arrayProduct, product);
+  //   setProgressProduct(true);
+  // };
+
   const handleUploadClick = () => {
     handleUpload('carousel', arrayCarousel);
     setProgressCarousel(true);
   };
 
-  // клик новостей
   const handleUploadNewsClick = () => {
     handleUpload('news', arrayNews);
     setProgressNews(true);
   };
 
-  // клик продукта
   const handleUploadProductsClick = () => {
     handleUpload('product', arrayProduct, product);
     setProgressProduct(true);
   };
 
+  // const handleUpload = (folderPath, array, product) => {
+  //   if (image) {
+  //     const uploadTask = storage.ref(`${folderPath}/${image.name}`).put(image);
+  //     uploadTask.on(
+  //       'state_changed',
+  //       (snapshot) => {
+  //         const progress = Math.round((snapshot.bytesTransferred / snapshot.totalBytes) * 100);
+  //         setProgress(progress);
+  //         console.log(`Progress: ${progress}%`);
+  //       },
+  //       (error) => {
+  //         console.log(error);
+  //       },
+  //       () => {
+  //         storage
+  //           .ref(folderPath)
+  //           .child(image.name)
+  //           .getDownloadURL()
+  //           .then((url) => {
+  //             console.log('Image URL:', url);
+
+  //             // Определяем обновление, которое нужно выполнить
+  //             let update = {};
+  //             product ? update = { [folderPath]: [...array, { ...product, img: url }] } : update = { [folderPath]: [...array, url] };
+
+  //             firestore
+  //               .collection('data')
+  //               .doc('RvwOmHHKyWpAChE4gdTQ')
+  //               .update(update)  // Применяем обновление
+  //               .then(() => {
+  //                 setProgress('Файл добавлен');
+  //                 setTimeout(() => {
+  //                   window.location.reload();
+  //                 }, 1000);
+  //                 console.log('URL сохранен в Firestore');
+  //               })
+  //               .catch((error) => {
+  //                 console.log('Ошибка сохранения URL:', error);
+  //                 setProgress('Ошибка добавления файла');
+  //               });
+  //           });
+  //       }
+  //     );
+  //   }
+  // };
+
   const handleUpload = (folderPath, array, product) => {
-    if (image) {
-      const uploadTask = storage.ref(`${folderPath}/${image.name}`).put(image);
-      uploadTask.on(
-        'state_changed',
-        (snapshot) => {
-          const progress = Math.round((snapshot.bytesTransferred / snapshot.totalBytes) * 100);
-          setProgress(progress);
-          console.log(`Progress: ${progress}%`);
-        },
-        (error) => {
-          console.log(error);
-        },
-        () => {
-          storage
-            .ref(folderPath)
-            .child(image.name)
-            .getDownloadURL()
-            .then((url) => {
-              console.log('Image URL:', url);
+    if (selectedFiles.length > 0) {
+      const uploadPromises = selectedFiles.map((file) => {
+        return storage
+          .ref(`${folderPath}/${file.name}`)
+          .put(file)
+          .then((snapshot) => {
+            const progress = Math.round(
+              (snapshot.bytesTransferred / snapshot.totalBytes) * 100
+            );
+            setProgress(progress);
+            console.log(`Progress: ${progress}%`);
 
-              // Определяем обновление, которое нужно выполнить
-              let update = {};
-              product ? update = { [folderPath]: [...array, { ...product, img: url }] } : update = { [folderPath]: [...array, url] };
+            return storage.ref(folderPath).child(file.name).getDownloadURL();
+          });
+      });
 
-              firestore
-                .collection('data')
-                .doc('RvwOmHHKyWpAChE4gdTQ')
-                .update(update)  // Применяем обновление
-                .then(() => {
-                  setProgress('Файл добавлен');
-                  setTimeout(() => {
-                    window.location.reload();
-                  }, 1000);
-                  console.log('URL сохранен в Firestore');
-                })
-                .catch((error) => {
-                  console.log('Ошибка сохранения URL:', error);
-                  setProgress('Ошибка добавления файла');
-                });
+      Promise.all(uploadPromises)
+        .then((urls) => {
+          console.log('Image URLs:', urls);
+
+          let update = {};
+          if (product) {
+            const updatedArray = array.map((item) => ({ ...item }));
+            updatedArray.push({ ...product, img: urls });
+            update = { [folderPath]: updatedArray };
+          } else {
+            update = { [folderPath]: [...array, ...urls] };
+          }
+
+          return firestore
+            .collection('data')
+            .doc('RvwOmHHKyWpAChE4gdTQ')
+            .update(update)
+            .then(() => {
+              setProgress('Файлы добавлены');
+              setSelectedFiles([]); // Сброс выбранных файлов
+              setTimeout(() => {
+                window.location.reload();
+              }, 1000);
+              console.log('URLs сохранены в Firestore');
             });
-        }
-      );
+        })
+        .catch((error) => {
+          console.log('Ошибка сохранения URLs:', error);
+          setProgress('Ошибка добавления файлов');
+        });
     }
   };
 
+
+  // const handleDelete = (url, folderPath, array) => {
+  //   const imageRef = storage.refFromURL(url);
+  //   imageRef
+  //     .delete()
+  //     .then(() => {
+  //       setProgress('Изображение удалено');
+  //       setTimeout(() => {
+  //         window.location.reload();
+  //       }, 1000);
+  //       console.log('Изображение удалено из хранилища');
+  //     })
+  //     .catch((error) => {
+  //       console.log('Ошибка удаления изображения из хранилища:', error);
+  //       setProgress('Ошибка удаления изображения');
+  //     });
+  //   let updatedArray = null
+  //   if (folderPath !== 'product') {
+  //    updatedArray = array.filter((item) => item !== url);
+  //   } else {
+  //    updatedArray = array.filter((item) => item.img !== url);
+  //   }
+
+  //   firestore
+  //     .collection('data')
+  //     .doc('RvwOmHHKyWpAChE4gdTQ')
+  //     .update({
+  //       [folderPath]: updatedArray,
+  //     })
+  //     .then(() => {
+  //       console.log('Изображение удалено из массива в Firebase');
+  //     })
+  //     .catch((error) => {
+  //       console.log('Ошибка удаления изображения из массива в Firebase:', error);
+  //     });
+  // };
+
   const handleDelete = (url, folderPath, array) => {
-    const imageRef = storage.refFromURL(url);
-    imageRef
-      .delete()
+    const imageRefs = [];
+    if (folderPath !== 'product') {
+      // Удаляем все фотографии товара из хранилища
+      imageRefs.push(storage.refFromURL(url).delete());
+    } else {
+      // Удаляем все фотографии товара из хранилища
+      url.forEach((photoUrl) => {
+        imageRefs.push(storage.refFromURL(photoUrl).delete());
+      });
+    }
+
+    Promise.all(imageRefs)
       .then(() => {
-        setProgress('Изображение удалено');
+        setProgress('Изображения удалены');
         setTimeout(() => {
           window.location.reload();
         }, 1000);
-        console.log('Изображение удалено из хранилища');
+        console.log('Изображения удалены из хранилища');
       })
       .catch((error) => {
-        console.log('Ошибка удаления изображения из хранилища:', error);
-        setProgress('Ошибка удаления изображения');
+        console.log('Ошибка удаления изображений из хранилища:', error);
+        setProgress('Ошибка удаления изображений');
       });
-    let updatedArray = null
+
+    let updatedArray = null;
     if (folderPath !== 'product') {
-     updatedArray = array.filter((item) => item !== url);
+      updatedArray = array.filter((item) => item !== url);
     } else {
-     updatedArray = array.filter((item) => item.img !== url);
+      updatedArray = array.filter((item) => item.img !== url);
     }
 
+    // Удаляем товар из базы данных
     firestore
       .collection('data')
       .doc('RvwOmHHKyWpAChE4gdTQ')
@@ -154,12 +273,13 @@ export default function Setting() {
         [folderPath]: updatedArray,
       })
       .then(() => {
-        console.log('Изображение удалено из массива в Firebase');
+        console.log('Изображения удалены из массива в Firestore');
       })
       .catch((error) => {
-        console.log('Ошибка удаления изображения из массива в Firebase:', error);
+        console.log('Ошибка удаления изображений из массива в Firestore:', error);
       });
   };
+
 
 
   // фильт для отображения товаров
@@ -331,7 +451,7 @@ export default function Setting() {
               <div key={index} className="setting-product__box-items">
                 <div className="setting-product__box-item">
                   <div className='setting-product__box-item__picture'>
-                    <img className='setting-product__box-item__img' src={item.img} alt={item.img} />
+                    <img className='setting-product__box-item__img' src={item.img[0]} alt={item.img[0]} />
                   </div>
                   <div className='setting-product__box-item-info'>
                     <div className='setting-product__box-item-info__title'>{item.title}</div>
@@ -392,7 +512,8 @@ export default function Setting() {
 
 
           <div className="setting-product__inputs">
-            {editProduct ? '' : <input type="file" onChange={handleFileChange} />}
+            {editProduct ? '' : <input type="file" onChange={handleFileChange} multiple />}
+        
             {editProduct
               ?
               <input className="setting-product__input" name="title" onChange={(e) => handleEditInputChange(e, editProduct)} value={editProduct.title} type="text" placeholder="Назва товару" />
