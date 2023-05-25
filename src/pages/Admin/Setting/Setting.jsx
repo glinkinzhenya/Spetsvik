@@ -14,6 +14,7 @@ export default function Setting() {
   const [progressCarousel, setProgressCarousel] = useState(false);
   const [progressProduct, setProgressProduct] = useState(false);
   const [image, setImage] = useState(null);
+  const [searchQuery, setSearchQuery] = useState('');
 
   const categoryArray = [
     'халати рабочі',
@@ -187,6 +188,15 @@ export default function Setting() {
     } else {
       return item.category === selectedCategory;
     }
+  }).filter((item) => {
+    const lowerCaseSearchQuery = searchQuery.toLowerCase();
+    const lowerCaseTitle = item.title.toLowerCase();
+    const lowerCaseArticle = item.article.toLowerCase();
+
+    return (
+      lowerCaseTitle.includes(lowerCaseSearchQuery) ||
+      lowerCaseArticle.includes(lowerCaseSearchQuery)
+    );
   });
 
   const displayedProducts = showPopular
@@ -253,6 +263,12 @@ export default function Setting() {
     // После сохранения изменений, можно сбросить editProduct или выполнить другие необходимые действия
   };
 
+  const handleSearchInputChange = (event) => {
+    setSearchQuery(event.target.value);
+  };
+
+
+
   return (
     <RequireAdminAuth>
       <div className="setting">
@@ -311,7 +327,7 @@ export default function Setting() {
               Показати популярні
             </label>
 
-            <input className='setting-product__search' type="text" name="search" placeholder='Пошук товара/артікля'/>
+            <input className='setting-product__search' value={searchQuery} onChange={handleSearchInputChange} type="text" name="search" placeholder='Пошук товара/артікля'/>
 
           </div>
 
