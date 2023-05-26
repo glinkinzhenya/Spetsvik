@@ -1,7 +1,6 @@
 import React from 'react';
-// import ProductsMap from '../../../../components/ProductsMap';
-import './WorkRobes.css';
 import ProductsMap from '../../../../components/ProductsMap';
+import './WorkRobes.css';
 
 export default function WorkRobes() {
 
@@ -26,14 +25,6 @@ export default function WorkRobes() {
           </div>
         </div>
 
-        {/* <div className='workRobes-container container'>
-          <h2 className='workRobes-mainTitle'>WorkRobes</h2>
-        </div> */}
-
-        {/* <div className='workRobes-baner'>
-          <img className='workRobes-baner__image' src="./img/jackets.jpg" alt="" />
-        </div> */}
-
         <div className='workRobes-container container'>
           <h3 className='workRobes-secondaryTitle'>Халати робочі</h3>
 
@@ -51,7 +42,7 @@ export default function WorkRobes() {
               <div className='workRobes-box__left-item'>ФИЛЬТРЫ 10</div>
             </div>
 
-            <ProductsMap category='халати робочі' />
+            <ProductsMap category='халати робочі' popular={true} />
 
           </div>
         </div>

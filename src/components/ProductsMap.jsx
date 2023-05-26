@@ -2,19 +2,26 @@ import React, { useContext, useEffect, useState } from 'react';
 import { Context } from '../Contex';
 import './ProductsMap.css';
 
-export default function ProductsMap({ category }) {
+export default function ProductsMap({ category, popular }) {
     const [arrayProduct, setArrayProduct] = useState([]);
     const { mainData } = useContext(Context);
 
     useEffect(() => {
         if (mainData) {
-            const filteredProducts = mainData[0].product.filter(
+            let filteredProducts = mainData[0].product.filter(
                 (item) => item.category === category
             );
+
+            if (popular) {
+                filteredProducts = filteredProducts.filter(
+                    (item) => item.popular
+                );
+            }
+
             setArrayProduct(filteredProducts);
         }
-    }, [mainData, category]);
-    console.log(arrayProduct);
+    }, [mainData, category, popular]);
+
     return (
         <div className='productsMap-box'>
             {arrayProduct.map((item, index) => (
