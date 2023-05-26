@@ -1,10 +1,10 @@
 import React from 'react';
 // import ProductsMap from '../../../../components/ProductsMap';
-import './WorkRobes.css';
+import './WorkRobes2.css';
 import ProductsMap from '../../../../../components/ProductsMap';
-import FilterProducts from './FilterProducts/FilterProducts';
+import FilterProducts from '../../WorkRobes/FilterProducts/FilterProducts';
 
-export default function WorkRobes() {
+export default function WorkRobes2() {
 
   return (
     <div className='workRobes'>
