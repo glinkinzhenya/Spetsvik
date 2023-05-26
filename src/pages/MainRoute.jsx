@@ -20,6 +20,7 @@ import WorkRobes from './Main/Products/WorkRobes/WorkRobes';
 import FireCabinets from './Main/Products/FireSafety/FireCabinets/FireCabinets';
 import FireHoses from './Main/Products/FireSafety/FireHoses/FireHoses';
 import MilitaryEquipment from './Main/Products/MilitaryEquipment/MilitaryEquipment';
+import MedicalClothes from './Main/Products/SpetsCloth/MedicalClothes/MedicalClothes';
 
 export default function MainRoute() {
   return (
@@ -30,8 +31,12 @@ export default function MainRoute() {
         <Route path='/setting' element={<Setting />} />
         <Route path='/about' element={<About />} />
         <Route path='/products' element={<Products />} />
+
         <Route path='/spets-cloth' element={<SpetsCloth />} />
         <Route path='/work-robes' element={<WorkRobes />} />
+        <Route path='/medical-clothes' element={<MedicalClothes />} />
+
+
         <Route path='/shoes' element={<Shoes />} />
         <Route path='/individual-protection' element={<IndividualProtection />} />
 

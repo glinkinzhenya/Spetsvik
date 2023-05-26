@@ -36,15 +36,14 @@ export default function SpetsCloth() {
 
           <div className='spetsCloth-box'>
 
-            
-          <a className='spetsCloth-box__item' href="/work-robes">
+
+            <a className='spetsCloth-box__item' href="/work-robes">
               <div className='spetsCloth-box__item-picture'>
                 <img className='spetsCloth-box__item-image' src="./img/stock_portrait.jpeg" alt="" />
               </div>
               <div className='spetsCloth-box__item-bg'>
                 <div className='spetsCloth-box__item-text'>ХАЛАТИ РОБОЧІ</div>
               </div>
-
             </a>
 
             <div className='spetsCloth-box__item'>
@@ -101,7 +100,7 @@ export default function SpetsCloth() {
                 <div className='spetsCloth-box__item-text'>ГОЛОВНІ УБОРИ</div>
               </div>
             </div>
-            
+
 
             <a className='spetsCloth-box__item' href="/individual-protection">
               <div className='spetsCloth-box__item-picture'>

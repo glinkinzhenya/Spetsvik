@@ -1,7 +1,7 @@
 import React from 'react';
 import './MilitaryEquipment.css';
 import News from '../../News/News';
-// import PopularGoodsmilitaryEquipment from './PopularGoodsmilitaryEquipment/PopularGoodsmilitaryEquipment';
+import PopularGoodsMilitaryEquipment from './PopularGoodsMilitaryEquipment/PopularGoodsMilitaryEquipment';
 
 export default function MilitaryEquipment() {
 
@@ -142,10 +142,127 @@ export default function MilitaryEquipment() {
               </div>
             </a>
 
+            <a className='militaryEquipment-box__item' href="/fire-hoses">
+              <div className='militaryEquipment-box__item-picture'>
+                <img className='militaryEquipment-box__item-image' src="./img/MilitaryEquipment13.png" alt="" />
+              </div>
+              <div className='militaryEquipment-box__item-bg'>
+                <div className='militaryEquipment-box__item-text'>ПОНЧО</div>
+              </div>
+            </a>
+
+            <a className='militaryEquipment-box__item' href="/fire-hoses">
+              <div className='militaryEquipment-box__item-picture'>
+                <img className='militaryEquipment-box__item-image' src="./img/MilitaryEquipment14.png" alt="" />
+              </div>
+              <div className='militaryEquipment-box__item-bg'>
+                <div className='militaryEquipment-box__item-text'>РЕМЕНІ, ПІДТЯЖКИ</div>
+              </div>
+            </a>
+
+            <a className='militaryEquipment-box__item' href="/fire-hoses">
+              <div className='militaryEquipment-box__item-picture'>
+                <img className='militaryEquipment-box__item-image' src="./img/MilitaryEquipment15.jpg" alt="" />
+              </div>
+              <div className='militaryEquipment-box__item-bg'>
+                <div className='militaryEquipment-box__item-text'>РОЗВАНТАЖУВАЛЬНІ СИСТЕМИ</div>
+              </div>
+            </a>
+
+            <a className='militaryEquipment-box__item' href="/fire-hoses">
+              <div className='militaryEquipment-box__item-picture'>
+                <img className='militaryEquipment-box__item-image' src="./img/MilitaryEquipment16.png" alt="" />
+              </div>
+              <div className='militaryEquipment-box__item-bg'>
+                <div className='militaryEquipment-box__item-text'>РУКАВИЦІ</div>
+              </div>
+            </a>
+
+            <a className='militaryEquipment-box__item' href="/fire-hoses">
+              <div className='militaryEquipment-box__item-picture'>
+                <img className='militaryEquipment-box__item-image' src="./img/MilitaryEquipment17.png" alt="" />
+              </div>
+              <div className='militaryEquipment-box__item-bg'>
+                <div className='militaryEquipment-box__item-text'>РЮКЗАКИ, СУМКИ, БАУЛИ</div>
+              </div>
+            </a>
+
+            <a className='militaryEquipment-box__item' href="/fire-hoses">
+              <div className='militaryEquipment-box__item-picture'>
+                <img className='militaryEquipment-box__item-image' src="./img/MilitaryEquipment18.png" alt="" />
+              </div>
+              <div className='militaryEquipment-box__item-bg'>
+                <div className='militaryEquipment-box__item-text'>СВЕТРИ, ФЛІСИ</div>
+              </div>
+            </a>
+
+            <a className='militaryEquipment-box__item' href="/fire-hoses">
+              <div className='militaryEquipment-box__item-picture'>
+                <img className='militaryEquipment-box__item-image' src="./img/MilitaryEquipment19.png" alt="" />
+              </div>
+              <div className='militaryEquipment-box__item-bg'>
+                <div className='militaryEquipment-box__item-text'>!!! НЕТ НАЗВАНИЯ !!!</div>
+              </div>
+            </a>
+
+            <a className='militaryEquipment-box__item' href="/fire-hoses">
+              <div className='militaryEquipment-box__item-picture'>
+                <img className='militaryEquipment-box__item-image' src="./img/MilitaryEquipment20.png" alt="" />
+              </div>
+              <div className='militaryEquipment-box__item-bg'>
+                <div className='militaryEquipment-box__item-text'>СОРОЧКИ, КІТЕЛІ</div>
+              </div>
+            </a>
+
+            <a className='militaryEquipment-box__item' href="/fire-hoses">
+              <div className='militaryEquipment-box__item-picture'>
+                <img className='militaryEquipment-box__item-image' src="./img/MilitaryEquipment21.png" alt="" />
+              </div>
+              <div className='militaryEquipment-box__item-bg'>
+                <div className='militaryEquipment-box__item-text'>ТЕРМОБІЛИЗНА</div>
+              </div>
+            </a>
+
+            <a className='militaryEquipment-box__item' href="/fire-hoses">
+              <div className='militaryEquipment-box__item-picture'>
+                <img className='militaryEquipment-box__item-image' src="./img/MilitaryEquipment22.jpg" alt="" />
+              </div>
+              <div className='militaryEquipment-box__item-bg'>
+                <div className='militaryEquipment-box__item-text'>ФУТБОЛКИ</div>
+              </div>
+            </a>
+
+            <a className='militaryEquipment-box__item' href="/fire-hoses">
+              <div className='militaryEquipment-box__item-picture'>
+                <img className='militaryEquipment-box__item-image' src="./img/MilitaryEquipment23.png" alt="" />
+              </div>
+              <div className='militaryEquipment-box__item-bg'>
+                <div className='militaryEquipment-box__item-text'>ШАРФ-ТРУБИ</div>
+              </div>
+            </a>
+
+            <a className='militaryEquipment-box__item' href="/fire-hoses">
+              <div className='militaryEquipment-box__item-picture'>
+                <img className='militaryEquipment-box__item-image' src="./img/MilitaryEquipment24.png" alt="" />
+              </div>
+              <div className='militaryEquipment-box__item-bg'>
+                <div className='militaryEquipment-box__item-text'>ШКАРПЕТКИ</div>
+              </div>
+            </a>
+
+            <a className='militaryEquipment-box__item' href="/fire-hoses">
+              <div className='militaryEquipment-box__item-picture'>
+                <img className='militaryEquipment-box__item-image' src="./img/MilitaryEquipment25.jpg" alt="" />
+              </div>
+              <div className='militaryEquipment-box__item-bg'>
+                <div className='militaryEquipment-box__item-text'>ШОРТИ</div>
+              </div>
+            </a>
+
           </div>
         </div>
       </div>
-      {/* <PopularGoodsmilitaryEquipment /> */}
+      <PopularGoodsMilitaryEquipment />
       <News />
     </>
   );
