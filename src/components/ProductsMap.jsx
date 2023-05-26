@@ -51,7 +51,7 @@ export default function ProductsMap({ category, popular }) {
                     </div>
                 ))}
             </div>
-            {productWindow && <div className='product-window__blur'></div>}
+            {productWindow && <div className='product-window__blur' onClick={touchProductClose}></div>}
             {productWindow && <div className='product-window'>
                 <img onClick={touchProductClose} className='product-window__close' src="./img/close.png" alt="" />
                 <div className='product-window__gallary'>
