@@ -21,6 +21,7 @@ import FireCabinets from './Main/Products/FireSafety/FireCabinets/FireCabinets';
 import FireHoses from './Main/Products/FireSafety/FireHoses/FireHoses';
 import MilitaryEquipment from './Main/Products/MilitaryEquipment/MilitaryEquipment';
 import MedicalClothes from './Main/Products/SpetsCloth/MedicalClothes/MedicalClothes';
+import InsulatedOveralls from './Main/Products/SpetsCloth/InsulatedOveralls/InsulatedOveralls';
 
 export default function MainRoute() {
   return (
@@ -35,6 +36,8 @@ export default function MainRoute() {
         <Route path='/spets-cloth' element={<SpetsCloth />} />
         <Route path='/work-robes' element={<WorkRobes />} />
         <Route path='/medical-clothes' element={<MedicalClothes />} />
+        <Route path='/insulated-overalls' element={<InsulatedOveralls />} />
+
 
 
         <Route path='/shoes' element={<Shoes />} />
