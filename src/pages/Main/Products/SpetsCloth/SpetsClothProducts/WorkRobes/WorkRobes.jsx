@@ -1,8 +1,7 @@
 import React from 'react';
 import './WorkRobes.css';
-import ProductsMap from '../../../../components/ProductsMap';
-import FilterProducts from '../FilterProducts/FilterProducts';
-// import FilterProducts from '../FilterProducts/FilterProducts';
+import ProductsMap from '../../../../../../components/ProductsMap';
+import FilterProducts from '../../../FilterProducts/FilterProducts';
 
 export default function WorkRobes() {
 

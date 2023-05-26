@@ -16,12 +16,12 @@ import Shoes from './Main/Products/Shoes/Shoes';
 import Shevrons from './Main/Products/Shevrons/Shevrons';
 import FireExtinguishers from './Main/Products/FireSafety/FireExtinguishers/FireExtinguishers';
 import Test from './Main/test/Test';
-import WorkRobes from './Main/Products/WorkRobes/WorkRobes';
+import WorkRobes from './Main/Products/SpetsCloth/SpetsClothProducts/WorkRobes/WorkRobes';
 import FireCabinets from './Main/Products/FireSafety/FireCabinets/FireCabinets';
 import FireHoses from './Main/Products/FireSafety/FireHoses/FireHoses';
 import MilitaryEquipment from './Main/Products/MilitaryEquipment/MilitaryEquipment';
-import MedicalClothes from './Main/Products/SpetsCloth/MedicalClothes/MedicalClothes';
-import InsulatedOveralls from './Main/Products/SpetsCloth/InsulatedOveralls/InsulatedOveralls';
+import MedicalClothes from './Main/Products/SpetsCloth/SpetsClothProducts/MedicalClothes/MedicalClothes';
+import InsulatedOveralls from './Main/Products/SpetsCloth/SpetsClothProducts/InsulatedOveralls/InsulatedOveralls';
 
 export default function MainRoute() {
   return (
