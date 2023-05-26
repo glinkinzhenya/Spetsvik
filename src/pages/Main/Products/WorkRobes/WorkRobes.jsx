@@ -1,13 +1,12 @@
 import React from 'react';
-import ProductsMap from '../../../../components/ProductsMap';
 import './WorkRobes.css';
-import FilterProducts from './FilterProducts/FilterProducts';
-// import FilterProducts from './FilterProducts/FilterProducts';
+import ProductsMap from '../../../../components/ProductsMap';
+import FilterProducts from '../FilterProducts/FilterProducts';
+// import FilterProducts from '../FilterProducts/FilterProducts';
 
 export default function WorkRobes() {
 
   return (
-    <>
       <div className='workRobes'>
         <div className='boxPath'>
           <div className='boxPath-container container'>
@@ -39,7 +38,5 @@ export default function WorkRobes() {
           </div>
         </div>
       </div>
-
-    </>
   );
 }

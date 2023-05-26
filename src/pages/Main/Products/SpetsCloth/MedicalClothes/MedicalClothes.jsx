@@ -1,8 +1,7 @@
 import React from 'react';
-// import ProductsMap from '../../../../components/ProductsMap';
 import './MedicalClothes.css';
 import ProductsMap from '../../../../../components/ProductsMap';
-import FilterProducts from './FilterProducts/FilterProducts';
+import FilterProducts from '../../FilterProducts/FilterProducts';
 
 export default function MedicalClothes() {
 
@@ -27,7 +26,7 @@ export default function MedicalClothes() {
       </div>
 
       <div className='workRobes-container container'>
-        <h3 className='workRobes-secondaryTitle'>Халати робочі</h3>
+        <h3 className='workRobes-secondaryTitle'>Медичний, кухарський, </h3>
 
         <div className='workRobes-box'>
 

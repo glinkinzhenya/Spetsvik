@@ -46,7 +46,7 @@ export default function SpetsCloth() {
               </div>
             </a>
 
-            <div className='spetsCloth-box__item'>
+            <a className='spetsCloth-box__item' href="/medical-clothes">
               <div className='spetsCloth-box__item-picture'>
                 <img className='spetsCloth-box__item-image' src="./img/stock_medical.jpeg" alt="" />
               </div>
@@ -54,7 +54,9 @@ export default function SpetsCloth() {
                 <div className='spetsCloth-box__item-text'>МЕДИЧНИЙ, КУХАРСЬКИЙ,
                   КЛІНІНГОВИЙ ОДЯГ</div>
               </div>
-            </div>
+            </a>
+
+
 
             <div className='spetsCloth-box__item'>
               <div className='spetsCloth-box__item-picture'>

@@ -1,8 +1,8 @@
 import React from 'react';
-// import ProductsMap from '../../../../components/ProductsMap';
 import './WorkRobes2.css';
 import ProductsMap from '../../../../../components/ProductsMap';
-import FilterProducts from '../../WorkRobes/FilterProducts/FilterProducts';
+import FilterProducts from '../../FilterProducts/FilterProducts';
+// import FilterProducts from '../../FilterProducts/FilterProducts';
 
 export default function WorkRobes2() {
 
@@ -33,7 +33,7 @@ export default function WorkRobes2() {
 
           <FilterProducts />
 
-          <ProductsMap category='халати робочі' />
+          <ProductsMap category='халати робочі' popular={true} />
 
         </div>
       </div>
