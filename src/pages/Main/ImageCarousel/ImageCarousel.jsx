@@ -15,7 +15,7 @@ export default function ImageCarousel() {
   });
 
   return (
-    <div className='imageCarouselCopy'>
+    <div className='imageCarousel'>
       <div className='image-carousel__bootstrap'>
         <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
           <div className="carousel-indicators">

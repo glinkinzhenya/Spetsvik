@@ -1,5 +1,3 @@
-
-
 .productsMap-box {
     padding: 20px;
     background-color: green;
@@ -13,7 +11,7 @@
 .productsMap-box-item {
     max-width: 300px;
     background-color: yellow;
-
+    cursor: pointer;
 }
 
 
@@ -42,4 +40,118 @@
     text-align: center;
     padding-bottom: 20px;
     background-color: grey;
+}
+
+.product-window__blur {
+    backdrop-filter: blur(10px);
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 9;
+}
+
+.product-window {
+    background-color: #ffffff;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 500px;
+    width: 1000px;
+    z-index: 10;
+    display: flex;
+}
+
+.product-window__close {
+    width: 30px;
+    height: 30px;
+    border: 0.5px solid white;
+    border-radius: 30px;
+    padding: 5px;
+    position: absolute;
+    z-index: 100;
+    top: -20px;
+    right: -20px;
+    background-color: rgba(0, 0, 0, 0.491);
+    cursor: pointer;
+}
+
+.product-window__gallary {
+    /* background-color: aquamarine; */
+    width: 100%;
+}
+
+.product-window__gallary-box {
+    background-color: red;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    padding: 5px;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.product-window__gallary-box-picture {
+    width: 100px;
+    height: 90%;
+}
+
+.product-window__gallary-box-img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.product-window__gallary__picture {
+    /* width: ; */
+    height: 400px;
+}
+
+.product-window__gallary__img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.product-window__gallary-indicators {
+    background-color: rgb(0, 0, 0);
+}
+
+.product-window__info {
+    /* background-color: orange; */
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+}
+
+.product-window__info-title {
+    color: black;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.product-window__info-price {
+    color: rgb(63, 63, 63);
+    font-size: 45px;
+    margin-top: 20px;
+}
+
+.product-window__info-description {
+    color: rgb(0, 0, 0);
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+.product-window__info-article {
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+}
+
+.product-window__info-line {
+    background-color: black;
+    height: 0.6px;
+    width: 100%;
 }
