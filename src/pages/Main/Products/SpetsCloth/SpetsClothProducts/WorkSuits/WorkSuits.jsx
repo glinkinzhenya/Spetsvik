@@ -21,12 +21,12 @@ export default function WorkSuits() {
           <div className='boxPath-container__arrow'>
             <img className='boxPath-container__arrow-image' src="./img/arrow-right.svg" alt="" />
           </div>
-          <a className='boxPath-container__text' href="/medical-clothes">Медичний, кухарський, клінінговий одяг</a>
+          <a className='boxPath-container__text' href="/medical-clothes">Костюми робочі</a>
         </div>
       </div>
 
       <div className='workRobes-container container'>
-        <h3 className='workRobes-secondaryTitle'>Медичний, кухарський, клінінговий одяг</h3>
+        <h3 className='workRobes-secondaryTitle'>Костюми робочі</h3>
 
         <div className='workRobes-box'>
 
