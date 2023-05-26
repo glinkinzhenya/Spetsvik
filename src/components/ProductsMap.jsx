@@ -12,8 +12,7 @@ export default function ProductsMap({ category, popular }) {
             let filteredProducts = mainData[0].product.filter(
                 (item) => item.category === category
             );
-
-            if (popular) {
+            if (popular === true) {
                 filteredProducts = filteredProducts.filter(
                     (item) => item.popular
                 );

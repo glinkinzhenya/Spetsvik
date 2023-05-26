@@ -28,7 +28,6 @@
 
 .productsMap-title {
     color: black;
-    background-color: violet;
     text-align: center;
     background-color: grey;
     padding-top: 20px;
@@ -36,7 +35,6 @@
 
 .productsMap-box__price {
     color: black;
-    background-color: red;
     text-align: center;
     padding-bottom: 20px;
     background-color: grey;
@@ -84,7 +82,6 @@
 }
 
 .product-window__gallary-box {
-    background-color: red;
     height: 100px;
     width: 100%;
     display: flex;

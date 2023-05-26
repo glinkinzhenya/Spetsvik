@@ -32,7 +32,7 @@ export default function MedicalClothes() {
 
           <FilterProducts />
 
-          <ProductsMap category='халати робочі' />
+          <ProductsMap category='халати робочі'/>
 
         </div>
       </div>

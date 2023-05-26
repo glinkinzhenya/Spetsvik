@@ -32,7 +32,7 @@ export default function WorkRobes() {
 
             <FilterProducts />
 
-            <ProductsMap category='халати робочі' popular={true} />
+            <ProductsMap category='халати робочі' />
 
           </div>
         </div>
