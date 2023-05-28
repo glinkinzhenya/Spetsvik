@@ -10,7 +10,7 @@
 
 .productsMap-box-item {
     max-width: 300px;
-    background-color: yellow;
+    /* background-color: yellow; */
     cursor: pointer;
 }
 
