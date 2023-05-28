@@ -1,5 +1,5 @@
 import React from 'react';
-import './InsulatedOveralls.css';
+// import './InsulatedOveralls.css';
 import ProductsMap from '../../../../../../components/ProductsMap';
 import FilterProducts from '../../../FilterProducts/FilterProducts';
 

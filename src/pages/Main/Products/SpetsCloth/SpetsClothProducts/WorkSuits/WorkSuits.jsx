@@ -1,5 +1,5 @@
 import React from 'react';
-import './WorkSuits.css';
+// import './WorkSuits.css';
 import ProductsMap from '../../../../../../components/ProductsMap';
 import FilterProducts from '../../../FilterProducts/FilterProducts';
 
