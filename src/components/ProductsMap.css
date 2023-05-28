@@ -3,18 +3,17 @@
     /* background-color: green; */
     display: grid;
     gap: 35px 35px;
-    grid-template-columns: repeat(4, 1fr);
+    /* grid-template-columns: repeat(4, 1fr); */
+    grid-template-columns: repeat(4, 233px);
     overflow-y: auto;
     width: 100%;
 }
 
 .productsMap-box-item {
     max-width: 300px;
-    background-color: yellow;
+    background-color: grey;
     cursor: pointer;
 }
-
-
 
 .productsMap-box__picture {
     height: 300px;
@@ -77,7 +76,6 @@
 }
 
 .product-window__gallary {
-    /* background-color: aquamarine; */
     width: 100%;
 }
 
@@ -103,7 +101,6 @@
 }
 
 .product-window__gallary__picture {
-    /* width: ; */
     height: 400px;
 }
 
@@ -118,7 +115,6 @@
 }
 
 .product-window__info {
-    /* background-color: orange; */
     height: 100%;
     width: 100%;
     padding: 20px;
