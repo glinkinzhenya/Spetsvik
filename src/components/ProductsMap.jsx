@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from 'react';
 import { Context } from '../Contex';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './ProductsMap.css';
-import { Button } from '@mui/material';
+import { Alert, Button, Snackbar } from '@mui/material';
 
 export default function ProductsMap({ category, popular }) {
     const [arrayProduct, setArrayProduct] = useState([]);
@@ -37,6 +37,20 @@ export default function ProductsMap({ category, popular }) {
         setProductWindow(false)
     };
 
+    const [open, setOpen] = useState(false);
+
+    const handleClick = () => {
+        setOpen(true);
+
+
+
+        
+    };
+
+    const handleClose = () => {
+        setOpen(false);
+    };
+
 
 
     return (
@@ -48,10 +62,10 @@ export default function ProductsMap({ category, popular }) {
                             <img className='productsMap-box__image' src={item.img[0]} alt='' />
                         </div>
                         <div className='productsMap-text'   >
- <div className='productsMap-title'>{item.title}</div>
-                        <div className='productsMap-box__price'>{item.price} грн</div>
+                            <div className='productsMap-title'>{item.title}</div>
+                            <div className='productsMap-box__price'>{item.price} грн</div>
                         </div>
-                       
+
                     </div>
                 ))}
             </div>
@@ -99,7 +113,12 @@ export default function ProductsMap({ category, popular }) {
                     <div className='product-window__info-line'></div>
                     <div className='product-window__info-price'>{product.price} грн.</div>
                     <div className='product-window__info-description'>{product.description} грн.</div>
-                    <Button style={{ backgroundColor: '#F07C00', marginTop: '20px' }} variant="contained">Додати до кошику</Button>
+                    <Button onClick={handleClick} style={{ backgroundColor: '#F07C00', marginTop: '20px', fontSize: '11px' }} variant="contained">Додати до кошику</Button>
+                    <Snackbar anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }} open={open} autoHideDuration={3000} onClose={handleClose}>
+                        <Alert onClose={handleClose} severity="success" sx={{ width: '100%', fontSize: '13px', height: '50px' }}>
+                            Товар додано до кошику
+                        </Alert>
+                    </Snackbar>
                 </div>
             </div>}
         </div>
