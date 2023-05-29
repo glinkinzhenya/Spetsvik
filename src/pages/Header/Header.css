@@ -359,7 +359,7 @@
 
     .header-category {
 
-        display: none !important;
+        /* display: none !important; */
         background-color: red;
     }
 
