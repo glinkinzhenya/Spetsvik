@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from 'react';
 import { Context } from '../Contex';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './ProductsMap.css';
+import { Button } from '@mui/material';
 
 export default function ProductsMap({ category, popular }) {
     const [arrayProduct, setArrayProduct] = useState([]);
@@ -95,7 +96,7 @@ export default function ProductsMap({ category, popular }) {
                     <div className='product-window__info-line'></div>
                     <div className='product-window__info-price'>{product.price} грн.</div>
                     <div className='product-window__info-description'>{product.description} грн.</div>
-
+                    <Button style={{ backgroundColor: '#F07C00', marginTop: '20px' }} variant="contained">Додати до кошику</Button>
                 </div>
             </div>}
         </div>
