@@ -55,14 +55,8 @@ export default function ProductsMap({ category, popular }) {
             {productWindow && <div className='product-window'>
                 <img onClick={touchProductClose} className='product-window__close' src="./img/close.png" alt="" />
                 <div className='product-window__gallary'>
-                    <div className='image-carousel__bootstrap'>
+                    <div className='product-carousel__bootstrap'>
                         <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
-                            <div className="carousel-indicators">
-                                {product.img.map((item, index) => (
-                                    (index === 0) ? <button key={index} type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
-                                        : <button key={index} type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to={index} aria-label={index + 1}></button>
-                                ))}
-                            </div>
                             <div className="carousel-inner">
                                 {product.img.map((item, index) => (
                                     (index === 0) ?
@@ -76,11 +70,11 @@ export default function ProductsMap({ category, popular }) {
                                 ))}
                             </div>
                             <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                                <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span className="carousel-control-prev-icon carousel-control-prev-icon-color" aria-hidden="true"></span>
                                 <span className="visually-hidden">Previous</span>
                             </button>
                             <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                                <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span className="carousel-control-next-icon-color carousel-control-next-icon" aria-hidden="true"></span>
                                 <span className="visually-hidden">Next</span>
                             </button>
                         </div>
