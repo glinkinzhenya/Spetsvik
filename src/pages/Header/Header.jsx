@@ -1,8 +1,8 @@
 import React, { useContext, useState, useEffect } from 'react';
-import './Header.css';
 import { Context } from '../../Contex';
 import Burger from './ComponentHeader/Burger/Burger';
 import BasicMenu from './ComponentHeader/BasicMenu/BasicMenu';
+import './Header.css';
 
 export default function Header() {
   const [busketNumber, setBusketNumber] = useState(0);
