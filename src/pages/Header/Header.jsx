@@ -1,14 +1,30 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useState, useEffect } from 'react';
 import './Header.css';
 import { Context } from '../../Contex';
 import Burger from './ComponentHeader/Burger/Burger';
 import BasicMenu from './ComponentHeader/BasicMenu/BasicMenu';
 
 export default function Header() {
-
+  const [busketNumber, setBusketNumber] = useState(0);
   const { cartItems2 } = useContext(Context);
 
-  console.log(cartItems2);
+  useEffect(() => {
+    const loadCartItems = async () => {
+      const cartItems = await localStorage.getItem("cartItems");
+      if (cartItems) {
+        setBusketNumber(JSON.parse(cartItems).length);
+      }
+    };
+    loadCartItems();
+  }, []);
+
+  const [busketNumberCorrect, setBusketNumberCorrect] = useState(0);
+
+  useEffect(() => {
+    setBusketNumberCorrect(cartItems2.length)
+    setBusketNumber(busketNumber + cartItems2.length - busketNumberCorrect)
+  }, [cartItems2]);
+
 
   const [isPulseButtonActive, setIsPulseButtonActive] = useState(false);
 
@@ -100,8 +116,9 @@ export default function Header() {
           <div className='burger-search__picture'>
             <img className='burger-search__image' src="./img/logo-search.svg" alt="logo-telephone" />
           </div>
-          <div onClick={touchProduct} className='burger-search__picture'>
-            <img className='burger-search__image' src="./img/logo-basket.svg" alt="logo-telephone" />
+          <div onClick={touchProduct} className='burger-search__basket'>
+            <img className='burger-search__basket-image' src="./img/logo-basket.svg" alt="logo-telephone" />
+            {busketNumber > 0 ? <div className='burger-basket__number'>{busketNumber}</div> : ''}
           </div>
           <Burger />
         </div>

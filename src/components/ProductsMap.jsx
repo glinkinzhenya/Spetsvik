@@ -42,7 +42,6 @@ export default function ProductsMap({ category, popular }) {
 
     const handleClick = (item) => {
         setOpen(true);
-        console.log(item);
         const updatedCartItems = [...cartItems, item];
         setCartItems(updatedCartItems);
         localStorage.setItem('cartItems', JSON.stringify(updatedCartItems));
