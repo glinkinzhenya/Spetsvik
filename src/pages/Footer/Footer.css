@@ -6,11 +6,14 @@
 .footer-primary {
     display: grid;
     grid-template-columns: 1fr 250px 250px 1fr;
+    grid-template-areas:
+        "left catalog info right";
     gap: 40px;
     width: 100%;
 }
 
 .footer-left {
+    grid-area: left;
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -29,8 +32,8 @@
     width: 235px;
 }
 
-.footer-catalog,
-.footer-info {
+.footer-catalog {
+    grid-area: catalog;
     padding-top: 10px;
     padding-bottom: 10px;
     color: white;
@@ -39,6 +42,20 @@
     flex-direction: column;
     width: 200px;
 }
+
+.footer-info {
+    grid-area: info;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    width: 200px;
+}
+
+
+
 
 .footer-catalog__title,
 .footer-info__title {
@@ -60,6 +77,7 @@
 /* <CategoriesServises /> */
 
 .footer-right {
+    grid-area: right;
     /* padding-top: 10px; */
     /* padding-bottom: 10px; */
     display: flex;
@@ -102,6 +120,7 @@
 }
 
 .footer-secondary {
+    width: 100%;
     display: flex;
     gap: 20px;
     justify-content: space-between;
@@ -131,8 +150,8 @@
 }
 
 .footer-secondary__telephone-image {
-width: 30px;
-margin-right: 10px;
+    width: 30px;
+    margin-right: 10px;
 }
 
 
@@ -146,6 +165,10 @@ margin-right: 10px;
     color: white;
 }
 
+/* $xl: 1200px;
+$lg: 992px;
+$md: 768px;
+$sm: 576px; */
 
 
 
