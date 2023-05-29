@@ -38,18 +38,26 @@ export default function ProductsMap({ category, popular }) {
     };
 
     const [open, setOpen] = useState(false);
+    const [cartItems, setCartItems] = useState([]);
 
-    const handleClick = () => {
+    const handleClick = (item) => {
         setOpen(true);
-
-
-
-        
+        console.log(item);
+        const updatedCartItems = [...cartItems, item];
+        setCartItems(updatedCartItems);
+        localStorage.setItem('cartItems', JSON.stringify(updatedCartItems));
     };
 
     const handleClose = () => {
         setOpen(false);
     };
+
+    useEffect(() => {
+        const storedCartItems = localStorage.getItem('cartItems');
+        if (storedCartItems) {
+            setCartItems(JSON.parse(storedCartItems));
+        }
+    }, []);
 
 
 
@@ -100,7 +108,7 @@ export default function ProductsMap({ category, popular }) {
 
                     <div className='product-window__gallary-box'>
                         {product.img.map((item, index) => (
-                            <div className='product-window__gallary-box-picture'>
+                            <div key={index} className='product-window__gallary-box-picture'>
                                 <img className='product-window__gallary-box-img' src={item} alt='' />
                             </div>
                         ))}
@@ -113,7 +121,7 @@ export default function ProductsMap({ category, popular }) {
                     <div className='product-window__info-line'></div>
                     <div className='product-window__info-price'>{product.price} грн.</div>
                     <div className='product-window__info-description'>{product.description} грн.</div>
-                    <Button onClick={handleClick} style={{ backgroundColor: '#F07C00', marginTop: '20px', fontSize: '11px' }} variant="contained">Додати до кошику</Button>
+                    <Button onClick={() => handleClick(product)} style={{ backgroundColor: '#F07C00', marginTop: '20px', fontSize: '11px' }} variant="contained">Додати до кошику</Button>
                     <Snackbar anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }} open={open} autoHideDuration={3000} onClose={handleClose}>
                         <Alert onClose={handleClose} severity="success" sx={{ width: '100%', fontSize: '13px', height: '50px' }}>
                             Товар додано до кошику
