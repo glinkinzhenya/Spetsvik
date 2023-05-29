@@ -94,7 +94,11 @@
 
 .setting-product__box {
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
+    max-height: 660px;
+    /* max-height: 400px; */
+    overflow-y: auto;
 }
 
 .setting-product__input {
@@ -170,6 +174,7 @@
 
 .setting-product__flex {
     display: flex;
+
     gap: 10px;
 }
 
