@@ -1,6 +1,6 @@
 .productsMap-box {
     padding: 20px;
-    background-color: #1E1E1E;
+    background-color: #0C0C0C;
     display: grid;
     gap: 35px 35px;
     /* grid-template-columns: repeat(4, 1fr); */
@@ -12,9 +12,6 @@
 
 .productsMap-box-item {
     max-width: 300px;
-    /* background-color: yellow; */
-    background-color: grey;
-
     cursor: pointer;
 }
 
@@ -28,18 +25,22 @@
     object-fit: cover;
 }
 
+.productsMap-text {
+    background-color: #232323;
+}
+
 .productsMap-title {
-    color: black;
+    color: white;
+    font-size: 20px;
     text-align: center;
-    background-color: grey;
     padding-top: 20px;
 }
 
 .productsMap-box__price {
-    color: black;
+    color: white;
+    font-size: 20px;
     text-align: center;
     padding-bottom: 20px;
-    background-color: grey;
 }
 
 .product-window__blur {
@@ -139,6 +140,8 @@
     color: rgb(0, 0, 0);
     margin-top: 20px;
     font-size: 15px;
+    overflow-y: auto;
+    height: 267px;
 }
 
 .product-window__info-article {
