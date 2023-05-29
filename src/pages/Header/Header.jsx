@@ -16,6 +16,16 @@ export default function Header() {
   const pulseButtonIconClasses = `pulse-button-icon ${isPulseButtonActive ? '' : 'pulse-button-icon_bottom opacity-image'}`;
   const headerBlack = `header-black ${isPulseButtonActive ? 'header-black__active' : ''}`;
 
+
+  const [productWindow, setProductWindow] = useState(false);
+  const touchProduct = () => {
+
+    setProductWindow(true)
+  };
+  const touchProductClose = () => {
+    setProductWindow(false)
+  };
+
   return (
     <div className='header'>
       <div onClick={handlePulseButtonClick} className={headerBlack}></div>
@@ -85,7 +95,7 @@ export default function Header() {
           <div className='burger-search__picture'>
             <img className='burger-search__image' src="./img/logo-search.svg" alt="logo-telephone" />
           </div>
-          <div className='burger-search__picture'>
+          <div onClick={touchProduct} className='burger-search__picture'>
             <img className='burger-search__image' src="./img/logo-basket.svg" alt="logo-telephone" />
           </div>
           <Burger />
@@ -118,6 +128,14 @@ export default function Header() {
         <img className="pulse-button-icon_image" src="./img/telegram-color.svg" alt="" />
         <img className="pulse-button-icon_image" src="./img/viber-color.svg" alt="" />
       </div>
+
+
+      {productWindow && <div className='product-window__blur' onClick={touchProductClose}></div>}
+      {productWindow && <div className='burger-basket'>
+        <img onClick={touchProductClose} className='product-window__close' src="./img/close.png" alt="" />
+
+
+      </div>}
 
     </div >
   );
