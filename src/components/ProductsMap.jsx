@@ -6,7 +6,7 @@ import { Alert, Button, Snackbar } from '@mui/material';
 
 export default function ProductsMap({ category, popular }) {
     const [arrayProduct, setArrayProduct] = useState([]);
-    const { mainData } = useContext(Context);
+    const { mainData, cartItems2, setCartItems2 } = useContext(Context);
 
     useEffect(() => {
         if (mainData) {
@@ -46,7 +46,12 @@ export default function ProductsMap({ category, popular }) {
         const updatedCartItems = [...cartItems, item];
         setCartItems(updatedCartItems);
         localStorage.setItem('cartItems', JSON.stringify(updatedCartItems));
+
+
+        setCartItems([...cartItems, item]);
+        setCartItems2([...cartItems2, item]);
     };
+    console.log(cartItems2);
 
     const handleClose = () => {
         setOpen(false);

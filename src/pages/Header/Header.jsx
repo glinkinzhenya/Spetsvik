@@ -1,9 +1,14 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import './Header.css';
+import { Context } from '../../Contex';
 import Burger from './ComponentHeader/Burger/Burger';
 import BasicMenu from './ComponentHeader/BasicMenu/BasicMenu';
 
 export default function Header() {
+
+  const { cartItems2 } = useContext(Context);
+
+  console.log(cartItems2);
 
   const [isPulseButtonActive, setIsPulseButtonActive] = useState(false);
 

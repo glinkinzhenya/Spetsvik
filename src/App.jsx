@@ -6,6 +6,9 @@ import { firestore } from './firebase';
 import DeleteButton from './pages/Admin/DeleteAdmin';
 
 export default function App() {
+
+  const [cartItems2, setCartItems2] = useState([]);
+
   const [data2, setData] = useState(null);
 
   useEffect(() => {
@@ -29,7 +32,7 @@ export default function App() {
   const hasAuth = localStorage.getItem('auth') !== null;
 
   return (
-    <Context.Provider value={{ mainData }}>
+    <Context.Provider value={{ mainData, cartItems2, setCartItems2 }}>
       <BrowserRouter>
         <Routes>
           <Route path='/*' element={<MainRoute />} />
