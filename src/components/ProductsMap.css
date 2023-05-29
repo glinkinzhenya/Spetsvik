@@ -1,6 +1,6 @@
 .productsMap-box {
     padding: 20px;
-    background-color: #232323;
+    background-color: black;
     display: grid;
     gap: 35px 35px;
     /* grid-template-columns: repeat(4, 1fr); */
