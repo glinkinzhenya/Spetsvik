@@ -34,7 +34,8 @@
 
 .workRobes-box {
     display: flex;
-    min-height: 100vh;
+    /* min-height: 100vh; */
+    height: 100vh;
     background-color: rgb(53, 52, 52);
 }
 

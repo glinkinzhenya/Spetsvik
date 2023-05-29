@@ -94,7 +94,11 @@
 
 .setting-product__box {
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
+    max-height: 660px;
+    /* max-height: 400px; */
+    overflow-y: auto;
 }
 
 .setting-product__input {
@@ -102,14 +106,17 @@
 }
 
 .setting-product__box-items {
+    padding: 2px;
     display: flex;
     flex-direction: column;
     gap: 10px;
     width: 100px;
+    border: #232323 solid 1px;
 }
 
 .setting-product__box-item__picture {
-    width: 100px;
+    /* width: 100px; */
+    width: 100%;
     height: 120px;
 }
 
@@ -170,6 +177,7 @@
 
 .setting-product__flex {
     display: flex;
+
     gap: 10px;
 }
 
