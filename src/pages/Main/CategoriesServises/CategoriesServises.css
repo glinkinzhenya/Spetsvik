@@ -166,6 +166,10 @@
             "servises2 servises3";
         gap: 30px;
     }
+
+    .categories-overalls {
+        height: 300px;
+    }
 }
 
 @media (max-width: 576.8px) {
