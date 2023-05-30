@@ -198,9 +198,40 @@ $sm: 576px; */
             "right";
     }
 
+    .footer-left {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+    }
+
+    .footer-left__text {
+    text-align: center;
+    }
+
     .footer-secondary {
         flex-direction: column;
     }
+
+    .footer-catalog {
+        align-items: center;
+    }
+    
+    .footer-info {
+        align-items: center;
+    }
+
+    .footer-right {
+        align-items: center;
+    }
+
+    .footer-right__item {
+        align-items: center;
+    }
+
+    .footer-right__item-address {
+     text-align: center;
+    }
+
 }
 
 
