@@ -110,6 +110,10 @@
         font-size: 20px;
     }
 
+    .news-wrapper {
+        gap: 10px;
+    }
+
     .news-map {
         grid-template-columns: repeat(2, 125px);
     }

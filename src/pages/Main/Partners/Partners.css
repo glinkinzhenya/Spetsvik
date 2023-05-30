@@ -64,7 +64,9 @@
 .wrapper-all {
     display: flex;
     gap: 20px;
-    width: 200%;
+    /* width: 200%; */
+    width: 2500px;
+    height: 110px;
     animation: marquee-infinite 20s linear infinite;
 }
 
