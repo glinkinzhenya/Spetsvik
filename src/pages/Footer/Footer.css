@@ -42,6 +42,7 @@
     gap: 10px;
     flex-direction: column;
     width: 200px;
+    /* background-color: red; */
 }
 
 .footer-info {
@@ -53,6 +54,7 @@
     gap: 10px;
     flex-direction: column;
     width: 200px;
+    /* background-color: green; */
 }
 
 .footer-catalog__title,
@@ -190,10 +192,11 @@ $sm: 576px; */
 @media (max-width: 576px) {
 
        .footer-primary {
+        gap: 20px;
         grid-template-columns: 1fr;
         grid-template-areas:
             "catalog"
-             "info"
+            "info"
             "left"
             "right";
     }
@@ -214,10 +217,12 @@ $sm: 576px; */
 
     .footer-catalog {
         align-items: center;
+        /* max-width: 200px; */
     }
     
     .footer-info {
         align-items: center;
+        /* max-width: 200px; */
     }
 
     .footer-right {
