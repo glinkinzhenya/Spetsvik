@@ -85,6 +85,14 @@
 }
 
 @media (max-width: 768px) {
+
+    .news-title {
+        text-align: center;
+        margin-bottom: 20px;
+        margin-left: 0px;
+        font-size: 30px;
+    }
+
     .news-map {
         grid-template-columns: repeat(2, 150px);
         justify-content: space-around;
@@ -97,6 +105,10 @@
 }
 
 @media (max-width: 576.8px) {
+    .news-title {
+        font-size: 20px;
+    }
+
     .news-map {
         grid-template-columns: repeat(2, 100px);
         justify-content: space-around;

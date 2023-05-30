@@ -186,4 +186,13 @@
             "servises3";
         gap: 20px;
     }
+
+    .categories-overalls__text,
+.categories-box__item-text {
+    font-size: 20px;
+}
+
+.servises-text {
+    font-size: 20px;
+}
 }
