@@ -19,8 +19,10 @@
 }
 
 .image-carousel__img {
-    height: auto;
+    /* height: auto; */
+    height: 100%;
     width: 100%;
+    object-fit: cover;
 }
 
 .carousel-control-next-icon {
