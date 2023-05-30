@@ -3,9 +3,11 @@ import { Context } from '../../Contex';
 import Burger from './ComponentHeader/Burger/Burger';
 import BasicMenu from './ComponentHeader/BasicMenu/BasicMenu';
 import './Header.css';
+import { TextField } from '@mui/material';
 
 export default function Header() {
   const [busketNumber, setBusketNumber] = useState(0);
+  const [busket, setBusket] = useState([]);
   const { cartItems2 } = useContext(Context);
 
   useEffect(() => {
@@ -13,6 +15,7 @@ export default function Header() {
       const cartItems = await localStorage.getItem("cartItems");
       if (cartItems) {
         setBusketNumber(JSON.parse(cartItems).length);
+        setBusket(JSON.parse(cartItems))
       }
     };
     loadCartItems();
@@ -25,6 +28,7 @@ export default function Header() {
     setBusketNumber(busketNumber + cartItems2.length - busketNumberCorrect)
   }, [cartItems2]);
 
+  console.log(busket);
 
   const [isPulseButtonActive, setIsPulseButtonActive] = useState(false);
 
@@ -152,6 +156,72 @@ export default function Header() {
       {productWindow && <div className='product-window__blur' onClick={touchProductClose}></div>}
       {productWindow && <div className='burger-basket'>
         <img onClick={touchProductClose} className='product-window__close' src="./img/close.png" alt="" />
+
+        <div className='basket-form'>
+          <h3 className='basket-form__title'>Ваші дані для замовлення</h3>
+          <TextField
+            sx={{ width: '90%' }}
+            autoFocus
+            margin="dense"
+            label="ПІБ"
+            type="text"
+            variant="outlined"
+          // value={formName}
+          // onChange={handleformNameChange}
+          />
+          <TextField
+            sx={{ width: '90%' }}
+            autoFocus
+            margin="dense"
+            label="Ваш E-mail"
+            type="text"
+            variant="outlined"
+          // value={formName}
+          // onChange={handleformNameChange}
+          />
+          <TextField
+            sx={{ width: '90%' }}
+            autoFocus
+            margin="dense"
+            label="Ваш номер телефону"
+            type="text"
+            variant="outlined"
+          // value={formName}
+          // onChange={handleformNameChange}
+          />
+
+
+        </div>
+
+        <div className='basket-products'>
+
+          <div className='basket-products__name'>
+            <div className='basket-products__title'>Товар</div>
+            <div className='basket-products__title'>Кількість</div>
+            <div className='basket-products__title'>Сума</div>
+          </div>
+
+          <div className="basket-map">
+
+            {busket.map((item, index) => (
+              <div key={index} className="basket-products__name">
+                <div className="basket-item">
+                  <div className="basket-item__picture">
+                    <img className="basket-item__img" src={item.img[0]} alt={item.img[0]} />
+                  </div>
+                  <div className="basket-item__title">{item.title}</div>
+                </div>
+                <div>1</div>
+                <div>{item.price}</div>
+              </div>
+            ))}
+
+          </div>
+
+        </div>
+
+
+
 
 
       </div>}
