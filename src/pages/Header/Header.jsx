@@ -106,12 +106,9 @@ export default function Header() {
             </select>
           </div> */}
         </div>
-        <div className='header-logo__picture'>
-          <a href="/">
-            <img className='header-logo__image' src="./img/logo-spetsvik.svg" alt="logo-spetsvik" />
-          </a>
-
-        </div>
+        <a className='header-logo__picture' href="/">
+          <img className='header-logo__image' src="./img/logo-spetsvik.svg" alt="logo-spetsvik" />
+        </a>
         <div className='header-logo__burger'>
           <div className='burger-search__picture'>
             <img className='burger-search__image' src="./img/logo-search.svg" alt="logo-telephone" />
