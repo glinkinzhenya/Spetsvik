@@ -3,11 +3,6 @@
     padding-bottom: 100px;
 }
 
-.categories {
-    /* display: flex;
-    gap: 30px; */
-}
-
 .categories-overalls {
     grid-area: overalls;
     background-image: url(../../../../public/img/jackets.jpg);
@@ -85,22 +80,22 @@
 
 .item1 {
     grid-area: item1;
-    background-image: url(../../../../public/img/fire-extinguisher.png); 
+    background-image: url(../../../../public/img/fire-extinguisher.png);
 }
 
 .item2 {
     grid-area: item2;
-    background-image: url(../../../../public/img/backpack.jpg); 
+    background-image: url(../../../../public/img/backpack.jpg);
 }
 
 .item3 {
     grid-area: item3;
-    background-image: url(../../../../public/img/blanket.png); 
+    background-image: url(../../../../public/img/blanket.png);
 }
 
 .item4 {
     grid-area: item4;
-    background-image: url(../../../../public/img/compass.png); 
+    background-image: url(../../../../public/img/compass.png);
 }
 
 
@@ -117,17 +112,17 @@
 
 .servises1 {
     grid-area: servises1;
-    background-image: url(../../../../public/img/militaryShoes2.JPG); 
+    background-image: url(../../../../public/img/militaryShoes2.JPG);
 }
 
 .servises2 {
     grid-area: servises2;
-    background-image: url(../../../../public/img/shevrons.JPG); 
+    background-image: url(../../../../public/img/shevrons.JPG);
 }
 
 .servises3 {
     grid-area: servises3;
-    background-image: url(../../../../public/img/services.png); 
+    background-image: url(../../../../public/img/services.png);
 }
 
 .servises:hover {
@@ -155,4 +150,36 @@
     font-weight: 600;
     width: 190px;
     text-align: center;
+}
+
+@media (max-width: 1200px) {}
+
+@media (max-width: 992px) {}
+
+@media (max-width: 768px) {
+    .categories-box {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "overalls item1"
+            "item2 item3"
+            "item4 servises1"
+            "servises2 servises3";
+        gap: 30px;
+    }
+}
+
+@media (max-width: 576.8px) {
+    .categories-box {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "overalls"
+            "item1 "
+            "item2"
+            "item3"
+            "item4"
+            "servises1"
+            "servises2"
+            "servises3";
+        gap: 20px;
+    }
 }
