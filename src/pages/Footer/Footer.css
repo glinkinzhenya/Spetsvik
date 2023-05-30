@@ -10,6 +10,7 @@
         "left catalog info right";
     gap: 40px;
     width: 100%;
+    padding-bottom: 20px;
 }
 
 .footer-left {
@@ -54,9 +55,6 @@
     width: 200px;
 }
 
-
-
-
 .footer-catalog__title,
 .footer-info__title {
     font-size: 20px;
@@ -74,12 +72,8 @@
     color: #F07C00 !important;
 }
 
-/* <CategoriesServises /> */
-
 .footer-right {
     grid-area: right;
-    /* padding-top: 10px; */
-    /* padding-bottom: 10px; */
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -170,6 +164,44 @@ $lg: 992px;
 $md: 768px;
 $sm: 576px; */
 
+@media (max-width: 1200px) {
+    .footer-primary {
+        justify-items: center;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "catalog info"
+            "left right";
+    }
+
+    .footer-right {
+   width: 300px;
+    }
+ 
+}
+
+@media (max-width: 992px) {
+
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 576px) {
+
+       .footer-primary {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "catalog"
+             "info"
+            "left"
+            "right";
+    }
+
+    .footer-secondary {
+        flex-direction: column;
+    }
+}
 
 
 
