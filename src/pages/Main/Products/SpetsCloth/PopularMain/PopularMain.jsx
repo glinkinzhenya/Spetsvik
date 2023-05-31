@@ -127,16 +127,16 @@ export default function PopularMain({ category, popular }) {
   return (
 
     <>
-      <div className='popularGoods'>
-        <div className='popularGoods-container container'>
-          <h3 className='popularGoods-secondaryTitle'>Популярні товари</h3>
+      <div className='popularMain'>
+        <div className='popularMain-container container'>
+          <h3 className='popularMain-secondaryTitle'>Популярні товари</h3>
         </div>
 
 
 
 
         <div className='productsMap container'>
-          <div className='productsMap-box'>
+          <div className='popularMain-box'>
             {arrayProduct.map((item, index) => (
               <div onClick={() => touchProduct(item)} className='productsMap-box-item' key={index}>
                 <div className='productsMap-box__picture'>
