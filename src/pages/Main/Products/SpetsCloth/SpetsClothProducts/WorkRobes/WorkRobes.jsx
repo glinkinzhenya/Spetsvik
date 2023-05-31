@@ -2,10 +2,15 @@ import React from 'react';
 import './WorkRobes.css';
 import ProductsMap from '../../../../../../components/ProductsMap';
 import FilterProducts from '../../../FilterProducts/FilterProducts';
+import News from '../../../../News/News';
+import PopularMain from '../../PopularMain/PopularMain';
 
 export default function WorkRobes() {
 
   return (
+    <>
+
+
       <div className='workRobes'>
         <div className='boxPath'>
           <div className='boxPath-container container'>
@@ -38,5 +43,8 @@ export default function WorkRobes() {
           </div>
         </div>
       </div>
+      <PopularMain category='халати робочі' />
+      <News />
+    </>
   );
 }
