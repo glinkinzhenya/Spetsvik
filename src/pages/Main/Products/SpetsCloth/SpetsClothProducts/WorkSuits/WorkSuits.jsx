@@ -31,7 +31,7 @@ export default function WorkSuits() {
 
           <FilterProducts />
 
-          <ProductsMap category='костюми робочі' popular={true} />
+          <ProductsMap category='костюми робочі' />
 
         </div>
       </div>

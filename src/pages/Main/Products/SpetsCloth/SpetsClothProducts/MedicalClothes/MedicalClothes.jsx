@@ -31,7 +31,7 @@ export default function MedicalClothes() {
 
           <FilterProducts />
 
-          <ProductsMap category='медичний, кухарський, клінінговий одяг' popular={true} />
+          <ProductsMap category='медичний, кухарський, клінінговий одяг' />
 
         </div>
       </div>

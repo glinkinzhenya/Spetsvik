@@ -39,16 +39,20 @@ export default function IndividualProtection() {
 
         <div className='individualProtection-container container'>
           <h3 className='individualProtection-secondaryTitle'>Основні категорії</h3>
-
           <div className='individualProtection-box'>
-            <div className='individualProtection-box__item'>
+
+
+            <a className='individualProtection-box__item' href="/hand-protection-equipment">
               <div className='individualProtection-box__item-picture'>
                 <img className='individualProtection-box__item-image' src="./img/individual_1.jpeg" alt="" />
               </div>
               <div className='individualProtection-box__item-bg'>
                 <div className='individualProtection-box__item-text'>ЗАСОБИ ЗАХИСТУ РУК</div>
               </div>
-            </div>
+            </a>
+
+
+
 
             <div className='individualProtection-box__item'>
               <div className='individualProtection-box__item-picture'>

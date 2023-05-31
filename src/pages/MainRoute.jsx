@@ -26,6 +26,7 @@ import WorkSuits from './Main/Products/SpetsCloth/SpetsClothProducts/WorkSuits/W
 import ProtectiveOveralls from './Main/Products/SpetsCloth/SpetsClothProducts/ProtectiveOveralls/ProtectiveOveralls';
 import WorkAprons from './Main/Products/SpetsCloth/SpetsClothProducts/WorkAprons/WorkAprons';
 import Hats from './Main/Products/SpetsCloth/SpetsClothProducts/Hats/Hats';
+import HandProtectionEquipment from './Main/Products/IndividualProtection/IndividualProducts/HandProtectionEquipment/HandProtectionEquipment';
 
 export default function MainRoute() {
   return (
@@ -45,13 +46,15 @@ export default function MainRoute() {
         <Route path='/protective-overalls' element={<ProtectiveOveralls />} />
         <Route path='/work-aprons' element={<WorkAprons />} />
         <Route path='/hats' element={<Hats />} />
-        {/* <Route path='/protective-overalls' element={<ProtectiveOveralls />} /> */}
 
-
+        <Route path='/individual-protection' element={<IndividualProtection />} />
+        <Route path='/hand-protection-equipment' element={<HandProtectionEquipment />} />
 
 
         <Route path='/shoes' element={<Shoes />} />
-        <Route path='/individual-protection' element={<IndividualProtection />} />
+
+
+
 
         <Route path='/fire-safety' element={<FireSafety />} />
         <Route path='/fire-extinguishers' element={<FireExtinguishers />} />

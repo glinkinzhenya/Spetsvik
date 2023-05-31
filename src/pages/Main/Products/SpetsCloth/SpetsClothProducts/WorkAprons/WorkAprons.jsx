@@ -31,7 +31,7 @@ export default function WorkAprons() {
 
           <FilterProducts />
 
-          <ProductsMap category='фартухи робочі' popular={true} />
+          <ProductsMap category='фартухи робочі' />
 
         </div>
       </div>

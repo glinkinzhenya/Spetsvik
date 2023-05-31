@@ -31,7 +31,7 @@ export default function InsulatedOveralls() {
 
           <FilterProducts />
 
-          <ProductsMap category='утеплений спецодяг' popular={true} />
+          <ProductsMap category='утеплений спецодяг' />
 
         </div>
       </div>

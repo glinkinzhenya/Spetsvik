@@ -31,7 +31,7 @@ export default function ProtectiveOveralls() {
 
           <FilterProducts />
 
-          <ProductsMap category='захисний спецодяг'  popular={true} />
+          <ProductsMap category='захисний спецодяг' />
 
         </div>
       </div>
