@@ -43,6 +43,8 @@ export default function WorkRobes() {
           </div>
         </div>
       </div>
+
+      {/* <ProductsMap category='халати робочі' popular={true} /> */}
       <PopularMain category='халати робочі' popular={true} />
       <News />
     </>

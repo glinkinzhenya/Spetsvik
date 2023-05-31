@@ -138,8 +138,8 @@ export default function PopularMain({ category, popular }) {
         <div className='productsMap container'>
           <div className='popularMain-box'>
             {arrayProduct.map((item, index) => (
-              <div onClick={() => touchProduct(item)} className='productsMap-box-item' key={index}>
-                <div className='productsMap-box__picture'>
+              <div onClick={() => touchProduct(item)} className='popularMain-box-item' key={index}>
+                <div className='popularMain-box__picture'>
                   <img className='productsMap-box__image' src={item.img[0]} alt='' />
                 </div>
                 <div className='productsMap-text'   >
