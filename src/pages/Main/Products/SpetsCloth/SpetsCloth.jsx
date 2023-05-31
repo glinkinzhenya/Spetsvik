@@ -74,33 +74,32 @@ export default function SpetsCloth() {
               </div>
             </a>
 
-            <div className='spetsCloth-box__item'>
+            <a className='spetsCloth-box__item' href="/protective-overalls">
               <div className='spetsCloth-box__item-picture'>
                 <img className='spetsCloth-box__item-image' src="./img/spets-cloth1.jpg" alt="" />
               </div>
               <div className='spetsCloth-box__item-bg'>
                 <div className='spetsCloth-box__item-text'>ЗАХИСНИЙ СПЕЦОДЯГ</div>
               </div>
-            </div>
+            </a>
 
-            <div className='spetsCloth-box__item'>
+            <a className='spetsCloth-box__item' href="">
               <div className='spetsCloth-box__item-picture'>
                 <img className='spetsCloth-box__item-image' src="./img/stock_optimistic.jpeg" alt="" />
               </div>
               <div className='spetsCloth-box__item-bg'>
                 <div className='spetsCloth-box__item-text'>ФАРТУХИ РОБОЧІ</div>
               </div>
-            </div>
+            </a>
 
-            <div className='spetsCloth-box__item'>
+            <a className='spetsCloth-box__item' href="">
               <div className='spetsCloth-box__item-picture'>
                 <img className='spetsCloth-box__item-image' src="./img/stock_baseball_cap.jpeg" alt="" />
               </div>
               <div className='spetsCloth-box__item-bg'>
                 <div className='spetsCloth-box__item-text'>ГОЛОВНІ УБОРИ</div>
               </div>
-            </div>
-
+            </a>
 
             <a className='spetsCloth-box__item' href="/individual-protection">
               <div className='spetsCloth-box__item-picture'>

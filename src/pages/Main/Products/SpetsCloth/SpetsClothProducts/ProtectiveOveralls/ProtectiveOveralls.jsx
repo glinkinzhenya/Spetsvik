@@ -1,9 +1,8 @@
 import React from 'react';
-// import './MedicalClothes.css';
 import ProductsMap from '../../../../../../components/ProductsMap';
 import FilterProducts from '../../../FilterProducts/FilterProducts';
 
-export default function MedicalClothes() {
+export default function ProtectiveOveralls() {
 
   return (
     <div className='workRobes'>
@@ -21,18 +20,18 @@ export default function MedicalClothes() {
           <div className='boxPath-container__arrow'>
             <img className='boxPath-container__arrow-image' src="./img/arrow-right.svg" alt="" />
           </div>
-          <a className='boxPath-container__text' href="/medical-clothes">Медичний, кухарський, клінінговий одяг</a>
+          <a className='boxPath-container__text' href="/protective-overalls">Захисний спецодяг</a>
         </div>
       </div>
 
       <div className='workRobes-container container'>
-        <h3 className='workRobes-secondaryTitle'>Медичний, кухарський, клінінговий одяг</h3>
+        <h3 className='workRobes-secondaryTitle'>Захисний спецодяг</h3>
 
         <div className='workRobes-box'>
 
           <FilterProducts />
 
-          <ProductsMap category='медичний, кухарський, клінінговий одяг' popular={true} />
+          <ProductsMap category='захисний спецодяг'  popular={true} />
 
         </div>
       </div>

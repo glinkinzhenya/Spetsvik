@@ -21,7 +21,7 @@ export default function WorkSuits() {
           <div className='boxPath-container__arrow'>
             <img className='boxPath-container__arrow-image' src="./img/arrow-right.svg" alt="" />
           </div>
-          <a className='boxPath-container__text' href="/medical-clothes">Костюми робочі</a>
+          <a className='boxPath-container__text' href="/work-suits">Костюми робочі</a>
         </div>
       </div>
 
@@ -32,7 +32,7 @@ export default function WorkSuits() {
 
           <FilterProducts />
 
-          <ProductsMap category='халати робочі' />
+          <ProductsMap category='костюми робочі' popular={true} />
 
         </div>
       </div>

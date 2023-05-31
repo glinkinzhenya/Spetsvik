@@ -21,7 +21,7 @@ export default function InsulatedOveralls() {
           <div className='boxPath-container__arrow'>
             <img className='boxPath-container__arrow-image' src="./img/arrow-right.svg" alt="" />
           </div>
-          <a className='boxPath-container__text' href="/medical-clothes">Утеплений спецодяг</a>
+          <a className='boxPath-container__text' href="/insulated-overalls">Утеплений спецодяг</a>
         </div>
       </div>
 
@@ -32,7 +32,7 @@ export default function InsulatedOveralls() {
 
           <FilterProducts />
 
-          <ProductsMap category='халати робочі' />
+          <ProductsMap category='утеплений спецодяг' popular={true} />
 
         </div>
       </div>
