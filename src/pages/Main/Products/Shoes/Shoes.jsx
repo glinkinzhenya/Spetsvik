@@ -35,23 +35,25 @@ export default function Shoes() {
           <h3 className='shoes-secondaryTitle'>Основні категорії</h3>
 
           <div className='shoes-box'>
-            <div className='shoes-box__item'>
+
+            <a className='shoes-box__item' href="/special-shoes">
               <div className='shoes-box__item-picture'>
                 <img className='shoes-box__item-image' src="./img/spetsShoespng.png" alt="" />
               </div>
               <div className='shoes-box__item-bg'>
                 <div className='shoes-box__item-text'>СПЕЦВЗУТТЯ</div>
               </div>
-            </div>
+            </a>
 
-            <div className='shoes-box__item'>
+            <a className='shoes-box__item' href="/military-footwear">
               <div className='shoes-box__item-picture'>
                 <img className='shoes-box__item-image' src="./img/militaryShoes2_1.JPG" alt="" />
               </div>
               <div className='shoes-box__item-bg'>
                 <div className='shoes-box__item-text'>ВІЙСЬКОВЕ ВЗУТТЯ</div>
               </div>
-            </div>
+            </a>
+
           </div>
         </div>
       </div>

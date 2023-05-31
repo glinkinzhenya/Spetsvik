@@ -30,6 +30,8 @@ import HandProtectionEquipment from './Main/Products/IndividualProtection/Indivi
 import EyeProtection from './Main/Products/IndividualProtection/IndividualProducts/EyeProtection/EyeProtection';
 import RespiratoryProtection from './Main/Products/IndividualProtection/IndividualProducts/RespiratoryProtection/RespiratoryProtection';
 import SignalingProducts from './Main/Products/IndividualProtection/IndividualProducts/SignalingProducts/SignalingProducts';
+import SpecialShoes from './Main/Products/Shoes/ShoesProducts/SpecialShoes/SpecialShoes';
+import MilitaryFootwear from './Main/Products/Shoes/ShoesProducts/MilitaryFootwear/MilitaryFootwear';
 
 export default function MainRoute() {
   return (
@@ -58,6 +60,9 @@ export default function MainRoute() {
 
 
         <Route path='/shoes' element={<Shoes />} />
+        <Route path='/special-shoes' element={<SpecialShoes />} />
+        <Route path='/military-footwear' element={<MilitaryFootwear />} />
+
 
 
 
