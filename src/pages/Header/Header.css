@@ -447,6 +447,7 @@
 
     .header-contacts {
         grid-template-columns: repeat(2, 1fr);
+        gap: 0px;
     }
 
     .header-logo__telephone {

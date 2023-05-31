@@ -44,7 +44,7 @@ export default function Burger() {
           onKeyDown={() => setOpen(false)}
           sx={{
             height: '100%',
-            width: '220px',
+            width: '170px',
             backgroundColor: 'rgb(60, 60, 58);',
           }}
         >
