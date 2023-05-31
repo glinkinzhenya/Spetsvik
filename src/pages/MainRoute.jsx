@@ -27,6 +27,9 @@ import ProtectiveOveralls from './Main/Products/SpetsCloth/SpetsClothProducts/Pr
 import WorkAprons from './Main/Products/SpetsCloth/SpetsClothProducts/WorkAprons/WorkAprons';
 import Hats from './Main/Products/SpetsCloth/SpetsClothProducts/Hats/Hats';
 import HandProtectionEquipment from './Main/Products/IndividualProtection/IndividualProducts/HandProtectionEquipment/HandProtectionEquipment';
+import EyeProtection from './Main/Products/IndividualProtection/IndividualProducts/EyeProtection/EyeProtection';
+import RespiratoryProtection from './Main/Products/IndividualProtection/IndividualProducts/RespiratoryProtection/RespiratoryProtection';
+import SignalingProducts from './Main/Products/IndividualProtection/IndividualProducts/SignalingProducts/SignalingProducts';
 
 export default function MainRoute() {
   return (
@@ -49,6 +52,9 @@ export default function MainRoute() {
 
         <Route path='/individual-protection' element={<IndividualProtection />} />
         <Route path='/hand-protection-equipment' element={<HandProtectionEquipment />} />
+        <Route path='/eye-protection' element={<EyeProtection />} />
+        <Route path='/respiratory-protection' element={<RespiratoryProtection />} />
+        <Route path='/signaling-products' element={<SignalingProducts />} />
 
 
         <Route path='/shoes' element={<Shoes />} />

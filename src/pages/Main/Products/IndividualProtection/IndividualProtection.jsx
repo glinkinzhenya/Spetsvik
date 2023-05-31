@@ -41,7 +41,6 @@ export default function IndividualProtection() {
           <h3 className='individualProtection-secondaryTitle'>Основні категорії</h3>
           <div className='individualProtection-box'>
 
-
             <a className='individualProtection-box__item' href="/hand-protection-equipment">
               <div className='individualProtection-box__item-picture'>
                 <img className='individualProtection-box__item-image' src="./img/individual_1.jpeg" alt="" />
@@ -51,35 +50,33 @@ export default function IndividualProtection() {
               </div>
             </a>
 
-
-
-
-            <div className='individualProtection-box__item'>
+            <a className='individualProtection-box__item' href="/eye-protection">
               <div className='individualProtection-box__item-picture'>
                 <img className='individualProtection-box__item-image' src="./img/individual2.jpeg" alt="" />
               </div>
               <div className='individualProtection-box__item-bg'>
                 <div className='individualProtection-box__item-text'>ЗАСОБИ ЗАХИСТУ ОЧЕЙ, ОБЛИЧЧЯ, ГОЛОВИ</div>
               </div>
-            </div>
+            </a>
 
-            <div className='individualProtection-box__item'>
+            <a className='individualProtection-box__item' href="/respiratory-protection">
               <div className='individualProtection-box__item-picture'>
                 <img className='individualProtection-box__item-image' src="./img/individual_3.jpeg" alt="" />
               </div>
               <div className='individualProtection-box__item-bg'>
                 <div className='individualProtection-box__item-text'>ЗАСОБИ ЗАХИСТУ ОРГАНІВ ДИХАННЯ</div>
               </div>
-            </div>
+            </a>
 
-            <div className='individualProtection-box__item'>
+            <a className='individualProtection-box__item' href="/signaling-products">
               <div className='individualProtection-box__item-picture'>
                 <img className='individualProtection-box__item-image' src="./img/individual_4.jpeg" alt="" />
               </div>
               <div className='individualProtection-box__item-bg'>
                 <div className='individualProtection-box__item-text'>СИГНАЛЬНА ПРОДУКЦІЯ</div>
               </div>
-            </div>
+            </a>
+
           </div>
         </div>
       </div>
