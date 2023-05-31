@@ -24,6 +24,8 @@ import MedicalClothes from './Main/Products/SpetsCloth/SpetsClothProducts/Medica
 import InsulatedOveralls from './Main/Products/SpetsCloth/SpetsClothProducts/InsulatedOveralls/InsulatedOveralls';
 import WorkSuits from './Main/Products/SpetsCloth/SpetsClothProducts/WorkSuits/WorkSuits';
 import ProtectiveOveralls from './Main/Products/SpetsCloth/SpetsClothProducts/ProtectiveOveralls/ProtectiveOveralls';
+import WorkAprons from './Main/Products/SpetsCloth/SpetsClothProducts/WorkAprons/WorkAprons';
+import Hats from './Main/Products/SpetsCloth/SpetsClothProducts/Hats/Hats';
 
 export default function MainRoute() {
   return (
@@ -41,8 +43,8 @@ export default function MainRoute() {
         <Route path='/insulated-overalls' element={<InsulatedOveralls />} />
         <Route path='/work-suits' element={<WorkSuits />} />
         <Route path='/protective-overalls' element={<ProtectiveOveralls />} />
-        {/* <Route path='/protective-overalls' element={<ProtectiveOveralls />} /> */}
-        {/* <Route path='/protective-overalls' element={<ProtectiveOveralls />} /> */}
+        <Route path='/work-aprons' element={<WorkAprons />} />
+        <Route path='/hats' element={<Hats />} />
         {/* <Route path='/protective-overalls' element={<ProtectiveOveralls />} /> */}
 
 

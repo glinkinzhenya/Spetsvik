@@ -2,7 +2,7 @@ import React from 'react';
 import ProductsMap from '../../../../../../components/ProductsMap';
 import FilterProducts from '../../../FilterProducts/FilterProducts';
 
-export default function WorkSuits() {
+export default function WorkAprons() {
 
   return (
     <div className='workRobes'>
@@ -20,18 +20,18 @@ export default function WorkSuits() {
           <div className='boxPath-container__arrow'>
             <img className='boxPath-container__arrow-image' src="./img/arrow-right.svg" alt="" />
           </div>
-          <a className='boxPath-container__text' href="/work-suits">Костюми робочі</a>
+          <a className='boxPath-container__text' href="/work-aprons">Фартухи робочі</a>
         </div>
       </div>
 
       <div className='workRobes-container container'>
-        <h3 className='workRobes-secondaryTitle'>Костюми робочі</h3>
+        <h3 className='workRobes-secondaryTitle'>Фартухи робочі</h3>
 
         <div className='workRobes-box'>
 
           <FilterProducts />
 
-          <ProductsMap category='костюми робочі' popular={true} />
+          <ProductsMap category='фартухи робочі' popular={true} />
 
         </div>
       </div>

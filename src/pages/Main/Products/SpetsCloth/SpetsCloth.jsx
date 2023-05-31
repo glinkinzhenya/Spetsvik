@@ -36,7 +36,6 @@ export default function SpetsCloth() {
 
           <div className='spetsCloth-box'>
 
-
             <a className='spetsCloth-box__item' href="/work-robes">
               <div className='spetsCloth-box__item-picture'>
                 <img className='spetsCloth-box__item-image' src="./img/stock_portrait.jpeg" alt="" />
@@ -83,7 +82,7 @@ export default function SpetsCloth() {
               </div>
             </a>
 
-            <a className='spetsCloth-box__item' href="">
+            <a className='spetsCloth-box__item' href="/work-aprons">
               <div className='spetsCloth-box__item-picture'>
                 <img className='spetsCloth-box__item-image' src="./img/stock_optimistic.jpeg" alt="" />
               </div>
@@ -92,7 +91,7 @@ export default function SpetsCloth() {
               </div>
             </a>
 
-            <a className='spetsCloth-box__item' href="">
+            <a className='spetsCloth-box__item' href="/hats">
               <div className='spetsCloth-box__item-picture'>
                 <img className='spetsCloth-box__item-image' src="./img/stock_baseball_cap.jpeg" alt="" />
               </div>
