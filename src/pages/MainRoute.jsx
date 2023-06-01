@@ -43,6 +43,10 @@ import FireBoxes from './Main/Products/FireSafety/FireCabinets/FireCabinetsProdu
 import ShevronsItem from './Main/Products/Shevrons/ShevronsProducts/ShevronsItem/ShevronsItem';
 import TechnicalFabrics from './Main/Products/Fabrics/FabricsProducts/TechnicalFabrics/TechnicalFabrics';
 import StrictFilterFabrics from './Main/Products/Fabrics/FabricsProducts/StrictFilterFabrics/StrictFilterFabrics';
+import Raincoats from './Main/Products/MilitaryEquipment/MilitaryEquipmentProducts/Raincoats/Raincoats';
+import Vests from './Main/Products/MilitaryEquipment/MilitaryEquipmentProducts/Vests/Vests';
+import WeaponBelts from './Main/Products/MilitaryEquipment/MilitaryEquipmentProducts/WeaponBelts/WeaponBelts';
+import SetsOfUniforms from './Main/Products/MilitaryEquipment/MilitaryEquipmentProducts/SetsOfUniforms/SetsOfUniforms';
 
 export default function MainRoute() {
   return (
@@ -91,6 +95,11 @@ export default function MainRoute() {
         <Route path='/fire-hoses' element={<FireHoses />} />
 
         <Route path='/military-equipment' element={<MilitaryEquipment />} />
+        <Route path='/raincoats' element={<Raincoats />} />
+        <Route path='/vests' element={<Vests />} />
+        <Route path='/weapon-belts' element={<WeaponBelts />} />
+        <Route path='/sets-of-uniforms' element={<SetsOfUniforms />} />
+        {/* <Route path='/military-equipment' element={<MilitaryEquipment />} /> */}
 
 
         <Route path='/shevrons' element={<Shevrons />} />
