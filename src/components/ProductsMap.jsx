@@ -66,8 +66,9 @@ export default function ProductsMap({ category, popular }) {
 
 
     return (
-        <div className='productsMap'>
-            <div className='productsMap-box'>
+        <>
+        {/* <div className='productsMap'> */}
+            {/* <div className='productsMap-box'> */}
                 {arrayProduct.map((item, index) => (
                     <div onClick={() => touchProduct(item)} className='productsMap-box-item' key={index}>
                         <div className='productsMap-box__picture'>
@@ -80,7 +81,7 @@ export default function ProductsMap({ category, popular }) {
 
                     </div>
                 ))}
-            </div>
+            {/* </div> */}
             {productWindow && <div className='product-window__blur' onClick={touchProductClose}></div>}
             {productWindow && <div className='product-window'>
                 <img onClick={touchProductClose} className='product-window__close' src="./img/close.png" alt="" />
@@ -133,6 +134,7 @@ export default function ProductsMap({ category, popular }) {
                     </Snackbar>
                 </div>
             </div>}
-        </div>
+        {/* </div> */}
+        </>
     );
 }

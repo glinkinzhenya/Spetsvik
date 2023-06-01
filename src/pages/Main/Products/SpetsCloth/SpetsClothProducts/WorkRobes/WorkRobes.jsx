@@ -37,14 +37,13 @@ export default function WorkRobes() {
 
             <FilterProducts />
 
-            {/* <ProductsMap category='халати робочі' popular={true} /> */}
-            <ProductsMap category='халати робочі' />
-
+            <div className='workRobes-box__productsMap'>
+              <ProductsMap category='халати робочі' />
+            </div>
           </div>
         </div>
       </div>
 
-      {/* <ProductsMap category='халати робочі' popular={true} /> */}
       <PopularMain category='халати робочі' popular={true} />
       <News />
     </>
