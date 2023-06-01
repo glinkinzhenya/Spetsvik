@@ -9,8 +9,6 @@ export default function WorkRobes() {
 
   return (
     <>
-
-
       <div className='workRobes'>
         <div className='boxPath'>
           <div className='boxPath-container container'>
