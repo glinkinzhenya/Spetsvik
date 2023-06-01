@@ -62,6 +62,11 @@ import Gloves from './Main/Products/MilitaryEquipment/MilitaryEquipmentProducts/
 import BackpacksBagsTrunks from './Main/Products/MilitaryEquipment/MilitaryEquipmentProducts/BackpacksBagsTrunks/BackpacksBagsTrunks';
 import SweatersFleeces from './Main/Products/MilitaryEquipment/MilitaryEquipmentProducts/SweatersFleeces/SweatersFleeces';
 import ShirtsCoats from './Main/Products/MilitaryEquipment/MilitaryEquipmentProducts/ShirtsCoats/ShirtsCoats';
+import ThermalUnderwear from './Main/Products/MilitaryEquipment/MilitaryEquipmentProducts/ThermalUnderwear/ThermalUnderwear';
+import Shirts from './Main/Products/MilitaryEquipment/MilitaryEquipmentProducts/Shirts/Shirts';
+import ScarfPipes from './Main/Products/MilitaryEquipment/MilitaryEquipmentProducts/ScarfPipes/ScarfPipes';
+import Socks from './Main/Products/MilitaryEquipment/MilitaryEquipmentProducts/Socks/Socks';
+import Shorts from './Main/Products/MilitaryEquipment/MilitaryEquipmentProducts/Shorts/Shorts';
 
 export default function MainRoute() {
   return (
@@ -129,9 +134,11 @@ export default function MainRoute() {
         <Route path='/backpacks-bags-trunks' element={<BackpacksBagsTrunks />} />
         <Route path='/sweaters-fleeces' element={<SweatersFleeces />} />
         <Route path='/shirts-coats' element={<ShirtsCoats />} />
-        {/* <Route path='/military-equipment' element={<MilitaryEquipment />} /> */}
-        {/* <Route path='/military-equipment' element={<MilitaryEquipment />} /> */}
-        {/* <Route path='/military-equipment' element={<MilitaryEquipment />} /> */}
+        <Route path='/thermal-underwear' element={<ThermalUnderwear />} />
+        <Route path='/shirts' element={<Shirts />} />
+        <Route path='/scarf-pipes' element={<ScarfPipes />} />
+        <Route path='/socks' element={<Socks />} />
+        <Route path='/shorts' element={<Shorts />} />
 
 
         <Route path='/shevrons' element={<Shevrons />} />

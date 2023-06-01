@@ -215,7 +215,7 @@ export default function MilitaryEquipment() {
               </div>
             </a>
 
-            <a className='militaryEquipment-box__item' href="/fire-hoses">
+            <a className='militaryEquipment-box__item' href="/thermal-underwear">
               <div className='militaryEquipment-box__item-picture'>
                 <img className='militaryEquipment-box__item-image' src="./img/MilitaryEquipment21.png" alt="" />
               </div>
@@ -224,7 +224,7 @@ export default function MilitaryEquipment() {
               </div>
             </a>
 
-            <a className='militaryEquipment-box__item' href="/fire-hoses">
+            <a className='militaryEquipment-box__item' href="/shirts">
               <div className='militaryEquipment-box__item-picture'>
                 <img className='militaryEquipment-box__item-image' src="./img/MilitaryEquipment22.jpg" alt="" />
               </div>
@@ -233,7 +233,7 @@ export default function MilitaryEquipment() {
               </div>
             </a>
 
-            <a className='militaryEquipment-box__item' href="/fire-hoses">
+            <a className='militaryEquipment-box__item' href="/scarf-pipes">
               <div className='militaryEquipment-box__item-picture'>
                 <img className='militaryEquipment-box__item-image' src="./img/MilitaryEquipment23.png" alt="" />
               </div>
@@ -242,7 +242,7 @@ export default function MilitaryEquipment() {
               </div>
             </a>
 
-            <a className='militaryEquipment-box__item' href="/fire-hoses">
+            <a className='militaryEquipment-box__item' href="/socks">
               <div className='militaryEquipment-box__item-picture'>
                 <img className='militaryEquipment-box__item-image' src="./img/MilitaryEquipment24.png" alt="" />
               </div>
@@ -251,7 +251,7 @@ export default function MilitaryEquipment() {
               </div>
             </a>
 
-            <a className='militaryEquipment-box__item' href="/fire-hoses">
+            <a className='militaryEquipment-box__item' href="/shorts">
               <div className='militaryEquipment-box__item-picture'>
                 <img className='militaryEquipment-box__item-image' src="./img/MilitaryEquipment25.jpg" alt="" />
               </div>
