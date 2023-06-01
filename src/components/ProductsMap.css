@@ -1,14 +1,3 @@
-/* .productsMap-box {
-    padding: 20px;
-    background-color: #0C0C0C;
-    display: grid;
-    gap: 35px 35px;
-    grid-template-columns: repeat(4, 233px);
-    overflow-y: auto !important;
-    width: 100%;
-    height: 100vh;
-} */
-
 .productsMap-box-item {
     max-width: 300px;
     cursor: pointer;

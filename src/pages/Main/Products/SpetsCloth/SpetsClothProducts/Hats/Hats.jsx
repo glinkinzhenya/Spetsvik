@@ -1,5 +1,4 @@
 import React from 'react';
-// import ProductsMap from '../../../../../../components/ProductsMap';
 import FilterProducts from '../../../FilterProducts/FilterProducts';
 import ProductsMap from '../../../../../../components/ProductsMap';
 import News from '../../../../News/News';
