@@ -32,6 +32,10 @@ import RespiratoryProtection from './Main/Products/IndividualProtection/Individu
 import SignalingProducts from './Main/Products/IndividualProtection/IndividualProducts/SignalingProducts/SignalingProducts';
 import SpecialShoes from './Main/Products/Shoes/ShoesProducts/SpecialShoes/SpecialShoes';
 import MilitaryFootwear from './Main/Products/Shoes/ShoesProducts/MilitaryFootwear/MilitaryFootwear';
+import PowderFireExtinguishers from './Main/Products/FireSafety/FireExtinguishers/FireExtinguishersProducts/PowderFireExtinguishers/PowderFireExtinguishers';
+import AcidFireExtinguishers from './Main/Products/FireSafety/FireExtinguishers/FireExtinguishersProducts/AcidFireExtinguishers/AcidFireExtinguishers';
+import StandsAndFasteners from './Main/Products/FireSafety/FireExtinguishers/FireExtinguishersProducts/StandsAndFasteners/StandsAndFasteners';
+import ComponentsForFireExtinguishers from './Main/Products/FireSafety/FireExtinguishers/FireExtinguishersProducts/ComponentsForFireExtinguishers/ComponentsForFireExtinguishers';
 
 export default function MainRoute() {
   return (
@@ -64,11 +68,16 @@ export default function MainRoute() {
         <Route path='/military-footwear' element={<MilitaryFootwear />} />
 
 
-
-
-
         <Route path='/fire-safety' element={<FireSafety />} />
         <Route path='/fire-extinguishers' element={<FireExtinguishers />} />
+        <Route path='/powder-fire-extinguishers' element={<PowderFireExtinguishers />} />
+
+        <Route path='/acid-fire-extinguishers' element={<AcidFireExtinguishers />} />
+        <Route path='/stands-and-fasteners' element={<StandsAndFasteners />} />
+        <Route path='/components-for-fire-extinguishers' element={<ComponentsForFireExtinguishers />} />
+
+
+
         <Route path='/fire-cabinets' element={<FireCabinets />} />
         <Route path='/fire-hoses' element={<FireHoses />} />
 
