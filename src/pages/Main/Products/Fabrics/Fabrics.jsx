@@ -1,7 +1,7 @@
 import React from 'react';
 import './Fabrics.css';
 import News from '../../News/News';
-import PopularGoodsFabrics from './PopularGoodsFabrics/PopularGoodsFabrics';
+// import PopularGoodsFabrics from './PopularGoodsFabrics/PopularGoodsFabrics';
 
 export default function Fabrics() {
 
@@ -55,7 +55,7 @@ export default function Fabrics() {
           </div>
         </div>
       </div>
-      <PopularGoodsFabrics />
+      {/* <PopularGoodsFabrics /> */}
       <News />
     </>
   );

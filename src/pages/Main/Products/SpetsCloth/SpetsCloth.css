@@ -55,11 +55,11 @@
 
 .spetsCloth-box {
     /* display: grid; */
-    gap: 100px 35px;
     /* grid-template-columns: repeat(4, 1fr); */
-    display: flex !important;
+    gap: 100px 35px;
+    display: flex;
     flex-wrap: wrap;
-    justify-content: center !important;
+    justify-content: center;
 }
 
 .spetsCloth-box__item {
