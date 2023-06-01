@@ -54,9 +54,11 @@
 }
 
 .shevrons-box {
-    display: grid;
+    /* display: grid;
+    grid-template-columns: repeat(4, 1fr); */
     gap: 100px 35px;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .shevrons-box__item {

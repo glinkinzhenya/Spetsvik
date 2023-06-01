@@ -1,7 +1,7 @@
 import React from 'react';
 import './FireSafety.css';
 import News from '../../News/News';
-import PopularGoodsFireSafety from './PopularGoodsFireSafety/PopularGoodsFireSafety';
+// import PopularGoodsFireSafety from './PopularGoodsFireSafety/PopularGoodsFireSafety';
 
 export default function FireSafety() {
 
@@ -65,7 +65,7 @@ export default function FireSafety() {
           </div>
         </div>
       </div>
-      <PopularGoodsFireSafety />
+      {/* <PopularGoodsFireSafety /> */}
       <News />
     </>
   );

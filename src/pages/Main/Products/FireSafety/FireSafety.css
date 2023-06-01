@@ -54,11 +54,9 @@
 }
 
 .fireSafety-box {
-    /* display: grid; */
     gap: 100px 35px;
-    /* grid-template-columns: repeat(4, 1fr); */
-    display: flex !important;
-    justify-content: center !important;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .fireSafety-box__item {

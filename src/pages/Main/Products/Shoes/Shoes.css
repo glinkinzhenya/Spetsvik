@@ -59,6 +59,7 @@
     /* grid-template-columns: repeat(4, 1fr); */
     display: flex;
     justify-content: center;
+    justify-content: space-evenly;
 }
 
 .shoes-box__item {
