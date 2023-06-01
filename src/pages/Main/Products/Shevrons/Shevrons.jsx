@@ -35,23 +35,17 @@ export default function Shevrons() {
           <h3 className='shevrons-secondaryTitle'>Основні категорії</h3>
 
           <div className='shevrons-box'>
-            <div className='shevrons-box__item'>
+            
+            <a className='shevrons-box__item' href="/shevrons-item">
               <div className='shevrons-box__item-picture'>
                 <img className='shevrons-box__item-image' src="./img/shevronspng.png" alt="" />
               </div>
               <div className='shevrons-box__item-bg'>
                 <div className='shevrons-box__item-text'>ШЕВРОНИ</div>
               </div>
-            </div>
+            </a>
 
-            {/* <div className='shevrons-box__item'>
-              <div className='shevrons-box__item-picture'>
-                <img className='shevrons-box__item-image' src="./img/militaryshevrons.jpg" alt="" />
-              </div>
-              <div className='shevrons-box__item-bg'>
-                <div className='shevrons-box__item-text'>ВІЙСЬКОВЕ ВЗУТТЯ</div>
-              </div>
-            </div> */}
+
           </div>
         </div>
       </div>

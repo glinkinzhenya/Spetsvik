@@ -40,6 +40,7 @@ import FireCabinetsItem from './Main/Products/FireSafety/FireCabinets/FireCabine
 import FireShieldsAndStands from './Main/Products/FireSafety/FireCabinets/FireCabinetsProducts/FireShieldsAndStands/FireShieldsAndStands';
 import FireEquipment from './Main/Products/FireSafety/FireCabinets/FireCabinetsProducts/FireEquipment/FireEquipment';
 import FireBoxes from './Main/Products/FireSafety/FireCabinets/FireCabinetsProducts/FireBoxes/FireBoxes';
+import ShevronsItem from './Main/Products/Shevrons/ShevronsProducts/ShevronsItem/ShevronsItem';
 
 export default function MainRoute() {
   return (
@@ -91,6 +92,8 @@ export default function MainRoute() {
 
 
         <Route path='/shevrons' element={<Shevrons />} />
+        <Route path='/shevrons-item' element={<ShevronsItem />} />
+
         <Route path='/fabrics' element={<Fabrics />} />
         <Route path='/services' element={<Services />} />
         <Route path='/news' element={<News />} />
