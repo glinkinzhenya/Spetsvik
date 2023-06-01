@@ -1,7 +1,8 @@
 import React from 'react';
+import './PopularMain.css';
 import ProductsMap from '../../../../../components/ProductsMap';
 
-export default function PopularMain() {
+export default function PopularMain({ category, popular }) {
 
   return (
     <>
@@ -13,7 +14,7 @@ export default function PopularMain() {
         <div className='productsMap container'>
           <div className='popularMain-box'>
 
-          <ProductsMap category='халати робочі' popular={true} />
+          <ProductsMap category={category} popular={popular} />
 
           </div>
         </div>

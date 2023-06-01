@@ -43,6 +43,7 @@ export default function WorkRobes() {
       </div>
 
       <PopularMain category='халати робочі' popular={true} />
+
       <News />
     </>
   );
