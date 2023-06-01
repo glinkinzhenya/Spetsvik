@@ -26,20 +26,24 @@
 
 .productsMap-text {
     background-color: #232323;
+    height: 110px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .productsMap-title {
     color: white;
     font-size: 20px;
     text-align: center;
-    padding-top: 20px;
+    padding-top: 10px;
+    height: 70px;
 }
 
 .productsMap-box__price {
     color: white;
     font-size: 20px;
     text-align: center;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 
 .product-window__blur {

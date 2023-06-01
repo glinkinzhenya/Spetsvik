@@ -2,6 +2,8 @@ import React from 'react';
 // import ProductsMap from '../../../../../../components/ProductsMap';
 import FilterProducts from '../../../FilterProducts/FilterProducts';
 import ProductsMap from '../../../../../../components/ProductsMap';
+import News from '../../../../News/News';
+import PopularMain from '../../PopularMain/PopularMain';
 
 export default function Hats() {
 
@@ -39,6 +41,10 @@ export default function Hats() {
           </div>
         </div>
       </div>
+
+      <PopularMain category='головні убори' popular={true} />
+
+      <News />
     </>
   );
 }
