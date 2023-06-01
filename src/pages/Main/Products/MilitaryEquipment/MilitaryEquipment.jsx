@@ -162,7 +162,7 @@ export default function MilitaryEquipment() {
 
             <a className='militaryEquipment-box__item' href="/fire-hoses">
               <div className='militaryEquipment-box__item-picture'>
-                <img className='militaryEquipment-box__item-image' src="./img/MilitaryEquipment15.jpg" alt="" />
+                <img className='militaryEquipment-box__item-image' src="./img/MilitaryEquipment15.JPG" alt="" />
               </div>
               <div className='militaryEquipment-box__item-bg'>
                 <div className='militaryEquipment-box__item-text'>РОЗВАНТАЖУВАЛЬНІ СИСТЕМИ</div>
