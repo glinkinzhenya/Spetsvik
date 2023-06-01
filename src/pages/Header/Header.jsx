@@ -15,7 +15,6 @@ export default function Header() {
       const cartItems = await localStorage.getItem("cartItems");
       if (cartItems) {
         setBusketNumber(JSON.parse(cartItems).length);
-        setBusket(JSON.parse(cartItems))
       }
     };
     loadCartItems();
@@ -26,6 +25,9 @@ export default function Header() {
   useEffect(() => {
     setBusketNumberCorrect(cartItems2.length)
     setBusketNumber(busketNumber + cartItems2.length - busketNumberCorrect)
+
+
+
   }, [cartItems2]);
 
   console.log(busket);
@@ -43,8 +45,10 @@ export default function Header() {
 
 
   const [productWindow, setProductWindow] = useState(false);
-  const touchProduct = () => {
 
+  const touchProduct = () => {
+    const cartItems = localStorage.getItem("cartItems");
+    if (cartItems) setBusket(JSON.parse(cartItems))
     setProductWindow(true)
   };
   const touchProductClose = () => {

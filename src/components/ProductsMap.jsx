@@ -50,7 +50,6 @@ export default function ProductsMap({ category, popular }) {
         setCartItems([...cartItems, item]);
         setCartItems2([...cartItems2, item]);
     };
-    console.log(cartItems2);
 
     const handleClose = () => {
         setOpen(false);

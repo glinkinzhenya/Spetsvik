@@ -8,8 +8,6 @@ export default function News() {
   const [mainData2, setMainData] = useState([]);
   const [index, setIndex] = useState(0);
 
-  console.log(mainData2);
-
   useEffect(() => {
     if (mainData) {
       setMainData(mainData[0].news);
