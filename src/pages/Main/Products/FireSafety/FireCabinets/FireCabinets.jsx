@@ -1,7 +1,7 @@
 import React from 'react';
 import './FireCabinets.css';
 import News from '../../../News/News';
-import PopularGoodsFireCabinets from './PopularGoodsFireCabinets/PopularGoodsFireCabinets';
+// import PopularGoodsFireCabinets from './PopularGoodsFireCabinets/PopularGoodsFireCabinets';
 
 export default function FireCabinets() {
 
@@ -38,45 +38,47 @@ export default function FireCabinets() {
           <h3 className='fireCabinets-secondaryTitle'>Основні категорії</h3>
 
           <div className='fireCabinets-box'>
-            <div className='fireCabinets-box__item'>
+
+            <a className='fireCabinets-box__item' href="/fire-cabinets-item">
               <div className='fireCabinets-box__item-picture'>
                 <img className='fireCabinets-box__item-image' src="./img/fire-cabinets1.jpg" alt="" />
               </div>
               <div className='fireCabinets-box__item-bg'>
-                <div className='fireCabinets-box__item-text'>ШАФИ ПОЖЕЖНІ</div>
+                <div className='fireCabinets-box__item-text'>ПОЖЕЖНІ ШАФИ</div>
               </div>
-            </div>
+            </a>
 
-            <div className='fireCabinets-box__item'>
+            <a className='fireCabinets-box__item' href="/fire-shields-and-stands">
               <div className='fireCabinets-box__item-picture'>
                 <img className='fireCabinets-box__item-image' src="./img/fire-cabinets2.jpeg" alt="" />
               </div>
               <div className='fireCabinets-box__item-bg'>
-                <div className='fireCabinets-box__item-text'>ПОЖЕЖНІ ЩИТИ І СТЕНДИ</div>
+                <div className='fireCabinets-box__item-text'>ПОЖЕЖНІ ЩИТИ ТА СТЕНДИ</div>
               </div>
-            </div>
+            </a>
 
-            <div className='fireCabinets-box__item'>
+            <a className='fireCabinets-box__item' href="/fire-equipment">
               <div className='fireCabinets-box__item-picture'>
                 <img className='fireCabinets-box__item-image' src="./img/fire-cabinets3.jpeg" alt="" />
               </div>
               <div className='fireCabinets-box__item-bg'>
                 <div className='fireCabinets-box__item-text'>ПОЖЕЖНИЙ ІНВЕНТАР</div>
               </div>
-            </div>
+            </a>
 
-            <div className='fireCabinets-box__item'>
+            <a className='fireCabinets-box__item' href="/fire-boxes">
               <div className='fireCabinets-box__item-picture'>
                 <img className='fireCabinets-box__item-image' src="./img/fireCabinets1.png" alt="" />
               </div>
               <div className='fireCabinets-box__item-bg'>
                 <div className='fireCabinets-box__item-text'>ЯЩИКИ ПОЖЕЖНІ</div>
               </div>
-            </div>
+            </a>
+
           </div>
         </div>
       </div>
-      <PopularGoodsFireCabinets />
+      {/* <PopularGoodsFireCabinets /> */}
       <News />
     </>
   );

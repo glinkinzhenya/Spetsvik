@@ -36,6 +36,10 @@ import PowderFireExtinguishers from './Main/Products/FireSafety/FireExtinguisher
 import AcidFireExtinguishers from './Main/Products/FireSafety/FireExtinguishers/FireExtinguishersProducts/AcidFireExtinguishers/AcidFireExtinguishers';
 import StandsAndFasteners from './Main/Products/FireSafety/FireExtinguishers/FireExtinguishersProducts/StandsAndFasteners/StandsAndFasteners';
 import ComponentsForFireExtinguishers from './Main/Products/FireSafety/FireExtinguishers/FireExtinguishersProducts/ComponentsForFireExtinguishers/ComponentsForFireExtinguishers';
+import FireCabinetsItem from './Main/Products/FireSafety/FireCabinets/FireCabinetsProducts/FireCabinetsItem/FireCabinetsItem';
+import FireShieldsAndStands from './Main/Products/FireSafety/FireCabinets/FireCabinetsProducts/FireShieldsAndStands/FireShieldsAndStands';
+import FireEquipment from './Main/Products/FireSafety/FireCabinets/FireCabinetsProducts/FireEquipment/FireEquipment';
+import FireBoxes from './Main/Products/FireSafety/FireCabinets/FireCabinetsProducts/FireBoxes/FireBoxes';
 
 export default function MainRoute() {
   return (
@@ -62,11 +66,9 @@ export default function MainRoute() {
         <Route path='/respiratory-protection' element={<RespiratoryProtection />} />
         <Route path='/signaling-products' element={<SignalingProducts />} />
 
-
         <Route path='/shoes' element={<Shoes />} />
         <Route path='/special-shoes' element={<SpecialShoes />} />
         <Route path='/military-footwear' element={<MilitaryFootwear />} />
-
 
         <Route path='/fire-safety' element={<FireSafety />} />
         <Route path='/fire-extinguishers' element={<FireExtinguishers />} />
@@ -76,9 +78,13 @@ export default function MainRoute() {
         <Route path='/stands-and-fasteners' element={<StandsAndFasteners />} />
         <Route path='/components-for-fire-extinguishers' element={<ComponentsForFireExtinguishers />} />
 
-
-
         <Route path='/fire-cabinets' element={<FireCabinets />} />
+        <Route path='/fire-cabinets-item' element={<FireCabinetsItem />} />
+        <Route path='/fire-shields-and-stands' element={<FireShieldsAndStands />} />
+        <Route path='/fire-equipment' element={<FireEquipment />} />
+        <Route path='/fire-boxes' element={<FireBoxes />} />
+
+
         <Route path='/fire-hoses' element={<FireHoses />} />
 
         <Route path='/military-equipment' element={<MilitaryEquipment />} />
