@@ -470,7 +470,12 @@
     }
 }
 
-@media (max-width: 576.8px) {}
+@media (max-width: 576.8px) {
+    .pulse-button {
+        width: 55px;
+        height: 55px;
+    }
+}
 
 
 /* @media (max-width: 1200px) {}
