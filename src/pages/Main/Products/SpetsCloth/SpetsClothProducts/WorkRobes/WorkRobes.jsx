@@ -3,7 +3,7 @@ import './WorkRobes.css';
 import ProductsMap from '../../../../../../components/ProductsMap';
 import FilterProducts from '../../../FilterProducts/FilterProducts';
 import News from '../../../../News/News';
-import PopularMain from '../../PopularMain/PopularMain';
+import PopularMain from '../../../PopularMain/PopularMain';
 
 export default function WorkRobes() {
 

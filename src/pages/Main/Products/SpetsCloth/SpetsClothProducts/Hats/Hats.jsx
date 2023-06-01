@@ -2,7 +2,7 @@ import React from 'react';
 import FilterProducts from '../../../FilterProducts/FilterProducts';
 import ProductsMap from '../../../../../../components/ProductsMap';
 import News from '../../../../News/News';
-import PopularMain from '../../PopularMain/PopularMain';
+import PopularMain from '../../../PopularMain/PopularMain';
 
 export default function Hats() {
 

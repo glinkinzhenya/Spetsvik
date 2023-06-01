@@ -1,6 +1,6 @@
 import React from 'react';
 import './PopularMain.css';
-import ProductsMap from '../../../../../components/ProductsMap';
+import ProductsMap from '../../../../components/ProductsMap';
 
 export default function PopularMain({ category, popular }) {
 
