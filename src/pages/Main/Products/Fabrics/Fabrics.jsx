@@ -35,23 +35,25 @@ export default function Fabrics() {
           <h3 className='fabrics-secondaryTitle'>Основні категорії</h3>
 
           <div className='fabrics-box'>
-            <div className='fabrics-box__item'>
+
+            <a className='fabrics-box__item' href="/technical-fabrics">
               <div className='fabrics-box__item-picture'>
                 <img className='fabrics-box__item-image' src="./img/fabrics1.jpg" alt="" />
               </div>
               <div className='fabrics-box__item-bg'>
                 <div className='fabrics-box__item-text'>ТЕХНІЧНІ ТКАНИНИ</div>
               </div>
-            </div>
+            </a>
 
-            <div className='fabrics-box__item'>
+            <a className='fabrics-box__item' href="/strict-filter-fabrics">
               <div className='fabrics-box__item-picture'>
                 <img className='fabrics-box__item-image' src="./img/fabrics.jpg" alt="" />
               </div>
               <div className='fabrics-box__item-bg'>
                 <div className='fabrics-box__item-text'>СУВОРІ ФІЛЬТРУВАЛЬНІ ТКАНИНИ</div>
               </div>
-            </div>
+            </a>
+
           </div>
         </div>
       </div>
