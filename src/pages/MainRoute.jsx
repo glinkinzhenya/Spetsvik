@@ -55,6 +55,13 @@ import Glasses from './Main/Products/MilitaryEquipment/MilitaryEquipmentProducts
 import Panami from './Main/Products/MilitaryEquipment/MilitaryEquipmentProducts/Panami/Panami';
 import Pouches from './Main/Products/MilitaryEquipment/MilitaryEquipmentProducts/Pouches/Pouches';
 import PlateCarriers from './Main/Products/MilitaryEquipment/MilitaryEquipmentProducts/PlateCarriers/PlateCarriers';
+import Poncho from './Main/Products/MilitaryEquipment/MilitaryEquipmentProducts/Poncho/Poncho';
+import BeltsBraces from './Main/Products/MilitaryEquipment/MilitaryEquipmentProducts/BeltsBraces/BeltsBraces';
+import UnloadingSystems from './Main/Products/MilitaryEquipment/MilitaryEquipmentProducts/UnloadingSystems/UnloadingSystems';
+import Gloves from './Main/Products/MilitaryEquipment/MilitaryEquipmentProducts/Gloves/Gloves';
+import BackpacksBagsTrunks from './Main/Products/MilitaryEquipment/MilitaryEquipmentProducts/BackpacksBagsTrunks/BackpacksBagsTrunks';
+import SweatersFleeces from './Main/Products/MilitaryEquipment/MilitaryEquipmentProducts/SweatersFleeces/SweatersFleeces';
+import ShirtsCoats from './Main/Products/MilitaryEquipment/MilitaryEquipmentProducts/ShirtsCoats/ShirtsCoats';
 
 export default function MainRoute() {
   return (
@@ -115,7 +122,13 @@ export default function MainRoute() {
         <Route path='/panami' element={<Panami />} />
         <Route path='/pouches' element={<Pouches />} />
         <Route path='/plate-carriers' element={<PlateCarriers />} />
-        {/* <Route path='/military-equipment' element={<MilitaryEquipment />} /> */}
+        <Route path='/poncho' element={<Poncho />} />
+        <Route path='/belts-braces' element={<BeltsBraces />} />
+        <Route path='/unloading-systems' element={<UnloadingSystems />} />
+        <Route path='/gloves' element={<Gloves />} />
+        <Route path='/backpacks-bags-trunks' element={<BackpacksBagsTrunks />} />
+        <Route path='/sweaters-fleeces' element={<SweatersFleeces />} />
+        <Route path='/shirts-coats' element={<ShirtsCoats />} />
         {/* <Route path='/military-equipment' element={<MilitaryEquipment />} /> */}
         {/* <Route path='/military-equipment' element={<MilitaryEquipment />} /> */}
         {/* <Route path='/military-equipment' element={<MilitaryEquipment />} /> */}

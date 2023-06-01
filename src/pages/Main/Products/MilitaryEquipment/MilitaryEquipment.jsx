@@ -143,7 +143,7 @@ export default function MilitaryEquipment() {
               </div>
             </a>
 
-            <a className='militaryEquipment-box__item' href="/fire-hoses">
+            <a className='militaryEquipment-box__item' href="/poncho">
               <div className='militaryEquipment-box__item-picture'>
                 <img className='militaryEquipment-box__item-image' src="./img/MilitaryEquipment13.png" alt="" />
               </div>
@@ -152,7 +152,7 @@ export default function MilitaryEquipment() {
               </div>
             </a>
 
-            <a className='militaryEquipment-box__item' href="/fire-hoses">
+            <a className='militaryEquipment-box__item' href="/belts-braces">
               <div className='militaryEquipment-box__item-picture'>
                 <img className='militaryEquipment-box__item-image' src="./img/MilitaryEquipment14.png" alt="" />
               </div>
@@ -161,7 +161,7 @@ export default function MilitaryEquipment() {
               </div>
             </a>
 
-            <a className='militaryEquipment-box__item' href="/fire-hoses">
+            <a className='militaryEquipment-box__item' href="/unloading-systems">
               <div className='militaryEquipment-box__item-picture'>
                 <img className='militaryEquipment-box__item-image' src="./img/MilitaryEquipment15.JPG" alt="" />
               </div>
@@ -170,7 +170,7 @@ export default function MilitaryEquipment() {
               </div>
             </a>
 
-            <a className='militaryEquipment-box__item' href="/fire-hoses">
+            <a className='militaryEquipment-box__item' href="/gloves">
               <div className='militaryEquipment-box__item-picture'>
                 <img className='militaryEquipment-box__item-image' src="./img/MilitaryEquipment16.png" alt="" />
               </div>
@@ -179,7 +179,7 @@ export default function MilitaryEquipment() {
               </div>
             </a>
 
-            <a className='militaryEquipment-box__item' href="/fire-hoses">
+            <a className='militaryEquipment-box__item' href="/backpacks-bags-trunks">
               <div className='militaryEquipment-box__item-picture'>
                 <img className='militaryEquipment-box__item-image' src="./img/MilitaryEquipment17.png" alt="" />
               </div>
@@ -188,7 +188,7 @@ export default function MilitaryEquipment() {
               </div>
             </a>
 
-            <a className='militaryEquipment-box__item' href="/fire-hoses">
+            <a className='militaryEquipment-box__item' href="/sweaters-fleeces">
               <div className='militaryEquipment-box__item-picture'>
                 <img className='militaryEquipment-box__item-image' src="./img/MilitaryEquipment18.png" alt="" />
               </div>
@@ -197,7 +197,7 @@ export default function MilitaryEquipment() {
               </div>
             </a>
 
-            <a className='militaryEquipment-box__item' href="/fire-hoses">
+            <a className='militaryEquipment-box__item' href="/military-footwear">
               <div className='militaryEquipment-box__item-picture'>
                 <img className='militaryEquipment-box__item-image' src="./img/MilitaryEquipment19.png" alt="" />
               </div>
@@ -206,7 +206,7 @@ export default function MilitaryEquipment() {
               </div>
             </a>
 
-            <a className='militaryEquipment-box__item' href="/fire-hoses">
+            <a className='militaryEquipment-box__item' href="/shirts-coats">
               <div className='militaryEquipment-box__item-picture'>
                 <img className='militaryEquipment-box__item-image' src="./img/MilitaryEquipment20.png" alt="" />
               </div>
