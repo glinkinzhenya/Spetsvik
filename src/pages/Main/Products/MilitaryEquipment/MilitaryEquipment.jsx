@@ -34,7 +34,8 @@ export default function MilitaryEquipment() {
           <h3 className='militaryEquipment-secondaryTitle'>Основні категорії</h3>
 
           <div className='militaryEquipment-box'>
-            <a className='militaryEquipment-box__item' href="/fire-extinguishers">
+
+            <a className='militaryEquipment-box__item' href="/raincoats">
               <div className='militaryEquipment-box__item-picture'>
                 <img className='militaryEquipment-box__item-image' src="./img/MilitaryEquipment1.png" alt="" />
               </div>
@@ -43,7 +44,7 @@ export default function MilitaryEquipment() {
               </div>
             </a>
 
-            <a className='militaryEquipment-box__item' href="/fire-cabinets">
+            <a className='militaryEquipment-box__item' href="/vests">
               <div className='militaryEquipment-box__item-picture'>
                 <img className='militaryEquipment-box__item-image' src="./img/MilitaryEquipment2.png" alt="" />
               </div>
@@ -52,7 +53,7 @@ export default function MilitaryEquipment() {
               </div>
             </a>
 
-            <a className='militaryEquipment-box__item' href="/fire-hoses">
+            <a className='militaryEquipment-box__item' href="/weapon-belts">
               <div className='militaryEquipment-box__item-picture'>
                 <img className='militaryEquipment-box__item-image' src="./img/MilitaryEquipment3.png" alt="" />
               </div>
@@ -61,7 +62,7 @@ export default function MilitaryEquipment() {
               </div>
             </a>
 
-            <a className='militaryEquipment-box__item' href="/fire-hoses">
+            <a className='militaryEquipment-box__item' href="/sets-of-uniforms">
               <div className='militaryEquipment-box__item-picture'>
                 <img className='militaryEquipment-box__item-image' src="./img/MilitaryEquipment4.png" alt="" />
               </div>
@@ -201,7 +202,7 @@ export default function MilitaryEquipment() {
                 <img className='militaryEquipment-box__item-image' src="./img/MilitaryEquipment19.png" alt="" />
               </div>
               <div className='militaryEquipment-box__item-bg'>
-                <div className='militaryEquipment-box__item-text'>!!! НЕТ НАЗВАНИЯ !!!</div>
+                <div className='militaryEquipment-box__item-text'>ВІЙСЬКОВЕ ВЗУТТЯ</div>
               </div>
             </a>
 
