@@ -71,7 +71,7 @@ export default function MilitaryEquipment() {
               </div>
             </a>
 
-            <a className='militaryEquipment-box__item' href="/fire-hoses">
+            <a className='militaryEquipment-box__item' href="/jackets-parks">
               <div className='militaryEquipment-box__item-picture'>
                 <img className='militaryEquipment-box__item-image' src="./img/MilitaryEquipment5.png" alt="" />
               </div>
@@ -80,7 +80,7 @@ export default function MilitaryEquipment() {
               </div>
             </a>
 
-            <a className='militaryEquipment-box__item' href="/fire-hoses">
+            <a className='militaryEquipment-box__item' href="/camouflage-clothing">
               <div className='militaryEquipment-box__item-picture'>
                 <img className='militaryEquipment-box__item-image' src="./img/MilitaryEquipment6.png" alt="" />
               </div>
@@ -89,7 +89,7 @@ export default function MilitaryEquipment() {
               </div>
             </a>
 
-            <a className='militaryEquipment-box__item' href="/fire-hoses">
+            <a className='militaryEquipment-box__item' href="/thigh-platforms">
               <div className='militaryEquipment-box__item-picture'>
                 <img className='militaryEquipment-box__item-image' src="./img/MilitaryEquipment7.png" alt="" />
               </div>
@@ -98,16 +98,16 @@ export default function MilitaryEquipment() {
               </div>
             </a>
 
-            <a className='militaryEquipment-box__item' href="/fire-hoses">
+            <a className='militaryEquipment-box__item' href="/knee-pads-and-elbow-pads">
               <div className='militaryEquipment-box__item-picture'>
                 <img className='militaryEquipment-box__item-image' src="./img/MilitaryEquipment8.jpg" alt="" />
               </div>
               <div className='militaryEquipment-box__item-bg'>
-                <div className='militaryEquipment-box__item-text'>НАКОЛІННИКИ І НАЛОКІТНИКИ</div>
+                <div className='militaryEquipment-box__item-text'>НАКОЛІННИКИ ТА НАЛОКІТНИКИ</div>
               </div>
             </a>
 
-            <a className='militaryEquipment-box__item' href="/fire-hoses">
+            <a className='militaryEquipment-box__item' href="/glasses">
               <div className='militaryEquipment-box__item-picture'>
                 <img className='militaryEquipment-box__item-image' src="./img/MilitaryEquipment9.png" alt="" />
               </div>
@@ -116,7 +116,7 @@ export default function MilitaryEquipment() {
               </div>
             </a>
 
-            <a className='militaryEquipment-box__item' href="/fire-hoses">
+            <a className='militaryEquipment-box__item' href="/panami">
               <div className='militaryEquipment-box__item-picture'>
                 <img className='militaryEquipment-box__item-image' src="./img/MilitaryEquipment10.jpg" alt="" />
               </div>
@@ -125,7 +125,7 @@ export default function MilitaryEquipment() {
               </div>
             </a>
 
-            <a className='militaryEquipment-box__item' href="/fire-hoses">
+            <a className='militaryEquipment-box__item' href="/pouches">
               <div className='militaryEquipment-box__item-picture'>
                 <img className='militaryEquipment-box__item-image' src="./img/MilitaryEquipment11.png" alt="" />
               </div>
@@ -134,7 +134,7 @@ export default function MilitaryEquipment() {
               </div>
             </a>
 
-            <a className='militaryEquipment-box__item' href="/fire-hoses">
+            <a className='militaryEquipment-box__item' href="/plate-carriers">
               <div className='militaryEquipment-box__item-picture'>
                 <img className='militaryEquipment-box__item-image' src="./img/MilitaryEquipment12.png" alt="" />
               </div>

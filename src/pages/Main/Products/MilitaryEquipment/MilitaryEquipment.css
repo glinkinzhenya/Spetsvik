@@ -54,12 +54,12 @@
 }
 
 .militaryEquipment-box {
-    /* display: grid;
-    grid-template-columns: repeat(4, 1fr); */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap: 100px 35px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* justify-content: center; */
 }
 
 .militaryEquipment-box__item {

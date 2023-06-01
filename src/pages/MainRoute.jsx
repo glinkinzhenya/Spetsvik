@@ -47,6 +47,14 @@ import Raincoats from './Main/Products/MilitaryEquipment/MilitaryEquipmentProduc
 import Vests from './Main/Products/MilitaryEquipment/MilitaryEquipmentProducts/Vests/Vests';
 import WeaponBelts from './Main/Products/MilitaryEquipment/MilitaryEquipmentProducts/WeaponBelts/WeaponBelts';
 import SetsOfUniforms from './Main/Products/MilitaryEquipment/MilitaryEquipmentProducts/SetsOfUniforms/SetsOfUniforms';
+import JacketsParks from './Main/Products/MilitaryEquipment/MilitaryEquipmentProducts/JacketsParks/JacketsParks';
+import CamouflageClothing from './Main/Products/MilitaryEquipment/MilitaryEquipmentProducts/CamouflageClothing/CamouflageClothing';
+import ThighPlatforms from './Main/Products/MilitaryEquipment/MilitaryEquipmentProducts/ThighPlatforms/ThighPlatforms';
+import KneePadsAndElbowPads from './Main/Products/MilitaryEquipment/MilitaryEquipmentProducts/KneePadsAndElbowPads/KneePadsAndElbowPads';
+import Glasses from './Main/Products/MilitaryEquipment/MilitaryEquipmentProducts/Glasses/Glasses';
+import Panami from './Main/Products/MilitaryEquipment/MilitaryEquipmentProducts/Panami/Panami';
+import Pouches from './Main/Products/MilitaryEquipment/MilitaryEquipmentProducts/Pouches/Pouches';
+import PlateCarriers from './Main/Products/MilitaryEquipment/MilitaryEquipmentProducts/PlateCarriers/PlateCarriers';
 
 export default function MainRoute() {
   return (
@@ -99,6 +107,17 @@ export default function MainRoute() {
         <Route path='/vests' element={<Vests />} />
         <Route path='/weapon-belts' element={<WeaponBelts />} />
         <Route path='/sets-of-uniforms' element={<SetsOfUniforms />} />
+        <Route path='/jackets-parks' element={<JacketsParks />} />
+        <Route path='/camouflage-clothing' element={<CamouflageClothing />} />
+        <Route path='/thigh-platforms' element={<ThighPlatforms />} />
+        <Route path='/knee-pads-and-elbow-pads' element={<KneePadsAndElbowPads />} />
+        <Route path='/glasses' element={<Glasses />} />
+        <Route path='/panami' element={<Panami />} />
+        <Route path='/pouches' element={<Pouches />} />
+        <Route path='/plate-carriers' element={<PlateCarriers />} />
+        {/* <Route path='/military-equipment' element={<MilitaryEquipment />} /> */}
+        {/* <Route path='/military-equipment' element={<MilitaryEquipment />} /> */}
+        {/* <Route path='/military-equipment' element={<MilitaryEquipment />} /> */}
         {/* <Route path='/military-equipment' element={<MilitaryEquipment />} /> */}
 
 
