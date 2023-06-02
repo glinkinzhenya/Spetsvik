@@ -29,7 +29,6 @@ export default function ProductsMap({ category, popular }) {
     const [product, setProduct] = useState([]);
 
     const touchProduct = (item) => {
-
         setProduct(item)
         setProductWindow(true)
     };
@@ -41,12 +40,10 @@ export default function ProductsMap({ category, popular }) {
 
     const handleClick = async (item) => {
         setOpen(true);
-        const dataTest = await localStorage.getItem("cartItems");
-        if (dataTest) {
-            const dataPars = JSON.parse(dataTest);
-            const updatedCartItems = [...dataPars, item];
-            console.log(updatedCartItems);
-            localStorage.setItem('cartItems', JSON.stringify([...dataPars, item]));
+        const cartItems = await localStorage.getItem("cartItems");
+        if (cartItems) {
+            const cartItemsPars = JSON.parse(cartItems);
+            localStorage.setItem('cartItems', JSON.stringify([...cartItemsPars, item]));
         } else {
             localStorage.setItem('cartItems', JSON.stringify([item]));
         }
