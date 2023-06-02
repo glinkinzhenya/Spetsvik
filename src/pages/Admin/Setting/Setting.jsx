@@ -244,43 +244,6 @@ export default function Setting() {
     }
   };
 
-
-  // const handleDelete = (url, folderPath, array) => {
-  //   const imageRef = storage.refFromURL(url);
-  //   imageRef
-  //     .delete()
-  //     .then(() => {
-  //       setProgress('Изображение удалено');
-  //       setTimeout(() => {
-  //         window.location.reload();
-  //       }, 1000);
-  //       console.log('Изображение удалено из хранилища');
-  //     })
-  //     .catch((error) => {
-  //       console.log('Ошибка удаления изображения из хранилища:', error);
-  //       setProgress('Ошибка удаления изображения');
-  //     });
-  //   let updatedArray = null
-  //   if (folderPath !== 'product') {
-  //    updatedArray = array.filter((item) => item !== url);
-  //   } else {
-  //    updatedArray = array.filter((item) => item.img !== url);
-  //   }
-
-  //   firestore
-  //     .collection('data')
-  //     .doc('RvwOmHHKyWpAChE4gdTQ')
-  //     .update({
-  //       [folderPath]: updatedArray,
-  //     })
-  //     .then(() => {
-  //       console.log('Изображение удалено из массива в Firebase');
-  //     })
-  //     .catch((error) => {
-  //       console.log('Ошибка удаления изображения из массива в Firebase:', error);
-  //     });
-  // };
-
   const handleDelete = (url, folderPath, array) => {
     const imageRefs = [];
     if (folderPath !== 'product') {
@@ -472,92 +435,7 @@ export default function Setting() {
 
         <div className="setting-product">
 
-          <div className='setting-product__flex'>
-
-            <p className="setting-carusel__title">Товар</p>
-            <select className='setting-product__select' onChange={handleChangeCategory}>
-              <option>Всі товари</option>
-              {categoryArray.map((item, index) => (
-                <option key={index}>{item}</option>
-              ))}
-            </select>
-
-            <label className='setting-product__change'>
-              <input name="popular" type="checkbox" onChange={handleChangeShowPopular} disabled={selectedCategory === 'Всі товари'} />
-              Показати популярні
-            </label>
-
-            <input className='setting-product__search' value={searchQuery} onChange={handleSearchInputChange} type="text" name="search" placeholder='Пошук товара/артікля' />
-
-          </div>
-
-
-
-
-          <div className="setting-product__box">
-            {displayedProducts.map((item, index) => (
-              <div key={index} className="setting-product__box-items">
-                <div className="setting-product__box-item">
-                  <div className='setting-product__box-item__picture'>
-                    <img className='setting-product__box-item__img' src={item.img[0]} alt={item.img[0]} />
-                  </div>
-                  <div className='setting-product__box-item-info'>
-                    <div className='setting-product__box-item-info__title'>{item.title}</div>
-                    <div className='setting-product__box-item-info__description'>{item.price}</div>
-                    <div className='setting-product__box-item-info__description'>{item.description}</div>
-                    <div className='setting-product__box-item-info__category'>{item.category}</div>
-                    <div className='setting-product__box-item-info__article'>{item.article}</div>
-                    <div className='setting-product__box-item-info__popular'>Популярні: {item.popular ? 'Так' : 'Ні'}</div>
-                  </div>
-                </div>
-                <button className="setting-carusel__item-edit" onClick={() => setEditProduct(item, setEditProductOrigin(item))}>Редагувати</button>
-                <button className="setting-carusel__item-delete" onClick={() => handleDelete(item.img, 'product', arrayProduct, setProgressProduct(true))}>Видалити</button>
-              </div>
-            ))}
-          </div>
-
           {editProduct && <p className="setting-carusel__title">Редагування товару</p>}
-          {/* {editProduct && (
-            <div className="setting-product__edit">
-              <p className="setting-carusel__title">Редагування товару</p>
-              <input
-                className="setting-product__input"
-                name="title"
-                onChange={(e) => handleEditInputChange(e, editProduct)}
-                value={editProduct.title}
-                type="text"
-                placeholder="Назва товару"
-              />
-              <input
-                className="setting-product__input"
-                name="description"
-                onChange={(e) => handleEditInputChange(e, editProduct)}
-                value={editProduct.description}
-                type="text"
-                placeholder="Ціна"
-              />
-              <select
-                className="setting-product__select"
-                onChange={(e) => handleEditInputChange(e, editProduct)}
-                name="category"
-                value={editProduct.category}
-              >
-                <option>Обрати категорію</option>
-                {categoryArray.map((item) => (
-                  <option key={item}>{item}</option>
-                ))}
-              </select>
-
-              <label>
-                <input name="popular" type="checkbox" onChange={(e) => handleEditInputChange(e, editProduct)} checked={editProduct.popular} value={editProduct.popular} />
-                Додати у популярні
-              </label>
-
-              <button className="setting-product__edit-button" onClick={() => handleEditProduct(editProduct)}>Зберегти</button>
-            </div>
-          )} */}
-
-
 
           <div className="setting-product__inputs">
             {editProduct ? '' : <input type="file" onChange={handleFileChange} multiple />}
@@ -619,6 +497,47 @@ export default function Setting() {
               <button onClick={handleUploadProductsClick} className="setting-product__button">Додати товар</button>}
           </div>
           {progressProduct ? <div className="setting-carusel__progress">{progress}</div> : null}
+
+          <div className='setting-product__flex'>
+
+            <p className="setting-carusel__title">Товар</p>
+            <select className='setting-product__select' onChange={handleChangeCategory}>
+              <option>Всі товари</option>
+              {categoryArray.map((item, index) => (
+                <option key={index}>{item}</option>
+              ))}
+            </select>
+
+            <label className='setting-product__change'>
+              <input name="popular" type="checkbox" onChange={handleChangeShowPopular} disabled={selectedCategory === 'Всі товари'} />
+              Показати популярні
+            </label>
+
+            <input className='setting-product__search' value={searchQuery} onChange={handleSearchInputChange} type="text" name="search" placeholder='Пошук товара/артікля' />
+
+          </div>
+
+          <div className="setting-product__box">
+            {displayedProducts.map((item, index) => (
+              <div key={index} className="setting-product__box-items">
+                <div className="setting-product__box-item">
+                  <div className='setting-product__box-item__picture'>
+                    <img className='setting-product__box-item__img' src={item.img[0]} alt={item.img[0]} />
+                  </div>
+                  <div className='setting-product__box-item-info'>
+                    <div className='setting-product__box-item-info__title'>{item.title}</div>
+                    <div className='setting-product__box-item-info__description'>{item.price}</div>
+                    <div className='setting-product__box-item-info__description'>{item.description}</div>
+                    <div className='setting-product__box-item-info__category'>{item.category}</div>
+                    <div className='setting-product__box-item-info__article'>{item.article}</div>
+                    <div className='setting-product__box-item-info__popular'>Популярні: {item.popular ? 'Так' : 'Ні'}</div>
+                  </div>
+                </div>
+                <button className="setting-carusel__item-edit" onClick={() => setEditProduct(item, setEditProductOrigin(item))}>Редагувати</button>
+                <button className="setting-carusel__item-delete" onClick={() => handleDelete(item.img, 'product', arrayProduct, setProgressProduct(true))}>Видалити</button>
+              </div>
+            ))}
+          </div>
 
         </div>
 
