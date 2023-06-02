@@ -1,7 +1,7 @@
 import React from 'react';
 import './FireHoses.css';
 import News from '../../../News/News';
-import PopularGoodsFireHoses from './PopularGoodsFireHoses/PopularGoodsFireHoses';
+// import PopularGoodsFireHoses from './PopularGoodsFireHoses/PopularGoodsFireHoses';
 
 export default function FireHoses() {
 
@@ -38,63 +38,65 @@ export default function FireHoses() {
           <h3 className='fireHoses-secondaryTitle'>Основні категорії</h3>
 
           <div className='fireHoses-box'>
-            <div className='fireHoses-box__item'>
+
+            <a className='fireHoses-box__item' href="/pressure-hoses">
               <div className='fireHoses-box__item-picture'>
                 <img className='fireHoses-box__item-image' src="./img/fire-hoses1.jpeg" alt="" />
               </div>
               <div className='fireHoses-box__item-bg'>
                 <div className='fireHoses-box__item-text'>РУКАВА ПОЖЕЖНІ НАПІРНІ</div>
               </div>
-            </div>
+            </a>
 
-            <div className='fireHoses-box__item'>
+            <a className='fireHoses-box__item' href="/fire-barrels">
               <div className='fireHoses-box__item-picture'>
                 <img className='fireHoses-box__item-image' src="./img/fire-hoses2.jpeg" alt="" />
               </div>
               <div className='fireHoses-box__item-bg'>
                 <div className='fireHoses-box__item-text'>СТВОЛИ ПОЖЕЖНІ</div>
               </div>
-            </div>
+            </a>
 
-            <div className='fireHoses-box__item'>
+            <a className='fireHoses-box__item' href="/fire-connecting-heads">
               <div className='fireHoses-box__item-picture'>
                 <img className='fireHoses-box__item-image' src="./img/fire-hoses7.jpeg" alt="" />
               </div>
               <div className='fireHoses-box__item-bg'>
                 <div className='fireHoses-box__item-text'>ГОЛОВКИ ПОЖЕЖНІ З'ЄДНУАЛЬНІ</div>
               </div>
-            </div>
+            </a>
 
-            <div className='fireHoses-box__item'>
+            <a className='fireHoses-box__item' href="/fire-hydrants">
               <div className='fireHoses-box__item-picture'>
                 <img className='fireHoses-box__item-image' src="./img/fire-hoses3.jpeg" alt="" />
               </div>
               <div className='fireHoses-box__item-bg'>
                 <div className='fireHoses-box__item-text'>КРАНИ ПОЖЕЖНІ, КЛАПАНИ ПОЖЕЖНІ, ВЕНТИЛІ ПОЖЕЖНОГО КРАНУ</div>
               </div>
-            </div>
+            </a>
 
-            <div className='fireHoses-box__item'>
+            <a className='fireHoses-box__item' href="/fire-columns">
               <div className='fireHoses-box__item-picture'>
                 <img className='fireHoses-box__item-image' src="./img/fire-hoses4.jpeg" alt="" />
               </div>
               <div className='fireHoses-box__item-bg'>
                 <div className='fireHoses-box__item-text'>ПОЖЕЖНІ КОЛОНКИ І ГІДРАНТИ ПОЖЕЖНІ</div>
               </div>
-            </div>
+            </a>
 
-            <div className='fireHoses-box__item'>
+            <a className='fireHoses-box__item' href="/stands-for-hydrants">
               <div className='fireHoses-box__item-picture'>
                 <img className='fireHoses-box__item-image' src="./img/fire-hoses6.png" alt="" />
               </div>
               <div className='fireHoses-box__item-bg'>
                 <div className='fireHoses-box__item-text'>ПІДСТАВКИ ДЛЯ ГІДРАНТА ПОЖЕЖНОГО</div>
               </div>
-            </div>
+            </a>
+
           </div>
         </div>
       </div>
-      <PopularGoodsFireHoses />
+      {/* <PopularGoodsFireHoses /> */}
       <News />
     </>
   );

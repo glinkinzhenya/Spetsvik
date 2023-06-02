@@ -216,7 +216,7 @@
     min-height: 100px;
     display: flex;
     flex-wrap: wrap;
-    gap: 40px;
+    gap: 0px 40px;
     justify-content: center;
     align-items: center;
     color: white;
@@ -441,13 +441,19 @@
     object-fit: cover;
 }
 
-.basket-item__price {
+@media (max-width: 1300px) {
+    .header {
+        height: 215px;
+    }
+
 }
 
 @media (max-width: 1200px) {}
 
 @media (max-width: 992px) {
-
+    .header {
+        height: 250px;
+    }
     .header-contacts {
         grid-template-columns: repeat(2, 1fr);
         gap: 0px;
@@ -463,7 +469,9 @@
 }
 
 @media (max-width: 768px) {
-
+    .header {
+        height: 160px;
+    }
     .header-logo__telephone {
         display: none;
     }

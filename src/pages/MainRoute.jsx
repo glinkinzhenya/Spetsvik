@@ -67,6 +67,12 @@ import Shirts from './Main/Products/MilitaryEquipment/MilitaryEquipmentProducts/
 import ScarfPipes from './Main/Products/MilitaryEquipment/MilitaryEquipmentProducts/ScarfPipes/ScarfPipes';
 import Socks from './Main/Products/MilitaryEquipment/MilitaryEquipmentProducts/Socks/Socks';
 import Shorts from './Main/Products/MilitaryEquipment/MilitaryEquipmentProducts/Shorts/Shorts';
+import PressureHoses from './Main/Products/FireSafety/FireHoses/FireHosesProducts/PressureHoses/PressureHoses';
+import FireBarrels from './Main/Products/FireSafety/FireHoses/FireHosesProducts/FireBarrels/FireBarrels';
+import FireConnectingHeads from './Main/Products/FireSafety/FireHoses/FireHosesProducts/FireConnectingHeads/FireConnectingHeads';
+import FireHydrants from './Main/Products/FireSafety/FireHoses/FireHosesProducts/FireHydrants/FireHydrants';
+import FireColumns from './Main/Products/FireSafety/FireHoses/FireHosesProducts/FireColumns/FireColumns';
+import StandsForHydrants from './Main/Products/FireSafety/FireHoses/FireHosesProducts/StandsForHydrants/StandsForHydrants';
 
 export default function MainRoute() {
   return (
@@ -113,6 +119,12 @@ export default function MainRoute() {
 
 
         <Route path='/fire-hoses' element={<FireHoses />} />
+        <Route path='/pressure-hoses' element={<PressureHoses />} />
+        <Route path='/fire-barrels' element={<FireBarrels />} />
+        <Route path='/fire-connecting-heads' element={<FireConnectingHeads />} />
+        <Route path='/fire-hydrants' element={<FireHydrants />} />
+        <Route path='/fire-columns' element={<FireColumns />} />
+        <Route path='/stands-for-hydrants' element={<StandsForHydrants />} />
 
         <Route path='/military-equipment' element={<MilitaryEquipment />} />
         <Route path='/raincoats' element={<Raincoats />} />

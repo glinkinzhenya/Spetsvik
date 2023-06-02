@@ -58,12 +58,12 @@
     grid-template-columns: repeat(4, 1fr); */
     gap: 100px 35px;
     display: flex;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .shevrons-box__item {
     height: 400px;
-    max-width: 300px;
+    width: 300px;
     cursor: pointer;
     display: flex;
     align-items: flex-end;
@@ -108,4 +108,24 @@ position: absolute;
     font-size: 20px;
     font-weight: 600;
     text-align: center;
+}
+
+@media (max-width: 1200px) {}
+
+@media (max-width: 992px) {}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 576.8px) {
+    .shevrons-box {
+        justify-content: space-evenly;
+    }
+    .shevrons-mainTitle {
+        font-size: 35px;
+    }
+    .shevrons-secondaryTitle {
+        font-size: 35px;
+    }
 }
