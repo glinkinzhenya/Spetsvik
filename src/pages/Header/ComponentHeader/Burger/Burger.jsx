@@ -38,13 +38,12 @@ export default function Burger() {
         open={open}
         onClose={() => setOpen(false)}
       >
-        <Box
+        <Box className='Box'
           role="presentation"
           onClick={() => setOpen(false)}
           onKeyDown={() => setOpen(false)}
           sx={{
-            height: '100%',
-            width: '170px',
+
             backgroundColor: 'rgb(60, 60, 58);',
           }}
         >
