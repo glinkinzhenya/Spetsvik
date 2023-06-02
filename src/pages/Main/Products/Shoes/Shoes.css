@@ -55,11 +55,11 @@
 
 .shoes-box {
     /* display: grid; */
-    gap: 100px 35px;
     /* grid-template-columns: repeat(4, 1fr); */
+    gap: 100px 35px;
     display: flex;
-    justify-content: center;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
 }
 
 .shoes-box__item {
@@ -109,4 +109,24 @@ position: absolute;
     font-size: 20px;
     font-weight: 600;
     text-align: center;
+}
+
+@media (max-width: 1200px) {}
+
+@media (max-width: 992px) {}
+
+@media (max-width: 768px) {
+
+    .shoes-box {
+        justify-content: space-evenly;
+    }
+}
+
+@media (max-width: 576.8px) {
+    .shoes-mainTitle {
+        font-size: 35px;
+    }
+    .shoes-secondaryTitle {
+        font-size: 35px;
+    }
 }

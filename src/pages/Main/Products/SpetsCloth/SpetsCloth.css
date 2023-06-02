@@ -119,23 +119,16 @@ position: absolute;
     .spetsCloth-box {
         justify-content: space-evenly;
     }
-
 }
 
 @media (max-width: 768px) {}
 
 @media (max-width: 576.8px) {
     .spetsCloth-mainTitle {
-        /* padding-top: 50px; */
         font-size: 35px;
-        /* font-weight: 700; */
-        /* padding-bottom: 50px; */
     }
 
     .spetsCloth-secondaryTitle {
         font-size: 35px;
-        /* font-weight: 700; */
-        /* padding-top: 100px; */
-        /* padding-bottom: 70px; */
     }
 }
