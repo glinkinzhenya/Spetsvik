@@ -41,11 +41,59 @@ export default function Header() {
 
   const [productWindow, setProductWindow] = useState(false);
 
+  const countDuplicates = (arr, value) => {
+    let count = 0;
+    for (let i = 0; i < arr.length; i++) {
+      if (arr[i].title === value) {
+        count++;
+      }
+    }
+    return count;
+  };
+
   const touchProduct = () => {
     const cartItems = localStorage.getItem("cartItems");
-    if (cartItems) setBusket(JSON.parse(cartItems))
-    setProductWindow(true)
+    if (cartItems) {
+      const parsedCartItems = JSON.parse(cartItems);
+      const uniqueItems = Array.from(new Set(parsedCartItems.map((item) => item.title)));
+
+      const basketItems = uniqueItems.map((title) => {
+        const quantity = countDuplicates(parsedCartItems, title);
+        const item = parsedCartItems.find((item) => item.title === title);
+        const total = item.price * quantity; // Вычисление суммы для каждого товара
+        return { ...item, quantity, total };
+      });
+
+      setBusket(basketItems);
+    }
+    setProductWindow(true);
   };
+
+  const increaseQuantity = (index) => {
+    const updatedBasket = [...busket];
+    updatedBasket[index].quantity += 1;
+    updatedBasket[index].total = updatedBasket[index].quantity * updatedBasket[index].price;
+    setBusket(updatedBasket);
+  };
+
+  const decreaseQuantity = (index) => {
+    const updatedBasket = [...busket];
+    if (updatedBasket[index].quantity > 1) {
+      updatedBasket[index].quantity -= 1;
+      updatedBasket[index].total = updatedBasket[index].quantity * updatedBasket[index].price;
+      setBusket(updatedBasket);
+    }
+  };
+
+  const calculateTotalAmount = () => {
+    let total = 0;
+    for (let i = 0; i < busket.length; i++) {
+      total += busket[i].total;
+    }
+    return total;
+  };
+
+
   const touchProductClose = () => {
     setProductWindow(false)
   };
@@ -210,10 +258,15 @@ export default function Header() {
                   </div>
                   <div className="basket-item__title">{item.title}</div>
                 </div>
-                <div>1</div>
-                <div>{item.price}</div>
+                <div className="basket-item__quantity">
+                  <button onClick={() => decreaseQuantity(index)}>-</button>
+                  {item.quantity}
+                  <button onClick={() => increaseQuantity(index)}>+</button>
+                </div>
+                <div>{item.total}</div>
               </div>
             ))}
+            <div className="total-amount">Общая сумма: {calculateTotalAmount()}</div>
 
           </div>
 
