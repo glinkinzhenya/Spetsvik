@@ -64,7 +64,7 @@
 
 .shoes-box__item {
     height: 400px;
-    max-width: 300px;
+    width: 300px;
     cursor: pointer;
     display: flex;
     align-items: flex-end;
