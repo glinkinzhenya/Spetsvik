@@ -25,12 +25,7 @@ export default function Header() {
   useEffect(() => {
     setBusketNumberCorrect(cartItems2.length)
     setBusketNumber(busketNumber + cartItems2.length - busketNumberCorrect)
-
-
-
   }, [cartItems2]);
-
-  console.log(busket);
 
   const [isPulseButtonActive, setIsPulseButtonActive] = useState(false);
 
