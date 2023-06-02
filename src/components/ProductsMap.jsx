@@ -38,30 +38,24 @@ export default function ProductsMap({ category, popular }) {
     };
 
     const [open, setOpen] = useState(false);
-    const [cartItems, setCartItems] = useState([]);
 
-    const handleClick = (item) => {
+    const handleClick = async (item) => {
         setOpen(true);
-        const updatedCartItems = [...cartItems, item];
-        setCartItems(updatedCartItems);
-        localStorage.setItem('cartItems', JSON.stringify(updatedCartItems));
-
-
-        setCartItems([...cartItems, item]);
+        const dataTest = await localStorage.getItem("cartItems");
+        if (dataTest) {
+            const dataPars = JSON.parse(dataTest);
+            const updatedCartItems = [...dataPars, item];
+            console.log(updatedCartItems);
+            localStorage.setItem('cartItems', JSON.stringify([...dataPars, item]));
+        } else {
+            localStorage.setItem('cartItems', JSON.stringify([item]));
+        }
         setCartItems2([...cartItems2, item]);
     };
 
     const handleClose = () => {
         setOpen(false);
     };
-
-    useEffect(() => {
-        const storedCartItems = localStorage.getItem('cartItems');
-        if (storedCartItems) {
-            setCartItems(JSON.parse(storedCartItems));
-        }
-    }, []);
-
 
 
     return (
