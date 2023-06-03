@@ -3,7 +3,10 @@ import { Context } from '../../Contex';
 import Burger from './ComponentHeader/Burger/Burger';
 import BasicMenu from './ComponentHeader/BasicMenu/BasicMenu';
 import './Header.css';
-import { TextField } from '@mui/material';
+import { Button, TextField } from '@mui/material';
+import DeleteForeverIcon from '@mui/icons-material/DeleteForever';
+import AddIcon from '@mui/icons-material/Add';
+import RemoveIcon from '@mui/icons-material/Remove';
 
 export default function Header() {
   const [busketNumber, setBusketNumber] = useState(0);
@@ -74,15 +77,47 @@ export default function Header() {
     updatedBasket[index].quantity += 1;
     updatedBasket[index].total = updatedBasket[index].quantity * updatedBasket[index].price;
     setBusket(updatedBasket);
+    updateLocalStorage(updatedBasket); // Обновляем данные в локальном хранилище
+    setBusketNumber(busketNumber + 1);
   };
-
+  // кнопка минус
   const decreaseQuantity = (index) => {
     const updatedBasket = [...busket];
     if (updatedBasket[index].quantity > 1) {
       updatedBasket[index].quantity -= 1;
       updatedBasket[index].total = updatedBasket[index].quantity * updatedBasket[index].price;
       setBusket(updatedBasket);
+      updateLocalStorage(updatedBasket); // Обновляем данные в локальном хранилище
+      setBusketNumber(busketNumber - 1);
     }
+  };
+
+  const removeItem = (index) => {
+    const updatedBasket = [...busket];
+    const item = updatedBasket[index];
+
+    // Удаляем все копии товара из корзины
+    const updatedBasketWithoutItem = updatedBasket.filter((basketItem) => basketItem.title !== item.title);
+    setBusket(updatedBasketWithoutItem);
+
+    // Удаляем все копии товара из локального хранилища
+    const cartItems = localStorage.getItem("cartItems");
+    if (cartItems) {
+      const parsedCartItems = JSON.parse(cartItems);
+      const updatedCartItems = parsedCartItems.filter((cartItem) => cartItem.title !== item.title);
+      localStorage.setItem("cartItems", JSON.stringify(updatedCartItems));
+      setBusketNumber(updatedCartItems.length);
+    }
+  };
+
+  const updateLocalStorage = (updatedBasket) => {
+    const cartItems = updatedBasket.reduce((items, item) => {
+      for (let i = 0; i < item.quantity; i++) {
+        items.push(item);
+      }
+      return items;
+    }, []);
+    localStorage.setItem("cartItems", JSON.stringify(cartItems));
   };
 
   const calculateTotalAmount = () => {
@@ -92,6 +127,8 @@ export default function Header() {
     }
     return total;
   };
+
+
 
 
   const touchProductClose = () => {
@@ -251,30 +288,31 @@ export default function Header() {
           <div className="basket-map">
 
             {busket.map((item, index) => (
-              <div key={index} className="basket-products__name">
+              <div key={index} className="basket-products__box">
                 <div className="basket-item">
                   <div className="basket-item__picture">
                     <img className="basket-item__img" src={item.img[0]} alt={item.img[0]} />
                   </div>
                   <div className="basket-item__title">{item.title}</div>
                 </div>
-                <div className="basket-item__quantity">
-                  <button onClick={() => decreaseQuantity(index)}>-</button>
-                  {item.quantity}
-                  <button onClick={() => increaseQuantity(index)}>+</button>
+                <div className="basket-item__actions">
+                  <RemoveIcon sx={{ cursor: 'pointer' }} onClick={() => decreaseQuantity(index)}>-</RemoveIcon>
+                  <div className='basket-item__quantity'>{item.quantity}</div> 
+                  <AddIcon sx={{ cursor: 'pointer' }} onClick={() => increaseQuantity(index)}>+</AddIcon>
                 </div>
-                <div>{item.total}</div>
+                <div className='basket-item__total'>{item.total}</div>
+                <DeleteForeverIcon sx={{ width: '60px', cursor: 'pointer' }} onClick={() => removeItem(index)}>Удалить</DeleteForeverIcon>
               </div>
             ))}
-            <div className="total-amount">Общая сумма: {calculateTotalAmount()}</div>
+
 
           </div>
 
+          <div className="basket-summ-button">
+            <div className="total-amount">Загальна сума: {calculateTotalAmount()}</div>
+            <Button variant="contained" sx={{ backgroundColor: '#F07C00', }}>Зробити замовлення</Button>
+          </div>
         </div>
-
-
-
-
 
       </div>}
 
