@@ -1,6 +1,5 @@
 .about {
     background-color: black;
-  
 }
 
 
@@ -20,7 +19,7 @@
 
 .about-text {
     color: white;
-    width: 700px;
+    max-width: 700px;
     font-weight: 400;
     font-size: 25px;
 }
@@ -31,9 +30,35 @@
 
 .about-picture {
     width: 400px;
-    margin-top: -58px;
 }
 
 .about-image {
     width: 100%;
 }
+
+
+@media (max-width: 1150px) {
+    .about-wripper {
+      flex-direction: column;
+      align-items: center;
+    }
+    .about-picture {
+     order: -1;
+     margin-bottom: 30px;
+     width: 40%;
+    }
+
+    .about-wripper {
+        padding-top: 50px;
+    }
+}
+
+@media (max-width: 992px) {}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 576.8px) {
+    .about-picture {
+        width: 50%;
+       }
+   }
