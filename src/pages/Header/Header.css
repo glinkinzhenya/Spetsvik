@@ -379,11 +379,11 @@
     z-index: 10;
     display: flex;
     padding: 10px;
-    gap: 5px;
+    gap: 10px;
 }
 
 .basket-form {
-    border: 1px solid rgb(142, 142, 142);
+    /* border: 1px solid rgb(142, 142, 142); */
     width: 40%;
     height: 100%;
     display: flex;
@@ -392,24 +392,37 @@
 }
 
 .basket-form__title {
-    color: black;
+    color: rgb(255, 255, 255);
     text-align: center;
     padding: 10px;
     font-weight: 300;
     font-size: 22px;
+    background-color: #212529;
+    width: 100%;
+    height: 53px;
 }
 
 .basket-products {
-    border: 1px solid rgb(142, 142, 142);
+    /* border: 1px solid rgb(142, 142, 142); */
     width: 60%;
     height: 100%;
 }
 
 .basket-products__name {
     display: grid;
-    grid-template-columns: 50% 25% 25%;
+    grid-template-columns: 50% 20% 20% 10%;
+    justify-items: center;
+    margin-bottom: 15px;
+    background-color: #212529;
+    color: white;
+}
+
+.basket-products__box {
+    display: grid;
+    grid-template-columns: 50% 20% 20% 10%;
     justify-items: center;
     margin-bottom: 10px;
+    align-items: center;
 }
 
 .basket-products__title {
@@ -422,12 +435,21 @@
     display: flex;
     gap: 10px;
     flex-direction: column;
+    height: 460px;
+    overflow-y: auto;
 }
 
 .basket-item {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.basket-item__actions {
     display: flex;
     gap: 5px;
-
+    align-items: center;
 }
 
 .basket-item__picture {
@@ -439,6 +461,29 @@
     height: 100%;
     width: 100%;
     object-fit: cover;
+}
+
+.basket-item__title {
+    width: 284px;
+}
+
+.basket-summ-button {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    align-items: center;
+}
+
+.total-amount {
+    font-size: 18px;
+}
+
+.basket-item__quantity {
+    font-size: 20px;
+}
+
+.basket-item__total {
+font-size: 20px;
 }
 
 @media (max-width: 1300px) {
@@ -454,6 +499,7 @@
     .header {
         height: 250px;
     }
+
     .header-contacts {
         grid-template-columns: repeat(2, 1fr);
         gap: 0px;
@@ -472,6 +518,7 @@
     .header {
         height: 160px;
     }
+
     .header-logo__telephone {
         display: none;
     }
