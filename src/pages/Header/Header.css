@@ -487,6 +487,14 @@
 font-size: 20px;
 }
 
+.MuiButtonBase-root{
+    transition: 0.5s!important;
+}
+
+.MuiButtonBase-root:hover {
+    color: #F07C00 !important;
+}
+
 @media (max-width: 1300px) {
     .header {
         height: 215px;

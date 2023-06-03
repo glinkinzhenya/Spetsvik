@@ -31,8 +31,8 @@ select:focus {
 
 a {
   text-decoration: none !important;
-  transition: 0.5s;
-  color: white !important;
+  transition: 0.5s!important;
+  color: white!important;
 }
 
 ul {
