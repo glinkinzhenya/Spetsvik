@@ -15,25 +15,13 @@ export const adminRules = {
 };
 
 export const addFormRules = {
-  login: {
-    required: { value: true, message: rulesText.required('логін') },
+  name: {
+    required: { value: true, message: rulesText.required('ПІБ') },
   },
-  password: {
-    required: { value: true, message: rulesText.required('пароль') },
+  mail: {
+    required: { value: true, message: rulesText.required('E-mail') },
   },
-  image: {
-    required: { value: true, message: addFormRulesImage.required('логотип') },
-  },
-  description: {
-    required: { value: true, message: rulesText.required('опис') },
-  },
-  day: {
-    required: { value: true, message: rulesText.required('день') },
-  },
-  time: {
-    required: { value: true, message: rulesText.required('час') },
-  },
-  place: {
-    required: { value: true, message: rulesText.required('кількість місць') },
+  number: {
+    required: { value: true, message: addFormRulesImage.required('Номер телефону') },
   },
 };

@@ -18,14 +18,10 @@ export function InputText({
       rules={rules}
       render={(({ field: { onChange, value, ref }, fieldState: { error } }) => (
         <TextField
-          InputProps={{
-            style: {
-              color: 'rgba(255, 255, 255, 0.892)', // цвет текста
-            },
-          }}
+   
           InputLabelProps={{
             style: {
-              color: 'rgba(255, 255, 255, 0.892)', // цвет текста метки
+              color: '#F07C00', // цвет текста метки
             },
           }}
           type='text'

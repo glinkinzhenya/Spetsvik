@@ -7,6 +7,9 @@ import { Button, TextField } from '@mui/material';
 import DeleteForeverIcon from '@mui/icons-material/DeleteForever';
 import AddIcon from '@mui/icons-material/Add';
 import RemoveIcon from '@mui/icons-material/Remove';
+import { InputText } from '../../components/Forms/InputText';
+import { addFormRules } from '../../constans/rules';
+import { useForm } from 'react-hook-form';
 
 export default function Header() {
   const [busketNumber, setBusketNumber] = useState(0);
@@ -135,6 +138,8 @@ export default function Header() {
     setProductWindow(false)
   };
 
+  const { control, handleSubmit } = useForm();
+
   return (
     <div className='header'>
       <div onClick={handlePulseButtonClick} className={headerBlack}></div>
@@ -243,37 +248,39 @@ export default function Header() {
 
         <div className='basket-form'>
           <h3 className='basket-form__title'>Ваші дані для замовлення</h3>
-          <TextField
+          <InputText
             sx={{ width: '90%' }}
             autoFocus
             margin="dense"
             label="ПІБ"
             type="text"
             variant="outlined"
-          // value={formName}
-          // onChange={handleformNameChange}
+            rules={addFormRules.name}
+            control={control}
+            name='name'
           />
-          <TextField
+          <InputText
             sx={{ width: '90%' }}
             autoFocus
             margin="dense"
             label="Ваш E-mail"
             type="text"
             variant="outlined"
-          // value={formName}
-          // onChange={handleformNameChange}
+            rules={addFormRules.mail}
+            control={control}
+            name='mail'
           />
-          <TextField
+          <InputText
             sx={{ width: '90%' }}
             autoFocus
             margin="dense"
             label="Ваш номер телефону"
             type="text"
             variant="outlined"
-          // value={formName}
-          // onChange={handleformNameChange}
+            rules={addFormRules.number}
+            control={control}
+            name='number'
           />
-
 
         </div>
 
@@ -297,7 +304,7 @@ export default function Header() {
                 </div>
                 <div className="basket-item__actions">
                   <RemoveIcon sx={{ cursor: 'pointer' }} onClick={() => decreaseQuantity(index)}>-</RemoveIcon>
-                  <div className='basket-item__quantity'>{item.quantity}</div> 
+                  <div className='basket-item__quantity'>{item.quantity}</div>
                   <AddIcon sx={{ cursor: 'pointer' }} onClick={() => increaseQuantity(index)}>+</AddIcon>
                 </div>
                 <div className='basket-item__total'>{item.total}</div>
@@ -310,7 +317,7 @@ export default function Header() {
 
           <div className="basket-summ-button">
             <div className="total-amount">Загальна сума: {calculateTotalAmount()}</div>
-            <Button variant="contained" sx={{ backgroundColor: '#F07C00', }}>Зробити замовлення</Button>
+            <Button onClick={handleSubmit()} variant="contained" sx={{ backgroundColor: '#F07C00', }}>Зробити замовлення</Button>
           </div>
         </div>
 
