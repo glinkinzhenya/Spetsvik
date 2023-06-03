@@ -8,10 +8,10 @@ export default function Services() {
     <div className='services'>
       <div className='services-container container'>
         <h2 className='services-title'>ПОСЛУГИ</h2>
-        <div className='services-wripper'>
-          <div className='services-text'>
-            <h3 className='services-text__title'>ПОШИВ СПЕЦОДЯГУ</h3>
-            <div className='services-text__description'>
+        <div className='services-box'>
+          <div className='services-box__text'>
+            <h3 className='services-box__text-title'>ПОШИВ СПЕЦОДЯГУ</h3>
+            <div className='services-box__text-description'>
               СПЕЦВІК пропонує свої послуги з пошиття спецодягу на
               давальницькій основі (з матеріалів замовника). На
               сьогоднішній день виробничі потужності підприємства
@@ -29,15 +29,15 @@ export default function Services() {
               <CallBack buttonText="ЗАМОВИТИ" dialogTitle="Введіть Ваш номер телефону та коментар" dialogText="Ми зателефонуємо як найшвідше та відповемо на всі ваші питання" confirmText="Надіслати" cancelText="Відміна" from="звідки - 'Пошив спецодягу'" fontSize="18px" />
             </div>
           </div>
-          <div className='services-picture'>
-            <img className='services-image' src="../img/jackets.jpg" alt="" />
+          <div className='services-box__picture'>
+            <img className='services-box__image' src="../img/jackets.jpg" alt="" />
           </div>
         </div>
 
-        <div className='services-wripper'>
-          <div className='services-text'>
-            <h3 className='services-text__title'>НАНЕСЕННЯ ЛОГОТИПІВ</h3>
-            <div className='services-text__description'>
+        <div className='services-box'>
+          <div className='services-box__text'>
+            <h3 className='services-box__text-title'>НАНЕСЕННЯ ЛОГОТИПІВ</h3>
+            <div className='services-box__text-description'>
               СПЕЦВІК професійно наносить логотипи, малюнки та
               зображення за допомогою найсучасніших технологій у
               Києві, Харкові, Запоріжжі, Кривому Розі та інших містах
@@ -56,8 +56,8 @@ export default function Services() {
             </div>
             
           </div>
-          <div className='services-picture services-picture--md'>
-            <img className='services-image' src="../img/services-logo.jpg" alt="" />
+          <div className='services-box__picture--md'>
+            <img className='services-box__image--md' src="../img/services-logo.jpg" alt="" />
           </div>
         </div>
       </div>

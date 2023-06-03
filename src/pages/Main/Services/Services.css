@@ -5,56 +5,110 @@
     /* padding-bottom: 150px; */
 }
 
+.services-container {
+    /* background-color: yellow; */
+    padding-bottom: 100px;
+}
+
 .services-title {
     text-align: center;
     padding-top: 50px;
     font-size: 35px;
 }
 
-.services-wripper {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 80px;
+.services-box {
+    /* display: grid;
+    grid-template-columns: repeat(2, 1fr); */
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+    gap: 20px;
     padding-top: 100px;
 }
 
-.services-text {
-    /* background-color: red; */
+.services-box__text {
+    /* background-color: green; */
+    height: 100%;
+    width: 630px;
 }
 
-.services-text__title {
+.services-box__text-title {
     font-size: 35px;
     margin-bottom: 20px;
 }
 
-.services-text__description {
+.services-box__text-description {
     font-weight: 400;
     font-size: 25px;
     margin-bottom: 20px;
+    /* background-color: red; */
 }
 
-.services-picture {
+.services-box__picture {
     /* height: 100%; */
     /* overflow-y: hidden; */
-    width: 100%;
-    height: 100%;
+    width: 630px;
+    height: 570px;
+
     /* filter: brightness(40%); */
     object-fit: cover;
 }
 
-.services-picture--md {
+.services-box__image {
+    height: 100%;
     width: 100%;
-    height: 80%;
+    object-fit: cover;
+}
+
+.services-box__picture--md {
+    /* width: 100%; */
+    width: 630px;
+    height: 570px;
        object-fit: cover;
     order: -1;
 }
 
-.services-image {
-    /* height: 100%; */
+
+.services-box__image--md {
+    height: 100%;
     width: 100%;
     object-fit: cover;
 }
 
 .services-call__back {
 width: 180px;
+}
+
+@media (max-width: 1310px) {
+
+    .services-box {
+        gap: 50px;
+        justify-content: center;
+    }
+
+    .services-box__picture--md {
+    
+        order: 0;
+    }
+}
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 992px) {}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 576.8px) {
+    .services-box__text {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+    }
+
+    .services-box__text-title {
+        font-size: 30px;
+        text-align: center;
+    }
+
 }
