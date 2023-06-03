@@ -44,7 +44,7 @@
 
 .services-picture--md {
     width: 100%;
-    height: 80%!important;
+    height: 80%;
        object-fit: cover;
     order: -1;
 }
