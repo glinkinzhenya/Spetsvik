@@ -203,9 +203,9 @@ export default function Header() {
           <img className='header-logo__image' src="./img/logo-spetsvik.svg" alt="logo-spetsvik" />
         </a>
         <div className='header-logo__burger'>
-          <div className='burger-search__picture'>
+          {/* <div className='burger-search__picture'>
             <img className='burger-search__image' src="./img/logo-search.svg" alt="logo-telephone" />
-          </div>
+          </div> */}
           <div onClick={touchProduct} className='burger-search__basket'>
             <img className='burger-search__basket-image' src="./img/logo-basket.svg" alt="logo-telephone" />
             {busketNumber > 0 ? <div className='burger-basket__number'>{busketNumber}</div> : ''}
