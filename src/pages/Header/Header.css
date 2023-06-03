@@ -538,6 +538,10 @@ font-size: 20px;
 }
 
 @media (max-width: 576.8px) {
+
+    .header-contacts {
+      display: none;
+    }
     .pulse-button {
         width: 55px;
         height: 55px;
