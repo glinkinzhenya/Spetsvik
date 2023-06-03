@@ -67,25 +67,20 @@
 
 @media (max-width: 576.8px) {
     .image-carousel__bg {
-    display: none;
+        display: none;
     }
-
-
 
     .imageCarousel {
 
-  height: 18.5vh;
+        height: 34.5vh;
         top: 0;
-        top: -60px;
-
+        top: -55px;
     }
 
+    .image-carousel__picture {
 
-
-.image-carousel__picture {
-  
-    /* height: 30vh; */
-    height: 25vh;
-    height: 25vh;
-}
+        /* height: 30vh; */
+        /* height: 25vh; */
+        height: 40vh;
+    }
 }
