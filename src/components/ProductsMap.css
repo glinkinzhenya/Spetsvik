@@ -1,5 +1,5 @@
 .productsMap-box-item {
-    max-width: 300px;
+    width: 203px;
     cursor: pointer;
 }
 
@@ -14,7 +14,8 @@
 }
 
 .productsMap-box__picture {
-    height: 300px;
+    height: 250px;
+    width: 100%;
     overflow: hidden;
 
 }
@@ -37,25 +38,26 @@
 
 .productsMap-text {
     background-color: #232323;
-    height: 110px;
+    /* height: 110px; */
     padding-left: 10px;
     padding-right: 10px;
 }
 
 .productsMap-title {
     color: white;
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
-    padding-top: 10px;
-    height: 70px;
-    overflow-y: clip;
+
+    height: 50px;
+    overflow: clip;
 }
 
 .productsMap-box__price {
     color: white;
-    font-size: 20px;
+    font-size: 25px;
+    font-weight: 500;
     text-align: center;
-    padding-bottom: 10px;
+
 }
 
 .product-window__blur {
@@ -183,3 +185,18 @@
     cursor: pointer;
     margin-bottom: -580px;
 }
+
+/* @media (max-width: 1400px) {
+
+}
+@media (max-width: 1200px) {}
+
+@media (max-width: 992px) {}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 576.8px) {
+
+} */

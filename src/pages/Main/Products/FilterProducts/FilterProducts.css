@@ -1,6 +1,7 @@
 .filterProducts {
     background-color: #0C0C0C;
-    width: 20%;
+    /* width: 20%; */
+    width: 225px;
     display: flex;
     flex-direction: column;
     align-items: center;

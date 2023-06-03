@@ -8,7 +8,6 @@ export default function IndividualProtection() {
   return (
     <>
       <div className='individualProtection'>
-        <div className='boxPath'>
           <div className='boxPath-container container'>
             <a className='boxPath-container__text' href="/">Головна</a>
             <div className='boxPath-container__arrow'>
@@ -28,7 +27,6 @@ export default function IndividualProtection() {
             <a className='boxPath-container__text' href="/individual-protection">Засоби індивідуального захисту</a>
           </div>
 
-        </div>
         <div className='individualProtection-container container'>
           <h2 className='individualProtection-mainTitle'>ЗАСОБИ ІНДИВІДУАЛЬНОГО ЗАХИСТУ</h2>
         </div>

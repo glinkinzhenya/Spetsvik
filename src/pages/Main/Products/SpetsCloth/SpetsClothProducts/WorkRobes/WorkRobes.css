@@ -41,11 +41,33 @@
 .workRobes-box__productsMap {
     padding: 20px;
     background-color: #0C0C0C;
-    display: grid;
     gap: 20px;
-    grid-template-columns: repeat(4, 251px);
+    /* display: grid; */
+    /* grid-template-columns: repeat(4, 251px); */
+    /* grid-template-columns: repeat(5, 198px); */
+    display: flex;
+    flex-wrap: wrap;
     overflow-y: auto !important;
     width: 100%;
+    /* background-color: red; */
+}
+
+
+@media (max-width: 1400px) {
+    .workRobes-box__productsMap {
+        justify-content: center;
+    }
+}
+@media (max-width: 1200px) {}
+
+@media (max-width: 992px) {}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 576.8px) {
+
 }
 
 
