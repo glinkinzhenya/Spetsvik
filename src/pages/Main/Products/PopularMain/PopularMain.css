@@ -24,3 +24,15 @@
     width: 100%;
     height: 378px;
 }
+
+@media (max-width: 1200px) {}
+
+@media (max-width: 992px) {}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 576.8px) {
+    .popularMain-box {
+        justify-content: center;
+    }
+}
