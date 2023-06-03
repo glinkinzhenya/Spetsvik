@@ -64,7 +64,7 @@ export default function ProductsMap({ category, popular }) {
                         <div className='productsMap-box__picture'>
                             <img className='productsMap-box__image' src={item.img[0]} alt='' />
                         </div>
-                        <div className='productsMap-text'   >
+                        <div className='productsMap-text'>
                             <div className='productsMap-title'>{item.title}</div>
                             <div className='productsMap-box__price'>{item.price} грн</div>
                         </div>
