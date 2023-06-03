@@ -74,8 +74,9 @@
 
     .imageCarousel {
 
-  height: 26vh;
+  height: 18.5vh;
         top: 0;
+        top: -60px;
 
     }
 
