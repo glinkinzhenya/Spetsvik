@@ -11,18 +11,21 @@
 }
 
 .popularMain-box {
-    padding: 20px;
-    background-color: #0C0C0C;
+    /* padding: 20px;
+    background-color: #0C0C0C; */
     /* gap: 20px; */
     /* display: grid;
     grid-template-columns: repeat(5, 241px);
-    grid-template-columns: repeat(6, 1fr); */
-    display: flex;
-    gap: 20px 14px;
-    flex-wrap: wrap;
+    /* grid-template-columns: repeat(6, 1fr); */
+
+
+    /* display: flex; */
+    /* gap: 20px 14px; */
+    /* flex-wrap: wrap; */
     overflow-y: auto !important;
     width: 100%;
-    height: 378px;
+    /* height: 355px; */
+    max-height: 605px;
 }
 
 @media (max-width: 1200px) {}
@@ -32,7 +35,7 @@
 @media (max-width: 768px) {}
 
 @media (max-width: 576.8px) {
-    .popularMain-box {
+    /* .popularMain-box {
         justify-content: center;
-    }
+    } */
 }

@@ -61,6 +61,20 @@ export default function ProductsMap({ category, popular }) {
 
 
             {!popular && <div className='filter'>
+<p>Lorem ipsum, dolor </p>
+<p>Lorem ipsum, dolor </p>
+<p>Lorem ipsum, dolor </p>
+<p>Lorem ipsum, dolor </p>
+<p>Lorem ipsum, dolor </p>
+<p>Lorem ipsum, dolor </p>
+<p>Lorem ipsum, dolor </p>
+<p>Lorem ipsum, dolor </p>
+<p>Lorem ipsum, dolor </p>
+<p>Lorem ipsum, dolor </p>
+<p>Lorem ipsum, dolor </p>
+<p>Lorem ipsum, dolor </p>
+<p>Lorem ipsum, dolor </p>
+<p>Lorem ipsum, dolor </p>
 
             </div>}
 
@@ -139,7 +153,7 @@ export default function ProductsMap({ category, popular }) {
                         <div className="accordion-item">
                             <h2 className="accordion-header">
                                 <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    Хакактерістита товару
+                                    Характеристика товару
                                 </button>
                             </h2>
                             <div id="collapseTwo" className="accordion-collapse collapse" data-bs-parent="#accordionExample">

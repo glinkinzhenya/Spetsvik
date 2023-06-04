@@ -10,11 +10,13 @@ export default function PopularMain({ category, popular }) {
         <div className='popularMain-container container'>
           <h3 className='popularMain-secondaryTitle'>Популярні товари</h3>
         </div>
-
         <div className='productsMap container'>
-          <div className='popularMain-box'>
 
-          <ProductsMap category={category} popular={popular} />
+
+<div className='popularMain-box'>
+
+<ProductsMap category={category} popular={popular} />
+         
 
           </div>
         </div>
