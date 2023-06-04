@@ -240,10 +240,14 @@ export default function Header() {
           {/* <div className='burger-search__picture'>
             <img className='burger-search__image' src="./img/logo-search.svg" alt="logo-telephone" />
           </div> */}
-          <div onClick={touchProduct} className='burger-search__basket'>
+          {busketNumber > 0 ? <div onClick={touchProduct} className='burger-search__basket'>
             <img className='burger-search__basket-image' src="./img/logo-basket.svg" alt="logo-telephone" />
-            {busketNumber > 0 ? <div className='burger-basket__number'>{busketNumber}</div> : ''}
-          </div>
+            <div className='burger-basket__number'>{busketNumber}</div>
+          </div> :
+            <div className='burger-search__basket'>
+              <img className='burger-search__basket-image' src="./img/logo-basket.svg" alt="logo-telephone" />
+            </div>}
+
           <Burger />
         </div>
       </div>

@@ -143,7 +143,7 @@ export default function CallBack(props) {
           {isLoading ? (
             <ThemeProvider theme={theme}>
               <Box sx={{ display: 'flex', alignItems: 'center' }}>
-              <CircularProgress size={24} color="secondary"/>
+                <CircularProgress size={24} color="secondary" />
                 <Button sx={{ color: '#F07C00', marginLeft: 1 }} disabled>
                   {confirmText}
                 </Button>
