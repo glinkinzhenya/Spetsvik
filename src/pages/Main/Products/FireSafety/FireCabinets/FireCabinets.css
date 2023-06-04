@@ -127,8 +127,10 @@ position: absolute;
 @media (max-width: 576.8px) {
     .fireCabinets-mainTitle {
         font-size: 35px;
+        text-align: center;
     }
     .fireCabinets-secondaryTitle {
         font-size: 35px;
+        text-align: center;
     }
 }

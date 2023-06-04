@@ -126,8 +126,10 @@ position: absolute;
 @media (max-width: 576.8px) {
     .fireHoses-mainTitle {
         font-size: 35px;
+        text-align: center;
     }
     .fireHoses-secondaryTitle {
         font-size: 35px;
+        text-align: center;
     }
 }

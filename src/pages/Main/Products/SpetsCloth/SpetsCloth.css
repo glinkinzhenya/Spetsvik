@@ -132,9 +132,11 @@ position: absolute;
 
     .spetsCloth-mainTitle {
         font-size: 35px;
+        text-align: center;
     }
-
+    
     .spetsCloth-secondaryTitle {
         font-size: 35px;
+        text-align: center;
     }
 }

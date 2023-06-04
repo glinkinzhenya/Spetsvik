@@ -127,9 +127,11 @@
 @media (max-width: 576.8px) {
     .individualProtection-mainTitle {
         font-size: 34px;
+        text-align: center;
     }
 
     .individualProtection-secondaryTitle {
         font-size: 35px;
+        text-align: center;
     }
 }

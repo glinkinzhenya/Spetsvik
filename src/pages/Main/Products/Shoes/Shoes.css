@@ -125,8 +125,10 @@ position: absolute;
 @media (max-width: 576.8px) {
     .shoes-mainTitle {
         font-size: 35px;
+        text-align: center;
     }
     .shoes-secondaryTitle {
         font-size: 35px;
+        text-align: center;
     }
 }

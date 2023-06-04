@@ -124,8 +124,10 @@ position: absolute;
     }
     .shevrons-mainTitle {
         font-size: 35px;
+        text-align: center;
     }
     .shevrons-secondaryTitle {
         font-size: 35px;
+        text-align: center;
     }
 }

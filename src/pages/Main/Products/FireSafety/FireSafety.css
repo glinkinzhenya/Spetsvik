@@ -122,9 +122,11 @@ position: absolute;
 @media (max-width: 576.8px) {
     .fireSafety-mainTitle {
         font-size: 35px;
+        text-align: center;
     }
     .fireSafety-secondaryTitle {
         font-size: 35px;
+        text-align: center;
     }
 
 

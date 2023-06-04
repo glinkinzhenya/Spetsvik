@@ -173,6 +173,11 @@
 }
 
 @media (max-width: 576.8px) {
+    .categoriesServises {
+        padding-top: 50px;
+        /* padding-bottom: 100px; */
+    }
+
     .categories-box {
         grid-template-columns: 1fr;
         grid-template-areas:

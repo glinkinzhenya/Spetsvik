@@ -121,9 +121,11 @@
 @media (max-width: 576.8px) {
     .fabrics-mainTitle {
         font-size: 35px;
+        text-align: center;
     }
 
     .fabrics-secondaryTitle {
         font-size: 35px;
+        text-align: center;
     }
 }
