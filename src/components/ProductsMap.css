@@ -218,16 +218,28 @@
 .accordion-body {
     padding: 0;
 }
+.accordion-item {
+    border: none;
+}
 
 .accordion-button {
     /* color: black; */
     color: white;
     background-color: #232323;
+    border-color: red!important;
 }
 
 .accordion-button:not(.collapsed) {
     color: #F07C00;
     background-color: #232323;
+}
+
+.accordion-button:focus {
+   
+}
+
+.collapsed {
+     border-color: red!important;
 }
 
 /* @media (max-width: 1400px) {
