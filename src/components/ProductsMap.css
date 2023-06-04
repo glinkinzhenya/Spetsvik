@@ -11,7 +11,7 @@ display: flex;
     /* grid-template-columns: repeat(5, 150px); */
     /* height: 100%; */
     overflow-y: auto;
-    background-color: yellow;
+    /* background-color: yellow; */
 }
 
 .productsMap-box-item {
@@ -166,8 +166,10 @@ display: flex;
 .product-window__info-title {
     color: black;
     /* font-size: 40px; */
+    height: 72px;
     font-size: 30px;
     margin-bottom: 20px;
+    overflow: clip;
 }
 
 .product-window__info-price {
