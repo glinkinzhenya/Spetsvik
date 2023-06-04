@@ -56,22 +56,30 @@ export default function ProductsMap({ category, popular }) {
 
 
     return (
-        <>
-            {/* <div className='productsMap'> */}
-            {/* <div className='productsMap-box'> */}
-            {arrayProduct.map((item, index) => (
-                <div onClick={() => touchProduct(item)} className='productsMap-box-item' key={index}>
-                    <div className='productsMap-box__picture'>
-                        <img className='productsMap-box__image' src={item.img[0]} alt='' />
-                    </div>
-                    <div className='productsMap-text'>
-                        <div className='productsMap-title'>{item.title}</div>
-                        <div className='productsMap-box__price'>{item.price} <span className='productsMap-box__price-span'>UAH</span></div>
-                    </div>
 
-                </div>
-            ))}
-            {/* </div> */}
+        <div className='productsMap'>
+
+
+            {!popular && <div className='filter'>
+
+            </div>}
+
+
+            <div className='productsMap-box'>
+                {arrayProduct.map((item, index) => (
+                    <div onClick={() => touchProduct(item)} className='productsMap-box-item' key={index}>
+                        <div className='productsMap-box__picture'>
+                            <img className='productsMap-box__image' src={item.img[0]} alt='' />
+                        </div>
+                        <div className='productsMap-text'>
+                            <div className='productsMap-title'>{item.title}</div>
+                            <div className='productsMap-box__price'>{item.price} <span className='productsMap-box__price-span'>UAH</span></div>
+                        </div>
+
+                    </div>
+                ))}
+            </div>
+
             {productWindow && <div className='product-window__blur' onClick={touchProductClose}></div>}
             {productWindow && <div className='product-window'>
                 <img onClick={touchProductClose} className='product-window__close' src="./img/close.png" alt="" />
@@ -151,7 +159,8 @@ export default function ProductsMap({ category, popular }) {
                     </Snackbar>
                 </div>
             </div>}
-            {/* </div> */}
-        </>
+
+        </div>
+
     );
 }

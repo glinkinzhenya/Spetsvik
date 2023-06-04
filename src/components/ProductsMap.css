@@ -1,3 +1,12 @@
+.productsMap {
+display: flex;
+}
+
+.productsMap-box {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .productsMap-box-item {
     width: 203px;
     cursor: pointer;
@@ -237,8 +246,15 @@
 
 .accordion-button:not(.collapsed)::after {
     background-image: url('../../public/img/arrow-right-black.png');
-
 }
+
+.filter {
+    background-color: red;
+    width: 300px;
+    height: 500px;
+}
+
+
 
 @media (max-width: 1200px) {}
 

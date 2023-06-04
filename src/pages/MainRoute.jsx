@@ -15,7 +15,6 @@ import Setting from './Admin/Setting/Setting';
 import Shoes from './Main/Products/Shoes/Shoes';
 import Shevrons from './Main/Products/Shevrons/Shevrons';
 import FireExtinguishers from './Main/Products/FireSafety/FireExtinguishers/FireExtinguishers';
-import Test from './Main/test/Test';
 import WorkRobes from './Main/Products/SpetsCloth/SpetsClothProducts/WorkRobes/WorkRobes';
 import FireCabinets from './Main/Products/FireSafety/FireCabinets/FireCabinets';
 import FireHoses from './Main/Products/FireSafety/FireHoses/FireHoses';
@@ -162,7 +161,6 @@ export default function MainRoute() {
 
         <Route path='/services' element={<Services />} />
         <Route path='/news' element={<News />} />
-        <Route path='/test' element={<Test />} />
         {/* <Route path='/admin/admin-test' element={<AdminTest />} /> */}
         {/* // /edit фиксированный элемент */}
         {/* <Route path='/trainings' element={<Trainings />} />

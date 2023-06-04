@@ -31,14 +31,9 @@ export default function WorkRobes() {
         <div className='workRobes-container container'>
           <h3 className='workRobes-secondaryTitle'>Халати робочі</h3>
 
-          <div className='workRobes-box'>
-
-            <FilterProducts />
-
-            <div className='workRobes-box__productsMap'>
               <ProductsMap category='халати робочі' />
-            </div>
-          </div>
+       
+    
         </div>
       </div>
 
