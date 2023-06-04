@@ -219,10 +219,15 @@
     padding: 0;
 }
 
+.accordion-item {
+    border: none;
+}
+
 .accordion-button {
     /* color: black; */
     color: white;
     background-color: #232323;
+    border-color: red !important;
 }
 
 .accordion-button:not(.collapsed) {
@@ -232,9 +237,13 @@
 
 .accordion-button:not(.collapsed)::after {
     background-image: url('../../public/img/arrow-right-black.png');
-}
 
-/* @media (max-width: 1400px) {
+
+    .collapsed {
+        border-color: red !important;
+    }
+
+    /* @media (max-width: 1400px) {
 
 }
 @media (max-width: 1200px) {}
