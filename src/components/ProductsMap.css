@@ -238,22 +238,12 @@
 .accordion-button:not(.collapsed)::after {
     background-image: url('../../public/img/arrow-right-black.png');
 
-
-    .collapsed {
-        border-color: red !important;
-    }
-
-    /* @media (max-width: 1400px) {
-
 }
+
 @media (max-width: 1200px) {}
 
 @media (max-width: 992px) {}
 
-@media (max-width: 768px) {
+@media (max-width: 768px) {}
 
-}
-
-@media (max-width: 576.8px) {
-
-} */
+@media (max-width: 576.8px) {}
