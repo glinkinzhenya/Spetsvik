@@ -204,8 +204,8 @@
 
 .accordion {
     height: 324px;
- /* background-color: red; */
- /* overflow-y: auto; */
+    /* background-color: red; */
+    /* overflow-y: auto; */
 }
 
 .product-window__info-description {
@@ -228,6 +228,10 @@
 .accordion-button:not(.collapsed) {
     color: #F07C00;
     background-color: #232323;
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url('../../public/img/arrow-right-black.png');
 }
 
 /* @media (max-width: 1400px) {

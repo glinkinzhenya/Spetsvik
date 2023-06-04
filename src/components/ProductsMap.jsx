@@ -103,8 +103,8 @@ export default function ProductsMap({ category, popular }) {
 
                     <div className='product-window__gallary-box'>
                         {product.img.map((item, index) => (
-                         (index > 4) ? '' : <div key={index} className='product-window__gallary-box-picture'>
-                              <img className='product-window__gallary-box-img' src={item} alt='' />
+                            (index > 4) ? '' : <div key={index} className='product-window__gallary-box-picture'>
+                                <img className='product-window__gallary-box-img' src={item} alt='' />
                             </div>
                         ))}
                     </div>
@@ -115,27 +115,27 @@ export default function ProductsMap({ category, popular }) {
                     <h2 className='product-window__info-article'>Артикул: {product.article}</h2>
                     <div className='product-window__info-line'></div>
                     <div className='product-window__info-price'>{product.price} <span className='product-window__info-price-span'>UAH</span></div>
-                    <div class="accordion" id="accordionExample">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <div className="accordion" id="accordionExample">
+                        <div className="accordion-item">
+                            <h2 className="accordion-header">
+                                <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                     Опис товару
                                 </button>
                             </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
+                            <div id="collapseOne" className="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                <div className="accordion-body">
                                     <div className='product-window__info-description'>{product.description}</div>
                                 </div>
                             </div>
                         </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <div className="accordion-item">
+                            <h2 className="accordion-header">
+                                <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                     Хакактерістита товару
                                 </button>
                             </h2>
-                            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
+                            <div id="collapseTwo" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div className="accordion-body">
                                     <div className='product-window__info-description'>{product.characteristic}</div>
                                 </div>
                             </div>
