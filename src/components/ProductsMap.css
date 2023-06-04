@@ -77,10 +77,12 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 560px;
-    width: 1000px;
+    height: 600px;
+    width: 1100px;
     z-index: 10;
     display: flex;
+    /* flex-wrap: wrap; */
+    /* gap: 20px; */
 }
 
 .product-window__close {
@@ -98,7 +100,8 @@
 }
 
 .product-window__gallary {
-    width: 70%;
+    /* width: 70%; */
+    width: 440px;
 }
 
 .product-window__gallary-box {
@@ -107,7 +110,8 @@
     display: flex;
     gap: 20px;
     padding: 5px;
-    align-items: flex-end;
+    /* align-items: flex-end; */
+    align-items: center;
     justify-content: center;
 }
 
@@ -123,7 +127,7 @@
 }
 
 .product-window__gallary__picture {
-    height: 450px;
+    height: 500px;
 }
 
 .product-window__gallary__img {
@@ -138,20 +142,21 @@
 
 .product-window__info {
     height: 100%;
-    width: 100%;
+    width: 660px;
     padding: 20px;
 }
 
 .product-window__info-title {
     color: black;
-    font-size: 40px;
+    /* font-size: 40px; */
+    font-size: 30px;
     margin-bottom: 20px;
 }
 
 .product-window__info-price {
     color: rgb(63, 63, 63);
     font-size: 45px;
-    margin-top: 20px;
+    /* margin-top: 20px; */
 }
 
 .product-window__info-price-span {
@@ -185,18 +190,39 @@
     background-image: url('../../public/img/arrow-right-black.png');
     width: 20px;
     cursor: pointer;
-    margin-bottom: -580px;
+    /* margin-bottom: -580px; */
+    margin-bottom: -600px;
 }
 
 .carousel-control-prev-icon-color {
     background-image: url('../../public/img/arrow-left-black.png');
     width: 20px;
     cursor: pointer;
-    margin-bottom: -580px;
+    /* margin-bottom: -580px; */
+    margin-bottom: -600px;
+}
+
+.accordion {
+    height: 324px;
+ /* background-color: red; */
+ /* overflow-y: auto; */
+}
+
+.product-window__info-description {
+    /* background-color: green; */
+    height: 198px;
+    overflow-y: auto;
+
+}
+
+.accordion-body {
+    padding: 0;
 }
 
 .accordion-button {
-    color: black;
+    /* color: black; */
+    color: white;
+    background-color: #232323;
 }
 
 .accordion-button:not(.collapsed) {

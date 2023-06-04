@@ -103,8 +103,8 @@ export default function ProductsMap({ category, popular }) {
 
                     <div className='product-window__gallary-box'>
                         {product.img.map((item, index) => (
-                            <div key={index} className='product-window__gallary-box-picture'>
-                                <img className='product-window__gallary-box-img' src={item} alt='' />
+                         (index > 4) ? '' : <div key={index} className='product-window__gallary-box-picture'>
+                              <img className='product-window__gallary-box-img' src={item} alt='' />
                             </div>
                         ))}
                     </div>
