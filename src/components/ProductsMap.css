@@ -195,6 +195,15 @@
     margin-bottom: -580px;
 }
 
+.accordion-button {
+    color: black;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #F07C00;
+    background-color: #232323;
+}
+
 /* @media (max-width: 1400px) {
 
 }

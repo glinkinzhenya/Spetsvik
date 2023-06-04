@@ -355,6 +355,7 @@ export default function Setting() {
           title: editProduct.title,
           price: editProduct.price,
           description: editProduct.description,
+          characteristic: editProduct.characteristic,
           category: editProduct.category,
           article: editProduct.article,
           popular: editProduct.popular
@@ -455,6 +456,15 @@ export default function Setting() {
               <input className="setting-product__input" name="description" onChange={(e) => handleEditInputChange(e, editProduct)} value={editProduct.description} type="text" placeholder="Опис товару" />
               :
               <input className="setting-product__input" name="description" onChange={handleInputChange} value={product.description} type="text" placeholder='Опис товару' />}
+
+
+            {editProduct
+              ?
+              <input className="setting-product__input" name="characteristic" onChange={(e) => handleEditInputChange(e, editProduct)} value={editProduct.characteristic} type="text" placeholder="характеристика товару" />
+              :
+              <input className="setting-product__input" name="characteristic" onChange={handleInputChange} value={product.characteristic} type="text" placeholder='характеристика товару' />}
+
+
             {editProduct
               ?
               <input className="setting-product__input" name="article" onChange={(e) => handleEditInputChange(e, editProduct)} value={editProduct.article} type="text" placeholder="Код товару" />

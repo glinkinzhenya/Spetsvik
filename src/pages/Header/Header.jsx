@@ -144,7 +144,9 @@ export default function Header() {
   const handleConfirm = (data) => {
     const dataBusket = busket.map(obj => ({
       article: obj.article,
-      quantity: obj.quantity
+      name: obj.title,
+      quantity: obj.quantity,
+      price: obj.price
     }));
 
     setLoading(true); // Set loading state to true

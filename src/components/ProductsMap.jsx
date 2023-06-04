@@ -115,7 +115,34 @@ export default function ProductsMap({ category, popular }) {
                     <h2 className='product-window__info-article'>Артикул: {product.article}</h2>
                     <div className='product-window__info-line'></div>
                     <div className='product-window__info-price'>{product.price} <span className='product-window__info-price-span'>UAH</span></div>
-                    <div className='product-window__info-description'>{product.description} грн.</div>
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Опис товару
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <div className='product-window__info-description'>{product.description}</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Хакактерістита товару
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <div className='product-window__info-description'>{product.characteristic}</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
                     {!open && <Button onClick={() => handleClick(product)} sx={{ backgroundColor: '#F07C00', '&:hover': { backgroundColor: '#F07C00', color: 'white !important' }, marginTop: '20px', fontSize: '11px', right: '-400px' }} variant="contained">Додати до кошику</Button>}
                     <Snackbar style={{ bottom: '30px', right: '20px' }} anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }} open={open} autoHideDuration={2000} onClose={handleClose}>
                         <Alert onClose={handleClose} severity="success" sx={{ width: '100%', fontSize: '13px', height: '50px' }}>
