@@ -66,7 +66,7 @@ export default function ProductsMap({ category, popular }) {
                     </div>
                     <div className='productsMap-text'>
                         <div className='productsMap-title'>{item.title}</div>
-                        <div className='productsMap-box__price'>{item.price} грн</div>
+                        <div className='productsMap-box__price'>{item.price} <span className='productsMap-box__price-span'>UAH</span></div>
                     </div>
 
                 </div>
@@ -114,10 +114,10 @@ export default function ProductsMap({ category, popular }) {
                     <h2 className='product-window__info-title'>{product.title}</h2>
                     <h2 className='product-window__info-article'>Артикул: {product.article}</h2>
                     <div className='product-window__info-line'></div>
-                    <div className='product-window__info-price'>{product.price} грн.</div>
+                    <div className='product-window__info-price'>{product.price} <span className='product-window__info-price-span'>UAH</span></div>
                     <div className='product-window__info-description'>{product.description} грн.</div>
-                    <Button onClick={() => handleClick(product)} sx={{ backgroundColor: '#F07C00', '&:hover': { backgroundColor: '#F07C00', color: 'white !important' }, marginTop: '20px', fontSize: '11px' }} variant="contained">Додати до кошику</Button>
-                    <Snackbar anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }} open={open} autoHideDuration={3000} onClose={handleClose}>
+                    {!open && <Button onClick={() => handleClick(product)} sx={{ backgroundColor: '#F07C00', '&:hover': { backgroundColor: '#F07C00', color: 'white !important' }, marginTop: '20px', fontSize: '11px', right: '-400px' }} variant="contained">Додати до кошику</Button>}
+                    <Snackbar style={{ bottom: '30px', right: '20px' }} anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }} open={open} autoHideDuration={2000} onClose={handleClose}>
                         <Alert onClose={handleClose} severity="success" sx={{ width: '100%', fontSize: '13px', height: '50px' }}>
                             Товар додано до кошику
                         </Alert>

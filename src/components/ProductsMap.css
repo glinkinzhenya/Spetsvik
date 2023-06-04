@@ -50,12 +50,13 @@
 
     height: 50px;
     overflow: clip;
+    margin-bottom: 5px;
 }
 
 .productsMap-box__price {
     color: white;
-    font-size: 25px;
-    font-weight: 500;
+    font-size: 20px;
+    font-weight: 300;
     text-align: center;
 
 }
@@ -151,6 +152,14 @@
     color: rgb(63, 63, 63);
     font-size: 45px;
     margin-top: 20px;
+}
+
+.product-window__info-price-span {
+    font-size: 25px;
+}
+
+.productsMap-box__price-span {
+    font-size: 15px;
 }
 
 .product-window__info-description {

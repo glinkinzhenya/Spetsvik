@@ -345,7 +345,7 @@ export default function Header() {
                   <div className='basket-item__quantity'>{item.quantity}</div>
                   <AddIcon sx={{ cursor: 'pointer' }} onClick={() => increaseQuantity(index)}>+</AddIcon>
                 </div>
-                <div className='basket-item__total'>{item.total}</div>
+                <div className='basket-item__total'>{item.total} <span className='basket-item__total-span'>UAH</span></div>
                 <DeleteForeverIcon sx={{ width: '60px', cursor: 'pointer' }} onClick={() => removeItem(index)}>Удалить</DeleteForeverIcon>
               </div>
             ))}
@@ -354,7 +354,7 @@ export default function Header() {
           </div>
 
           <div className="basket-summ-button">
-            <div className="total-amount">Загальна сума: {calculateTotalAmount()}</div>
+            <div className="total-amount">Загальна сума: {calculateTotalAmount()} <span className='basket-item__total-span'>UAH</span></div>
             {isLoading ? (
               <ThemeProvider theme={theme}>
                 <Box sx={{ display: 'flex', alignItems: 'center', gap: '10px' }}>

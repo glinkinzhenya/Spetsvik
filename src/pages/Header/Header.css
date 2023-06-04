@@ -246,7 +246,7 @@
     background: #F07C00;
     position: fixed;
     bottom: 120px;
-    left: 50px;
+    right: 50px;
     cursor: pointer;
     z-index: 13;
 }
@@ -333,7 +333,7 @@
 .pulse-button-icon {
     position: fixed;
     bottom: 210px;
-    left: 60px;
+    right: 60px;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -477,6 +477,11 @@
 
 .total-amount {
     font-size: 18px;
+    background-color: #212529;
+    color: white;
+    padding: 5px;
+    border-radius: 4px;
+    font-weight: 300;
 }
 
 .basket-item__quantity {
@@ -484,11 +489,15 @@
 }
 
 .basket-item__total {
-font-size: 20px;
+    font-size: 20px;
 }
 
-.MuiButtonBase-root{
-    transition: 0.5s!important;
+.basket-item__total-span {
+    font-size: 15px;
+}
+
+.MuiButtonBase-root {
+    transition: 0.5s !important;
 }
 
 .MuiButtonBase-root:hover {
@@ -539,12 +548,14 @@ font-size: 20px;
 
 @media (max-width: 576.8px) {
     .header {
-    padding-top: 15px;
-    height: 90px;
+        padding-top: 15px;
+        height: 90px;
     }
+
     .header-contacts {
-      display: none;
+        display: none;
     }
+
     .pulse-button {
         width: 55px;
         height: 55px;
