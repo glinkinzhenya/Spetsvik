@@ -125,6 +125,10 @@
 @media (max-width: 768px) {}
 
 @media (max-width: 576.8px) {
+    .individualProtection {
+        padding-top:25px;
+    }
+
     .individualProtection-mainTitle {
         font-size: 34px;
         text-align: center;

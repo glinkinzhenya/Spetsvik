@@ -122,6 +122,9 @@ position: absolute;
 }
 
 @media (max-width: 576.8px) {
+    .militaryEquipment {
+        padding-top:25px;
+    }
     .militaryEquipment-mainTitle {
         font-size: 35px;
         text-align: center;

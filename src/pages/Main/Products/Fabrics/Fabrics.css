@@ -119,6 +119,12 @@
 }
 
 @media (max-width: 576.8px) {
+
+
+    .fabrics {
+        padding-top:25px;
+    }
+
     .fabrics-mainTitle {
         font-size: 35px;
         text-align: center;

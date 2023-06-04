@@ -125,6 +125,10 @@ position: absolute;
 }
 
 @media (max-width: 576.8px) {
+
+    .fireCabinets {
+        padding-top:25px;
+    }
     .fireCabinets-mainTitle {
         font-size: 35px;
         text-align: center;
