@@ -57,20 +57,20 @@ export default function ProductsMap({ category, popular }) {
 
     return (
         <>
-        {/* <div className='productsMap'> */}
+            {/* <div className='productsMap'> */}
             {/* <div className='productsMap-box'> */}
-                {arrayProduct.map((item, index) => (
-                    <div onClick={() => touchProduct(item)} className='productsMap-box-item' key={index}>
-                        <div className='productsMap-box__picture'>
-                            <img className='productsMap-box__image' src={item.img[0]} alt='' />
-                        </div>
-                        <div className='productsMap-text'>
-                            <div className='productsMap-title'>{item.title}</div>
-                            <div className='productsMap-box__price'>{item.price} грн</div>
-                        </div>
-
+            {arrayProduct.map((item, index) => (
+                <div onClick={() => touchProduct(item)} className='productsMap-box-item' key={index}>
+                    <div className='productsMap-box__picture'>
+                        <img className='productsMap-box__image' src={item.img[0]} alt='' />
                     </div>
-                ))}
+                    <div className='productsMap-text'>
+                        <div className='productsMap-title'>{item.title}</div>
+                        <div className='productsMap-box__price'>{item.price} грн</div>
+                    </div>
+
+                </div>
+            ))}
             {/* </div> */}
             {productWindow && <div className='product-window__blur' onClick={touchProductClose}></div>}
             {productWindow && <div className='product-window'>
@@ -116,7 +116,7 @@ export default function ProductsMap({ category, popular }) {
                     <div className='product-window__info-line'></div>
                     <div className='product-window__info-price'>{product.price} грн.</div>
                     <div className='product-window__info-description'>{product.description} грн.</div>
-                    <Button onClick={() => handleClick(product)} style={{ backgroundColor: '#F07C00', marginTop: '20px', fontSize: '11px' }} variant="contained">Додати до кошику</Button>
+                    <Button onClick={() => handleClick(product)} sx={{ backgroundColor: '#F07C00', '&:hover': { backgroundColor: '#F07C00', color: 'white !important' }, marginTop: '20px', fontSize: '11px' }} variant="contained">Додати до кошику</Button>
                     <Snackbar anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }} open={open} autoHideDuration={3000} onClose={handleClose}>
                         <Alert onClose={handleClose} severity="success" sx={{ width: '100%', fontSize: '13px', height: '50px' }}>
                             Товар додано до кошику
@@ -124,7 +124,7 @@ export default function ProductsMap({ category, popular }) {
                     </Snackbar>
                 </div>
             </div>}
-        {/* </div> */}
+            {/* </div> */}
         </>
     );
 }
