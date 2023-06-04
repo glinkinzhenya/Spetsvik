@@ -119,13 +119,20 @@ position: absolute;
 }
 
 @media (max-width: 576.8px) {
+
+    .shevrons {
+        padding-top:25px;
+    }
+
     .shevrons-box {
         justify-content: space-evenly;
     }
     .shevrons-mainTitle {
         font-size: 35px;
+        text-align: center;
     }
     .shevrons-secondaryTitle {
         font-size: 35px;
+        text-align: center;
     }
 }

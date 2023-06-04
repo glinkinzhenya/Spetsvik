@@ -120,11 +120,17 @@ position: absolute;
 }
 
 @media (max-width: 576.8px) {
+
+    .fireSafety {
+        padding-top:25px;
+    }
     .fireSafety-mainTitle {
         font-size: 35px;
+        text-align: center;
     }
     .fireSafety-secondaryTitle {
         font-size: 35px;
+        text-align: center;
     }
 
 

@@ -123,10 +123,17 @@ position: absolute;
 }
 
 @media (max-width: 576.8px) {
+
+    .shoes {
+        padding-top:25px;
+    }
+    
     .shoes-mainTitle {
         font-size: 35px;
+        text-align: center;
     }
     .shoes-secondaryTitle {
         font-size: 35px;
+        text-align: center;
     }
 }

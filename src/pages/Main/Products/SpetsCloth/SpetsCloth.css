@@ -124,11 +124,17 @@ position: absolute;
 @media (max-width: 768px) {}
 
 @media (max-width: 576.8px) {
-    .spetsCloth-mainTitle {
-        font-size: 35px;
+    .spetsCloth {
+        padding-top: 25px;
     }
 
+    .spetsCloth-mainTitle {
+        font-size: 35px;
+        text-align: center;
+    }
+    
     .spetsCloth-secondaryTitle {
         font-size: 35px;
+        text-align: center;
     }
 }

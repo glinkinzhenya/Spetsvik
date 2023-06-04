@@ -125,11 +125,18 @@ position: absolute;
 }
 
 @media (max-width: 576.8px) {
+
+    .fireExtinguishers {
+        padding-top:25px;
+    }
+
     .fireExtinguishers-mainTitle {
         font-size: 35px;
+        text-align: center;
     }
 
     .fireExtinguishers-secondaryTitle {
         font-size: 35px;
+        text-align: center;
     }
 }

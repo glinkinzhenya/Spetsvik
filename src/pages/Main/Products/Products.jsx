@@ -6,8 +6,8 @@ export default function Products() {
 
   return (
     <div className='products'>
-      <div className='services-container container'>
-        <h2 className='services-title'>ТОВАРИ</h2>
+      <div className='products-container container'>
+        <h2 className='products-title'>ТОВАРИ</h2>
 
         <CategoriesServises />
         
