@@ -2,14 +2,16 @@ import React, { useContext, useState, useEffect } from 'react';
 import { Context } from '../../Contex';
 import Burger from './ComponentHeader/Burger/Burger';
 import BasicMenu from './ComponentHeader/BasicMenu/BasicMenu';
-import './Header.css';
-import { Button, TextField } from '@mui/material';
+import { Button, CircularProgress, Snackbar, ThemeProvider, createTheme } from '@mui/material';
 import DeleteForeverIcon from '@mui/icons-material/DeleteForever';
+import MuiAlert from '@mui/material/Alert';
 import AddIcon from '@mui/icons-material/Add';
 import RemoveIcon from '@mui/icons-material/Remove';
 import { InputText } from '../../components/Forms/InputText';
 import { addFormRules } from '../../constans/rules';
 import { useForm } from 'react-hook-form';
+import { Box } from '@mui/system';
+import './Header.css';
 
 export default function Header() {
   const [busketNumber, setBusketNumber] = useState(0);
@@ -132,13 +134,60 @@ export default function Header() {
   };
 
 
-
-
   const touchProductClose = () => {
     setProductWindow(false)
   };
 
   const { control, handleSubmit } = useForm();
+
+
+  const handleConfirm = (data) => {
+    const dataBusket = busket.map(obj => ({
+      article: obj.article,
+      quantity: obj.quantity
+    }));
+
+    setLoading(true); // Set loading state to true
+    fetch('https://formspree.io/f/mbjebaod', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ ...data, ...dataBusket }),
+    })
+      .then(response => {
+        if (response.ok) {
+          setSuccessOpen(true);
+          setProductWindow(false)
+          localStorage.removeItem("cartItems");
+          setBusket([]);
+          setBusketNumber(0)
+        } else {
+          console.log('Ошибка отправки данных');
+          console.log(data);
+        }
+        setLoading(false); // Set loading state back to false
+      })
+      .catch(error => {
+        console.log('Ошибка отправки данных:', error);
+        setLoading(false); // Set loading state back to false
+      });
+  };
+
+  const [isLoading, setLoading] = useState(false);
+  const [successOpen, setSuccessOpen] = useState(false);
+
+  const handleSuccessClose = () => {
+    setSuccessOpen(false);
+  };
+
+  const theme = createTheme({
+    palette: {
+      secondary: {
+        main: '#f07c00'
+      },
+    },
+  });
 
   return (
     <div className='header'>
@@ -183,21 +232,6 @@ export default function Header() {
             <a className='header-language__en' href="">EN</a>
             <a className='header-language__en' href="">DE</a>
           </div>
-
-          {/* <div className='header-logo__telephone-picture'>
-            <img className='header-logo__telephone-image' src="./img/logo-telephone.svg" alt="logo-telephone" />
-          </div> */}
-          {/* <div className='header-logo__choice'>
-
-            <div className='header-logo__choice-number'>
-              <a className='header-logo__choice-link' href={newDataNumber}>{(selectedPhone) ? selectedPhone : defaultPhone}</a>
-            </div>
-            <select className='header-logo__choice-select' onChange={handleSelectChange} value={selectedAddress}>
-              {addresses.map(a => (
-                <option className='header-logo__choice-option' key={a.address} value={a.address}>{a.address}</option>
-              ))}
-            </select>
-          </div> */}
         </div>
         <a className='header-logo__picture' href="/">
           <img className='header-logo__image' src="./img/logo-spetsvik.svg" alt="logo-spetsvik" />
@@ -317,12 +351,32 @@ export default function Header() {
 
           <div className="basket-summ-button">
             <div className="total-amount">Загальна сума: {calculateTotalAmount()}</div>
-            <Button onClick={handleSubmit()} variant="contained" sx={{ backgroundColor: '#F07C00', }}>Зробити замовлення</Button>
+            {isLoading ? (
+              <ThemeProvider theme={theme}>
+                <Box sx={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                  <CircularProgress size={24} color="secondary" />
+                  <Button sx={{ backgroundColor: '#F07C00' }} disabled>Зробити замовлення</Button>
+                </Box>
+              </ThemeProvider>
+            ) : (
+              <Button onClick={handleSubmit(handleConfirm)} variant="contained" sx={{ backgroundColor: '#F07C00', '&:hover': { backgroundColor: '#F07C00', color: 'white !important' } }}>Зробити замовлення</Button>
+            )}
           </div>
         </div>
 
       </div>}
 
+      <Snackbar
+        sx={{ BackgroundColor: 'black' }}
+        open={successOpen}
+        autoHideDuration={4000}
+        onClose={handleSuccessClose}
+        anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }}
+      >
+        <MuiAlert sx={{ сolor: 'black' }} elevation={6} variant="filled" onClose={handleSuccessClose} severity="success">
+          Заявка отримана, скоро з Вами зв'яжемось.
+        </MuiAlert>
+      </Snackbar>
     </div >
   );
 }
