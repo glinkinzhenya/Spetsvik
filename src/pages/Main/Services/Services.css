@@ -117,5 +117,7 @@
         font-size: 30px;
         text-align: center;
     }
-
+    .services-box__text-description {
+        font-size: 20px;
+    }
 }

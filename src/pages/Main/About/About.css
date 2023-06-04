@@ -61,4 +61,7 @@
     .about-picture {
         width: 50%;
        }
+       .about-text {
+        font-size: 20px;
+    }
    }
