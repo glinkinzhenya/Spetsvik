@@ -541,9 +541,9 @@ export default function Setting() {
                 </div>
                 <div className='setting-product__box-item-info'>
                   <div className='setting-product__box-item-info__title'>{item.title}</div>
-                  <div className='setting-product__box-item-info__description'>{item.price}</div>
+                  <div className='setting-product__box-item-info__price'>{item.price} UAH</div>
                   <div className='setting-product__box-item-info__description'>{item.description}</div>
-                  <div className='setting-product__box-item-info__category'>{item.category}</div>
+                  <div className='setting-product__box-item-info__description'>{item.category}</div>
                   <div className='setting-product__box-item-info__article'>{item.article}</div>
                   <div className='setting-product__box-item-info__popular'>Популярні: {item.popular ? 'Так' : 'Ні'}</div>
                 </div>
