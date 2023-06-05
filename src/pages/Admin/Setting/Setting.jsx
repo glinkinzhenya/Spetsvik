@@ -421,7 +421,10 @@ export default function Setting() {
             <div className="setting-carusel__box">
               {arrayNews.map((item, index) => (
                 <div key={index} className="setting-carusel__item">
-                  <img src={item} className="setting-carusel__item-image" alt="..." />
+                  <div className='setting-carusel__item-picture'>
+                       <img src={item} className="setting-carusel__item-image" alt="..." />
+                  </div>
+               
                   <button className="setting-carusel__item-delete" onClick={() => handleDelete(item, 'news', arrayNews, setProgressNews(true))}>Видалити</button>
                 </div>
               ))}
