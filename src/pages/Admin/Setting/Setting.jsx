@@ -396,7 +396,7 @@ export default function Setting() {
   return (
     <RequireAdminAuth>
       <div className="setting">
-        <div className="setting-carusel">
+        <div className="setting-carusel container">
           <p className="setting-carusel__title">Зображення на головній сторінці</p>
           <div className="setting-carusel__box">
             {arrayCarousel.map((item, index) => (
@@ -415,27 +415,28 @@ export default function Setting() {
         </div>
 
         <div className="setting-news">
-          <p className="setting-carusel__title">Новини на головній сторінці</p>
+          <div className="setting-news-container container">
+            <p className="setting-carusel__title">Новини на головній сторінці</p>
 
-          <div className="setting-carusel__box">
-            {arrayNews.map((item, index) => (
-              <div key={index} className="setting-carusel__item">
-                <img src={item} className="setting-carusel__item-image" alt="..." />
-                <button className="setting-carusel__item-delete" onClick={() => handleDelete(item, 'news', arrayNews, setProgressNews(true))}>Видалити</button>
-              </div>
-            ))}
+            <div className="setting-carusel__box">
+              {arrayNews.map((item, index) => (
+                <div key={index} className="setting-carusel__item">
+                  <img src={item} className="setting-carusel__item-image" alt="..." />
+                  <button className="setting-carusel__item-delete" onClick={() => handleDelete(item, 'news', arrayNews, setProgressNews(true))}>Видалити</button>
+                </div>
+              ))}
+            </div>
+
+            <div className="setting-upload">
+              <input type="file" onChange={handleFileChange} />
+              <button onClick={handleUploadNewsClick} className="setting-upload__button">Додати зображення</button>
+            </div>
+            {progressNews ? <div className="setting-carusel__progress">{progress}</div> : null}
           </div>
-
-          <div className="setting-upload">
-            <input type="file" onChange={handleFileChange} />
-            <button onClick={handleUploadNewsClick} className="setting-upload__button">Додати зображення</button>
-          </div>
-          {progressNews ? <div className="setting-carusel__progress">{progress}</div> : null}
-
         </div>
 
-        <div className="setting-product">
-
+        <div className="setting-product container">
+          <p className="setting-product__title">Управління товарами</p>
           {editProduct && <p className="setting-carusel__title">Редагування товару</p>}
 
           <div className="setting-product__inputs">
@@ -510,7 +511,7 @@ export default function Setting() {
 
           <div className='setting-product__flex'>
 
-            <p className="setting-carusel__title">Товар</p>
+            <p className="setting-product__flex-title">Товар</p>
             <select className='setting-product__select' onChange={handleChangeCategory}>
               <option>Всі товари</option>
               {categoryArray.map((item, index) => (
@@ -526,31 +527,29 @@ export default function Setting() {
             <input className='setting-product__search' value={searchQuery} onChange={handleSearchInputChange} type="text" name="search" placeholder='Пошук товара/артікля' />
 
           </div>
-
-          <div className="setting-product__box">
-            {displayedProducts.map((item, index) => (
-              <div key={index} className="setting-product__box-items">
-                <div className="setting-product__box-item">
-                  <div className='setting-product__box-item__picture'>
-                    <img className='setting-product__box-item__img' src={item.img[0]} alt={item.img[0]} />
-                  </div>
-                  <div className='setting-product__box-item-info'>
-                    <div className='setting-product__box-item-info__title'>{item.title}</div>
-                    <div className='setting-product__box-item-info__description'>{item.price}</div>
-                    <div className='setting-product__box-item-info__description'>{item.description}</div>
-                    <div className='setting-product__box-item-info__category'>{item.category}</div>
-                    <div className='setting-product__box-item-info__article'>{item.article}</div>
-                    <div className='setting-product__box-item-info__popular'>Популярні: {item.popular ? 'Так' : 'Ні'}</div>
-                  </div>
-                </div>
-                <button className="setting-carusel__item-edit" onClick={() => setEditProduct(item, setEditProductOrigin(item))}>Редагувати</button>
-                <button className="setting-carusel__item-delete" onClick={() => handleDelete(item.img, 'product', arrayProduct, setProgressProduct(true))}>Видалити</button>
-              </div>
-            ))}
-          </div>
-
         </div>
+        <div className="setting-product__box">
 
+          {displayedProducts.map((item, index) => (
+            <div key={index} className="setting-product__box-items">
+              <div className="setting-product__box-item">
+                <div className='setting-product__box-item__picture'>
+                  <img className='setting-product__box-item__img' src={item.img[0]} alt={item.img[0]} />
+                </div>
+                <div className='setting-product__box-item-info'>
+                  <div className='setting-product__box-item-info__title'>{item.title}</div>
+                  <div className='setting-product__box-item-info__description'>{item.price}</div>
+                  <div className='setting-product__box-item-info__description'>{item.description}</div>
+                  <div className='setting-product__box-item-info__category'>{item.category}</div>
+                  <div className='setting-product__box-item-info__article'>{item.article}</div>
+                  <div className='setting-product__box-item-info__popular'>Популярні: {item.popular ? 'Так' : 'Ні'}</div>
+                </div>
+              </div>
+              <button className="setting-carusel__item-edit" onClick={() => setEditProduct(item, setEditProductOrigin(item))}>Редагувати</button>
+              <button className="setting-carusel__item-delete" onClick={() => handleDelete(item.img, 'product', arrayProduct, setProgressProduct(true))}>Видалити</button>
+            </div>
+          ))}
+        </div>
       </div>
     </RequireAdminAuth>
   );
