@@ -68,14 +68,15 @@ export default function ProductsMap({ category, popular }) {
 
 
     // Фильтр
-    const [min, setMin] = useState(0);
-    const [max, setMax] = useState(0);
+    const [min, setMin] = useState('');
+    const [max, setMax] = useState('');
     const [gender, setGender] = useState(false);
     const [selectedValue, setSelectedValue] = useState('sorting');
 
     const handleMinChange = (event) => {
         const value = parseInt(event.target.value);
-        isNaN(value) ? setMin(0) : setMin(value);
+        // isNaN(value) ? setMin(0) : setMin(value);
+        setMin(value);
 
     };
 
@@ -104,7 +105,7 @@ export default function ProductsMap({ category, popular }) {
     const handleFilterPriceClick = () => {
         let filteredProducts = arrayProductOrigin;
 
-        if (max > 0) {
+        if (min > 0 && max > 0) {
             filteredProducts = filteredProducts.filter((product) => {
                 return product.price >= min && product.price <= max;
             });
@@ -123,8 +124,8 @@ export default function ProductsMap({ category, popular }) {
     const handleFilterPriceNull = () => {
         setSelectedValue('sorting');
         setArrayProduct(arrayProductOrigin);
-        setMin(0);
-        setMax(0);
+        setMin('');
+        setMax('');
         setGender(false);
     };
 
@@ -145,9 +146,9 @@ export default function ProductsMap({ category, popular }) {
                 <label className='filter-price__label'>
                     Ціна:
                     <div className='filter-price'>
-                        <input className='filter-price__input' placeholder='Від' type="number" onChange={handleMinChange} />
+                        <input className='filter-price__input' value={min} placeholder='Від' type="number" onChange={handleMinChange} />
                         <div>-</div>
-                        <input className='filter-price__input' placeholder='До' type="number" onChange={handleMaxChange} />
+                        <input className='filter-price__input' value={max} placeholder='До' type="number" onChange={handleMaxChange} />
                     </div>
                 </label>
                 {categoryFilterGender && <FormControlLabel
