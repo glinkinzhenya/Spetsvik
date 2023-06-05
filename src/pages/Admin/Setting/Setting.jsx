@@ -348,17 +348,18 @@ export default function Setting() {
     // Здесь вы можете выполнить необходимую логику сохранения изменений
     // Например, отправить запрос на сервер для обновления товара
     setProgressProduct(true);
+    const filteredEditProduct = Object.entries(editProduct).reduce((acc, [key, value]) => {
+      if (value !== undefined) {
+        acc[key] = value;
+      }
+      return acc;
+    }, {});
+
     const updatedArray = arrayProduct.map((item) => {
       if (item === editProductOrigin) {
         return {
           ...item,
-          title: editProduct.title,
-          price: editProduct.price,
-          description: editProduct.description,
-          characteristic: editProduct.characteristic,
-          category: editProduct.category,
-          article: editProduct.article,
-          popular: editProduct.popular
+          ...filteredEditProduct
         };
       }
       return item;
@@ -448,9 +449,9 @@ export default function Setting() {
               <input className="setting-product__input" name="title" onChange={handleInputChange} value={product.title} type="text" placeholder='Назва товару' />}
             {editProduct
               ?
-              <input className="setting-product__input" name="price" onChange={(e) => handleEditInputChange(e, editProduct)} value={editProduct.price} type="text" placeholder="Ціна" />
+              <input className="setting-product__input" name="price" onChange={(e) => handleEditInputChange(e, editProduct)} value={editProduct.price} type="number" placeholder="Ціна" />
               :
-              <input className="setting-product__input" name="price" onChange={handleInputChange} value={product.price} type="text" placeholder='Ціна' />}
+              <input className="setting-product__input" name="price" onChange={handleInputChange} value={product.price} type="number" placeholder='Ціна' />}
             {editProduct
               ?
               <input className="setting-product__input" name="description" onChange={(e) => handleEditInputChange(e, editProduct)} value={editProduct.description} type="text" placeholder="Опис товару" />

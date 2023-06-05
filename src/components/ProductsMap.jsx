@@ -6,6 +6,7 @@ import { Alert, Button, Snackbar } from '@mui/material';
 
 export default function ProductsMap({ category, popular }) {
     const [arrayProduct, setArrayProduct] = useState([]);
+    const [arrayProductOrigin, setArrayProductOrigin] = useState([]);
     const { mainData, cartItems2, setCartItems2 } = useContext(Context);
 
     useEffect(() => {
@@ -18,7 +19,7 @@ export default function ProductsMap({ category, popular }) {
                     (item) => item.popular
                 );
             }
-
+            setArrayProductOrigin(filteredProducts);
             setArrayProduct(filteredProducts);
         }
     }, [mainData, category, popular]);
@@ -55,27 +56,70 @@ export default function ProductsMap({ category, popular }) {
     };
 
 
+    // Фильтр
+    const [min, setMin] = useState('');
+    const [max, setMax] = useState('');
+    const [selectedValue, setSelectedValue] = useState('sorting');
+
+    const handleMinChange = (event) => {
+        const value = parseInt(event.target.value);
+        setMin(value);
+    };
+
+    const handleMaxChange = (event) => {
+        const value = parseInt(event.target.value);
+        setMax(value);
+    };
+
+    const handleSelectChange = (event) => {
+        setSelectedValue(event.target.value);
+        if (event.target.value === "less") {
+            const sorted = [...arrayProductOrigin].sort((a, b) => a.price - b.price);
+            setArrayProduct(sorted);
+        } 
+        if (event.target.value === "more") {
+            const sorted = [...arrayProductOrigin].sort((a, b) => b.price - a.price);
+            setArrayProduct(sorted);
+        } 
+    };
+
+    const handleFilterPriceClick = () => {
+        const filtered = arrayProductOrigin.filter((product) => {
+            return product.price >= min && product.price <= max;
+        });
+        setArrayProduct(filtered);
+    };
+
+    const handleFilterPriceNull = () => {
+        setSelectedValue('sorting');
+        setArrayProduct(arrayProductOrigin);
+    };
+
+
     return (
 
         <div className='productsMap'>
 
 
             {!popular && <div className='filter'>
-<p>Lorem ipsum, dolor </p>
-<p>Lorem ipsum, dolor </p>
-<p>Lorem ipsum, dolor </p>
-<p>Lorem ipsum, dolor </p>
-<p>Lorem ipsum, dolor </p>
-<p>Lorem ipsum, dolor </p>
-<p>Lorem ipsum, dolor </p>
-<p>Lorem ipsum, dolor </p>
-<p>Lorem ipsum, dolor </p>
-<p>Lorem ipsum, dolor </p>
-<p>Lorem ipsum, dolor </p>
-<p>Lorem ipsum, dolor </p>
-<p>Lorem ipsum, dolor </p>
-<p>Lorem ipsum, dolor </p>
 
+                <select onChange={handleSelectChange} value={selectedValue} name="select" className='filter-select'>
+                    <option value="sorting" disabled>Сортування</option>
+                    <option value="less">від меншої ціни</option>
+                    <option value="more">від більшої ціни</option>
+                </select>
+
+                <label className='filter-price__label'>
+                    Ціна:
+                    <div className='filter-price'>
+                        <input className='filter-price__input' placeholder='Від' type="number" onChange={handleMinChange} />
+                        <div>-</div>
+                        <input className='filter-price__input' placeholder='До' type="number" onChange={handleMaxChange} />
+                    </div>
+                </label>
+
+                <Button onClick={handleFilterPriceClick} sx={{ backgroundColor: '#F07C00', '&:hover': { backgroundColor: '#F07C00', color: 'white !important' }, maxHeight: '35px !important', minWidth: '25px !important' }} variant="contained">OK</Button>
+                <Button onClick={handleFilterPriceNull} sx={{ backgroundColor: '#F07C00', '&:hover': { backgroundColor: '#F07C00', color: 'white !important' }, maxHeight: '35px !important' }} variant="contained">Анулювати фільтр</Button>
             </div>}
 
 
@@ -166,7 +210,7 @@ export default function ProductsMap({ category, popular }) {
 
 
                     {!open && <Button onClick={() => handleClick(product)} sx={{ backgroundColor: '#F07C00', '&:hover': { backgroundColor: '#F07C00', color: 'white !important' }, marginTop: '20px', fontSize: '11px', right: '-400px' }} variant="contained">Додати до кошику</Button>}
-                    <Snackbar style={{ bottom: '30px', right: '20px' }} anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }} open={open} autoHideDuration={2000} onClose={handleClose}>
+                    <Snackbar style={{ bottom: '15px', right: '20px' }} anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }} open={open} autoHideDuration={2000} onClose={handleClose}>
                         <Alert onClose={handleClose} severity="success" sx={{ width: '100%', fontSize: '13px', height: '50px' }}>
                             Товар додано до кошику
                         </Alert>

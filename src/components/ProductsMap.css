@@ -1,12 +1,13 @@
 .productsMap {
-display: flex;
-/* height: 100vh; */
+    display: flex;
+    /* height: 100vh; */
+    gap: 20px;
 }
 
 .productsMap-box {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px!important;
+    gap: 20px !important;
     /* display: grid; */
     /* grid-template-columns: repeat(5, 150px); */
     /* height: 100%; */
@@ -255,15 +256,56 @@ display: flex;
 }
 
 .accordion-button:not(.collapsed)::after {
-    background-image: url('../../public/img/arrow-right-black.png');
+    background-image: none;
+}
+
+.accordion-button:focus {
+    border-color: none;
 }
 
 .filter {
-    background-color: red;
-    max-width: 225px;
-    min-width: 225px;
- 
+    background-color: #232323;
+    padding: 10px;
+    max-width: 205px;
+    min-width: 205px;
+    padding-top: 40px;
 }
+
+.filter-select {
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 100%;
+}
+
+.filter-price {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.filter-price__label {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.filter-price__input {
+    width: 80px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid black;
+    padding: 5px;
+
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
 
 
 
