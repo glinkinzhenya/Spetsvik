@@ -1,7 +1,6 @@
 import React from 'react';
 import './MilitaryEquipment.css';
 import News from '../../News/News';
-// import PopularGoodsMilitaryEquipment from './PopularGoodsMilitaryEquipment/PopularGoodsMilitaryEquipment';
 
 export default function MilitaryEquipment() {
 
@@ -263,7 +262,6 @@ export default function MilitaryEquipment() {
           </div>
         </div>
       </div>
-      {/* <PopularGoodsMilitaryEquipment /> */}
       <News />
     </>
   );

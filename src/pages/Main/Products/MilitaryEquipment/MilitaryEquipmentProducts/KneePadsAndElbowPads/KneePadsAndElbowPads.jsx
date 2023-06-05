@@ -1,5 +1,4 @@
 import React from 'react';
-import FilterProducts from '../../../FilterProducts/FilterProducts';
 import ProductsMap from '../../../../../../components/ProductsMap';
 import PopularMain from '../../../PopularMain/PopularMain';
 import News from '../../../../News/News';
@@ -30,14 +29,8 @@ export default function KneePadsAndElbowPads() {
         <div className='workRobes-container container'>
           <h3 className='workRobes-secondaryTitle'>Наколінники та налокітники</h3>
 
-          <div className='workRobes-box'>
-
-            <FilterProducts />
-
-            <div className='workRobes-box__productsMap'>
               <ProductsMap category='наколінники та налокітники' />
-            </div>
-          </div>
+              
         </div>
       </div>
 
