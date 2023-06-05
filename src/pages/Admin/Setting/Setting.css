@@ -10,7 +10,7 @@
 
     padding: 20px;
     margin-bottom: 5px;
-    height: 400px;
+    /* height: 400px; */
 }
 
 .setting-carusel__title {
@@ -58,7 +58,7 @@
 }
 
 .setting-upload {
-    margin-top: 30px;
+    margin-top: 20px;
     background-color: rgb(142, 142, 142);
     width: 600px;
     padding: 30px;
@@ -221,6 +221,7 @@
 
 .setting-product__flex {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     margin-top: 30px;
     /* margin-bottom: 30px; */
@@ -248,6 +249,12 @@
     outline: none;
     height: 33px;
     /* margin-top: 11px; */
+}
+
+.setting-carusel__box2 {
+    height: 25px;
+    /* width: 500px;
+    background-color: red; */
 }
 
 .setting-carusel__item-edit {

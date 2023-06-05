@@ -436,7 +436,10 @@ export default function Setting() {
               <input type="file" onChange={handleFileChange} />
               <button onClick={handleUploadNewsClick} className="setting-upload__button">Додати зображення</button>
             </div>
+
             {progressNews ? <div className="setting-carusel__progress">{progress}</div> : null}
+
+
           </div>
         </div>
 
@@ -529,8 +532,9 @@ export default function Setting() {
               :
               <button onClick={handleUploadProductsClick} className="setting-product__button">Додати товар</button>}
           </div>
-          {progressProduct ? <div className="setting-carusel__progress">{progress}</div> : null}
-
+          <div className="setting-carusel__box2">
+            {progressProduct ? <div className="setting-carusel__progress">{progress}</div> : null}
+          </div>
           <div className='setting-product__flex'>
 
             <p className="setting-product__flex-title">Товар</p>
