@@ -1,6 +1,5 @@
 import React from 'react';
 import ProductsMap from '../../../../../../components/ProductsMap';
-import FilterProducts from '../../../FilterProducts/FilterProducts';
 import PopularMain from '../../../PopularMain/PopularMain';
 import News from '../../../../News/News';
 
@@ -32,14 +31,8 @@ export default function SpecialShoes() {
         <div className='workRobes-container container'>
           <h3 className='workRobes-secondaryTitle'>Спецвзуття</h3>
 
-          <div className='workRobes-box'>
-
-            <FilterProducts />
-
-            <div className='workRobes-box__productsMap'>
               <ProductsMap category='спецвзуття' />
-            </div>
-          </div>
+              
         </div>
       </div>
 

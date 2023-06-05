@@ -1,7 +1,6 @@
 import React from 'react';
 import './FireSafety.css';
 import News from '../../News/News';
-// import PopularGoodsFireSafety from './PopularGoodsFireSafety/PopularGoodsFireSafety';
 
 export default function FireSafety() {
 
@@ -54,7 +53,6 @@ export default function FireSafety() {
 
             <a className='fireSafety-box__item' href="/fire-hoses">
               <div className='fireSafety-box__item-picture'>
-                {/* <img className='fireSafety-box__item-image' src="./img/stock_rukav.jpg" alt="" /> */}
                 <img className='fireSafety-box__item-image' src="./img/rukav.png" alt="" />
               </div>
               <div className='fireSafety-box__item-bg'>
@@ -65,7 +63,6 @@ export default function FireSafety() {
           </div>
         </div>
       </div>
-      {/* <PopularGoodsFireSafety /> */}
       <News />
     </>
   );

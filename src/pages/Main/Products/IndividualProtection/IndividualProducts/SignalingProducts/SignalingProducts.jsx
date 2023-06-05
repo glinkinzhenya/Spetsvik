@@ -1,6 +1,5 @@
 import React from 'react';
 import ProductsMap from '../../../../../../components/ProductsMap';
-import FilterProducts from '../../../FilterProducts/FilterProducts';
 import PopularMain from '../../../PopularMain/PopularMain';
 import News from '../../../../News/News';
 
@@ -35,15 +34,8 @@ export default function SignalingProducts() {
         <div className='workRobes-container container'>
           <h3 className='workRobes-secondaryTitle'>Сигнальна продукція</h3>
 
-          <div className='workRobes-box'>
-
-            <FilterProducts />
-
-
-            <div className='workRobes-box__productsMap'>
               <ProductsMap category='сигнальна продукція' />
-            </div>
-          </div>
+              
         </div>
       </div>
 

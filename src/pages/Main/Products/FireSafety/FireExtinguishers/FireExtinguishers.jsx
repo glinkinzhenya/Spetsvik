@@ -1,7 +1,6 @@
 import React from 'react';
 import './FireExtinguishers.css';
 import News from '../../../News/News';
-// import PopularGoodsFireExtinguishers from './PopularGoodsFireExtinguishers/PopularGoodsFireExtinguishers';
 
 export default function FireExtinguishers() {
 
@@ -78,7 +77,6 @@ export default function FireExtinguishers() {
           </div>
         </div>
       </div>
-      {/* <PopularGoodsFireExtinguishers /> */}
       <News />
     </>
   );

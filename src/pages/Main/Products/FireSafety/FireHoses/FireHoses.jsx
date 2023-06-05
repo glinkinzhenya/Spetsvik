@@ -1,7 +1,6 @@
 import React from 'react';
 import './FireHoses.css';
 import News from '../../../News/News';
-// import PopularGoodsFireHoses from './PopularGoodsFireHoses/PopularGoodsFireHoses';
 
 export default function FireHoses() {
 
@@ -96,7 +95,6 @@ export default function FireHoses() {
           </div>
         </div>
       </div>
-      {/* <PopularGoodsFireHoses /> */}
       <News />
     </>
   );

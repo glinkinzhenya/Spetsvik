@@ -32,7 +32,6 @@ export default function WorkRobes() {
           <h3 className='workRobes-secondaryTitle'>Халати робочі</h3>
 
               <ProductsMap category='халати робочі' />
-       
     
         </div>
       </div>

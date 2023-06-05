@@ -1,6 +1,5 @@
 import React from 'react';
 import ProductsMap from '../../../../../../components/ProductsMap';
-import FilterProducts from '../../../FilterProducts/FilterProducts';
 import PopularMain from '../../../PopularMain/PopularMain';
 import News from '../../../../News/News';
 
@@ -35,15 +34,8 @@ export default function RespiratoryProtection() {
         <div className='workRobes-container container'>
           <h3 className='workRobes-secondaryTitle'>Засоби захисту органів дихання</h3>
 
-          <div className='workRobes-box'>
-
-            <FilterProducts />
-
-
-            <div className='workRobes-box__productsMap'>
               <ProductsMap category='засоби захисту органів дихання' />
-            </div>
-          </div>
+
         </div>
       </div>
 

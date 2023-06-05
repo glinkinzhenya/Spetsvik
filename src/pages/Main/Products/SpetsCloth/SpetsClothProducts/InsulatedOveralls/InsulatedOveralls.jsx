@@ -1,6 +1,5 @@
 import React from 'react';
 import ProductsMap from '../../../../../../components/ProductsMap';
-import FilterProducts from '../../../FilterProducts/FilterProducts';
 import News from '../../../../News/News';
 import PopularMain from '../../../PopularMain/PopularMain';
 
@@ -30,14 +29,7 @@ export default function InsulatedOveralls() {
         <div className='workRobes-container container'>
           <h3 className='workRobes-secondaryTitle'>Утеплений спецодяг</h3>
 
-          <div className='workRobes-box'>
-
-            <FilterProducts />
-
-            <div className='workRobes-box__productsMap'>
               <ProductsMap category='утеплений спецодяг' />
-            </div>
-          </div>
         </div>
       </div>
 

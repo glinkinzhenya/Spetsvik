@@ -1,7 +1,6 @@
 import React from 'react';
 import './Shevrons.css';
 import News from '../../News/News';
-// import PopularGoodsShevrons from './PopularGoodsShevrons/PopularGoodsShevrons';
 
 export default function Shevrons() {
 
@@ -45,11 +44,9 @@ export default function Shevrons() {
               </div>
             </a>
 
-
           </div>
         </div>
       </div>
-      {/* <PopularGoodsShevrons /> */}
       <News />
     </>
   );

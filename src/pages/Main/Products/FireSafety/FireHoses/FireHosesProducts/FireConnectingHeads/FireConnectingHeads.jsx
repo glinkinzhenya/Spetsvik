@@ -1,5 +1,4 @@
 import React from 'react';
-import FilterProducts from '../../../../FilterProducts/FilterProducts';
 import ProductsMap from '../../../../../../../components/ProductsMap';
 import PopularMain from '../../../../PopularMain/PopularMain';
 import News from '../../../../../News/News';
@@ -34,14 +33,8 @@ export default function FireConnectingHeads() {
         <div className='workRobes-container container'>
           <h3 className='workRobes-secondaryTitle'>Головки пожежні з’єднувальні</h3>
 
-          <div className='workRobes-box'>
-
-            <FilterProducts />
-
-            <div className='workRobes-box__productsMap'>
               <ProductsMap category='головки пожежні з’єднувальні' />
-            </div>
-          </div>
+              
         </div>
       </div>
 

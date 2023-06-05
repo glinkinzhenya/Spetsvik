@@ -29,10 +29,8 @@ export default function Hats() {
 
         <div className='workRobes-container container'>
           <h3 className='workRobes-secondaryTitle'>Головні убори</h3>
-
      
               <ProductsMap category='головні убори' />
-         
      
         </div>
       </div>
