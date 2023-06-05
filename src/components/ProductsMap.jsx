@@ -68,13 +68,15 @@ export default function ProductsMap({ category, popular }) {
 
 
     // Фильтр
-    const [min, setMin] = useState('');
-    const [max, setMax] = useState('');
+    const [min, setMin] = useState(0);
+    const [max, setMax] = useState(0);
+    const [gender, setGender] = useState(false);
     const [selectedValue, setSelectedValue] = useState('sorting');
 
     const handleMinChange = (event) => {
         const value = parseInt(event.target.value);
-        setMin(value);
+        isNaN(value) ? setMin(0) : setMin(value);
+
     };
 
     const handleMaxChange = (event) => {
@@ -82,28 +84,48 @@ export default function ProductsMap({ category, popular }) {
         setMax(value);
     };
 
+    const handleGenderChange = (event) => {
+        setGender(event.target.value)
+        console.log(gender);
+    };
+
     const handleSelectChange = (event) => {
         setSelectedValue(event.target.value);
         if (event.target.value === "less") {
-            const sorted = [...arrayProductOrigin].sort((a, b) => a.price - b.price);
+            const sorted = [...arrayProduct].sort((a, b) => a.price - b.price);
             setArrayProduct(sorted);
         }
         if (event.target.value === "more") {
-            const sorted = [...arrayProductOrigin].sort((a, b) => b.price - a.price);
+            const sorted = [...arrayProduct].sort((a, b) => b.price - a.price);
             setArrayProduct(sorted);
         }
     };
 
     const handleFilterPriceClick = () => {
-        const filtered = arrayProductOrigin.filter((product) => {
-            return product.price >= min && product.price <= max;
-        });
-        setArrayProduct(filtered);
+        let filteredProducts = arrayProductOrigin;
+
+        if (max > 0) {
+            filteredProducts = filteredProducts.filter((product) => {
+                return product.price >= min && product.price <= max;
+            });
+        }
+
+        if (gender) {
+            filteredProducts = filteredProducts.filter((product) => {
+                return product.gender === gender;
+            });
+        }
+
+        setArrayProduct(filteredProducts);
+        setSelectedValue('sorting');
     };
 
     const handleFilterPriceNull = () => {
         setSelectedValue('sorting');
         setArrayProduct(arrayProductOrigin);
+        setMin(0);
+        setMax(0);
+        setGender(false);
     };
 
 
@@ -129,18 +151,22 @@ export default function ProductsMap({ category, popular }) {
                     </div>
                 </label>
                 {categoryFilterGender && <FormControlLabel
-                    value="men"
+                    value="Чоловічий"
                     control={<Checkbox />}
                     label="Чоловічі"
                     labelPlacement="end"
                     sx={{ display: 'flex', marginTop: '20px' }}
+                    onChange={handleGenderChange}
+                    checked={gender === 'Чоловічий'}
                 />}
                 {categoryFilterGender && <FormControlLabel
-                    value="men"
+                    value="Жіночий"
                     control={<Checkbox />}
                     label="Жіночі"
                     labelPlacement="end"
                     sx={{ display: 'flex' }}
+                    onChange={handleGenderChange}
+                    checked={gender === 'Жіночий'}
                 />}
 
                 <Button onClick={handleFilterPriceClick} sx={{ marginBottom: '20px', marginTop: '20px', backgroundColor: '#F07C00', '&:hover': { backgroundColor: '#F07C00', color: 'white !important' }, maxHeight: '35px !important', minWidth: '25px !important' }} variant="contained">OK</Button>

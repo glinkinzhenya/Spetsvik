@@ -78,6 +78,7 @@ export default function Setting() {
     price: '',
     description: '',
     category: '',
+    gender: '',
     article: '',
     popular: false,
   });
@@ -423,9 +424,9 @@ export default function Setting() {
               {arrayNews.map((item, index) => (
                 <div key={index} className="setting-carusel__item">
                   <div className='setting-carusel__item-picture'>
-                       <img src={item} className="setting-carusel__item-image" alt="..." />
+                    <img src={item} className="setting-carusel__item-image" alt="..." />
                   </div>
-               
+
                   <button className="setting-carusel__item-delete" onClick={() => handleDelete(item, 'news', arrayNews, setProgressNews(true))}>Видалити</button>
                 </div>
               ))}
@@ -494,6 +495,23 @@ export default function Setting() {
 
             {editProduct
               ?
+              <select onChange={(e) => handleEditInputChange(e, editProduct)} name="gender" value={editProduct.gender}>
+                <option>Обрати пол</option>
+                <option>Чоловічий</option>
+                <option>Жіночий</option>
+              </select>
+              :
+              <select onChange={handleInputChange} name="gender" value={product.gender}>
+                <option>Обрати пол</option>
+                <option>Чоловічий</option>
+                <option>Жіночий</option>
+              </select>}
+
+
+
+
+            {editProduct
+              ?
               <label>
                 <input name="popular" type="checkbox" onChange={(e) => handleEditInputChange(e, editProduct)} checked={editProduct.popular} value={editProduct.popular} />
                 Додати у популярні
@@ -545,6 +563,7 @@ export default function Setting() {
                   <div className='setting-product__box-item-info__price'>{item.price} UAH</div>
                   <div className='setting-product__box-item-info__description'>{item.description}</div>
                   <div className='setting-product__box-item-info__description'>{item.category}</div>
+                  <div className='setting-product__box-item-info__description'>{item.gender}</div>
                   <div className='setting-product__box-item-info__article'>{item.article}</div>
                   <div className='setting-product__box-item-info__popular'>Популярні: {item.popular ? 'Так' : 'Ні'}</div>
                 </div>
