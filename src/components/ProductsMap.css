@@ -247,7 +247,6 @@
     /* color: black; */
     color: white;
     background-color: #232323;
-    border-color: red !important;
 }
 
 .accordion-button:not(.collapsed) {
@@ -288,7 +287,6 @@
     flex-direction: column;
     gap: 10px;
     font-size: 15px;
-    margin-bottom: 5px;
 }
 
 .filter-price__input {
@@ -300,10 +298,8 @@
 
 }
 
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
+.css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root.Mui-checked {
+    color: #F07C00 !important;
 }
 
 

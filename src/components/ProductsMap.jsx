@@ -2,12 +2,15 @@ import React, { useContext, useEffect, useState } from 'react';
 import { Context } from '../Contex';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './ProductsMap.css';
-import { Alert, Button, Snackbar } from '@mui/material';
+import { Alert, Button, Checkbox, FormControlLabel, Snackbar } from '@mui/material';
 
 export default function ProductsMap({ category, popular }) {
     const [arrayProduct, setArrayProduct] = useState([]);
     const [arrayProductOrigin, setArrayProductOrigin] = useState([]);
     const { mainData, cartItems2, setCartItems2 } = useContext(Context);
+
+    const categoryFilter = ['халати робочі'];
+    const [categoryFilterGender, setCategoryFilterGender] = useState(false);
 
     useEffect(() => {
         if (mainData) {
@@ -22,8 +25,16 @@ export default function ProductsMap({ category, popular }) {
             setArrayProductOrigin(filteredProducts);
             setArrayProduct(filteredProducts);
         }
+
     }, [mainData, category, popular]);
 
+    useEffect(() => {
+        categoryFilter.forEach(element => {
+            if (element === category) {
+                setCategoryFilterGender(true)
+            }
+        });
+    }, []);
 
 
     const [productWindow, setProductWindow] = useState(false);
@@ -76,11 +87,11 @@ export default function ProductsMap({ category, popular }) {
         if (event.target.value === "less") {
             const sorted = [...arrayProductOrigin].sort((a, b) => a.price - b.price);
             setArrayProduct(sorted);
-        } 
+        }
         if (event.target.value === "more") {
             const sorted = [...arrayProductOrigin].sort((a, b) => b.price - a.price);
             setArrayProduct(sorted);
-        } 
+        }
     };
 
     const handleFilterPriceClick = () => {
@@ -117,8 +128,22 @@ export default function ProductsMap({ category, popular }) {
                         <input className='filter-price__input' placeholder='До' type="number" onChange={handleMaxChange} />
                     </div>
                 </label>
+                {categoryFilterGender && <FormControlLabel
+                    value="men"
+                    control={<Checkbox />}
+                    label="Чоловічі"
+                    labelPlacement="end"
+                    sx={{ display: 'flex', marginTop: '20px' }}
+                />}
+                {categoryFilterGender && <FormControlLabel
+                    value="men"
+                    control={<Checkbox />}
+                    label="Жіночі"
+                    labelPlacement="end"
+                    sx={{ display: 'flex' }}
+                />}
 
-                <Button onClick={handleFilterPriceClick} sx={{ backgroundColor: '#F07C00', '&:hover': { backgroundColor: '#F07C00', color: 'white !important' }, maxHeight: '35px !important', minWidth: '25px !important' }} variant="contained">OK</Button>
+                <Button onClick={handleFilterPriceClick} sx={{ marginBottom: '20px', marginTop: '20px', backgroundColor: '#F07C00', '&:hover': { backgroundColor: '#F07C00', color: 'white !important' }, maxHeight: '35px !important', minWidth: '25px !important' }} variant="contained">OK</Button>
                 <Button onClick={handleFilterPriceNull} sx={{ backgroundColor: '#F07C00', '&:hover': { backgroundColor: '#F07C00', color: 'white !important' }, maxHeight: '35px !important' }} variant="contained">Анулювати фільтр</Button>
             </div>}
 
