@@ -38,4 +38,9 @@
     /* .popularMain-box {
         justify-content: center;
     } */
+
+    .popularMain-secondaryTitle {
+        font-size: 35px;
+    text-align: center;
+    }
 }

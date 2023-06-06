@@ -291,6 +291,7 @@
 
 .filter-price__input {
     width: 80px;
+
     border-radius: 5px;
     outline: none;
     border: 1px solid black;
@@ -305,10 +306,31 @@
 
 
 
+@media (max-width: 1350px) {
+    .productsMap-box {
+        justify-content: center;
+    }
+
+
+}
+
 @media (max-width: 1200px) {}
 
 @media (max-width: 992px) {}
 
 @media (max-width: 768px) {}
 
-@media (max-width: 576.8px) {}
+@media (max-width: 576.8px) {
+    .productsMap {
+            flex-direction: column;
+         }
+         .filter {
+            max-width: 100%;
+            /* min-width: 205px; */
+        }
+        .MuiButtonBase-root {
+            margin-left: 20px!important;
+        }
+
+        
+}
