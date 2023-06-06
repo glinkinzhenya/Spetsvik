@@ -410,7 +410,7 @@ export default function Setting() {
           </div>
 
           <div className="setting-upload">
-            <input type="file" onChange={handleFileChange} />
+            <input className="setting-upload__input" type="file" onChange={handleFileChange} />
             <button onClick={handleUploadClick} className="setting-upload__button">Додати зображення</button>
           </div>
           {progressCarousel ? <div className="setting-carusel__progress">{progress}</div> : null}
@@ -433,7 +433,7 @@ export default function Setting() {
             </div>
 
             <div className="setting-upload">
-              <input type="file" onChange={handleFileChange} />
+              <input className="setting-upload__input" type="file" onChange={handleFileChange} />
               <button onClick={handleUploadNewsClick} className="setting-upload__button">Додати зображення</button>
             </div>
 
