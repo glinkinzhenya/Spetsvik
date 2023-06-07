@@ -32,19 +32,11 @@ export default function ImageCarousel() {
             {mainData2.map((item, index) => (
               (index === 0) ?
                 <div key={index} className="carousel-item active image-carousel__picture">
-                  <img src={item} className="d-block image-carousel__img" alt="..." />
-                  {/* <div className="carousel-caption d-none d-md-block">
-                    <h5 className='carousel-item__title'>{item.title}</h5>
-                    <p className='carousel-item__description'>{item.description}</p>
-                  </div> */}
+                  <img src={item} className="d-block image-carousel__img" alt={item} />
                 </div> :
                 <div key={index} className={`carousel-item image-carousel__picture`}
                 >
-                  <img src={item} className="d-block image-carousel__img" alt="..." />
-                  {/* <div className="carousel-caption d-none d-md-block">
-                    <h5 className='carousel-item__title'>{item.title}</h5>
-                    <p className='carousel-item__description'>{item.description}</p>
-                  </div> */}
+                  <img src={item} className="d-block image-carousel__img" alt={item} />
                 </div>
             ))}
 
