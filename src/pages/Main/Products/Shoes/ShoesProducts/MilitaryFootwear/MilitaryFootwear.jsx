@@ -1,16 +1,14 @@
 import React from 'react';
-import ProductsMap from '../../../../../../components/ProductsMap';
-import PopularMain from '../../../PopularMain/PopularMain';
+import './MilitaryFootwear.css';
 import News from '../../../../News/News';
 
 export default function MilitaryFootwear() {
 
   return (
     <>
-      <div className='workRobes'>
+      <div className='militaryFootwear'>
         <div className='boxPath'>
           <div className='boxPath-container container'>
-
             <a className='boxPath-container__text' href="/">Головна</a>
             <div className='boxPath-container__arrow'>
               <img className='boxPath-container__arrow-image' src="./img/arrow-right.svg" alt="" />
@@ -24,19 +22,62 @@ export default function MilitaryFootwear() {
               <img className='boxPath-container__arrow-image' src="./img/arrow-right.svg" alt="" />
             </div>
             <a className='boxPath-container__text' href="/military-footwear">Військове взуття</a>
+          </div>
+
+        </div>
+        <div className='militaryFootwear-container container'>
+          <h2 className='militaryFootwear-mainTitle'>ВІЙСЬКОВЕ ВЗУТТЯ</h2>
+        </div>
+
+        <div className='militaryFootwear-baner'>
+          {/* <img className='militaryFootwear-baner__image' src="./img/militaryShoes2.JPG" alt="" /> */}
+          <img className='militaryFootwear-baner__image' src="./img/militaryShoes2_1.JPG" alt="" />
+        </div>
+
+        <div className='militaryFootwear-container container'>
+          <h3 className='militaryFootwear-secondaryTitle'>Основні категорії</h3>
+
+          <div className='militaryFootwear-box'>
+
+            <a className='militaryFootwear-box__item' href="/military-footwear-winter">
+              <div className='militaryFootwear-box__item-picture'>
+                <img className='militaryFootwear-box__item-image' src="./img/militaryShoes2_1.JPG" alt="" />
+              </div>
+              <div className='militaryFootwear-box__item-bg'>
+                <div className='militaryFootwear-box__item-text'>ВІЙСЬКОВЕ ВЗУТТЯ ЗИМОВЕ</div>
+              </div>
+            </a>
+
+            <a className='militaryFootwear-box__item' href="/military-footwear">
+              <div className='militaryFootwear-box__item-picture'>
+                <img className='militaryFootwear-box__item-image' src="./img/militaryShoes2_1.JPG" alt="" />
+              </div>
+              <div className='militaryFootwear-box__item-bg'>
+                <div className='militaryFootwear-box__item-text'>ВІЙСЬКОВЕ ВЗУТТЯ</div>
+              </div>
+            </a>
+
+            <a className='militaryFootwear-box__item' href="/military-footwear">
+              <div className='militaryFootwear-box__item-picture'>
+                <img className='militaryFootwear-box__item-image' src="./img/militaryShoes2_1.JPG" alt="" />
+              </div>
+              <div className='militaryFootwear-box__item-bg'>
+                <div className='militaryFootwear-box__item-text'>ВІЙСЬКОВЕ ВЗУТТЯ</div>
+              </div>
+            </a>
+
+            <a className='militaryFootwear-box__item' href="/military-footwear">
+              <div className='militaryFootwear-box__item-picture'>
+                <img className='shomilitaryFootweares-box__item-image' src="./img/militaryShoes2_1.JPG" alt="" />
+              </div>
+              <div className='militaryFootwear-box__item-bg'>
+                <div className='militaryFootwear-box__item-text'>ВІЙСЬКОВЕ ВЗУТТЯ</div>
+              </div>
+            </a>
 
           </div>
         </div>
-
-        <div className='workRobes-container container'>
-          <h3 className='workRobes-secondaryTitle'>Військове взуття</h3>
-
-              <ProductsMap category='військове взуття' />
-              
-        </div>
       </div>
-
-      <PopularMain category='військове взуття' popular={true} />
 
       <News />
     </>

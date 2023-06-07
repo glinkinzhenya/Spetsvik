@@ -1,0 +1,145 @@
+.militaryFootwear {
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    background-color: #0C0C0C;
+}
+
+.boxPath {
+    background-color: #232323;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.boxPath-container {
+    display: flex;
+    gap: 10px;
+}
+
+.boxPath-container__text {
+   
+}
+
+.boxPath-container__arrow {
+   width: 7px;
+}
+
+.boxPath-container__arrow-image {
+   width: 100%;    
+}
+
+.militaryFootwear-mainTitle {
+    padding-top: 50px;
+    font-size: 45px;
+    font-weight: 700;
+    padding-bottom: 50px;
+}
+
+.militaryFootwear-baner {
+    height: 550px;
+}
+
+.militaryFootwear-baner__image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.militaryFootwear-secondaryTitle {
+    font-size: 45px;
+    font-weight: 700;
+    padding-top: 100px;
+    padding-bottom: 70px;
+}
+
+.militaryFootwear-box {
+    gap: 100px 35px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.militaryFootwear-box__item {
+    height: 400px;
+    width: 300px;
+    cursor: pointer;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    transition: background-image 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+.militaryFootwear-box__item:hover {
+    filter: brightness(80%);
+    transition: filter 0.3s ease-in-out;
+}
+
+.militaryFootwear-box__item:not(:hover) {
+    filter: brightness(100%);
+    transition: filter 0.3s ease-in-out;
+}
+
+.militaryFootwear-box__item-picture {
+    width: 100%;
+    height: 100%;
+}
+
+.militaryFootwear-box__item-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.militaryFootwear-box__item-bg {
+position: absolute;
+    background-color: rgba(0, 0, 0, 0.654);
+    width: 100%;
+    height: 135px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.militaryFootwear-box__item-text {
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+
+@media (max-width: 1200px) {}
+
+@media (max-width: 992px) {}
+
+@media (max-width: 768px) {
+
+    .militaryFootwear-box {
+        justify-content: space-evenly;
+    }
+}
+
+@media (max-width: 576.8px) {
+
+    .militaryFootwear {
+        padding-top:25px;
+        padding-bottom: 50px;
+    }
+
+    .militaryFootwear-box {
+        gap: 35px 35px;
+    }
+    
+    .militaryFootwear-mainTitle {
+        font-size: 35px;
+        text-align: center;
+        padding-top: 50px;
+        padding-bottom: 25px;
+    }
+    .militaryFootwear-secondaryTitle {
+        font-size: 35px;
+        text-align: center;
+        padding-top: 50px;
+        padding-bottom: 35px;
+    }
+}

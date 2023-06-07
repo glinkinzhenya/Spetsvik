@@ -30,7 +30,8 @@ import EyeProtection from './Main/Products/IndividualProtection/IndividualProduc
 import RespiratoryProtection from './Main/Products/IndividualProtection/IndividualProducts/RespiratoryProtection/RespiratoryProtection';
 import SignalingProducts from './Main/Products/IndividualProtection/IndividualProducts/SignalingProducts/SignalingProducts';
 import SpecialShoes from './Main/Products/Shoes/ShoesProducts/SpecialShoes/SpecialShoes';
-import MilitaryFootwear from './Main/Products/Shoes/ShoesProducts/MilitaryFootwear/MilitaryFootwear';
+// import MilitaryFootwear from './Main/Products/Shoes/ShoesProducts/MilitaryFootwear/MilitaryFootwear';
+
 import PowderFireExtinguishers from './Main/Products/FireSafety/FireExtinguishers/FireExtinguishersProducts/PowderFireExtinguishers/PowderFireExtinguishers';
 import AcidFireExtinguishers from './Main/Products/FireSafety/FireExtinguishers/FireExtinguishersProducts/AcidFireExtinguishers/AcidFireExtinguishers';
 import StandsAndFasteners from './Main/Products/FireSafety/FireExtinguishers/FireExtinguishersProducts/StandsAndFasteners/StandsAndFasteners';
@@ -72,6 +73,8 @@ import FireConnectingHeads from './Main/Products/FireSafety/FireHoses/FireHosesP
 import FireHydrants from './Main/Products/FireSafety/FireHoses/FireHosesProducts/FireHydrants/FireHydrants';
 import FireColumns from './Main/Products/FireSafety/FireHoses/FireHosesProducts/FireColumns/FireColumns';
 import StandsForHydrants from './Main/Products/FireSafety/FireHoses/FireHosesProducts/StandsForHydrants/StandsForHydrants';
+import MilitaryFootwear from './Main/Products/Shoes/ShoesProducts/MilitaryFootwear/MilitaryFootwear';
+import MilitaryFootwearWinter from './Main/Products/Shoes/ShoesProducts/MilitaryFootwear/MilitaryFootwearProducts/MilitaryFootwearWinter/MilitaryFootwearWinter';
 
 export default function MainRoute() {
   return (
@@ -100,7 +103,12 @@ export default function MainRoute() {
 
         <Route path='/shoes' element={<Shoes />} />
         <Route path='/special-shoes' element={<SpecialShoes />} />
+
         <Route path='/military-footwear' element={<MilitaryFootwear />} />
+        <Route path='/military-footwear-winter' element={<MilitaryFootwearWinter />} />
+        {/* <Route path='/military-footwear' element={<MilitaryFootwear />} /> */}
+        {/* <Route path='/military-footwear' element={<MilitaryFootwear />} /> */}
+        {/* <Route path='/military-footwear' element={<MilitaryFootwear />} /> */}
 
         <Route path='/fire-safety' element={<FireSafety />} />
         <Route path='/fire-extinguishers' element={<FireExtinguishers />} />
