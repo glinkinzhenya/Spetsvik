@@ -15,7 +15,7 @@ import './Header.css';
 
 export default function Header() {
   const [busketNumber, setBusketNumber] = useState(0);
-  const [selectedValue, setSelectedValue] = useState({});
+  const [selectedValue, setSelectedValue] = useState('');
   const [busket, setBusket] = useState([]);
   const { cartItems2 } = useContext(Context);
 
@@ -143,6 +143,9 @@ export default function Header() {
 
 
   const handleConfirm = (data) => {
+
+    const obj = { post: selectedValue }
+
     const dataBusket = busket.map(obj => ({
       article: obj.article,
       name: obj.title,
@@ -152,14 +155,13 @@ export default function Header() {
       postNumber: obj.department,
 
     }));
-    console.log(dataBusket);
     setLoading(true); // Set loading state to true
     fetch('https://formspree.io/f/mbjebaod', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify({ ...data, ...dataBusket, ...selectedValue }),
+      body: JSON.stringify({ ...data, ...dataBusket, ...obj }),
     })
       .then(response => {
         if (response.ok) {
@@ -197,7 +199,7 @@ export default function Header() {
 
   const handleChange = (event) => {
     const newValue = event.target.value;
-    setSelectedValue({ post: newValue });
+    setSelectedValue(newValue);
     console.log(selectedValue);
   };
 
@@ -345,13 +347,13 @@ export default function Header() {
           <div className='basket-form__checkbox'>
             <FormControlLabel
               value="Нова Пошта"
-              control={<Checkbox checked={selectedValue === { post: 'Нова Пошта' }} onChange={handleChange} />}
+              control={<Checkbox checked={selectedValue === 'Нова Пошта'} onChange={handleChange} />}
               label="Нова Пошта"
               labelPlacement="end"
             />
             <FormControlLabel
               value="Укр Пошта"
-              control={<Checkbox checked={selectedValue === { post: 'Укр Пошта' }} onChange={handleChange} />}
+              control={<Checkbox checked={selectedValue === 'Укр Пошта'} onChange={handleChange} />}
               label="Укр Пошта"
               labelPlacement="end"
             />
