@@ -54,8 +54,6 @@
 }
 
 .fireHoses-box {
-    /* display: grid;
-    grid-template-columns: repeat(4, 1fr); */
     gap: 100px 35px;
     display: flex;
     flex-wrap: wrap;
@@ -126,13 +124,22 @@ position: absolute;
 @media (max-width: 576.8px) {
     .fireHoses {
         padding-top:25px;
+        padding-bottom: 50px;
+    }
+
+    .fireHoses-box {
+        gap: 35px 35px;
     }
     .fireHoses-mainTitle {
         font-size: 35px;
         text-align: center;
+        padding-top: 50px;
+        padding-bottom: 25px;
     }
     .fireHoses-secondaryTitle {
         font-size: 35px;
         text-align: center;
+        padding-top: 50px;
+        padding-bottom: 35px;
     }
 }

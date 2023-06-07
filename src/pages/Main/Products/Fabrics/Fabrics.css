@@ -52,8 +52,6 @@
 }
 
 .fabrics-box {
-    /* display: grid;
-    grid-template-columns: repeat(4, 1fr); */
     gap: 100px 35px;
     display: flex;
     flex-wrap: wrap;
@@ -120,18 +118,27 @@
 
 @media (max-width: 576.8px) {
 
-
     .fabrics {
-        padding-top:25px;
+        padding-top: 25px;
+        padding-bottom: 50px;
+    }
+
+    .fabrics-box {
+        gap: 35px 35px;
     }
 
     .fabrics-mainTitle {
         font-size: 35px;
         text-align: center;
+        padding-top: 50px;
+        padding-bottom: 25px;
     }
+
 
     .fabrics-secondaryTitle {
         font-size: 35px;
         text-align: center;
+        padding-top: 50px;
+        padding-bottom: 35px;
     }
 }

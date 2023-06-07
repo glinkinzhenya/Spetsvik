@@ -35,12 +35,13 @@
 @media (max-width: 768px) {}
 
 @media (max-width: 576.8px) {
-    /* .popularMain-box {
-        justify-content: center;
-    } */
+    .popularMain {
+        padding-bottom: 50px;
+    }
 
     .popularMain-secondaryTitle {
         font-size: 35px;
-    text-align: center;
+        text-align: center;
+        padding-bottom: 25px;
     }
 }

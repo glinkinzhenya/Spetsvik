@@ -17,16 +17,14 @@
     gap: 10px;
 }
 
-.boxPath-container__text {
-   
-}
+.boxPath-container__text {}
 
 .boxPath-container__arrow {
-   width: 7px;
+    width: 7px;
 }
 
 .boxPath-container__arrow-image {
-   width: 100%;    
+    width: 100%;
 }
 
 .spetsCloth-mainTitle {
@@ -54,8 +52,6 @@
 }
 
 .spetsCloth-box {
-    /* display: grid; */
-    /* grid-template-columns: repeat(4, 1fr); */
     gap: 100px 35px;
     display: flex;
     flex-wrap: wrap;
@@ -95,7 +91,7 @@
 }
 
 .spetsCloth-box__item-bg {
-position: absolute;
+    position: absolute;
     background-color: rgba(0, 0, 0, 0.654);
     width: 100%;
     height: 135px;
@@ -126,15 +122,25 @@ position: absolute;
 @media (max-width: 576.8px) {
     .spetsCloth {
         padding-top: 25px;
+        padding-bottom: 50px;
+    }
+
+    .spetsCloth-box {
+        justify-content: space-evenly;
+        gap: 35px 35px;
     }
 
     .spetsCloth-mainTitle {
         font-size: 35px;
         text-align: center;
+        padding-top: 50px;
+        padding-bottom: 25px;
     }
-    
+
     .spetsCloth-secondaryTitle {
         font-size: 35px;
         text-align: center;
+        padding-top: 50px;
+        padding-bottom: 25px;
     }
 }

@@ -54,8 +54,6 @@
 }
 
 .shevrons-box {
-    /* display: grid;
-    grid-template-columns: repeat(4, 1fr); */
     gap: 100px 35px;
     display: flex;
     flex-wrap: wrap;
@@ -126,13 +124,19 @@ position: absolute;
 
     .shevrons-box {
         justify-content: space-evenly;
+            gap: 35px 35px;
     }
+
     .shevrons-mainTitle {
         font-size: 35px;
         text-align: center;
+        padding-top: 50px;
+        padding-bottom: 25px;
     }
     .shevrons-secondaryTitle {
         font-size: 35px;
         text-align: center;
+        padding-top: 50px;
+        padding-bottom: 35px;
     }
 }
