@@ -144,9 +144,7 @@ export default function Header() {
 
   const handleConfirm = (data) => {
 
-    const obj = {
-      post: selectedValue
-    }
+    const obj = { post: selectedValue }
 
     const dataBusket = busket.map(obj => ({
       article: obj.article,
@@ -157,7 +155,6 @@ export default function Header() {
       postNumber: obj.department,
 
     }));
-    console.log(dataBusket);
     setLoading(true); // Set loading state to true
     fetch('https://formspree.io/f/mbjebaod', {
       method: 'POST',
