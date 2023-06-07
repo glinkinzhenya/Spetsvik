@@ -56,8 +56,6 @@
 }
 
 .individualProtection-box {
-    /* display: grid;
-    grid-template-columns: repeat(4, 1fr); */
     gap: 100px 35px;
     display: flex;
     flex-wrap: wrap;
@@ -129,6 +127,10 @@
         padding-top:25px;
     }
 
+    .individualProtection-box {
+        gap: 35px 35px;
+    }
+
     .individualProtection-mainTitle {
         font-size: 34px;
         text-align: center;
@@ -137,5 +139,7 @@
     .individualProtection-secondaryTitle {
         font-size: 35px;
         text-align: center;
+        padding-top: 50px;
+        padding-bottom: 35px;
     }
 }

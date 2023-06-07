@@ -54,12 +54,9 @@
 }
 
 .shoes-box {
-    /* display: grid; */
-    /* grid-template-columns: repeat(4, 1fr); */
     gap: 100px 35px;
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: space-between; */
 }
 
 .shoes-box__item {
@@ -127,6 +124,10 @@ position: absolute;
     .shoes {
         padding-top:25px;
     }
+
+    .shoes-box {
+        gap: 35px 35px;
+    }
     
     .shoes-mainTitle {
         font-size: 35px;
@@ -135,5 +136,7 @@ position: absolute;
     .shoes-secondaryTitle {
         font-size: 35px;
         text-align: center;
+        padding-top: 50px;
+        padding-bottom: 35px;
     }
 }

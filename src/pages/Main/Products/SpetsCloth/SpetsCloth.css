@@ -54,8 +54,6 @@
 }
 
 .spetsCloth-box {
-    /* display: grid; */
-    /* grid-template-columns: repeat(4, 1fr); */
     gap: 100px 35px;
     display: flex;
     flex-wrap: wrap;
@@ -128,6 +126,11 @@ position: absolute;
         padding-top: 25px;
     }
 
+    .spetsCloth-box {
+        justify-content: space-evenly;
+        gap: 35px 35px;
+    }
+
     .spetsCloth-mainTitle {
         font-size: 35px;
         text-align: center;
@@ -136,5 +139,7 @@ position: absolute;
     .spetsCloth-secondaryTitle {
         font-size: 35px;
         text-align: center;
+        padding-top: 50px;
+        padding-bottom: 35px;
     }
 }

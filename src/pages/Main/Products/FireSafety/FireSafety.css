@@ -124,6 +124,10 @@ position: absolute;
     .fireSafety {
         padding-top:25px;
     }
+
+    .fireSafety-box {
+        gap: 35px 35px;
+    }
     .fireSafety-mainTitle {
         font-size: 35px;
         text-align: center;
@@ -131,6 +135,8 @@ position: absolute;
     .fireSafety-secondaryTitle {
         font-size: 35px;
         text-align: center;
+        padding-top: 50px;
+        padding-bottom: 35px;
     }
 
 
