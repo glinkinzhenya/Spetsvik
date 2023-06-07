@@ -74,7 +74,10 @@ import FireHydrants from './Main/Products/FireSafety/FireHoses/FireHosesProducts
 import FireColumns from './Main/Products/FireSafety/FireHoses/FireHosesProducts/FireColumns/FireColumns';
 import StandsForHydrants from './Main/Products/FireSafety/FireHoses/FireHosesProducts/StandsForHydrants/StandsForHydrants';
 import MilitaryFootwear from './Main/Products/Shoes/ShoesProducts/MilitaryFootwear/MilitaryFootwear';
-import MilitaryFootwearWinter from './Main/Products/Shoes/ShoesProducts/MilitaryFootwear/MilitaryFootwearProducts/MilitaryFootwearWinter/MilitaryFootwearWinter';
+import WinterMilitaryFootwear from './Main/Products/Shoes/ShoesProducts/MilitaryFootwear/MilitaryFootwearProducts/WinterMilitaryFootwear/WinterMilitaryFootwear';
+import SummerFootwearWinter from './Main/Products/Shoes/ShoesProducts/MilitaryFootwear/MilitaryFootwearProducts/SummerFootwearWinter/SummerFootwearWinter';
+import LowMilitaryShoes from './Main/Products/Shoes/ShoesProducts/MilitaryFootwear/MilitaryFootwearProducts/LowMilitaryShoes/LowMilitaryShoes';
+import HighMilitaryShoes from './Main/Products/Shoes/ShoesProducts/MilitaryFootwear/MilitaryFootwearProducts/HighMilitaryShoes/HighMilitaryShoes';
 
 export default function MainRoute() {
   return (
@@ -105,10 +108,10 @@ export default function MainRoute() {
         <Route path='/special-shoes' element={<SpecialShoes />} />
 
         <Route path='/military-footwear' element={<MilitaryFootwear />} />
-        <Route path='/military-footwear-winter' element={<MilitaryFootwearWinter />} />
-        {/* <Route path='/military-footwear' element={<MilitaryFootwear />} /> */}
-        {/* <Route path='/military-footwear' element={<MilitaryFootwear />} /> */}
-        {/* <Route path='/military-footwear' element={<MilitaryFootwear />} /> */}
+        <Route path='/winter-military-footwear' element={<WinterMilitaryFootwear />} />
+        <Route path='/summer-military-footwear' element={<SummerFootwearWinter />} />
+        <Route path='/low-military-shoes' element={<LowMilitaryShoes />} />
+        <Route path='/high-military-shoes' element={<HighMilitaryShoes />} />
 
         <Route path='/fire-safety' element={<FireSafety />} />
         <Route path='/fire-extinguishers' element={<FireExtinguishers />} />

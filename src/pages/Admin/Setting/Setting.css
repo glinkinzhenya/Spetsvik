@@ -60,7 +60,6 @@
 .setting-upload {
     margin-top: 20px;
     background-color: rgb(142, 142, 142);
-    /* width: 600px; */
     width: auto;
     padding: 30px;
     display: flex;
@@ -70,7 +69,6 @@
 
 .setting-upload__input {
 min-width: 260px;
-background-color: red;
 }
 
 .setting-upload__button {

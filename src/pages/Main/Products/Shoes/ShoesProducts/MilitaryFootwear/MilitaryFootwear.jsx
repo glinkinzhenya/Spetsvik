@@ -39,39 +39,39 @@ export default function MilitaryFootwear() {
 
           <div className='militaryFootwear-box'>
 
-            <a className='militaryFootwear-box__item' href="/military-footwear-winter">
+            <a className='militaryFootwear-box__item' href="/winter-military-footwear">
               <div className='militaryFootwear-box__item-picture'>
-                <img className='militaryFootwear-box__item-image' src="./img/militaryShoes2_1.JPG" alt="" />
+                <img className='militaryFootwear-box__item-image' src="./img/militaryShoes2.JPG" alt="" />
               </div>
               <div className='militaryFootwear-box__item-bg'>
-                <div className='militaryFootwear-box__item-text'>ВІЙСЬКОВЕ ВЗУТТЯ ЗИМОВЕ</div>
+                <div className='militaryFootwear-box__item-text'>ЗИМОВЕ ВІЙСЬКОВЕ ВЗУТТЯ</div>
               </div>
             </a>
 
-            <a className='militaryFootwear-box__item' href="/military-footwear">
+            <a className='militaryFootwear-box__item' href="/summer-military-footwear">
               <div className='militaryFootwear-box__item-picture'>
-                <img className='militaryFootwear-box__item-image' src="./img/militaryShoes2_1.JPG" alt="" />
+                <img className='militaryFootwear-box__item-image' src="./img/militaryShoes2.JPG" alt="" />
               </div>
               <div className='militaryFootwear-box__item-bg'>
-                <div className='militaryFootwear-box__item-text'>ВІЙСЬКОВЕ ВЗУТТЯ</div>
+                <div className='militaryFootwear-box__item-text'>ЛІТНЄ ВІЙСЬКОВЕ ВЗУТТЯ</div>
               </div>
             </a>
 
-            <a className='militaryFootwear-box__item' href="/military-footwear">
+            <a className='militaryFootwear-box__item' href="/low-military-shoes">
               <div className='militaryFootwear-box__item-picture'>
-                <img className='militaryFootwear-box__item-image' src="./img/militaryShoes2_1.JPG" alt="" />
+                <img className='militaryFootwear-box__item-image' src="./img/militaryShoes2.JPG" alt="" />
               </div>
               <div className='militaryFootwear-box__item-bg'>
-                <div className='militaryFootwear-box__item-text'>ВІЙСЬКОВЕ ВЗУТТЯ</div>
+                <div className='militaryFootwear-box__item-text'>НИЗЬКЕ ВІЙСЬКОВЕ ВЗУТТЯ</div>
               </div>
             </a>
 
-            <a className='militaryFootwear-box__item' href="/military-footwear">
+            <a className='militaryFootwear-box__item' href="/high-military-shoes">
               <div className='militaryFootwear-box__item-picture'>
-                <img className='shomilitaryFootweares-box__item-image' src="./img/militaryShoes2_1.JPG" alt="" />
+                <img className='militaryFootwear-box__item-image' src="./img/militaryShoes2.JPG" alt="" />
               </div>
               <div className='militaryFootwear-box__item-bg'>
-                <div className='militaryFootwear-box__item-text'>ВІЙСЬКОВЕ ВЗУТТЯ</div>
+                <div className='militaryFootwear-box__item-text'>ВИСОКЕ ВІЙСЬКОВЕ ВЗУТТЯ</div>
               </div>
             </a>
 

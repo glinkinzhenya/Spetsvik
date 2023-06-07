@@ -3,7 +3,7 @@ import News from '../../../../../../News/News';
 import ProductsMap from '../../../../../../../../components/ProductsMap';
 import PopularMain from '../../../../../PopularMain/PopularMain';
 
-export default function MilitaryFootwearWinter() {
+export default function LowMilitaryShoes() {
 
   return (
     <>
@@ -27,19 +27,19 @@ export default function MilitaryFootwearWinter() {
             <div className='boxPath-container__arrow'>
               <img className='boxPath-container__arrow-image' src="./img/arrow-right.svg" alt="" />
             </div>
-            <a className='boxPath-container__text' href="/military-footwear">Військове взуття зимове</a>
+            <a className='boxPath-container__text' href="/low-military-shoes">Низьке військове взуття</a>
           </div>
         </div>
 
         <div className='workRobes-container container'>
-          <h3 className='workRobes-secondaryTitle'>Військове взуття зимове</h3>
+          <h3 className='workRobes-secondaryTitle'>Низьке військове взуття</h3>
 
-              <ProductsMap category='військове взуття зимове' />
+              <ProductsMap category='низьке військове взуття' />
               
         </div>
       </div>
 
-      <PopularMain category='військове взуття зимове' popular={true} />
+      <PopularMain category='низьке військове взуття' popular={true} />
 
       <News />
     </>
