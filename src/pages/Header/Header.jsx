@@ -315,7 +315,7 @@ export default function Header() {
             autoFocus
             margin="dense"
             label="Ваш номер телефону"
-            type="text"
+            type="number"
             variant="outlined"
             rules={addFormRules.number}
             control={control}

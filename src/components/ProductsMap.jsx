@@ -105,7 +105,10 @@ export default function ProductsMap({ category, popular }) {
     const handleFilterPriceClick = () => {
         let filteredProducts = arrayProductOrigin;
 
-        if (min > 0 && max > 0) {
+
+        if (max > 0) {
+            if (min === '') setMin(0)
+
             filteredProducts = filteredProducts.filter((product) => {
                 return product.price >= min && product.price <= max;
             });
