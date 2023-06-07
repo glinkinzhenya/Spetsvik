@@ -125,6 +125,7 @@
 @media (max-width: 576.8px) {
     .individualProtection {
         padding-top:25px;
+        padding-bottom: 50px;
     }
 
     .individualProtection-box {

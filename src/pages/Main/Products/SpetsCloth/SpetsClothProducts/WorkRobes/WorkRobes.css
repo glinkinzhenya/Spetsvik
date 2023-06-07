@@ -63,6 +63,10 @@
 }
 
 @media (max-width: 576.8px) {
+
+    .workRobes {
+        padding-bottom: 50px;
+    }
     .workRobes-secondaryTitle {
         font-size: 35px;
      text-align: center;

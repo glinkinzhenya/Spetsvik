@@ -17,16 +17,14 @@
     gap: 10px;
 }
 
-.boxPath-container__text {
-   
-}
+.boxPath-container__text {}
 
 .boxPath-container__arrow {
-   width: 7px;
+    width: 7px;
 }
 
 .boxPath-container__arrow-image {
-   width: 100%;    
+    width: 100%;
 }
 
 .fireSafety-mainTitle {
@@ -92,7 +90,7 @@
 }
 
 .fireSafety-box__item-bg {
-position: absolute;
+    position: absolute;
     background-color: rgba(0, 0, 0, 0.654);
     width: 100%;
     height: 135px;
@@ -116,24 +114,26 @@ position: absolute;
     }
 }
 
-@media (max-width: 768px) {
-}
+@media (max-width: 768px) {}
 
 @media (max-width: 576.8px) {
 
     .fireSafety {
-        padding-top:25px;
+        padding-top: 25px;
+        padding-bottom: 50px;
     }
 
     .fireSafety-box {
         gap: 35px 35px;
     }
+
     .fireSafety-mainTitle {
         font-size: 35px;
         text-align: center;
         padding-top: 50px;
         padding-bottom: 25px;
     }
+
     .fireSafety-secondaryTitle {
         font-size: 35px;
         text-align: center;

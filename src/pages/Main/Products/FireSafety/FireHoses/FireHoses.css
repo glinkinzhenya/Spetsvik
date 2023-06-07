@@ -124,6 +124,7 @@ position: absolute;
 @media (max-width: 576.8px) {
     .fireHoses {
         padding-top:25px;
+        padding-bottom: 50px;
     }
 
     .fireHoses-box {

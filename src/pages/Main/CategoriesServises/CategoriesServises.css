@@ -174,8 +174,8 @@
 
 @media (max-width: 576.8px) {
     .categoriesServises {
-        padding-top: 50px;
-        /* padding-bottom: 100px; */
+        padding-top: 25px;
+        padding-bottom: 50px;
     }
 
     .categories-box {
