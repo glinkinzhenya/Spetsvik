@@ -2,7 +2,7 @@ import React, { useContext, useState, useEffect } from 'react';
 import { Context } from '../../Contex';
 import Burger from './ComponentHeader/Burger/Burger';
 import BasicMenu from './ComponentHeader/BasicMenu/BasicMenu';
-import { Button, CircularProgress, Snackbar, ThemeProvider, createTheme } from '@mui/material';
+import { Button, Checkbox, CircularProgress, FormControlLabel, Snackbar, ThemeProvider, createTheme } from '@mui/material';
 import DeleteForeverIcon from '@mui/icons-material/DeleteForever';
 import MuiAlert from '@mui/material/Alert';
 import AddIcon from '@mui/icons-material/Add';
@@ -15,6 +15,7 @@ import './Header.css';
 
 export default function Header() {
   const [busketNumber, setBusketNumber] = useState(0);
+  const [selectedValue, setSelectedValue] = useState({});
   const [busket, setBusket] = useState([]);
   const { cartItems2 } = useContext(Context);
 
@@ -146,16 +147,19 @@ export default function Header() {
       article: obj.article,
       name: obj.title,
       quantity: obj.quantity,
-      price: obj.price
-    }));
+      price: obj.price,
+      city: obj.city,
+      postNumber: obj.department,
 
+    }));
+    console.log(dataBusket);
     setLoading(true); // Set loading state to true
     fetch('https://formspree.io/f/mbjebaod', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify({ ...data, ...dataBusket }),
+      body: JSON.stringify({ ...data, ...dataBusket, ...selectedValue }),
     })
       .then(response => {
         if (response.ok) {
@@ -190,6 +194,12 @@ export default function Header() {
       },
     },
   });
+
+  const handleChange = (event) => {
+    const newValue = event.target.value;
+    setSelectedValue({ post: newValue });
+    console.log(selectedValue);
+  };
 
   return (
     <div className='header'>
@@ -321,7 +331,42 @@ export default function Header() {
             control={control}
             name='number'
           />
-
+          <InputText
+            sx={{ width: '90%' }}
+            autoFocus
+            margin="dense"
+            label="Ваше місто"
+            type="text"
+            variant="outlined"
+            rules={addFormRules.city}
+            control={control}
+            name='city'
+          />
+          <div className='basket-form__checkbox'>
+            <FormControlLabel
+              value="Нова Пошта"
+              control={<Checkbox checked={selectedValue === { post: 'Нова Пошта' }} onChange={handleChange} />}
+              label="Нова Пошта"
+              labelPlacement="end"
+            />
+            <FormControlLabel
+              value="Укр Пошта"
+              control={<Checkbox checked={selectedValue === { post: 'Укр Пошта' }} onChange={handleChange} />}
+              label="Укр Пошта"
+              labelPlacement="end"
+            />
+          </div>
+          <InputText
+            sx={{ width: '90%' }}
+            autoFocus
+            margin="dense"
+            label="Ваше відділення"
+            type="number"
+            variant="outlined"
+            rules={addFormRules.department}
+            control={control}
+            name='department'
+          />
         </div>
 
         <div className='basket-products'>

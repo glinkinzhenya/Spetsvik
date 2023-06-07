@@ -504,6 +504,11 @@
     color: #F07C00 !important;
 }
 
+.basket-form__checkbox {
+    display: flex;
+    width: 90%;
+}
+
 @media (max-width: 1300px) {
     .header {
         height: 215px;

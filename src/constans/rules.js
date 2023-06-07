@@ -24,4 +24,10 @@ export const addFormRules = {
   number: {
     required: { value: true, message: addFormRulesImage.required('Номер телефону') },
   },
+  city: {
+    required: { value: true, message: addFormRulesImage.required('Місто') },
+  },
+  department: {
+    required: { value: true, message: addFormRulesImage.required('Відділення') },
+  },
 };
