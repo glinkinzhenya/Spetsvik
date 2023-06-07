@@ -29,9 +29,6 @@ import HandProtectionEquipment from './Main/Products/IndividualProtection/Indivi
 import EyeProtection from './Main/Products/IndividualProtection/IndividualProducts/EyeProtection/EyeProtection';
 import RespiratoryProtection from './Main/Products/IndividualProtection/IndividualProducts/RespiratoryProtection/RespiratoryProtection';
 import SignalingProducts from './Main/Products/IndividualProtection/IndividualProducts/SignalingProducts/SignalingProducts';
-import SpecialShoes from './Main/Products/Shoes/ShoesProducts/SpecialShoes/SpecialShoes';
-// import MilitaryFootwear from './Main/Products/Shoes/ShoesProducts/MilitaryFootwear/MilitaryFootwear';
-
 import PowderFireExtinguishers from './Main/Products/FireSafety/FireExtinguishers/FireExtinguishersProducts/PowderFireExtinguishers/PowderFireExtinguishers';
 import AcidFireExtinguishers from './Main/Products/FireSafety/FireExtinguishers/FireExtinguishersProducts/AcidFireExtinguishers/AcidFireExtinguishers';
 import StandsAndFasteners from './Main/Products/FireSafety/FireExtinguishers/FireExtinguishersProducts/StandsAndFasteners/StandsAndFasteners';
@@ -78,6 +75,11 @@ import WinterMilitaryFootwear from './Main/Products/Shoes/ShoesProducts/Military
 import SummerFootwearWinter from './Main/Products/Shoes/ShoesProducts/MilitaryFootwear/MilitaryFootwearProducts/SummerFootwearWinter/SummerFootwearWinter';
 import LowMilitaryShoes from './Main/Products/Shoes/ShoesProducts/MilitaryFootwear/MilitaryFootwearProducts/LowMilitaryShoes/LowMilitaryShoes';
 import HighMilitaryShoes from './Main/Products/Shoes/ShoesProducts/MilitaryFootwear/MilitaryFootwearProducts/HighMilitaryShoes/HighMilitaryShoes';
+import SpecialShoes from './Main/Products/Shoes/ShoesProducts/SpecialShoes/SpecialShoes';
+import WinterSpecialShoes from './Main/Products/Shoes/ShoesProducts/SpecialShoes/SpecialShoesProducts/WinterSpecialShoes/WinterSpecialShoes';
+import SummerSpecialShoes from './Main/Products/Shoes/ShoesProducts/SpecialShoes/SpecialShoesProducts/SummerSpecialShoes/SummerSpecialShoes';
+import LowSpecialShoes from './Main/Products/Shoes/ShoesProducts/SpecialShoes/SpecialShoesProducts/LowSpecialShoes/LowSpecialShoes';
+import HighSpecialShoes from './Main/Products/Shoes/ShoesProducts/SpecialShoes/SpecialShoesProducts/HighSpecialShoes/HighSpecialShoes';
 
 export default function MainRoute() {
   return (
@@ -106,6 +108,10 @@ export default function MainRoute() {
 
         <Route path='/shoes' element={<Shoes />} />
         <Route path='/special-shoes' element={<SpecialShoes />} />
+        <Route path='/winter-special-shoes' element={<WinterSpecialShoes />} />
+        <Route path='/summer-special-shoes' element={<SummerSpecialShoes />} />
+        <Route path='/low-special-shoes' element={<LowSpecialShoes />} />
+        <Route path='/high-special-shoes' element={<HighSpecialShoes />} />
 
         <Route path='/military-footwear' element={<MilitaryFootwear />} />
         <Route path='/winter-military-footwear' element={<WinterMilitaryFootwear />} />
