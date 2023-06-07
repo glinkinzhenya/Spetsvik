@@ -130,6 +130,8 @@ position: absolute;
     .shevrons-mainTitle {
         font-size: 35px;
         text-align: center;
+        padding-top: 50px;
+        padding-bottom: 25px;
     }
     .shevrons-secondaryTitle {
         font-size: 35px;

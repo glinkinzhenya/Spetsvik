@@ -132,6 +132,8 @@ position: absolute;
     .fireHoses-mainTitle {
         font-size: 35px;
         text-align: center;
+        padding-top: 50px;
+        padding-bottom: 25px;
     }
     .fireHoses-secondaryTitle {
         font-size: 35px;

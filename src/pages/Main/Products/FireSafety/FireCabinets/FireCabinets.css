@@ -134,6 +134,8 @@ position: absolute;
     .fireCabinets-mainTitle {
         font-size: 35px;
         text-align: center;
+        padding-top: 50px;
+        padding-bottom: 25px;
     }
     .fireCabinets-secondaryTitle {
         font-size: 35px;

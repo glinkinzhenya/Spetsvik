@@ -132,6 +132,8 @@ position: absolute;
     .shoes-mainTitle {
         font-size: 35px;
         text-align: center;
+        padding-top: 50px;
+        padding-bottom: 25px;
     }
     .shoes-secondaryTitle {
         font-size: 35px;

@@ -134,6 +134,8 @@
     .individualProtection-mainTitle {
         font-size: 34px;
         text-align: center;
+        padding-top: 50px;
+        padding-bottom: 25px;
     }
 
     .individualProtection-secondaryTitle {

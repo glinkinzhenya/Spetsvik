@@ -42,14 +42,10 @@
     padding: 20px;
     background-color: #0C0C0C;
     gap: 20px;
-    /* display: grid; */
-    /* grid-template-columns: repeat(4, 251px); */
-    /* grid-template-columns: repeat(5, 198px); */
     display: flex;
     flex-wrap: wrap;
     overflow-y: auto !important;
     width: 100%;
-    /* background-color: red; */
 }
 
 
@@ -67,11 +63,11 @@
 }
 
 @media (max-width: 576.8px) {
-
-
     .workRobes-secondaryTitle {
         font-size: 35px;
      text-align: center;
+        padding-top: 50px;
+        padding-bottom: 25px;
     }
 }
 
