@@ -9,7 +9,7 @@ export default function ProductsMap({ category, popular }) {
     const [arrayProductOrigin, setArrayProductOrigin] = useState([]);
     const { mainData, cartItems2, setCartItems2 } = useContext(Context);
 
-    const categoryFilter = ['халати робочі'];
+    const categoryFilter = ['халати робочі', 'медичний, кухарський, клінінговий одяг', 'костюми робочі', 'утеплений спецодяг'];
     const [categoryFilterGender, setCategoryFilterGender] = useState(false);
 
     useEffect(() => {
