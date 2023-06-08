@@ -299,7 +299,8 @@ export default function Header() {
         <img onClick={touchProductClose} className='product-window__close' src="./img/close.png" alt="" />
 
         <div className='basket-form'>
-          <h3 className='basket-form__title'>Ваші дані для замовлення</h3>
+          <div className='basket-form__box'><div className='basket-form__title'>Ваші дані для замовлення</div></div>
+          
           <InputText
             sx={{ width: '90%' }}
             autoFocus
@@ -412,7 +413,7 @@ export default function Header() {
                 </Box>
               </ThemeProvider>
             ) : (
-              <Button onClick={handleSubmit(handleConfirm)} variant="contained" sx={{ backgroundColor: '#F07C00', '&:hover': { backgroundColor: '#F07C00', color: 'white !important' } }}>Зробити замовлення</Button>
+                <Button onClick={handleSubmit(handleConfirm)} variant="contained" sx={{ marginLeft: '0px!important', backgroundColor: '#F07C00', '&:hover': { backgroundColor: '#F07C00', color: 'white !important' } }}>Зробити замовлення</Button>
             )}
           </div>
         </div>
