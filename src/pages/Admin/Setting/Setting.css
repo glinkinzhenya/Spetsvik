@@ -288,6 +288,25 @@ min-width: 260px;
 }
 
 @media (max-width: 576.8px) {
+
+.setting-product__inputs {
+    width: auto;
+    /* padding: 30px; */
+    /* gap: 10px; */
+}
+.setting-product__select {
+    /* height: 33px; */
+   width: 200px;
+   width: 100%;
+}
+
+.setting-product__select option {
+   max-width: 200px!important;
+   background-color: red;
+}
+
+
+
     .setting-carusel__box {
         justify-content: center;
     }
@@ -296,4 +315,10 @@ min-width: 260px;
             padding: 20px;
         max-width: 530px;
     }
+
+.setting-product__box {
+    justify-content: center;
+}
+
+
 }
