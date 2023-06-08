@@ -90,7 +90,6 @@ export default function MainRoute() {
         <Route path='/setting' element={<Setting />} />
         <Route path='/about' element={<About />} />
         <Route path='/products' element={<Products />} />
-
         <Route path='/spets-cloth' element={<SpetsCloth />} />
         <Route path='/work-robes' element={<WorkRobes />} />
         <Route path='/medical-clothes' element={<MedicalClothes />} />
@@ -99,41 +98,33 @@ export default function MainRoute() {
         <Route path='/protective-overalls' element={<ProtectiveOveralls />} />
         <Route path='/work-aprons' element={<WorkAprons />} />
         <Route path='/hats' element={<Hats />} />
-
         <Route path='/individual-protection' element={<IndividualProtection />} />
         <Route path='/hand-protection-equipment' element={<HandProtectionEquipment />} />
         <Route path='/eye-protection' element={<EyeProtection />} />
         <Route path='/respiratory-protection' element={<RespiratoryProtection />} />
         <Route path='/signaling-products' element={<SignalingProducts />} />
-
         <Route path='/shoes' element={<Shoes />} />
         <Route path='/special-shoes' element={<SpecialShoes />} />
         <Route path='/winter-special-shoes' element={<WinterSpecialShoes />} />
         <Route path='/summer-special-shoes' element={<SummerSpecialShoes />} />
         <Route path='/low-special-shoes' element={<LowSpecialShoes />} />
         <Route path='/high-special-shoes' element={<HighSpecialShoes />} />
-
         <Route path='/military-footwear' element={<MilitaryFootwear />} />
         <Route path='/winter-military-footwear' element={<WinterMilitaryFootwear />} />
         <Route path='/summer-military-footwear' element={<SummerFootwearWinter />} />
         <Route path='/low-military-shoes' element={<LowMilitaryShoes />} />
         <Route path='/high-military-shoes' element={<HighMilitaryShoes />} />
-
         <Route path='/fire-safety' element={<FireSafety />} />
         <Route path='/fire-extinguishers' element={<FireExtinguishers />} />
         <Route path='/powder-fire-extinguishers' element={<PowderFireExtinguishers />} />
-
         <Route path='/acid-fire-extinguishers' element={<AcidFireExtinguishers />} />
         <Route path='/stands-and-fasteners' element={<StandsAndFasteners />} />
         <Route path='/components-for-fire-extinguishers' element={<ComponentsForFireExtinguishers />} />
-
         <Route path='/fire-cabinets' element={<FireCabinets />} />
         <Route path='/fire-cabinets-item' element={<FireCabinetsItem />} />
         <Route path='/fire-shields-and-stands' element={<FireShieldsAndStands />} />
         <Route path='/fire-equipment' element={<FireEquipment />} />
         <Route path='/fire-boxes' element={<FireBoxes />} />
-
-
         <Route path='/fire-hoses' element={<FireHoses />} />
         <Route path='/pressure-hoses' element={<PressureHoses />} />
         <Route path='/fire-barrels' element={<FireBarrels />} />
@@ -167,25 +158,13 @@ export default function MainRoute() {
         <Route path='/scarf-pipes' element={<ScarfPipes />} />
         <Route path='/socks' element={<Socks />} />
         <Route path='/shorts' element={<Shorts />} />
-
-
         <Route path='/shevrons' element={<Shevrons />} />
         <Route path='/shevrons-item' element={<ShevronsItem />} />
-
         <Route path='/fabrics' element={<Fabrics />} />
         <Route path='/technical-fabrics' element={<TechnicalFabrics />} />
         <Route path='/strict-filter-fabrics' element={<StrictFilterFabrics />} />
-
         <Route path='/services' element={<Services />} />
         <Route path='/news' element={<News />} />
-        {/* <Route path='/admin/admin-test' element={<AdminTest />} /> */}
-        {/* // /edit фиксированный элемент */}
-        {/* <Route path='/trainings' element={<Trainings />} />
-        <Route path='/trainers' element={<Trainers />} />
-        <Route path='/admin' element={<Admin />} /> */}
-        {/* /:name плавающий элемент */}
-        {/* <Route path='/trainings/:name' element={<SportPage />} />
-        <Route path='/*' element={<NotFound />} /> */}
       </Routes>
     </Grid>
   );

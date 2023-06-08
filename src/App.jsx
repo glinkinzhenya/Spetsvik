@@ -6,26 +6,29 @@ import { firestore } from './firebase';
 import DeleteButton from './pages/Admin/DeleteAdmin';
 
 export default function App() {
-
   const [cartItems2, setCartItems2] = useState([]);
 
   const [data2, setData] = useState(null);
 
   useEffect(() => {
-    firestore.collection("data").get()
+    firestore
+      .collection('data')
+      .get()
       .then((querySnapshot) => {
         const data = [];
         querySnapshot.forEach((doc) => {
           data.push(doc.data());
         });
-        setData(data);
+        return data; // Вернуть значение из обработчика then()
       })
+      .then((data) => setData(data))
       .catch((error) => {
         // Обработка ошибок
-        console.log("Ошибка получения данных из Firestore:", error);
+        console.log('Ошибка получения данных из Firestore:', error);
         throw error;
       });
   }, []);
+
   const mainData = data2;
 
   const hasAuth = localStorage.getItem('auth') !== null;
