@@ -16,7 +16,15 @@ import { ThemeProvider } from '@mui/system';
 import './CallBack.css';
 
 export default function CallBack(props) {
-  const { buttonText, dialogTitle, dialogText, confirmText, cancelText, fontSize, from } = props;
+  const {
+    buttonText,
+    dialogTitle,
+    dialogText,
+    confirmText,
+    cancelText,
+    fontSize,
+    from,
+  } = props;
   const [open, setOpen] = useState(false);
   const [phoneNumber, setPhoneNumber] = useState('');
   const [formName, setformName] = useState('');
@@ -44,9 +52,15 @@ export default function CallBack(props) {
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify({ formName, phoneNumber, formText, formMail, from }),
+      body: JSON.stringify({
+        formName,
+        phoneNumber,
+        formText,
+        formMail,
+        from,
+      }),
     })
-      .then(response => {
+      .then((response) => {
         if (response.ok) {
           setSuccessOpen(true);
         } else {
@@ -54,11 +68,13 @@ export default function CallBack(props) {
         }
         setLoading(false); // Set loading state back to false
         handleClose();
+        return response; // Return the response or throw an exception if needed
       })
-      .catch(error => {
+      .catch((error) => {
         console.log('Ошибка отправки данных:', error);
         setLoading(false); // Set loading state back to false
         handleClose();
+        throw new Error('Ошибка отправки данных:', error); // Throw an exception
       });
   };
 
@@ -81,14 +97,19 @@ export default function CallBack(props) {
   const theme = createTheme({
     palette: {
       secondary: {
-        main: '#f07c00'
+        main: '#f07c00',
       },
     },
   });
 
   return (
     <div className='callBack'>
-      <Button sx={{ width: '100%', color: '#F07C00', borderColor: '#F07C00', ':hover': { borderColor: 'white' } }} variant="outlined" onClick={handleClickOpen}>
+      <Button sx={{
+        width: '100%',
+        color: '#F07C00',
+        borderColor: '#F07C00',
+        ':hover': { borderColor: 'white' },
+      }} variant="outlined" onClick={handleClickOpen}>
         <Typography sx={{ fontSize }} color="white">{buttonText}</Typography>
       </Button>
       <Dialog sx={{ backdropFilter: 'blur(10px)' }} open={open} onClose={handleClose}>
@@ -162,7 +183,7 @@ export default function CallBack(props) {
         anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }}
       >
         <MuiAlert sx={{ сolor: 'black' }} elevation={6} variant="filled" onClose={handleSuccessClose} severity="success">
-          Ми отримали повідомлення, скоро з Вами зв'яжемось.
+          Ми отримали повідомлення, скоро з Вам зателефонуємо.
         </MuiAlert>
       </Snackbar>
     </div>
