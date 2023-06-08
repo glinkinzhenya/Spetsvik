@@ -27,7 +27,8 @@ export default function Shoes() {
         </div>
 
         <div className='shoes-baner'>
-          <img className='shoes-baner__image' src="./img/militaryShoes2.JPG" alt="" />
+          {/* <img className='shoes-baner__image' src="./img/militaryShoes2.JPG" alt="" /> */}
+          <img className='shoes-baner__image' src="./img/shoes-main.JPG" alt="" />
         </div>
 
         <div className='shoes-container container'>
