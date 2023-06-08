@@ -618,6 +618,13 @@
     .pulse-button {
         width: 55px;
         height: 55px;
+        bottom: 35px;
+        right: 35px;
+    }
+
+    .pulse-button-icon {
+        bottom: 115px;
+        right: 37px;
     }
 
 
@@ -652,6 +659,8 @@
     .basket-summ-button {
         flex-direction: column;
     }
+
+
 }
 
 
