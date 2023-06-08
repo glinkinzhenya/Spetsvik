@@ -230,7 +230,22 @@ export default function ProductsMap({ category, popular }) {
           <h2 className='product-window__info-title'>{product.title}</h2>
           <h2 className='product-window__info-article'>Артикул: {product.article}</h2>
           <div className='product-window__info-line'></div>
-          <div className='product-window__info-price'>{product.price} <span className='product-window__info-price-span'>UAH</span></div>
+
+          <div className='product-window__info-price_button'>
+            <div className='product-window__info-price'>{product.price} <span className='product-window__info-price-span'>UAH</span></div>
+
+            <Button className='accordion-item__button' onClick={() => handleClick(product)} sx={{
+              backgroundColor: '#F07C00',
+              '&:hover': { backgroundColor: '#F07C00', color: 'white !important' },
+              marginTop: '20px',
+              fontSize: '11px',
+              right: '-400px',
+            }} variant="contained">Додати до кошику</Button>
+
+          </div>
+
+
+
           <div className="accordion" id="accordionExample">
             <div className="accordion-item">
               <h2 className="accordion-header">
@@ -257,21 +272,13 @@ export default function ProductsMap({ category, popular }) {
               </div>
             </div>
           </div>
-
-          {!open && <Button className='accordion-item__button' onClick={() => handleClick(product)} sx={{
-            backgroundColor: '#F07C00',
-            '&:hover': { backgroundColor: '#F07C00', color: 'white !important' },
-            marginTop: '20px',
-            fontSize: '11px',
-            right: '-400px',
-          }} variant="contained">Додати до кошику</Button>}
-          <Snackbar style={{ bottom: '10px', right: '20px' }} anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }} open={open} autoHideDuration={20000} onClose={handleClose}>
-            <Alert onClose={handleClose} severity="success" sx={{ width: '100%', fontSize: '13px', height: '50px' }}>
-              Товар додано до кошику
-            </Alert>
-          </Snackbar>
         </div>
       </div>}
+      <Snackbar anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }} open={open} autoHideDuration={20000} onClose={handleClose}>
+        <Alert onClose={handleClose} severity="success" sx={{ width: '100%', fontSize: '13px', height: '50px' }}>
+          Товар додано до кошику
+        </Alert>
+      </Snackbar>
     </div>
 
   );

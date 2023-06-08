@@ -168,6 +168,14 @@
     overflow: clip;
 }
 
+.product-window__info-price_button {
+    display: flex;
+    gap: 20px;
+
+    align-items: center;
+    justify-content: space-between;
+}
+
 .product-window__info-price {
     color: rgb(63, 63, 63);
     font-size: 45px;
@@ -250,8 +258,11 @@
 }
 
 .accordion-item__button {
-    /* background-color: red !important; */
-    right: -77% !important;
+    /* background-color: green !important; */
+    right: 0 !important;
+    margin-bottom: 10px !important;
+    /* height: 40px!important;
+    width: 200px!important; */
 }
 
 .filter {
@@ -283,12 +294,10 @@
 
 .filter-price__input {
     width: 80px;
-
     border-radius: 5px;
     outline: none;
     border: 1px solid black;
     padding: 5px;
-
 }
 
 .css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root.Mui-checked {
@@ -338,9 +347,9 @@
         /* padding: 20px; */
     }
 
-    .accordion-item__button {
+    /* .accordion-item__button {
         right: -66% !important;
-    }
+    } */
 }
 
 @media (max-width: 576.8px) {
@@ -389,9 +398,9 @@
         margin-left: 20px !important;
     }
 
-    .accordion-item__button {
+    /* .accordion-item__button {
         right: -41% !important;
-    }
+    } */
 
     .carousel-control-next-icon-color {
         margin-bottom: -410px;
