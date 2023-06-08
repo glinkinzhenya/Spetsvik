@@ -58,10 +58,19 @@
 @media (max-width: 768px) {}
 
 @media (max-width: 576.8px) {
+
+    .about-title {
+        font-size: 25px;
+    }
+
+    .about-wripper {
+        padding-top: 0px;
+        padding-bottom: 50px;
+    }
     .about-picture {
         width: 50%;
        }
        .about-text {
-        font-size: 20px;
+        font-size: 15px;
     }
    }

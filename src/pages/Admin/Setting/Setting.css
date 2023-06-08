@@ -295,14 +295,12 @@ min-width: 260px;
     /* gap: 10px; */
 }
 .setting-product__select {
-    /* height: 33px; */
-   width: 200px;
    width: 100%;
 }
 
 .setting-product__select option {
-   max-width: 200px!important;
-   background-color: red;
+   /* max-width: 200px!important; */
+   /* background-color: red; */
 }
 
 
