@@ -4,7 +4,6 @@ import News from '../../../../News/News';
 import PopularMain from '../../../PopularMain/PopularMain';
 
 export default function WorkSuits() {
-
   return (
     <>
       <div className='workRobes'>
@@ -30,7 +29,6 @@ export default function WorkSuits() {
           <h3 className='workRobes-secondaryTitle'>Костюми робочі</h3>
 
               <ProductsMap category='костюми робочі' />
-              
         </div>
       </div>
 

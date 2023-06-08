@@ -374,21 +374,25 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 600px;
-    width: 1100px;
+    /* height: 600px; */
+    /* width: 1100px; */
     z-index: 10;
     display: flex;
     padding: 10px;
     gap: 10px;
+    /* background-color: red; */
+    padding: 10px;
 }
 
 .basket-form {
     /* border: 1px solid rgb(142, 142, 142); */
-    width: 40%;
+    /* width: 40%; */
+    width: 425px;
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    /* background-color: green; */
 }
 
 .basket-form__title {
@@ -404,8 +408,10 @@
 
 .basket-products {
     /* border: 1px solid rgb(142, 142, 142); */
-    width: 60%;
+    /* width: 60%; */
+    width: 640px;
     height: 100%;
+    /* background-color: yellow; */
 }
 
 .basket-products__name {
@@ -444,6 +450,8 @@
     display: flex;
     gap: 10px;
     align-items: center;
+    padding-left: 10px;
+    /* background-color: red; */
 }
 
 .basket-item__actions {
@@ -454,7 +462,7 @@
 
 .basket-item__picture {
     height: 50px;
-    width: 30px;
+    width: 40px;
 }
 
 .basket-item__img {
@@ -518,6 +526,24 @@
 
 @media (max-width: 1200px) {}
 
+@media (max-width: 1100px) {
+
+    .burger-basket {
+        flex-direction: column;
+        height: 90vh;
+        /* width: auto; */
+        overflow-y: auto;
+    }
+
+    .basket-products {
+   order: -1;
+    }
+
+    .basket-form {
+        width: 100%;
+    }
+}
+
 @media (max-width: 992px) {
     .header {
         height: 250px;
@@ -549,6 +575,15 @@
     .header-category {
         display: none;
     }
+
+    .basket-products {
+     width: auto;
+         }
+
+         .burger-basket {
+            /* width: 500px; */
+            width: 80vw;
+        }
 }
 
 @media (max-width: 576.8px) {
@@ -564,6 +599,30 @@
     .pulse-button {
         width: 55px;
         height: 55px;
+    }
+    .burger-basket {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .basket-products__title {
+        font-size: 18px;
+    }
+
+    .basket-form__title {
+        font-size: 18px;
+    }
+
+    .basket-item__quantity {
+        font-size: 15px;
+    }
+    
+    .basket-item__total {
+        font-size: 15px;
+    }
+    
+    .basket-item__total-span {
+        font-size: 10px;
     }
 }
 
