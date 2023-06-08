@@ -4,7 +4,6 @@ import News from '../../News/News';
 // import PopularGoodsSpetsCloth from './PopularGoodsSpetsCloth/PopularGoodsSpetsCloth';
 
 export default function SpetsCloth() {
-
   return (
     <>
       <div className='spetsCloth'>
