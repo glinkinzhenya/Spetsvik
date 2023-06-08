@@ -18,7 +18,6 @@ export function InputText({
       rules={rules}
       render={(({ field: { onChange, value, ref }, fieldState: { error } }) => (
         <TextField
-   
           InputLabelProps={{
             style: {
               color: '#F07C00', // цвет текста метки
