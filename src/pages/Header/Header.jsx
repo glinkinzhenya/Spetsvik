@@ -316,7 +316,7 @@ export default function Header() {
             sx={{ width: '90%' }}
             autoFocus
             margin="dense"
-            label="Ваш E-mail"
+            label="E-mail"
             type="text"
             variant="outlined"
             rules={addFormRules.mail}
@@ -327,7 +327,7 @@ export default function Header() {
             sx={{ width: '90%' }}
             autoFocus
             margin="dense"
-            label="Ваш номер телефону"
+            label="Номер телефону"
             type="number"
             variant="outlined"
             rules={addFormRules.number}
