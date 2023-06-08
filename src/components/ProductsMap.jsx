@@ -265,7 +265,7 @@ export default function ProductsMap({ category, popular }) {
             fontSize: '11px',
             right: '-400px',
           }} variant="contained">Додати до кошику</Button>}
-          <Snackbar style={{ bottom: '15px', right: '20px' }} anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }} open={open} autoHideDuration={2000} onClose={handleClose}>
+          <Snackbar style={{ bottom: '10px', right: '20px' }} anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }} open={open} autoHideDuration={20000} onClose={handleClose}>
             <Alert onClose={handleClose} severity="success" sx={{ width: '100%', fontSize: '13px', height: '50px' }}>
               Товар додано до кошику
             </Alert>

@@ -187,7 +187,7 @@
     margin-top: 10px;
     font-size: 15px;
     overflow-y: auto;
-    height: 250px;
+    height: 245px;
     overflow-y: auto;
 }
 
@@ -336,6 +336,7 @@
         width: auto;
         /* padding: 20px; */
     }
+
     .accordion-item__button {
         right: -66% !important;
     }
@@ -353,9 +354,7 @@
         padding: 10px;
     }
 
-    .product-window {
-   
-    }
+    .product-window {}
 
     .product-window__gallary {
         width: auto;
@@ -396,7 +395,7 @@
     .carousel-control-next-icon-color {
         margin-bottom: -410px;
     }
-    
+
     .carousel-control-prev-icon-color {
         margin-bottom: -410px;
     }
