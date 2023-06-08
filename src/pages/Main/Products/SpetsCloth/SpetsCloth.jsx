@@ -27,8 +27,8 @@ export default function SpetsCloth() {
         </div>
 
         <div className='spetsCloth-baner'>
-          {/* <img className='spetsCloth-baner__image' src="./img/jackets.jpg" alt="" /> */}
-          <img className='spetsCloth-baner__image' src="./img/spets-cloth-main.JPG" alt="" />
+          <img className='spetsCloth-baner__image' src="./img/jackets.jpg" alt="" />
+          {/* <img className='spetsCloth-baner__image' src="./img/spets-cloth-main.JPG" alt="" /> */}
         </div>
 
         <div className='spetsCloth-container container'>

@@ -26,8 +26,8 @@ export default function MilitaryEquipment() {
         </div>
 
         <div className='militaryEquipment-baner'>
-          {/* <img className='militaryEquipment-baner__image' src="./img/MilitaryEquipment9.png" alt="" /> */}
-          <img className='militaryEquipment-baner__image' src="./img/military-equipment-main.png" alt="" />
+          <img className='militaryEquipment-baner__image' src="./img/MilitaryEquipment9.png" alt="" />
+          {/* <img className='militaryEquipment-baner__image' src="./img/military-equipment-main.png" alt="" /> */}
         </div>
 
         <div className='militaryEquipment-container container'>
