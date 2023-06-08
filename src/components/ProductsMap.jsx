@@ -274,7 +274,7 @@ export default function ProductsMap({ category, popular }) {
           </div>
         </div>
       </div>}
-      <Snackbar anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }} open={open} autoHideDuration={20000} onClose={handleClose}>
+      <Snackbar anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }} open={open} autoHideDuration={2000} onClose={handleClose}>
         <Alert onClose={handleClose} severity="success" sx={{ width: '100%', fontSize: '13px', height: '50px' }}>
           Товар додано до кошику
         </Alert>
