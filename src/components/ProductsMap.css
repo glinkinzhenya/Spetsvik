@@ -366,24 +366,35 @@
 
     .product-window {}
 
-    .product-window__gallary {
+    /* .product-window__gallary {
         width: auto;
-    }
+    } */
 
-    .product-window__gallary-box {
+    /* .product-window__gallary-box {
         width: 80%;
         margin-left: auto;
         margin-right: auto;
-    }
+    } */
 
     .product-window__gallary-box-picture {
         height: 50px;
         margin-top: 0px;
+        min-width: 40px;
+        max-width: 40px;
     }
 
     .product-window__gallary__picture {
         height: 350px;
+       /* width: 250px;
+       margin-left: 20%; */
     }
+
+        .product-window__gallary__img {
+            object-fit: cover;
+            height: 100%;
+            width: 250px;
+            margin-left: 20%;
+        }
 
     .product-window__info-title {
         font-size: 20px;
@@ -397,6 +408,8 @@
     .MuiButtonBase-root {
         margin-left: 20px !important;
     }
+
+          
 
     /* .accordion-item__button {
         right: -41% !important;
