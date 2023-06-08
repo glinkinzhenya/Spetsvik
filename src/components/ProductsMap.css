@@ -90,17 +90,18 @@
 }
 
 .product-window {
+    padding: 20px;
     background-color: #ffffff;
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 600px;
-    width: 1100px;
+    /* height: 600px; */
+    /* width: 1100px; */
     z-index: 10;
     display: flex;
     /* flex-wrap: wrap; */
-    /* gap: 20px; */
+    gap: 20px;
 }
 
 .product-window__close {
@@ -120,10 +121,12 @@
 .product-window__gallary {
     /* width: 70%; */
     width: 440px;
+    /* background-color: red; */
 }
 
 .product-window__gallary-box {
-    height: 100px;
+    /* background-color: red; */
+    /* height: 100px; */
     width: 100%;
     display: flex;
     gap: 20px;
@@ -136,6 +139,7 @@
 .product-window__gallary-box-picture {
     width: 40px;
     height: 60px;
+    margin-top: 20px;
 }
 
 .product-window__gallary-box-img {
@@ -161,7 +165,8 @@
 .product-window__info {
     height: 100%;
     width: 660px;
-    padding: 20px;
+    /* padding: 20px; */
+    /* background-color: green; */
 }
 
 .product-window__info-title {
@@ -189,10 +194,11 @@
 
 .product-window__info-description {
     color: rgb(0, 0, 0);
-    margin-top: 20px;
+    margin-top: 10px;
     font-size: 15px;
     overflow-y: auto;
     height: 250px;
+    overflow-y: auto;
 }
 
 .product-window__info-article {
@@ -211,7 +217,7 @@
     width: 20px;
     cursor: pointer;
     /* margin-bottom: -580px; */
-    margin-bottom: -600px;
+    margin-bottom: -610px;
 }
 
 .carousel-control-prev-icon-color {
@@ -219,20 +225,11 @@
     width: 20px;
     cursor: pointer;
     /* margin-bottom: -580px; */
-    margin-bottom: -600px;
+    margin-bottom: -610px;
 }
 
 .accordion {
-    height: 324px;
-    /* background-color: red; */
-    /* overflow-y: auto; */
-}
-
-.product-window__info-description {
-    /* background-color: green; */
-    height: 198px;
-    overflow-y: auto;
-
+    height: 355px;
 }
 
 .accordion-body {
@@ -260,6 +257,11 @@
 
 .accordion-button:focus {
     border-color: none;
+}
+
+.accordion-item__button {
+    /* background-color: red !important; */
+    right: -77% !important;
 }
 
 .filter {
@@ -314,30 +316,96 @@
 
 }
 
-@media (max-width: 1200px) {}
+@media (max-width: 1200px) {
+    .product-window {
+        padding: 20px;
+        align-items: center;
+        flex-direction: column;
+        height: 80vh;
+        overflow-y: auto;
+    }
+
+
+
+}
 
 @media (max-width: 992px) {}
 
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
+
+    .product-window {
+        height: 90vh;
+    }
+
+    .product-window__info {
+        width: auto;
+        /* padding: 20px; */
+    }
+    .accordion-item__button {
+        right: -66% !important;
+    }
+}
 
 @media (max-width: 576.8px) {
 
 
     .productsMap {
-            flex-direction: column;
-         }
-         .filter {
-            max-width: 100%;
-            padding: 10px;
-            /* padding-bottom: 0px; */
-        }
+        flex-direction: column;
+    }
 
-        .filter {
-          
-        }
-        .MuiButtonBase-root {
-            margin-left: 20px!important;
-        }
+    .filter {
+        max-width: 100%;
+        padding: 10px;
+        /* padding-bottom: 0px; */
+    }
 
-        
+    .product-window {
+        /* padding: 20px; */
+        /* height: 90vh; */
+    }
+
+    .product-window__gallary {
+        width: auto;
+    }
+
+    .product-window__gallary-box {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .product-window__gallary-box-picture {
+        height: 50px;
+        margin-top: 0px;
+    }
+
+    .product-window__gallary__picture {
+        height: 350px;
+    }
+
+    .product-window__info-title {
+        font-size: 20px;
+        margin-bottom: 0px;
+    }
+
+    .product-window__info-price {
+        font-size: 30px;
+    }
+
+    .MuiButtonBase-root {
+        margin-left: 20px !important;
+    }
+
+    .accordion-item__button {
+        right: -41% !important;
+    }
+
+
+    .carousel-control-next-icon-color {
+        margin-bottom: -410px;
+    }
+    
+    .carousel-control-prev-icon-color {
+        margin-bottom: -410px;
+    }
 }

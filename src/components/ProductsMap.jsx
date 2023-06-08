@@ -264,7 +264,7 @@ export default function ProductsMap({ category, popular }) {
                     </div>
 
 
-                    {!open && <Button onClick={() => handleClick(product)} sx={{ backgroundColor: '#F07C00', '&:hover': { backgroundColor: '#F07C00', color: 'white !important' }, marginTop: '20px', fontSize: '11px', right: '-400px' }} variant="contained">Додати до кошику</Button>}
+                    {!open && <Button className='accordion-item__button' onClick={() => handleClick(product)} sx={{ backgroundColor: '#F07C00', '&:hover': { backgroundColor: '#F07C00', color: 'white !important' }, marginTop: '20px', fontSize: '11px', right: '-400px' }} variant="contained">Додати до кошику</Button>}
                     <Snackbar style={{ bottom: '15px', right: '20px' }} anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }} open={open} autoHideDuration={2000} onClose={handleClose}>
                         <Alert onClose={handleClose} severity="success" sx={{ width: '100%', fontSize: '13px', height: '50px' }}>
                             Товар додано до кошику
