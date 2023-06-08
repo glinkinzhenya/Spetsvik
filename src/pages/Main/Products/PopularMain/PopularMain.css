@@ -40,7 +40,8 @@
     }
 
     .popularMain-secondaryTitle {
-        font-size: 35px;
+        /* font-size: 35px; */
+        font-size: 30px;
         text-align: center;
         padding-bottom: 25px;
     }

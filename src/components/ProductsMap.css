@@ -321,12 +321,19 @@
 @media (max-width: 768px) {}
 
 @media (max-width: 576.8px) {
+
+
     .productsMap {
             flex-direction: column;
          }
          .filter {
             max-width: 100%;
-            /* min-width: 205px; */
+            padding: 10px;
+            /* padding-bottom: 0px; */
+        }
+
+        .filter {
+          
         }
         .MuiButtonBase-root {
             margin-left: 20px!important;
