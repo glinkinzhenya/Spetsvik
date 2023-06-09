@@ -4,22 +4,31 @@
 
 .not_found-title {
     color: white;
-    position: absolute;
-    right: 200px;
-    bottom: 170px;
     font-size: 15vh;
     opacity: 0.2;
-    margin: 0px;
     z-index: -1;
+    margin-left: 40%;
 }
 
 .not_found_button {
-    margin-top: 5%;
+    margin-top: 12%;
     margin-left: 10%;
+    margin-bottom: 5%;
     border: none;
-    font-size: 5vh;
+    font-size: 30px;
     background-color: transparent;
     color: white;
     opacity: 0.6;
     cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .not_found-title {
+        font-size: 30px;
+    }
+
+    .not_found {
+        height: 40vh;
+    }
+
 }

@@ -5,8 +5,6 @@ import './NotFound.css';
 export default function NotFound() {
     return (
         <div className='not_found'>
-            <h3 className='not_found-title'>Помилка 404</h3>
-
             <button className='not_found_button'>
                 <Link
                     to={'/'}
@@ -14,6 +12,8 @@ export default function NotFound() {
                 >Перейти на головну...
                 </Link>
             </button>
+            
+            <h3 className='not_found-title'>Помилка 404</h3>
         </div>
     );
 }
