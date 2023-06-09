@@ -1,16 +1,23 @@
 import React, { useContext, useState, useEffect } from 'react';
-import { Context } from '../../Contex';
-import Burger from './ComponentHeader/Burger/Burger';
-import BasicMenu from './ComponentHeader/BasicMenu/BasicMenu';
-import { Button, Checkbox, CircularProgress, FormControlLabel, Snackbar, ThemeProvider, createTheme } from '@mui/material';
+import { useForm } from 'react-hook-form';
+import {
+  Button,
+  Checkbox,
+  CircularProgress,
+  FormControlLabel,
+  Snackbar, ThemeProvider,
+  createTheme,
+} from '@mui/material';
 import DeleteForeverIcon from '@mui/icons-material/DeleteForever';
+import RemoveIcon from '@mui/icons-material/Remove';
+import { Box } from '@mui/system';
 import MuiAlert from '@mui/material/Alert';
 import AddIcon from '@mui/icons-material/Add';
-import RemoveIcon from '@mui/icons-material/Remove';
+import Burger from './ComponentHeader/Burger/Burger';
+import { Context } from '../../Contex';
 import { InputText } from '../../components/Forms/InputText';
+import BasicMenu from './ComponentHeader/BasicMenu/BasicMenu';
 import { addFormRules } from '../../constans/rules';
-import { useForm } from 'react-hook-form';
-import { Box } from '@mui/system';
 import Pulse from '../../components/Pulse/Pulse';
 import './Header.css';
 
@@ -18,11 +25,14 @@ export default function Header() {
   const [busketNumber, setBusketNumber] = useState(0);
   const [selectedValue, setSelectedValue] = useState('');
   const [busket, setBusket] = useState([]);
+  const [isLoading, setLoading] = useState(false);
+  const [successOpen, setSuccessOpen] = useState(false);
+  const [busketNumberCorrect, setBusketNumberCorrect] = useState(0);
   const { cartItems2 } = useContext(Context);
 
   useEffect(() => {
     const loadCartItems = async () => {
-      const cartItems = await localStorage.getItem("cartItems");
+      const cartItems = await localStorage.getItem('cartItems');
       if (cartItems) {
         setBusketNumber(JSON.parse(cartItems).length);
       }
@@ -30,27 +40,25 @@ export default function Header() {
     loadCartItems();
   }, []);
 
-  const [busketNumberCorrect, setBusketNumberCorrect] = useState(0);
-
   useEffect(() => {
-    setBusketNumberCorrect(cartItems2.length)
-    setBusketNumber(busketNumber + cartItems2.length - busketNumberCorrect)
+    setBusketNumberCorrect(cartItems2.length);
+    setBusketNumber(busketNumber + cartItems2.length - busketNumberCorrect);
   }, [cartItems2]);
 
   const [productWindow, setProductWindow] = useState(false);
 
   const countDuplicates = (arr, value) => {
     let count = 0;
-    for (let i = 0; i < arr.length; i++) {
+    for (let i = 0; i < arr.length; i += 1) {
       if (arr[i].title === value) {
-        count++;
+        count += 1;
       }
     }
     return count;
   };
 
   const touchProduct = () => {
-    const cartItems = localStorage.getItem("cartItems");
+    const cartItems = localStorage.getItem('cartItems');
     if (cartItems) {
       const parsedCartItems = JSON.parse(cartItems);
       const uniqueItems = Array.from(new Set(parsedCartItems.map((item) => item.title)));
@@ -66,6 +74,16 @@ export default function Header() {
     }
     setProductWindow(true);
     document.body.classList.add('body-fixed');
+  };
+
+  const updateLocalStorage = (updatedBasket) => {
+    const cartItems = updatedBasket.reduce((items, item) => {
+      for (let i = 0; i < item.quantity; i += 1) {
+        items.push(item);
+      }
+      return items;
+    }, []);
+    localStorage.setItem('cartItems', JSON.stringify(cartItems));
   };
 
   const increaseQuantity = (index) => {
@@ -97,47 +115,34 @@ export default function Header() {
     setBusket(updatedBasketWithoutItem);
 
     // Удаляем все копии товара из локального хранилища
-    const cartItems = localStorage.getItem("cartItems");
+    const cartItems = localStorage.getItem('cartItems');
     if (cartItems) {
       const parsedCartItems = JSON.parse(cartItems);
       const updatedCartItems = parsedCartItems.filter((cartItem) => cartItem.title !== item.title);
-      localStorage.setItem("cartItems", JSON.stringify(updatedCartItems));
+      localStorage.setItem('cartItems', JSON.stringify(updatedCartItems));
       setBusketNumber(updatedCartItems.length);
     }
   };
 
-  const updateLocalStorage = (updatedBasket) => {
-    const cartItems = updatedBasket.reduce((items, item) => {
-      for (let i = 0; i < item.quantity; i++) {
-        items.push(item);
-      }
-      return items;
-    }, []);
-    localStorage.setItem("cartItems", JSON.stringify(cartItems));
-  };
-
   const calculateTotalAmount = () => {
     let total = 0;
-    for (let i = 0; i < busket.length; i++) {
+    for (let i = 0; i < busket.length; i += 1) {
       total += busket[i].total;
     }
     return total;
   };
 
-
   const touchProductClose = () => {
-    setProductWindow(false)
+    setProductWindow(false);
     document.body.classList.remove('body-fixed');
   };
 
   const { control, handleSubmit } = useForm();
 
-
   const handleConfirm = (data) => {
+    const obj = { post: selectedValue };
 
-    const obj = { post: selectedValue }
-
-    const dataBusket = busket.map(obj => ({
+    const dataBusket = busket.map((obj) => ({
       article: obj.article,
       name: obj.title,
       quantity: obj.quantity,
@@ -146,6 +151,7 @@ export default function Header() {
       postNumber: obj.department,
 
     }));
+
     setLoading(true); // Set loading state to true
     fetch('https://formspree.io/f/mbjebaod', {
       method: 'POST',
@@ -154,27 +160,25 @@ export default function Header() {
       },
       body: JSON.stringify({ ...data, ...dataBusket, ...obj }),
     })
-      .then(response => {
+      .then((response) => {
         if (response.ok) {
           setSuccessOpen(true);
-          setProductWindow(false)
-          localStorage.removeItem("cartItems");
+          setProductWindow(false);
+          localStorage.removeItem('cartItems');
           setBusket([]);
-          setBusketNumber(0)
+          setBusketNumber(0);
+          document.body.classList.remove('body-fixed');
         } else {
           console.log('Ошибка отправки данных');
-          console.log(data);
         }
-        setLoading(false); // Set loading state back to false
+        setLoading(false);
+        return response;
       })
-      .catch(error => {
+      .catch((error) => {
         console.log('Ошибка отправки данных:', error);
-        setLoading(false); // Set loading state back to false
+        setLoading(false);
       });
   };
-
-  const [isLoading, setLoading] = useState(false);
-  const [successOpen, setSuccessOpen] = useState(false);
 
   const handleSuccessClose = () => {
     setSuccessOpen(false);
@@ -183,7 +187,7 @@ export default function Header() {
   const theme = createTheme({
     palette: {
       secondary: {
-        main: '#f07c00'
+        main: '#f07c00',
       },
     },
   });
@@ -191,7 +195,6 @@ export default function Header() {
   const handleChange = (event) => {
     const newValue = event.target.value;
     setSelectedValue(newValue);
-    console.log(selectedValue);
   };
 
   return (
@@ -209,21 +212,21 @@ export default function Header() {
         <BasicMenu
           city="м. Лозова"
           addresses={[
-            { label: 'вул. Богданівська 35', url: 'https://goo.gl/maps/hT7zgvGWuNVq3gEY8' }
+            { label: 'вул. Богданівська 35', url: 'https://goo.gl/maps/hT7zgvGWuNVq3gEY8' },
           ]}
           phoneNumbers={['+380676132880']}
         />
         <BasicMenu
           city="м. Харків"
           addresses={[
-            { label: 'вул. Різдвяна 21', url: 'https://goo.gl/maps/3bmo4t72UDWPVEzW7' }
+            { label: 'вул. Різдвяна 21', url: 'https://goo.gl/maps/3bmo4t72UDWPVEzW7' },
           ]}
           phoneNumbers={['+380676121958']}
         />
         <BasicMenu
           city="м. Городок"
           addresses={[
-            { label: 'вул. Грушевського 84/2', url: 'https://goo.gl/maps/pmMV6SjztNN585nq9' }
+            { label: 'вул. Грушевського 84/2', url: 'https://goo.gl/maps/pmMV6SjztNN585nq9' },
           ]}
           phoneNumbers={['+380974058748']}
         />
@@ -244,13 +247,19 @@ export default function Header() {
           {/* <div className='burger-search__picture'>
             <img className='burger-search__image' src="./img/logo-search.svg" alt="logo-telephone" />
           </div> */}
-          {busketNumber > 0 ? <div onClick={touchProduct} className='burger-search__basket'>
-            <img className='burger-search__basket-image' src="./img/logo-basket.svg" alt="logo-telephone" />
-            <div className='burger-basket__number'>{busketNumber}</div>
-          </div> :
-            <div className='burger-search__basket'>
-              <img className='burger-search__basket-image' src="./img/logo-basket.svg" alt="logo-telephone" />
-            </div>}
+          {busketNumber > 0
+            ? (
+              <div onClick={touchProduct} className='burger-search__basket'>
+                <img className='burger-search__basket-image' src="./img/logo-basket.svg" alt="logo-telephone" />
+                <div className='burger-basket__number'>{busketNumber}</div>
+              </div>
+            )
+            : (
+              <div className='burger-search__basket'>
+                <img className='burger-search__basket-image' src="./img/logo-basket.svg" alt="logo-telephone" />
+              </div>
+            )
+          }
 
           <Burger />
         </div>
@@ -373,7 +382,6 @@ export default function Header() {
               </div>
             ))}
 
-
           </div>
 
           <div className="basket-summ-button">
@@ -386,7 +394,16 @@ export default function Header() {
                 </Box>
               </ThemeProvider>
             ) : (
-              <Button onClick={handleSubmit(handleConfirm)} variant="contained" sx={{ marginLeft: '0px!important', backgroundColor: '#F07C00', '&:hover': { backgroundColor: '#F07C00', color: 'white !important' } }}>Зробити замовлення</Button>
+              <Button
+                onClick={handleSubmit(handleConfirm)}
+                variant="contained"
+                sx={{
+                  marginLeft: '0px!important',
+                  backgroundColor: '#F07C00',
+                  '&:hover': { backgroundColor: '#F07C00', color: 'white !important' },
+                }}
+              >Зробити замовлення
+              </Button>
             )}
           </div>
         </div>
@@ -401,7 +418,7 @@ export default function Header() {
         anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }}
       >
         <MuiAlert sx={{ сolor: 'black' }} elevation={6} variant="filled" onClose={handleSuccessClose} severity="success">
-          Заявка отримана, скоро з Вами зв'яжемось.
+          Заявка отримана, скоро з Вам зателефонуємо.
         </MuiAlert>
       </Snackbar>
     </div >
