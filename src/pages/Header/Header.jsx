@@ -11,6 +11,7 @@ import { InputText } from '../../components/Forms/InputText';
 import { addFormRules } from '../../constans/rules';
 import { useForm } from 'react-hook-form';
 import { Box } from '@mui/system';
+import Pulse from '../../components/Pulse/Pulse';
 import './Header.css';
 
 export default function Header() {
@@ -35,18 +36,6 @@ export default function Header() {
     setBusketNumberCorrect(cartItems2.length)
     setBusketNumber(busketNumber + cartItems2.length - busketNumberCorrect)
   }, [cartItems2]);
-
-  const [isPulseButtonActive, setIsPulseButtonActive] = useState(false);
-
-  const handlePulseButtonClick = () => {
-    setIsPulseButtonActive(!isPulseButtonActive);
-  };
-
-  const pulseButtonImageClasses = `pulse-button-image ${isPulseButtonActive ? 'rotate opacity-image' : ''}`;
-  const pulseButtonImage2Classes = `pulse-button-image2 ${isPulseButtonActive ? '' : 'opacity-image rotate '}`;
-  const pulseButtonIconClasses = `pulse-button-icon ${isPulseButtonActive ? '' : 'pulse-button-icon_bottom opacity-image'}`;
-  const headerBlack = `header-black ${isPulseButtonActive ? 'header-black__active' : ''}`;
-
 
   const [productWindow, setProductWindow] = useState(false);
 
@@ -207,8 +196,7 @@ export default function Header() {
 
   return (
     <div className='header'>
-      <div onClick={handlePulseButtonClick} className={headerBlack}></div>
-
+      <Pulse />
       <div className='header-contacts container'>
         <BasicMenu
           city="м. Запоріжжя"
@@ -279,30 +267,13 @@ export default function Header() {
         <a className='header-category__item' href="/services">ПОСЛУГИ</a>
       </nav>
 
-
-      <div onClick={handlePulseButtonClick} className="pulse-button">
-        <img className={pulseButtonImageClasses} src="./img/chat.png" alt="" />
-        <img className={pulseButtonImage2Classes} src="./img/image-icon.png" alt="" />
-
-        <span className="pulse-button__rings"></span>
-        <span className="pulse-button__rings"></span>
-        <span className="pulse-button__rings"></span>
-      </div>
-
-      <div className={pulseButtonIconClasses}>
-        <img className="pulse-button-icon_image" src="./img/instagram-color.png" alt="" />
-        <img className="pulse-button-icon_image" src="./img/telegram-color.svg" alt="" />
-        <img className="pulse-button-icon_image" src="./img/viber-color.svg" alt="" />
-      </div>
-
-
       {productWindow && <div className='product-window__blur' onClick={touchProductClose}></div>}
       {productWindow && <div className='burger-basket'>
         <img onClick={touchProductClose} className='product-window__close' src="./img/close.png" alt="" />
 
         <div className='basket-form'>
           <div className='basket-form__box'><div className='basket-form__title'>Ваші дані для замовлення</div></div>
-          
+
           <InputText
             sx={{ width: '90%' }}
             autoFocus
@@ -415,7 +386,7 @@ export default function Header() {
                 </Box>
               </ThemeProvider>
             ) : (
-                <Button onClick={handleSubmit(handleConfirm)} variant="contained" sx={{ marginLeft: '0px!important', backgroundColor: '#F07C00', '&:hover': { backgroundColor: '#F07C00', color: 'white !important' } }}>Зробити замовлення</Button>
+              <Button onClick={handleSubmit(handleConfirm)} variant="contained" sx={{ marginLeft: '0px!important', backgroundColor: '#F07C00', '&:hover': { backgroundColor: '#F07C00', color: 'white !important' } }}>Зробити замовлення</Button>
             )}
           </div>
         </div>
