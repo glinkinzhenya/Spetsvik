@@ -328,6 +328,8 @@
 
 .opacity-image {
     opacity: 0;
+    /* display: none !important; */
+    pointer-events: none;
 }
 
 .pulse-button-icon {

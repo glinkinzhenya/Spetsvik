@@ -76,6 +76,7 @@ export default function Header() {
       setBusket(basketItems);
     }
     setProductWindow(true);
+    document.body.classList.add('body-fixed');
   };
 
   const increaseQuantity = (index) => {
@@ -137,6 +138,7 @@ export default function Header() {
 
   const touchProductClose = () => {
     setProductWindow(false)
+    document.body.classList.remove('body-fixed');
   };
 
   const { control, handleSubmit } = useForm();

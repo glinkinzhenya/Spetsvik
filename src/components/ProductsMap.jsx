@@ -47,9 +47,11 @@ export default function ProductsMap({ category, popular }) {
   const touchProduct = (item) => {
     setProduct(item);
     setProductWindow(true);
+    document.body.classList.add('body-fixed');
   };
   const touchProductClose = () => {
     setProductWindow(false);
+    document.body.classList.remove('body-fixed');
   };
 
   const [open, setOpen] = useState(false);
