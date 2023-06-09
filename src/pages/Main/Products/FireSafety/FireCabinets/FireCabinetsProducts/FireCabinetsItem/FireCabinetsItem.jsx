@@ -4,7 +4,6 @@ import PopularMain from '../../../../PopularMain/PopularMain';
 import News from '../../../../../News/News';
 
 export default function FireCabinetsItem() {
-
   return (
     <>
       <div className='workRobes'>
@@ -33,7 +32,7 @@ export default function FireCabinetsItem() {
         <div className='workRobes-container container'>
           <h3 className='workRobes-secondaryTitle'>Пожежні шафи</h3>
 
-              <ProductsMap category='пожежні шафи' />
+          <ProductsMap category='пожежні шафи' />
 
         </div>
       </div>

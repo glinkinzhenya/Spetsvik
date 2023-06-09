@@ -95,19 +95,18 @@ export default function Footer() {
         </div>
 
         <div className='footer-secondary__telephone'>
-          {/* <a className='footer-secondary__telephone-link' href="">
-          <img className='footer-secondary__telephone-image' src="./img/logo-telephone.svg" alt="" />
-                099 000 11 22
-          </a> */}
-          <CallBack buttonText="Ми Вам зателефонуємо" dialogTitle="Введіть Ваш номер телефону та коментар" dialogText="Ми зателефонуємо якнайшвидше та відповемо на всі ваші питання" confirmText="Надіслати" cancelText="Відміна" from="звідки - 'Головна сторінка'" fontSize="12px" />
+          <CallBack
+            buttonText="Ми Вам зателефонуємо"
+            dialogTitle="Введіть Ваш номер телефону та коментар"
+            dialogText="Ми зателефонуємо якнайшвидше та відповемо на всі ваші питання"
+            confirmText="Надіслати" cancelText="Відміна" from="звідки - 'Головна сторінка'"
+            fontSize="12px"
+          />
           <div className='footer-secondary__telephone-grafic'>Працюємо: Пн-Пт: 8:30-15:30</div>
         </div>
 
         <div className='footer-secondary__info'>© СПЕЦВІК – 2023.</div>
-
-
       </div>
-
     </footer>
   );
 }

@@ -3,7 +3,6 @@ import './FireCabinets.css';
 import News from '../../../News/News';
 
 export default function FireCabinets() {
-
   return (
     <>
       <div className='fireCabinets'>

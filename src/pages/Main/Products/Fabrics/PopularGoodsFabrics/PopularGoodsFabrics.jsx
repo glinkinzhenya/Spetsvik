@@ -2,7 +2,6 @@ import React from 'react';
 import './PopularGoodsFabrics.css';
 
 export default function PopularGoodsFabrics() {
-
   return (
     <div className='popularGoods'>
       <div className='popularGoods-container container'>

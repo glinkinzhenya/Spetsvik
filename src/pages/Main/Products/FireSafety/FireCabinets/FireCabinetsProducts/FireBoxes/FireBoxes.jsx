@@ -4,7 +4,6 @@ import PopularMain from '../../../../PopularMain/PopularMain';
 import News from '../../../../../News/News';
 
 export default function FireBoxes() {
-
   return (
     <>
       <div className='workRobes'>
@@ -33,7 +32,7 @@ export default function FireBoxes() {
         <div className='workRobes-container container'>
           <h3 className='workRobes-secondaryTitle'>Ящики пожежні</h3>
 
-              <ProductsMap category='ящики пожежні' />
+          <ProductsMap category='ящики пожежні' />
 
         </div>
       </div>

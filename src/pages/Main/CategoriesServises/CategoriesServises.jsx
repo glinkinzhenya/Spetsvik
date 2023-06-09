@@ -2,7 +2,6 @@ import React from 'react';
 import './CategoriesServises.css';
 
 export default function CategoriesServises() {
-
   return (
     <div className='categoriesServises container'>
 

@@ -1,6 +1,7 @@
 .productsMap {
     display: flex;
     /* height: 100vh; */
+    /* height: 1045px; */
     gap: 20px;
 }
 
@@ -8,7 +9,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 20px !important;
-    overflow-y: auto;
+    /* overflow-y: auto; */
 }
 
 .productsMap-box-item {
@@ -86,7 +87,7 @@
 }
 
 .body-fixed {
-    overflow: hidden;
+    overflow: hidden !important;
 }
 
 .product-window {
@@ -103,7 +104,7 @@
     gap: 20px;
 }
 
-.product-window__close {
+.product-window__close-product {
     width: 30px;
     height: 30px;
     border: 0.5px solid white;
@@ -201,6 +202,8 @@
     overflow-y: auto;
     height: 290px;
     overflow-y: auto;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .product-window__info-article {
@@ -304,6 +307,12 @@
     padding: 5px;
 }
 
+.filter-price__input-button {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
 .css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root.Mui-checked {
     color: #F07C00 !important;
 }
@@ -323,7 +332,7 @@
         overflow-y: auto;
     }
 
-    .product-window__close {
+    .product-window__close-product {
         top: 22px;
         right: 22px;
     }
@@ -347,9 +356,12 @@
     }
 
     .product-window__info {
-        width: auto;
+        width: 100%;
+
         /* padding: 20px; */
     }
+
+
 
     /* .accordion-item__button {
         right: -66% !important;
@@ -357,10 +369,24 @@
 }
 
 @media (max-width: 576.8px) {
+.accordion-button {
+  padding: 10px;
+    font-size: 14px;
+    font-weight: 300;
 
+
+    }
+
+
+
+    .product-window__close-product {
+        top: 40px;
+right: 48px;
+    }
 
     .productsMap {
         flex-direction: column;
+
     }
 
     .filter {
@@ -368,11 +394,23 @@
         padding: 10px;
     }
 
-    .product-window {}
+    .product-window {
+        overflow-x: hidden;
+        padding-top: 55px;
+        /* padding-bottom: 50px; */
+        /* background-color: red; */
+    }
 
-    /* .product-window__gallary {
-        width: auto;
-    } */
+    .product-window__info-description {
+
+        height: 228px;
+  
+
+    }
+
+    .product-window__gallary {
+        width: 100vw;
+    }
 
     /* .product-window__gallary-box {
         width: 80%;
@@ -397,7 +435,8 @@
         object-fit: cover;
         height: 100%;
         width: 250px;
-        margin-left: 20%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .product-window__info-title {
@@ -409,9 +448,9 @@
         font-size: 30px;
     }
 
-    .MuiButtonBase-root {
+    /* .MuiButtonBase-root {
         margin-left: 20px !important;
-    }
+    } */
 
 
 

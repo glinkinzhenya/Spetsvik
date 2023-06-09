@@ -4,7 +4,6 @@ import PopularMain from '../../../PopularMain/PopularMain';
 import News from '../../../../News/News';
 
 export default function TechnicalFabrics() {
-
   return (
     <>
       <div className='workRobes'>
@@ -29,7 +28,7 @@ export default function TechnicalFabrics() {
         <div className='workRobes-container container'>
           <h3 className='workRobes-secondaryTitle'>Технічні тканини</h3>
 
-              <ProductsMap category='технічні тканини' />
+          <ProductsMap category='технічні тканини' />
 
         </div>
       </div>

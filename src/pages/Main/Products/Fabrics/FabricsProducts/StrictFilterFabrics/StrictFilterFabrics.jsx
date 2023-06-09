@@ -4,7 +4,6 @@ import PopularMain from '../../../PopularMain/PopularMain';
 import News from '../../../../News/News';
 
 export default function StrictFilterFabrics() {
-
   return (
     <>
       <div className='workRobes'>
@@ -28,9 +27,7 @@ export default function StrictFilterFabrics() {
 
         <div className='workRobes-container container'>
           <h3 className='workRobes-secondaryTitle'>Суворі фільтрувальні тканини</h3>
-
-              <ProductsMap category='суворі фільтрувальні тканини' />
-              
+          <ProductsMap category='суворі фільтрувальні тканини' />
         </div>
       </div>
 

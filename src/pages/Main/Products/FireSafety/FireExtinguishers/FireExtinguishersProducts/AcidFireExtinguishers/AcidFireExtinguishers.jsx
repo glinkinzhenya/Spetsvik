@@ -4,7 +4,6 @@ import PopularMain from '../../../../PopularMain/PopularMain';
 import News from '../../../../../News/News';
 
 export default function AcidFireExtinguishers() {
-
   return (
     <>
       <div className='workRobes'>
@@ -33,7 +32,7 @@ export default function AcidFireExtinguishers() {
         <div className='workRobes-container container'>
           <h3 className='workRobes-secondaryTitle'>Вогнегасники вуглекислотні</h3>
 
-              <ProductsMap category='вогнегасники вуглекислотні' />
+          <ProductsMap category='вогнегасники вуглекислотні' />
 
         </div>
       </div>

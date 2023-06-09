@@ -6,7 +6,6 @@ export default function NotFound() {
   return (
     <>
       <h3 className='not_found'>Помилка 404</h3>
-
       <button className='not_found_button'>
         <Link
           to={'/trainings'}

@@ -2,7 +2,6 @@ import React from 'react';
 import './PopularGoodsFireCabinets.css';
 
 export default function PopularGoodsFireCabinets() {
-
   return (
     <div className='popularGoods'>
       <div className='popularGoods-container container'>

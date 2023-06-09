@@ -4,22 +4,22 @@ import './Partners.css';
 export default function Partners() {
   const partners = [
     {
-      image: './img/brand1.png'
+      image: './img/brand1.png',
     },
     {
-      image: './img/brand2.png'
+      image: './img/brand2.png',
     },
     {
-      image: './img/brand3.png'
+      image: './img/brand3.png',
     },
     {
-      image: './img/brand4.png'
+      image: './img/brand4.png',
     },
     {
-      image: './img/brand5.png'
+      image: './img/brand5.png',
     },
     {
-      image: './img/brand6.png'
+      image: './img/brand6.png',
     },
   ];
 

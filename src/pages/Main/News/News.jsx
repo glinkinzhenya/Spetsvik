@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react';
+import { useMediaQuery } from '@mui/material';
 import { Context } from '../../../Contex';
 import './News.css';
-import { useMediaQuery } from '@mui/material';
 
 export default function News() {
   const { mainData } = useContext(Context);
@@ -43,16 +43,16 @@ export default function News() {
           <div className='news-map'>
             {Screen768
               ? newNews.slice(0, 4).map((item, index) => (
-                  <div key={index} className='news-map__item-picture'>
-                    <img className='news-map__item-image' src={item} alt="" />
-                  </div>
-                ))
+                <div key={index} className='news-map__item-picture'>
+                  <img className='news-map__item-image' src={item} alt="" />
+                </div>
+              ))
               : newNews.slice(0, 2).map((item, index) => (
-                  <div key={index} className='news-map__item-picture'>
-                    <img className='news-map__item-image' src={item} alt="" />
-                  </div>
-                ))
-              }
+                <div key={index} className='news-map__item-picture'>
+                  <img className='news-map__item-image' src={item} alt="" />
+                </div>
+              ))
+            }
           </div>
           <div className='news-arrow__picture' onClick={handleClickRight}>
             <img className='news-arrow__img' src="./img/arrow-right.svg" alt="" />

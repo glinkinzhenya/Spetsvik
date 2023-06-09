@@ -4,7 +4,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './ImageCarousel.css';
 
 export default function ImageCarousel() {
-
   const { mainData } = useContext(Context);
   const [mainData2, setMainData] = useState([]);
 
@@ -20,7 +19,6 @@ export default function ImageCarousel() {
         <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
           <div className="carousel-indicators">
 
-
             {mainData2.map((item, index) => (
               (index === 0) ? <button key={index} type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
                 : <button key={index} type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to={index} aria-label={index + 1}></button>
@@ -30,14 +28,15 @@ export default function ImageCarousel() {
           <div className="carousel-inner">
 
             {mainData2.map((item, index) => (
-              (index === 0) ?
+              (index === 0) ? (
                 <div key={index} className="carousel-item active image-carousel__picture">
                   <img src={item} className="d-block image-carousel__img" alt={item} />
-                </div> :
-                <div key={index} className={`carousel-item image-carousel__picture`}
+                </div>
+              ) : (
+                <div key={index} className={'carousel-item image-carousel__picture'}
                 >
                   <img src={item} className="d-block image-carousel__img" alt={item} />
-                </div>
+                </div>)
             ))}
 
           </div>

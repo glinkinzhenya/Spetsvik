@@ -4,7 +4,6 @@ import PopularMain from '../../../../PopularMain/PopularMain';
 import News from '../../../../../News/News';
 
 export default function PowderFireExtinguishers() {
-
   return (
     <>
       <div className='workRobes'>
@@ -33,7 +32,7 @@ export default function PowderFireExtinguishers() {
         <div className='workRobes-container container'>
           <h3 className='workRobes-secondaryTitle'>Вогнегасники порошкові</h3>
 
-              <ProductsMap category='вогнегасники порошкові' />
+          <ProductsMap category='вогнегасники порошкові' />
 
         </div>
       </div>

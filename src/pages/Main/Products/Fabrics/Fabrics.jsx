@@ -3,7 +3,6 @@ import './Fabrics.css';
 import News from '../../News/News';
 
 export default function Fabrics() {
-
   return (
     <>
       <div className='fabrics'>

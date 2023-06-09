@@ -4,7 +4,6 @@ import PopularMain from '../../../../PopularMain/PopularMain';
 import News from '../../../../../News/News';
 
 export default function FireShieldsAndStands() {
-
   return (
     <>
       <div className='workRobes'>
@@ -33,7 +32,7 @@ export default function FireShieldsAndStands() {
         <div className='workRobes-container container'>
           <h3 className='workRobes-secondaryTitle'>Пожежні щити та стенди</h3>
 
-              <ProductsMap category='пожежні щити та стенди' />
+          <ProductsMap category='пожежні щити та стенди' />
 
         </div>
       </div>

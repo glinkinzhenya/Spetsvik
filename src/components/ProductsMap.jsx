@@ -169,15 +169,26 @@ export default function ProductsMap({ category, popular }) {
           checked={gender === 'Жіночий'}
         />}
 
-        <Button onClick={handleFilterPriceClick} sx={{
-          marginBottom: '20px',
-          marginTop: '20px',
-          backgroundColor: '#F07C00',
-          '&:hover': { backgroundColor: '#F07C00', color: 'white !important' },
-          maxHeight: '35px !important',
-          minWidth: '25px !important',
-        }} variant="contained">OK</Button>
-        <Button onClick={handleFilterPriceNull} sx={{ backgroundColor: '#F07C00', '&:hover': { backgroundColor: '#F07C00', color: 'white !important' }, maxHeight: '35px !important' }} variant="contained">Анулювати фільтр</Button>
+        <div className='filter-price__input-button'>
+
+          <Button onClick={handleFilterPriceClick} sx={{
+            marginBottom: '20px',
+            marginTop: '20px',
+            backgroundColor: '#F07C00',
+            '&:hover': { backgroundColor: '#F07C00', color: 'white !important' },
+            maxHeight: '35px !important',
+            minWidth: '25px !important',
+          }} variant="contained"
+          >OK</Button>
+          <Button onClick={handleFilterPriceNull}
+            sx={{
+              backgroundColor: '#F07C00',
+              '&:hover': { backgroundColor: '#F07C00', color: 'white !important' },
+              maxHeight: '35px !important',
+            }} variant="contained"
+          >Анулювати фільтр</Button>
+
+        </div>
       </div>}
 
       <div className='productsMap-box'>
@@ -197,7 +208,7 @@ export default function ProductsMap({ category, popular }) {
 
       {productWindow && <div className='product-window__blur' onClick={touchProductClose}></div>}
       {productWindow && <div className='product-window'>
-        <img onClick={touchProductClose} className='product-window__close' src="./img/close.png" alt="" />
+        <img onClick={touchProductClose} className='product-window__close-product' src="./img/close.png" alt="" />
         <div className='product-window__gallary'>
           <div className='product-carousel__bootstrap'>
             <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
@@ -245,8 +256,6 @@ export default function ProductsMap({ category, popular }) {
             }} variant="contained">Додати до кошику</Button>
 
           </div>
-
-
 
           <div className="accordion" id="accordionExample">
             <div className="accordion-item">

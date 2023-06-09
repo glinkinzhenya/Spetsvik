@@ -117,6 +117,11 @@ export default function CallBack(props) {
         <DialogContent>
           <DialogContentText>{dialogText}</DialogContentText>
           <TextField
+            InputLabelProps={{
+              style: {
+                color: '#F07C00', // цвет текста метки
+              },
+            }}
             autoFocus
             margin="dense"
             label="Ім'я"
@@ -127,6 +132,11 @@ export default function CallBack(props) {
             onChange={handleformNameChange}
           />
           <TextField
+            InputLabelProps={{
+              style: {
+                color: '#F07C00', // цвет текста метки
+              },
+            }}
             autoFocus
             margin="dense"
             label="Пошта"
@@ -137,6 +147,11 @@ export default function CallBack(props) {
             onChange={handleformMailChange}
           />
           <TextField
+            InputLabelProps={{
+              style: {
+                color: '#F07C00', // цвет текста метки
+              },
+            }}
             autoFocus
             margin="dense"
             label="Номер"
@@ -147,6 +162,11 @@ export default function CallBack(props) {
             onChange={handlePhoneNumberChange}
           />
           <TextField
+            InputLabelProps={{
+              style: {
+                color: '#F07C00', // цвет текста метки
+              },
+            }}
             autoFocus
             margin="dense"
             label="Коментар"

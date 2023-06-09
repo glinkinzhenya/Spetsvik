@@ -368,6 +368,8 @@
     padding: 5px;
     border-radius: 4px;
     font-weight: 300;
+    min-width: 210px;
+    text-align: center;
 }
 
 .basket-item__quantity {
@@ -395,6 +397,21 @@
 .basket-form__checkbox {
     display: flex;
     width: 90%;
+}
+
+
+.product-window__close {
+    width: 30px;
+    height: 30px;
+    border: 0.5px solid white;
+    border-radius: 30px;
+    padding: 5px;
+    position: absolute;
+    z-index: 100;
+    top: -20px;
+    right: -20px;
+    background-color: rgba(0, 0, 0, 0.491);
+    cursor: pointer;
 }
 
 @media (max-width: 1300px) {
@@ -460,10 +477,17 @@
     .burger-basket {
         width: 100vw;
         height: 100vh;
+      
     }
 }
 
 @media (max-width: 576.8px) {
+    .burger-basket {
+
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
     .header {
         padding-top: 15px;
         height: 90px;
@@ -471,6 +495,11 @@
 
     .header-contacts {
         display: none;
+    }
+
+    .basket-map {
+        height: auto;
+        max-height: 460px;
     }
 
     .basket-products__title {
@@ -504,6 +533,14 @@
     .basket-summ-button {
         flex-direction: column;
     }
+
+        .product-window__close {
+         
+            top: 61px;
+            right: 20px;
+           
+        }
+
 }
 
 

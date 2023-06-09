@@ -15,6 +15,8 @@ export default function Setting() {
   const [progressProduct, setProgressProduct] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedFiles, setSelectedFiles] = useState([]);
+  const [editProduct, setEditProduct] = useState(null);
+  const [editProductOrigin, setEditProductOrigin] = useState(null);
 
   const categoryArray = [
     'халати робочі',
@@ -77,7 +79,7 @@ export default function Setting() {
     'шарф-труби',
     'шкарпетки',
     'шорти',
-  ]
+  ];
 
   const [product, setProduct] = useState({
     title: '',
@@ -98,11 +100,6 @@ export default function Setting() {
   }, [mainData]);
 
   const handleFileChange = (e) => {
-
-    // if (e.target.files[0]) {
-    //   // e.preventDefault();
-    //   setImage(e.target.files[0]);
-    // }
     if (e.target.files.length > 0) {
       const filesArray = Array.from(e.target.files);
       setSelectedFiles(filesArray);
@@ -110,7 +107,12 @@ export default function Setting() {
   };
 
   const handleInputChange = (event) => {
-    const { name, value, type, checked } = event.target;
+    const {
+      name,
+      value,
+      type,
+      checked,
+    } = event.target;
 
     if (!editProduct) {
       if (type === 'checkbox') {
@@ -121,86 +123,6 @@ export default function Setting() {
     }
   };
 
-
-  // // клик карусели
-  // const handleUploadClick = () => {
-  //   handleUpload('carousel', arrayCarousel);
-  //   setProgressCarousel(true);
-  // };
-
-  // // клик новостей
-  // const handleUploadNewsClick = () => {
-  //   handleUpload('news', arrayNews);
-  //   setProgressNews(true);
-  // };
-
-  // // клик продукта
-  // const handleUploadProductsClick = () => {
-  //   handleUpload('product', arrayProduct, product);
-  //   setProgressProduct(true);
-  // };
-
-  const handleUploadClick = () => {
-    handleUpload('carousel', arrayCarousel);
-    setProgressCarousel(true);
-  };
-
-  const handleUploadNewsClick = () => {
-    handleUpload('news', arrayNews);
-    setProgressNews(true);
-  };
-
-  const handleUploadProductsClick = () => {
-    handleUpload('product', arrayProduct, product);
-    setProgressProduct(true);
-  };
-
-  // const handleUpload = (folderPath, array, product) => {
-  //   if (image) {
-  //     const uploadTask = storage.ref(`${folderPath}/${image.name}`).put(image);
-  //     uploadTask.on(
-  //       'state_changed',
-  //       (snapshot) => {
-  //         const progress = Math.round((snapshot.bytesTransferred / snapshot.totalBytes) * 100);
-  //         setProgress(progress);
-  //         console.log(`Progress: ${progress}%`);
-  //       },
-  //       (error) => {
-  //         console.log(error);
-  //       },
-  //       () => {
-  //         storage
-  //           .ref(folderPath)
-  //           .child(image.name)
-  //           .getDownloadURL()
-  //           .then((url) => {
-  //             console.log('Image URL:', url);
-
-  //             // Определяем обновление, которое нужно выполнить
-  //             let update = {};
-  //             product ? update = { [folderPath]: [...array, { ...product, img: url }] } : update = { [folderPath]: [...array, url] };
-
-  //             firestore
-  //               .collection('data')
-  //               .doc('RvwOmHHKyWpAChE4gdTQ')
-  //               .update(update)  // Применяем обновление
-  //               .then(() => {
-  //                 setProgress('Файл добавлен');
-  //                 setTimeout(() => {
-  //                   window.location.reload();
-  //                 }, 1000);
-  //                 console.log('URL сохранен в Firestore');
-  //               })
-  //               .catch((error) => {
-  //                 console.log('Ошибка сохранения URL:', error);
-  //                 setProgress('Ошибка добавления файла');
-  //               });
-  //           });
-  //       }
-  //     );
-  //   }
-  // };
-
   const handleUpload = (folderPath, array, product) => {
     if (selectedFiles.length > 0) {
       const uploadPromises = selectedFiles.map((file) => {
@@ -209,11 +131,10 @@ export default function Setting() {
           .put(file)
           .then((snapshot) => {
             const progress = Math.round(
-              (snapshot.bytesTransferred / snapshot.totalBytes) * 100
+              (snapshot.bytesTransferred / snapshot.totalBytes) * 100,
             );
             setProgress(progress);
             console.log(`Progress: ${progress}%`);
-
             return storage.ref(folderPath).child(file.name).getDownloadURL();
           });
       });
@@ -249,6 +170,21 @@ export default function Setting() {
           setProgress('Ошибка добавления файлов');
         });
     }
+  };
+
+  const handleUploadClick = () => {
+    handleUpload('carousel', arrayCarousel);
+    setProgressCarousel(true);
+  };
+
+  const handleUploadNewsClick = () => {
+    handleUpload('news', arrayNews);
+    setProgressNews(true);
+  };
+
+  const handleUploadProductsClick = () => {
+    handleUpload('product', arrayProduct, product);
+    setProgressProduct(true);
   };
 
   const handleDelete = (url, folderPath, array) => {
@@ -298,8 +234,6 @@ export default function Setting() {
       });
   };
 
-
-
   // фильт для отображения товаров
   const [selectedCategory, setSelectedCategory] = useState('Всі товари');
   const [showPopular, setShowPopular] = useState(false);
@@ -313,19 +247,17 @@ export default function Setting() {
   };
 
   const filteredProducts = arrayProduct.filter((item) => {
-    if (selectedCategory === 'Всі товари') {
+    if (selectedCategory === 'Всі товари' || item.category === selectedCategory) {
       return true;
-    } else {
-      return item.category === selectedCategory;
     }
+    return false;
   }).filter((item) => {
     const lowerCaseSearchQuery = searchQuery.toLowerCase();
     const lowerCaseTitle = item.title.toLowerCase();
     const lowerCaseArticle = item.article.toLowerCase();
 
     return (
-      lowerCaseTitle.includes(lowerCaseSearchQuery) ||
-      lowerCaseArticle.includes(lowerCaseSearchQuery)
+      lowerCaseTitle.includes(lowerCaseSearchQuery) || lowerCaseArticle.includes(lowerCaseSearchQuery)
     );
   });
 
@@ -333,27 +265,21 @@ export default function Setting() {
     ? filteredProducts.filter((item) => item.popular === true && item.category === selectedCategory)
     : filteredProducts;
 
-
-  // Редактирование товара
-  const [editProduct, setEditProduct] = useState(null);
-  const [editProductOrigin, setEditProductOrigin] = useState(null);
-  console.log(editProduct);
-  // Функция обработки изменений в полях ввода редактирования товара
   const handleEditInputChange = (e, editProduct) => {
-    const { name, type, value, checked } = e.target;
+    const {
+      name,
+      type,
+      value,
+      checked,
+    } = e.target;
     if (type === 'checkbox') {
-      setEditProduct({ ...editProduct, [name]: checked })
-      console.log(value);
+      setEditProduct({ ...editProduct, [name]: checked });
     } else {
       setEditProduct({ ...editProduct, [name]: value });
-      console.log(checked);
     }
   };
 
-  // Функция обработки сохранения изменений в товаре
   const handleEditProduct = (editProduct) => {
-    // Здесь вы можете выполнить необходимую логику сохранения изменений
-    // Например, отправить запрос на сервер для обновления товара
     setProgressProduct(true);
     const filteredEditProduct = Object.entries(editProduct).reduce((acc, [key, value]) => {
       if (value !== undefined) {
@@ -366,7 +292,7 @@ export default function Setting() {
       if (item === editProductOrigin) {
         return {
           ...item,
-          ...filteredEditProduct
+          ...filteredEditProduct,
         };
       }
       return item;
@@ -387,19 +313,11 @@ export default function Setting() {
         console.log('Ошибка сохранения URL:', error);
         setProgress('Ошибка добавления файла');
       });
-
-
-    console.log(updatedArray);
-    // handleUpload('product', updatedArray);
-    // setEditProduct(null);
-    // После сохранения изменений, можно сбросить editProduct или выполнить другие необходимые действия
   };
 
   const handleSearchInputChange = (event) => {
     setSearchQuery(event.target.value);
   };
-
-
 
   return (
     <RequireAdminAuth>
@@ -445,7 +363,6 @@ export default function Setting() {
 
             {progressNews ? <div className="setting-carusel__progress">{progress}</div> : null}
 
-
           </div>
         </div>
 
@@ -456,87 +373,161 @@ export default function Setting() {
           <div className="setting-product__inputs">
             {editProduct ? '' : <input type="file" onChange={handleFileChange} multiple />}
 
-            {editProduct
-              ?
-              <input className="setting-product__input" name="title" onChange={(e) => handleEditInputChange(e, editProduct)} value={editProduct.title} type="text" placeholder="Назва товару" />
-              :
-              <input className="setting-product__input" name="title" onChange={handleInputChange} value={product.title} type="text" placeholder='Назва товару' />}
-            {editProduct
-              ?
-              <input className="setting-product__input" name="price" onChange={(e) => handleEditInputChange(e, editProduct)} value={editProduct.price} type="number" placeholder="Ціна" />
-              :
-              <input className="setting-product__input" name="price" onChange={handleInputChange} value={product.price} type="number" placeholder='Ціна' />}
-            {editProduct
-              ?
-              <input className="setting-product__input" name="description" onChange={(e) => handleEditInputChange(e, editProduct)} value={editProduct.description} type="text" placeholder="Опис товару" />
-              :
-              <input className="setting-product__input" name="description" onChange={handleInputChange} value={product.description} type="text" placeholder='Опис товару' />}
+            {editProduct ? (
+              <input
+                className="setting-product__input"
+                name="title"
+                onChange={(e) => handleEditInputChange(e, editProduct)}
+                value={editProduct.title}
+                type="text"
+                placeholder="Назва товару"
+              />
+            ) : (
+              <input
+                className="setting-product__input"
+                name="title"
+                onChange={handleInputChange}
+                value={product.title}
+                type="text"
+                placeholder="Назва товару"
+              />
+            )}
+            {editProduct ? (
+              <input
+                className="setting-product__input"
+                name="price" onChange={(e) => handleEditInputChange(e, editProduct)}
+                value={editProduct.price}
+                type="number"
+                placeholder="Ціна" />
+            ) : (
+              <input className="setting-product__input"
+                name="price" onChange={handleInputChange}
+                value={product.price} type="number"
+                placeholder='Ціна' />
+            )}
+            {editProduct ? (
+              <input
+                className="setting-product__input"
+                name="description" onChange={(e) => handleEditInputChange(e, editProduct)}
+                value={editProduct.description}
+                type="text"
+                placeholder="Опис товару" />
+            ) : (
+              <input className="setting-product__input"
+                name="description" onChange={handleInputChange}
+                value={product.description}
+                type="text"
+                placeholder='Опис товару' />
+            )}
 
+            {editProduct ? (
+              <input
+                className="setting-product__input"
+                name="characteristic"
+                onChange={(e) => handleEditInputChange(e, editProduct)}
+                value={editProduct.characteristic}
+                type="text"
+                placeholder="характеристика товару" />
+            ) : (
+              <input
+                className="setting-product__input"
+                name="characteristic"
+                onChange={handleInputChange}
+                value={product.characteristic}
+                type="text"
+                placeholder='характеристика товару' />
+            )}
 
-            {editProduct
-              ?
-              <input className="setting-product__input" name="characteristic" onChange={(e) => handleEditInputChange(e, editProduct)} value={editProduct.characteristic} type="text" placeholder="характеристика товару" />
-              :
-              <input className="setting-product__input" name="characteristic" onChange={handleInputChange} value={product.characteristic} type="text" placeholder='характеристика товару' />}
+            {editProduct ? (
+              <input
+                className="setting-product__input"
+                name="article"
+                onChange={(e) => handleEditInputChange(e, editProduct)}
+                value={editProduct.article}
+                type="text"
+                placeholder="Код товару" />
+            ) : (
+              <input
+                className="setting-product__input"
+                name="article"
+                onChange={handleInputChange}
+                value={product.article}
+                type="text"
+                placeholder='Код товару' />
+            )}
 
-
-            {editProduct
-              ?
-              <input className="setting-product__input" name="article" onChange={(e) => handleEditInputChange(e, editProduct)} value={editProduct.article} type="text" placeholder="Код товару" />
-              :
-              <input className="setting-product__input" name="article" onChange={handleInputChange} value={product.article} type="text" placeholder='Код товару' />}
-            {editProduct
-              ?
-              <select onChange={(e) => handleEditInputChange(e, editProduct)} name="category" value={editProduct.category}>
+            {editProduct ? (
+              <select
+                onChange={(e) => handleEditInputChange(e, editProduct)}
+                name="category"
+                value={editProduct.category}>
                 <option>Обрати категорію</option>
                 {categoryArray.map((item) => (
                   <option key={item}>{item}</option>
                 ))}
               </select>
-              :
-              <select onChange={handleInputChange} name="category" value={product.category}>
+            ) : (
+              <select
+                onChange={handleInputChange}
+                name="category"
+                value={product.category}>
                 <option>Обрати категорію</option>
                 {categoryArray.map((item, index) => (
                   <option key={index}>{item}</option>
                 ))}
-              </select>}
+              </select>
+            )}
 
-
-            {editProduct
-              ?
-              <select onChange={(e) => handleEditInputChange(e, editProduct)} name="gender" value={editProduct.gender}>
+            {editProduct ? (
+              <select
+                onChange={(e) => handleEditInputChange(e, editProduct)}
+                name="gender"
+                value={editProduct.gender}>
                 <option>Обрати пол</option>
                 <option>Чоловічий</option>
                 <option>Жіночий</option>
               </select>
-              :
-              <select onChange={handleInputChange} name="gender" value={product.gender}>
+            ) : (
+              <select
+                onChange={handleInputChange}
+                name="gender"
+                value={product.gender}>
                 <option>Обрати пол</option>
                 <option>Чоловічий</option>
                 <option>Жіночий</option>
-              </select>}
+              </select>
+            )}
 
-
-
-
-            {editProduct
-              ?
+            {editProduct ? (
               <label>
-                <input name="popular" type="checkbox" onChange={(e) => handleEditInputChange(e, editProduct)} checked={editProduct.popular} value={editProduct.popular} />
+                <input
+                  name="popular"
+                  type="checkbox"
+                  onChange={(e) => handleEditInputChange(e, editProduct)}
+                  checked={editProduct.popular}
+                  value={editProduct.popular} />
                 Додати у популярні
               </label>
-              :
+            ) : (
               <label>
-                <input name="popular" type="checkbox" onChange={handleInputChange} value={product.popular} />
+                <input
+                  name="popular"
+                  type="checkbox"
+                  onChange={handleInputChange}
+                  value={product.popular} />
                 Додати у популярні
-              </label>}
+              </label>
+            )}
 
-
-
-            {editProduct ?
-              <button className="setting-product__button" onClick={() => handleEditProduct(editProduct)}>Зберегти</button>
-              :
-              <button onClick={handleUploadProductsClick} className="setting-product__button">Додати товар</button>}
+            {editProduct ? (
+              <button
+                className="setting-product__button"
+                onClick={() => handleEditProduct(editProduct)}>Зберегти</button>
+            ) : (
+              <button
+                onClick={handleUploadProductsClick}
+                className="setting-product__button">Додати товар</button>
+            )}
           </div>
           <div className="setting-carusel__box2">
             {progressProduct ? <div className="setting-carusel__progress">{progress}</div> : null}

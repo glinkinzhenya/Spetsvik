@@ -1,7 +1,7 @@
 import React from 'react';
-import { auth } from '../../firebase';
 import { Button } from '@mui/material';
 import { useForm } from 'react-hook-form';
+import { auth } from '../../firebase';
 import { InputText } from '../../components/Forms/InputText';
 import { adminRules } from '../../constans/rules';
 import './Admin.css';
@@ -19,7 +19,6 @@ export default function Admin() {
       console.error('Ошибка аутентификации:', error);
     }
   };
-
 
   return (
     <div className='admin'>
