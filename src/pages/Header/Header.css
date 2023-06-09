@@ -328,14 +328,13 @@
 
 .opacity-image {
     opacity: 0;
-    /* display: none !important; */
     pointer-events: none;
 }
 
 .pulse-button-icon {
     position: fixed;
     bottom: 210px;
-    right: 60px;
+    right: 57px;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -617,7 +616,7 @@
         display: none;
     }
 
-    .pulse-button {
+    /* .pulse-button {
         width: 55px;
         height: 55px;
         bottom: 35px;
@@ -625,9 +624,13 @@
     }
 
     .pulse-button-icon {
-        bottom: 115px;
+        bottom: 150px;
         right: 37px;
     }
+
+    .pulse-button-icon-bottom {
+        bottom: 50px!important;
+    } */
 
 
     .basket-products__title {
