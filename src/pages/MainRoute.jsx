@@ -80,6 +80,7 @@ import WinterSpecialShoes from './Main/Products/Shoes/ShoesProducts/SpecialShoes
 import SummerSpecialShoes from './Main/Products/Shoes/ShoesProducts/SpecialShoes/SpecialShoesProducts/SummerSpecialShoes/SummerSpecialShoes';
 import LowSpecialShoes from './Main/Products/Shoes/ShoesProducts/SpecialShoes/SpecialShoesProducts/LowSpecialShoes/LowSpecialShoes';
 import HighSpecialShoes from './Main/Products/Shoes/ShoesProducts/SpecialShoes/SpecialShoesProducts/HighSpecialShoes/HighSpecialShoes';
+import NotFound from './NotFound/NotFound';
 
 export default function MainRoute() {
   return (
@@ -165,6 +166,7 @@ export default function MainRoute() {
         <Route path='/strict-filter-fabrics' element={<StrictFilterFabrics />} />
         <Route path='/services' element={<Services />} />
         <Route path='/news' element={<News />} />
+        <Route path='/*' element={<NotFound />} />
       </Routes>
     </Grid>
   );

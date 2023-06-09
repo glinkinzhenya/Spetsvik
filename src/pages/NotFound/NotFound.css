@@ -1,0 +1,25 @@
+.not_found {
+    height: 60vh;
+}
+
+.not_found-title {
+    color: white;
+    position: absolute;
+    right: 200px;
+    bottom: 170px;
+    font-size: 15vh;
+    opacity: 0.2;
+    margin: 0px;
+    z-index: -1;
+}
+
+.not_found_button {
+    margin-top: 5%;
+    margin-left: 10%;
+    border: none;
+    font-size: 5vh;
+    background-color: transparent;
+    color: white;
+    opacity: 0.6;
+    cursor: pointer;
+}

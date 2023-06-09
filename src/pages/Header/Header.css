@@ -6,22 +6,17 @@
 
 .header-contacts {
     padding-top: 10px;
-    /* background-color: red; */
-
     display: grid;
     gap: 20px;
     grid-template-columns: repeat(4, 1fr);
 }
 
 .header-contacts__item {
-    /* background-color: green; */
-    /* height: 50px; */
     display: flex;
     flex-direction: column;
 }
 
 .header-contacts__item-name {
-    /* background-color: yellow; */
     cursor: pointer;
     font-size: 20px;
     font-weight: 500;
