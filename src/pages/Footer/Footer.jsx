@@ -45,23 +45,19 @@ export default function Footer() {
               067 612 03 66</a>
           </div>
 
-          <div className='footer-right'>
-            <div className='footer-right__item'>
-              <a className='footer-right__item-address' target='_blank' href="https://goo.gl/maps/untzH82HCHdjzH4i7">м. Запоріжжя, Бульвар Шевченка 16</a>
-              <a className='footer-right__item-telephone' href="tel:+380981807080">
-                <img className='footer-right__item-image' src="./img/logo-telephone.svg" alt="" />
-                098 180 70 80</a>
-            </div>
+          <div className='footer-right__item'>
+            <a className='footer-right__item-address' target='_blank' href="https://goo.gl/maps/untzH82HCHdjzH4i7">м. Запоріжжя, Бульвар Шевченка 16</a>
+            <a className='footer-right__item-telephone' href="tel:+380981807080">
+              <img className='footer-right__item-image' src="./img/logo-telephone.svg" alt="" />
+              098 180 70 80</a>
           </div>
 
-          <div className='footer-right'>
-            <div className='footer-right__item'>
-              <a className='footer-right__item-address' target='_blank' href="https://goo.gl/maps/hT7zgvGWuNVq3gEY8">м. Лозова (Харківська область), вул. Богданівська 35
-                (біля магазину СПАР)</a>
-              <a className='footer-right__item-telephone' href="tel:+380676132880">
-                <img className='footer-right__item-image' src="./img/logo-telephone.svg" alt="" />
-                067 613 28 80</a>
-            </div>
+          <div className='footer-right__item'>
+            <a className='footer-right__item-address' target='_blank' href="https://goo.gl/maps/hT7zgvGWuNVq3gEY8">м. Лозова (Харківська область), вул. Богданівська 35
+              (біля магазину СПАР)</a>
+            <a className='footer-right__item-telephone' href="tel:+380676132880">
+              <img className='footer-right__item-image' src="./img/logo-telephone.svg" alt="" />
+              067 613 28 80</a>
           </div>
 
           <div className='footer-right__item'>

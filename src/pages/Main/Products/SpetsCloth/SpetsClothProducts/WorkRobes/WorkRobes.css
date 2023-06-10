@@ -5,35 +5,6 @@
     background-color: #0C0C0C;
 }
 
-/* .workRobes-container {
-padding-left: 0px;
-padding-right: 0px;
-} */
-
-.boxPath {
-    background-color: #232323;
-    height: 50px;
-    display: flex;
-    align-items: center;
-
-    padding-top: 3px;
-    padding-bottom: 3px;
-}
-
-.boxPath-container {
-    display: flex;
-    gap: 10px;
-   
-}
-
-.boxPath-container__arrow {
-    width: 7px;
-}
-
-.boxPath-container__arrow-image {
-    width: 100%;
-}
-
 .workRobes-secondaryTitle {
     font-size: 45px;
     font-weight: 700;

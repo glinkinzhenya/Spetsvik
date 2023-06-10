@@ -5,32 +5,6 @@
     background-color: #0C0C0C;
 }
 
-/* .boxPath {
-    background-color: #232323;
-    min-height: 50px!important;
-    display: flex;
-    align-items: center;
-} */
-
-.boxPath-container {
-    background-color: #232323;
-    min-height: 50px !important;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 10px;
-}
-
-.boxPath-container__text {}
-
-.boxPath-container__arrow {
-    width: 7px;
-}
-
-.boxPath-container__arrow-image {
-    width: 100%;
-}
-
 .individualProtection-mainTitle {
     padding-top: 50px;
     font-size: 45px;
