@@ -132,30 +132,24 @@
     pointer-events: auto;
 }
 
+.body-fixed {
+    overflow: hidden !important;
+}
+
 @media (max-width: 576.8px) {
-   .pulse-button {
+    .pulse-button {
         width: 55px;
         height: 55px;
         bottom: 35px;
         right: 35px;
     }
 
-.pulse-button-icon {
- 
-    bottom: 115px;
-    right: 37px;
-
-}
-        .pulse-button-icon_bottom {
-            bottom: 35px;
-        }
-
-    /* .pulse-button-icon {
-        bottom: 150px;
+    .pulse-button-icon {
+        bottom: 115px;
         right: 37px;
     }
 
-    .pulse-button-icon-bottom {
-        bottom: 50px!important;
-    } */
+    .pulse-button-icon_bottom {
+        bottom: 35px;
+    }
 }

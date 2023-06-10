@@ -6,6 +6,7 @@ export default function Pulse() {
 
   const handlePulseButtonClick = () => {
     setIsPulseButtonActive(!isPulseButtonActive);
+    document.body.classList.toggle('body-fixed');
   };
 
   const pulseButtonImageClasses = `pulse-button-image ${isPulseButtonActive ? 'rotate opacity-image' : ''}`;

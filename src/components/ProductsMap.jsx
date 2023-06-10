@@ -250,7 +250,7 @@ export default function ProductsMap({ category, popular }) {
             <Button className='accordion-item__button' onClick={() => handleClick(product)} sx={{
               backgroundColor: '#F07C00',
               '&:hover': { backgroundColor: '#F07C00', color: 'white !important' },
-              marginTop: '20px',
+              marginTop: '11px',
               fontSize: '11px',
               right: '-400px',
             }} variant="contained">Додати до кошику</Button>
