@@ -342,7 +342,7 @@ export default function Setting() {
 
         <div className="setting-news">
           <div className="setting-news-container container">
-            <p className="setting-carusel__title">Новини на головній сторінці</p>
+            <p className="setting-carusel__title">Новини на головній сторінці.  Рекомендований розмір забражень для Новин та Акцій 300 * 250px</p>
 
             <div className="setting-carusel__box">
               {arrayNews.map((item, index) => (
@@ -367,7 +367,7 @@ export default function Setting() {
         </div>
 
         <div className="setting-product container">
-          <p className="setting-product__title">Управління товарами</p>
+          <p className="setting-product__title">Управління товарами.  Рекомендований розмір забражень для товару 500 * 440px</p>
           {editProduct && <p className="setting-carusel__title">Редагування товару</p>}
 
           <div className="setting-product__inputs">
