@@ -330,15 +330,28 @@ export default function Header() {
           <div className='basket-form__checkbox'>
             <FormControlLabel
               value="Нова Пошта"
-              control={<Checkbox checked={selectedValue === 'Нова Пошта'} onChange={handleChange} />}
+              control={
+                <Checkbox
+                  style={{ color: '#F07C00' }}
+                  checked={selectedValue === 'Нова Пошта'}
+                />
+              }
               label="Нова Пошта"
               labelPlacement="end"
+              onChange={handleChange}
             />
             <FormControlLabel
               value="Укр Пошта"
-              control={<Checkbox checked={selectedValue === 'Укр Пошта'} onChange={handleChange} />}
+              // control={<Checkbox checked={selectedValue === 'Укр Пошта'} />}
+              control={
+                <Checkbox
+                  style={{ color: '#F07C00' }}
+                  checked={selectedValue === 'Укр Пошта'}
+                />
+              }
               label="Укр Пошта"
               labelPlacement="end"
+              onChange={handleChange}
             />
           </div>
           <InputText

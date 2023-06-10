@@ -314,10 +314,6 @@
     align-items: flex-start;
 }
 
-.css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root.Mui-checked {
-    color: #F07C00 !important;
-}
-
 @media (max-width: 1350px) {
     .productsMap-box {
         justify-content: center;

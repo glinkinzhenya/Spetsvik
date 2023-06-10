@@ -79,13 +79,21 @@ export default function ProductsMap({ category, popular }) {
   const [selectedValue, setSelectedValue] = useState('sorting');
 
   const handleMinChange = (event) => {
-    const value = +event.target.value;
-    setMin(value);
+    if (event.target.value === '') {
+      setMin('');
+    } else {
+      const value = +event.target.value;
+      setMin(value);
+    }
   };
 
   const handleMaxChange = (event) => {
-    const value = +event.target.value;
-    setMax(value);
+    if (event.target.value === '') {
+      setMax('');
+    } else {
+      const value = +event.target.value;
+      setMax(value);
+    }
   };
 
   const handleGenderChange = (event) => {
@@ -152,21 +160,29 @@ export default function ProductsMap({ category, popular }) {
         </label>
         {categoryFilterGender && <FormControlLabel
           value="Чоловічий"
-          control={<Checkbox />}
+          control={
+            <Checkbox
+              style={{ color: '#F07C00' }}
+              checked={gender === 'Чоловічий'}
+            />
+          }
           label="Чоловічі"
           labelPlacement="end"
           sx={{ display: 'flex', marginTop: '20px' }}
           onChange={handleGenderChange}
-          checked={gender === 'Чоловічий'}
         />}
         {categoryFilterGender && <FormControlLabel
           value="Жіночий"
-          control={<Checkbox />}
+          control={
+            <Checkbox
+              style={{ color: '#F07C00' }}
+              checked={gender === 'Жіночий'}
+            />
+          }
           label="Жіночі"
           labelPlacement="end"
           sx={{ display: 'flex' }}
           onChange={handleGenderChange}
-          checked={gender === 'Жіночий'}
         />}
 
         <div className='filter-price__input-button'>

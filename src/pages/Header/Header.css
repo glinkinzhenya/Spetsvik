@@ -390,9 +390,9 @@
     transition: 0.5s !important;
 }
 
-.MuiButtonBase-root:hover {
+/* .MuiButtonBase-root:hover {
     color: #F07C00 !important;
-}
+} */
 
 .basket-form__checkbox {
     display: flex;
