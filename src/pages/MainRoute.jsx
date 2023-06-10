@@ -13,7 +13,6 @@ import Fabrics from './Main/Products/Fabrics/Fabrics';
 import Admin from './Admin/Admin';
 import Setting from './Admin/Setting/Setting';
 import Shoes from './Main/Products/Shoes/Shoes';
-import Shevrons from './Main/Products/Shevrons/Shevrons';
 import FireExtinguishers from './Main/Products/FireSafety/FireExtinguishers/FireExtinguishers';
 import WorkRobes from './Main/Products/SpetsCloth/SpetsClothProducts/WorkRobes/WorkRobes';
 import FireCabinets from './Main/Products/FireSafety/FireCabinets/FireCabinets';
@@ -37,7 +36,6 @@ import FireCabinetsItem from './Main/Products/FireSafety/FireCabinets/FireCabine
 import FireShieldsAndStands from './Main/Products/FireSafety/FireCabinets/FireCabinetsProducts/FireShieldsAndStands/FireShieldsAndStands';
 import FireEquipment from './Main/Products/FireSafety/FireCabinets/FireCabinetsProducts/FireEquipment/FireEquipment';
 import FireBoxes from './Main/Products/FireSafety/FireCabinets/FireCabinetsProducts/FireBoxes/FireBoxes';
-import ShevronsItem from './Main/Products/Shevrons/ShevronsProducts/ShevronsItem/ShevronsItem';
 import TechnicalFabrics from './Main/Products/Fabrics/FabricsProducts/TechnicalFabrics/TechnicalFabrics';
 import StrictFilterFabrics from './Main/Products/Fabrics/FabricsProducts/StrictFilterFabrics/StrictFilterFabrics';
 import Raincoats from './Main/Products/MilitaryEquipment/MilitaryEquipmentProducts/Raincoats/Raincoats';
@@ -81,6 +79,7 @@ import SummerSpecialShoes from './Main/Products/Shoes/ShoesProducts/SpecialShoes
 import LowSpecialShoes from './Main/Products/Shoes/ShoesProducts/SpecialShoes/SpecialShoesProducts/LowSpecialShoes/LowSpecialShoes';
 import HighSpecialShoes from './Main/Products/Shoes/ShoesProducts/SpecialShoes/SpecialShoesProducts/HighSpecialShoes/HighSpecialShoes';
 import NotFound from './NotFound/NotFound';
+import Shevrons from './Main/Products/Shevrons/Shevrons';
 
 export default function MainRoute() {
   return (
@@ -160,7 +159,6 @@ export default function MainRoute() {
         <Route path='/socks' element={<Socks />} />
         <Route path='/shorts' element={<Shorts />} />
         <Route path='/shevrons' element={<Shevrons />} />
-        <Route path='/shevrons-item' element={<ShevronsItem />} />
         <Route path='/fabrics' element={<Fabrics />} />
         <Route path='/technical-fabrics' element={<TechnicalFabrics />} />
         <Route path='/strict-filter-fabrics' element={<StrictFilterFabrics />} />

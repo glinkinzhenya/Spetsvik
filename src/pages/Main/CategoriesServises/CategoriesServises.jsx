@@ -44,6 +44,7 @@ export default function CategoriesServises() {
         </a>
 
         <a className='servises servises2' href="/shevrons">
+        {/* <a className='servises servises2' href="/shevrons-item"> */}
           <div className='servises-bg'>
             <div className='servises-text'>ШЕВРОНИ</div>
           </div>
