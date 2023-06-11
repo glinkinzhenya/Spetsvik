@@ -80,6 +80,7 @@ import LowSpecialShoes from './Main/Products/Shoes/ShoesProducts/SpecialShoes/Sp
 import HighSpecialShoes from './Main/Products/Shoes/ShoesProducts/SpecialShoes/SpecialShoesProducts/HighSpecialShoes/HighSpecialShoes';
 import NotFound from './NotFound/NotFound';
 import Shevrons from './Main/Products/Shevrons/Shevrons';
+import Contacts from './Main/Contacts/Contacts';
 
 export default function MainRoute() {
   return (
@@ -163,6 +164,7 @@ export default function MainRoute() {
         <Route path='/technical-fabrics' element={<TechnicalFabrics />} />
         <Route path='/strict-filter-fabrics' element={<StrictFilterFabrics />} />
         <Route path='/services' element={<Services />} />
+        <Route path='/contacts' element={<Contacts />} />
         <Route path='/news' element={<News />} />
         <Route path='/*' element={<NotFound />} />
       </Routes>
