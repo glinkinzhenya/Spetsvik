@@ -68,7 +68,7 @@
 }
 
 .fireExtinguishers-box__item-bg {
-position: absolute;
+    position: absolute;
     background-color: rgba(0, 0, 0, 0.654);
     width: 100%;
     height: 135px;
@@ -95,13 +95,12 @@ position: absolute;
     }
 }
 
-@media (max-width: 768px) {
-}
+@media (max-width: 768px) {}
 
 @media (max-width: 576.8px) {
 
     .fireExtinguishers {
-        padding-top:25px;
+        padding-top: 25px;
         padding-bottom: 50px;
     }
 

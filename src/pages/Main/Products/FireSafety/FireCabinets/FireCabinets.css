@@ -68,7 +68,7 @@
 }
 
 .fireCabinets-box__item-bg {
-position: absolute;
+    position: absolute;
     background-color: rgba(0, 0, 0, 0.654);
     width: 100%;
     height: 135px;
@@ -95,25 +95,26 @@ position: absolute;
     }
 }
 
-@media (max-width: 768px) {
-}
+@media (max-width: 768px) {}
 
 @media (max-width: 576.8px) {
 
     .fireCabinets {
-        padding-top:25px;
+        padding-top: 25px;
         padding-bottom: 50px;
     }
 
     .fireCabinets-box {
         gap: 35px 35px;
     }
+
     .fireCabinets-mainTitle {
         font-size: 35px;
         text-align: center;
         padding-top: 50px;
         padding-bottom: 25px;
     }
+
     .fireCabinets-secondaryTitle {
         font-size: 35px;
         text-align: center;

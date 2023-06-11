@@ -19,7 +19,6 @@
     color: white;
     margin-bottom: 20px;
     margin-left: 32px;
-    /* font-size: 30px; */
     font-size: 45px;
 }
 
@@ -75,14 +74,14 @@
 @media (max-width: 992px) {
     .news-map {
         grid-template-columns: repeat(4, 150px);
-     
+
         gap: 20px;
     }
 
     .news-map__item-picture {
         height: 180px;
     }
- }
+}
 
 @media (max-width: 768px) {
 
@@ -95,7 +94,7 @@
 
     .news-map {
         grid-template-columns: repeat(2, 150px);
-           justify-content: space-evenly;
+        justify-content: space-evenly;
         gap: 10px;
     }
 
@@ -109,7 +108,7 @@
         padding-top: 50px;
         padding-bottom: 100px;
     }
-    
+
     .news-title {
         font-size: 30px;
     }

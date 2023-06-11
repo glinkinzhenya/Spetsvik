@@ -11,20 +11,8 @@
 }
 
 .popularMain-box {
-    /* padding: 20px;
-    background-color: #0C0C0C; */
-    /* gap: 20px; */
-    /* display: grid;
-    grid-template-columns: repeat(5, 241px);
-    /* grid-template-columns: repeat(6, 1fr); */
-
-
-    /* display: flex; */
-    /* gap: 20px 14px; */
-    /* flex-wrap: wrap; */
     overflow-y: auto !important;
     width: 100%;
-    /* height: 355px; */
     max-height: 605px;
 }
 
@@ -40,7 +28,6 @@
     }
 
     .popularMain-secondaryTitle {
-        /* font-size: 35px; */
         font-size: 30px;
         text-align: center;
         padding-bottom: 25px;

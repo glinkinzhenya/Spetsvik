@@ -4,7 +4,6 @@
 }
 
 .basic-menu__flex-link {
-    /* color: white !important; */
     color: black !important;
 }
 
@@ -23,7 +22,6 @@
 }
 
 .css-6hp17o-MuiList-root-MuiMenu-list {
-    /* background-color: rgb(50, 49, 49) !important; */
     background-color: white;
 }
 
@@ -37,5 +35,4 @@
     .basic-menu__flex {
         flex-direction: column;
     }
-
 }

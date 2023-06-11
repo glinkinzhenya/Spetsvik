@@ -32,7 +32,6 @@
 }
 
 .header-contacts__item-city-active {
-    /* background-color: blue; */
     cursor: pointer;
 }
 
@@ -56,8 +55,6 @@
     font-size: 15px;
     font-weight: 400;
     color: #F07C00 !important;
-    /* display: flex; */
-    /* justify-content: center; */
     text-align: center;
     display: none;
 }
@@ -74,7 +71,6 @@
     width: 20px;
     padding-right: 5px;
 }
-
 
 .header-language {
     display: flex;
@@ -103,15 +99,12 @@
     align-items: center;
     gap: 20px;
     width: 100%;
-    /* height: 100px; */
-    /* padding-top: 20px; */
 }
 
 .header-logo__telephone {
     display: flex;
     align-items: center;
     min-width: 400px;
-    /* background-color: red; */
 }
 
 .header-logo__telephone-picture {
@@ -156,8 +149,6 @@
 
 .header-logo__picture {
     width: 100px;
-    /* height: 68px; */
-    /* background-color: green; */
 }
 
 .header-logo__image {
@@ -170,7 +161,6 @@
     min-width: 400px;
     justify-content: flex-end;
     align-items: center;
-    /* background-color: red; */
 }
 
 .burger-search__picture {
@@ -234,25 +224,19 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    /* height: 600px; */
-    /* width: 1100px; */
     z-index: 14;
     display: flex;
     padding: 10px;
     gap: 10px;
-    /* background-color: red; */
     padding: 10px;
 }
 
 .basket-form {
-    /* border: 1px solid rgb(142, 142, 142); */
-    /* width: 40%; */
     width: 425px;
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* background-color: green; */
 }
 
 .basket-form__box {
@@ -265,23 +249,15 @@
 }
 
 .basket-form__title {
-
     text-align: center;
-    /* padding: 10px;
-    padding: 5px; */
     font-weight: 300;
     font-size: 22px;
-
     width: 100%;
-
 }
 
 .basket-products {
-    /* border: 1px solid rgb(142, 142, 142); */
-    /* width: 60%; */
     width: 640px;
     height: 100%;
-    /* background-color: yellow; */
 }
 
 .basket-products__name {
@@ -324,7 +300,6 @@
     gap: 10px;
     align-items: center;
     padding-left: 10px;
-    /* background-color: red; */
 }
 
 .basket-item__actions {
@@ -390,15 +365,10 @@
     transition: 0.5s !important;
 }
 
-/* .MuiButtonBase-root:hover {
-    color: #F07C00 !important;
-} */
-
 .basket-form__checkbox {
     display: flex;
     width: 90%;
 }
-
 
 .product-window__close {
     width: 30px;
@@ -428,7 +398,6 @@
     .burger-basket {
         flex-direction: column;
         height: 100vh;
-        /* width: auto; */
         overflow-y: auto;
     }
 
@@ -473,11 +442,9 @@
         width: auto;
     }
 
-
     .burger-basket {
         width: 100vw;
         height: 100vh;
-
     }
 }
 
@@ -525,9 +492,7 @@
     }
 
     .basket-form__title {
-
         padding: 10px;
-
     }
 
     .basket-summ-button {
@@ -535,12 +500,9 @@
     }
 
     .product-window__close {
-
         top: 62px;
         right: 22px;
-
     }
-
 }
 
 

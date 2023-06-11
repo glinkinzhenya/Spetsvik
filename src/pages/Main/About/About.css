@@ -2,7 +2,6 @@
     background-color: black;
 }
 
-
 .about-title {
     text-align: center;
     color: white;
@@ -36,16 +35,16 @@
     width: 100%;
 }
 
-
 @media (max-width: 1150px) {
     .about-wripper {
-      flex-direction: column;
-      align-items: center;
+        flex-direction: column;
+        align-items: center;
     }
+
     .about-picture {
-     order: -1;
-     margin-bottom: 30px;
-     width: 40%;
+        order: -1;
+        margin-bottom: 30px;
+        width: 40%;
     }
 
     .about-wripper {
@@ -67,10 +66,12 @@
         padding-top: 0px;
         padding-bottom: 50px;
     }
+
     .about-picture {
         width: 50%;
-       }
-       .about-text {
+    }
+
+    .about-text {
         font-size: 15px;
     }
-   }
+}

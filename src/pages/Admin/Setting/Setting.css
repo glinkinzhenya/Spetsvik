@@ -1,16 +1,12 @@
 .setting {
-    /* position: relative; */
-    /* z-index: 100; */
     background-color: rgb(170, 161, 161);
     padding-bottom: 20px;
 
 }
 
 .setting-carusel {
-
     padding: 20px;
     margin-bottom: 5px;
-    /* height: 400px; */
 }
 
 .setting-carusel__title {
@@ -68,7 +64,7 @@
 }
 
 .setting-upload__input {
-min-width: 260px;
+    min-width: 260px;
 }
 
 .setting-upload__button {
@@ -83,17 +79,11 @@ min-width: 260px;
 }
 
 .setting-news {
-    /* height: 400px;
-    padding: 20px; */
     background-color: rgb(184, 177, 177);
-    /* margin-bottom: 5px; */
 }
 
-
 .setting-news-container {
-    /* height: 400px; */
     padding: 20px;
-    /* background-color: rgb(184, 177, 177); */
     margin-bottom: 5px;
 }
 
@@ -130,11 +120,9 @@ min-width: 260px;
 .setting-product__box {
     padding-left: 20px;
     padding-right: 20px;
-
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    /* max-height: 671px; */
     max-height: 739px;
     overflow-y: auto;
 }
@@ -148,7 +136,6 @@ min-width: 260px;
     display: flex;
     flex-direction: column;
     gap: 10px;
-    /* width: 100px; */
     width: 125px;
     border: #232323 solid 1px;
     background-color: rgb(142, 142, 142);
@@ -233,12 +220,10 @@ min-width: 260px;
     flex-wrap: wrap;
     align-items: center;
     margin-top: 30px;
-    /* margin-bottom: 30px; */
     gap: 10px;
 }
 
 .setting-product__flex-title {
-    /* padding-bottom: 10px; */
     font-size: 20px;
     font-weight: 500;
     margin: 0;
@@ -246,24 +231,16 @@ min-width: 260px;
 
 .setting-product__select {
     height: 33px;
-    /* margin-top: 11px; */
-}
-
-.setting-product__change {
-    /* margin-top: 16px; */
 }
 
 .setting-product__search {
     padding: 5px;
     outline: none;
     height: 33px;
-    /* margin-top: 11px; */
 }
 
 .setting-carusel__box2 {
     height: 25px;
-    /* width: 500px;
-    background-color: red; */
 }
 
 .setting-carusel__item-edit {
@@ -279,44 +256,30 @@ min-width: 260px;
 
 @media (max-width: 1200px) {}
 
-@media (max-width: 992px) {
+@media (max-width: 992px) {}
 
-}
-
-@media (max-width: 768px) {
-
-}
+@media (max-width: 768px) {}
 
 @media (max-width: 576.8px) {
 
-.setting-product__inputs {
-    width: auto;
-    /* padding: 30px; */
-    /* gap: 10px; */
-}
-.setting-product__select {
-   width: 100%;
-}
+    .setting-product__inputs {
+        width: auto;
+    }
 
-.setting-product__select option {
-   /* max-width: 200px!important; */
-   /* background-color: red; */
-}
-
-
+    .setting-product__select {
+        width: 100%;
+    }
 
     .setting-carusel__box {
         justify-content: center;
     }
-   
-        .setting-upload {
-            padding: 20px;
+
+    .setting-upload {
+        padding: 20px;
         max-width: 530px;
     }
 
-.setting-product__box {
-    justify-content: center;
-}
-
-
+    .setting-product__box {
+        justify-content: center;
+    }
 }

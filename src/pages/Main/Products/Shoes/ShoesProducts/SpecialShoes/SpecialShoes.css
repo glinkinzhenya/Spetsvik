@@ -68,7 +68,7 @@
 }
 
 .specialShoes-box__item-bg {
-position: absolute;
+    position: absolute;
     background-color: rgba(0, 0, 0, 0.654);
     width: 100%;
     height: 135px;
@@ -98,20 +98,21 @@ position: absolute;
 @media (max-width: 576.8px) {
 
     .specialShoes {
-        padding-top:25px;
+        padding-top: 25px;
         padding-bottom: 50px;
     }
 
     .specialShoes-box {
         gap: 35px 35px;
     }
-    
+
     .specialShoes-mainTitle {
         font-size: 35px;
         text-align: center;
         padding-top: 50px;
         padding-bottom: 25px;
     }
+
     .specialShoes-secondaryTitle {
         font-size: 35px;
         text-align: center;
