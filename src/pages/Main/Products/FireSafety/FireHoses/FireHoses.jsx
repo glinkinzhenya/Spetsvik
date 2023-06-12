@@ -3,7 +3,6 @@ import './FireHoses.css';
 import News from '../../../News/News';
 
 export default function FireHoses() {
-
   return (
     <>
       <div className='fireHoses'>
@@ -30,7 +29,7 @@ export default function FireHoses() {
         </div>
 
         <div className='fireHoses-baner'>
-          <img className='fireHoses-baner__image' src="./img/stock-rukav.jpg" alt="" />
+          <img className='fireHoses-baner__image' src="./img/rukav.png" alt="" />
         </div>
 
         <div className='fireHoses-container container'>

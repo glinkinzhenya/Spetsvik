@@ -6,8 +6,13 @@ import './News.css';
 export default function News() {
   const { mainData } = useContext(Context);
   const [mainData2, setMainData] = useState([]);
-  // const [displayedImages, setDisplayedImages] = useState([]);
   const [index, setIndex] = useState(0);
+
+  const loadImage = (src) => new Promise((resolve) => {
+    const image = new Image();
+    image.onload = () => resolve(src);
+    image.src = src;
+  });
 
   useEffect(() => {
     if (mainData) {
@@ -19,19 +24,10 @@ export default function News() {
   useEffect(() => {
     const loadImages = async () => {
       await Promise.all(mainData2.map((item) => loadImage(item)));
-      // setDisplayedImages(loadedImages);
     };
 
     loadImages();
   }, [mainData2]);
-
-  const loadImage = (src) => {
-    return new Promise((resolve) => {
-      const image = new Image();
-      image.onload = () => resolve(src);
-      image.src = src;
-    });
-  };
 
   const handleClickLeft = () => {
     const newIndex = index === 0 ? mainData2.length - 1 : index - 1;
@@ -45,12 +41,7 @@ export default function News() {
 
   const newNews = [...mainData2.slice(index, mainData2.length), ...mainData2.slice(0, index)];
 
-
   const Screen768 = useMediaQuery('(min-width:768px)');
-  // 1200px
-  //  992px
-  //  768px
-  //  576.8px
 
   return (
     <div className='news-bg'>
@@ -71,8 +62,7 @@ export default function News() {
                 <div key={index} className='news-map__item-picture'>
                   <img className='news-map__item-image' src={item} alt="" />
                 </div>
-              ))
-            }
+              ))}
           </div>
           <div className='news-arrow__picture' onClick={handleClickRight}>
             <img className='news-arrow__img' src="./img/arrow-right.svg" alt="" />
