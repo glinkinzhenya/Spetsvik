@@ -6,13 +6,32 @@ import './News.css';
 export default function News() {
   const { mainData } = useContext(Context);
   const [mainData2, setMainData] = useState([]);
+  // const [displayedImages, setDisplayedImages] = useState([]);
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
     if (mainData) {
       setMainData(mainData[0].news);
+      setIndex(0);
     }
   }, [mainData]);
+
+  useEffect(() => {
+    const loadImages = async () => {
+      await Promise.all(mainData2.map((item) => loadImage(item)));
+      // setDisplayedImages(loadedImages);
+    };
+
+    loadImages();
+  }, [mainData2]);
+
+  const loadImage = (src) => {
+    return new Promise((resolve) => {
+      const image = new Image();
+      image.onload = () => resolve(src);
+      image.src = src;
+    });
+  };
 
   const handleClickLeft = () => {
     const newIndex = index === 0 ? mainData2.length - 1 : index - 1;
@@ -25,6 +44,7 @@ export default function News() {
   };
 
   const newNews = [...mainData2.slice(index, mainData2.length), ...mainData2.slice(0, index)];
+
 
   const Screen768 = useMediaQuery('(min-width:768px)');
   // 1200px
