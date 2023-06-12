@@ -3,7 +3,6 @@ import './Services.css';
 import CallBack from '../../../components/CallBack/CallBack';
 
 export default function Services() {
-
   return (
     <div className='services'>
       <div className='services-container container'>
@@ -26,7 +25,13 @@ export default function Services() {
             </div>
 
             <div className='services-call__back'>
-              <CallBack buttonText="ЗАМОВИТИ" dialogTitle="Введіть Ваш номер телефону та коментар" dialogText="Ми зателефонуємо як найшвідше та відповемо на всі ваші питання" confirmText="Надіслати" cancelText="Відміна" from="звідки - 'Пошив спецодягу'" fontSize="18px" />
+              <CallBack buttonText="ЗАМОВИТИ"
+                dialogTitle="Введіть Ваш номер телефону та коментар"
+                dialogText="Ми зателефонуємо як найшвідше та відповемо на всі ваші питання"
+                confirmText="Надіслати"
+                cancelText="Відміна"
+                from="звідки - 'Пошив спецодягу'"
+                fontSize="18px" />
             </div>
           </div>
           <div className='services-box__picture'>
@@ -52,9 +57,15 @@ export default function Services() {
             </div>
 
             <div className='services-call__back'>
-              <CallBack buttonText="ЗАМОВИТИ" dialogTitle="Введіть Ваш номер телефону та коментар" dialogText="Ми зателефонуємо як найшвідше та відповемо на всі ваші питання" confirmText="Надіслати" cancelText="Відміна" from="звідки - 'Нанесення логотипів'" fontSize="18px" />
+              <CallBack
+                buttonText="ЗАМОВИТИ"
+                dialogTitle="Введіть Ваш номер телефону та коментар"
+                dialogText="Ми зателефонуємо як найшвідше та відповемо на всі ваші питання"
+                confirmText="Надіслати"
+                cancelText="Відміна"
+                from="звідки - 'Нанесення логотипів'"
+                fontSize="18px" />
             </div>
-            
           </div>
           <div className='services-box__picture--md'>
             <img className='services-box__image--md' src="../img/services-logo.jpg" alt="" />

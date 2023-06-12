@@ -6,7 +6,6 @@ import Partners from './Partners/Partners';
 import ImageCarousel from './ImageCarousel/ImageCarousel';
 
 export default function Main() {
-
   return (
     <main>
       <ImageCarousel />

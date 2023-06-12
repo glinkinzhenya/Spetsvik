@@ -1,12 +1,7 @@
-import React, { useContext } from 'react';
-import { Context } from '../../../Contex';
+import React from 'react';
 import './About.css';
 
 export default function About() {
-  const { mainData } = useContext(Context);
-
-  console.log(mainData);
-
   return (
     <div className='about'>
       <h2 className='about-title'>ПРО НАС</h2>

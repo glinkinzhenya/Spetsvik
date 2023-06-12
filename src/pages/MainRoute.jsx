@@ -133,7 +133,6 @@ export default function MainRoute() {
         <Route path='/fire-hydrants' element={<FireHydrants />} />
         <Route path='/fire-columns' element={<FireColumns />} />
         <Route path='/stands-for-hydrants' element={<StandsForHydrants />} />
-
         <Route path='/military-equipment' element={<MilitaryEquipment />} />
         <Route path='/raincoats' element={<Raincoats />} />
         <Route path='/vests' element={<Vests />} />
