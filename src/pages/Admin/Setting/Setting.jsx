@@ -154,7 +154,7 @@ export default function Setting() {
 
           return firestore
             .collection('data')
-            .doc('RvwOmHHKyWpAChE4gdTQ')
+            .doc('2cFIo4VuROPZuC8HbORe')
             .update(update)
             .then(() => {
               setProgress('Файлы добавлены');
@@ -222,7 +222,7 @@ export default function Setting() {
     // Удаляем товар из базы данных
     firestore
       .collection('data')
-      .doc('RvwOmHHKyWpAChE4gdTQ')
+      .doc('2cFIo4VuROPZuC8HbORe')
       .update({
         [folderPath]: updatedArray,
       })
@@ -300,7 +300,7 @@ export default function Setting() {
 
     firestore
       .collection('data')
-      .doc('RvwOmHHKyWpAChE4gdTQ')
+      .doc('2cFIo4VuROPZuC8HbORe')
       .update({ 'product': updatedArray })
       .then(() => {
         setProgress('Товар оновлено');
