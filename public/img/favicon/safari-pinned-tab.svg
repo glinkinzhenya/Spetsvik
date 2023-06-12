@@ -1,43 +1,20 @@
-<svg width="844.000000pt" height="842.000000pt" viewBox="0 0 844.000000 842.000000" xmlns="http://www.w3.org/2000/svg">
-  <g transform="translate(0.000000,842.000000) scale(0.100000,-0.100000)" fill="#e28130" stroke="none">
-    <path d="M1875 7050 c-952 -4 -1763 -11 -1802 -15 l-73 -7 0 -25 0 -24 502
--507 c614 -620 3707 -3706 3719 -3710 12 -5 3121 3091 3740 3722 l479 489 0
-31 0 31 -92 1 c-765 6 -4291 23 -4483 22 -143 -1 -1038 -5 -1990 -8z" />
-    <path d="M8408 4633 c-14 -16 -32 -39 -39 -54 -8 -14 -471 -479 -1029 -1034
--558 -555 -1486 -1479 -2062 -2054 l-1047 -1045 -2109 2102 c-1160 1156 -2112
-2102 -2116 2102 -3 0 -6 -984 -6 -2187 l0 -2188 4220 3 4220 2 0 2190 c0 1205
--1 2190 -3 2190 -2 0 -15 -12 -29 -27z" />
-  </g>
-  <g transform="translate(0.000000,842.000000) scale(0.100000,-0.100000)" fill="#ffffff" stroke="none">
-    <path d="M0 7719 l0 -702 68 7 c37 4 990 11 2117 16 l2050 8 1950 -8 c1073 -5
-2019 -12 2103 -16 l152 -7 0 701 0 702 -4220 0 -4220 0 0 -701z" />
-    <path d="M0 5821 l0 -1179 2116 -2108 2115 -2108 1052 1050 c579 578 1509
-1504 2067 2059 558 555 1021 1020 1029 1034 7 15 24 38 37 52 l24 25 -2 1172
--3 1171 -395 -405 c-217 -222 -1165 -1171 -2105 -2108 l-1710 -1703 -1606
-1601 c-883 881 -1833 1831 -2112 2113 l-507 512 0 -1178z" />
-    <path d="M0 145 l0 -145 4220 0 4220 0 0 145 0 145 -4220 0 -4220 0 0 -145z" />
-  </g>
-  <g transform="translate(0.000000,842.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none" />
-  <g transform="translate(0.000000,842.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none" />
-  <g transform="translate(0.000000,842.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none" />
-  <g transform="translate(0.000000,842.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none" />
-  <g transform="translate(0.000000,842.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none" />
-  <g transform="translate(0.000000,842.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none" />
-  <g transform="translate(0.000000,842.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none" />
-  <g transform="translate(0.000000,842.000000) scale(0.100000,-0.100000)" fill="#ffffff" stroke="none" />
-  <g transform="translate(0.000000,842.000000) scale(0.100000,-0.100000)" fill="#00ffff" stroke="none" />
-  <g transform="translate(0.000000,842.000000) scale(0.100000,-0.100000)" fill="#ff00ff" stroke="none" />
-  <g transform="translate(0.000000,842.000000) scale(0.100000,-0.100000)" fill="#0000ff" stroke="none" />
-  <g transform="translate(0.000000,842.000000) scale(0.100000,-0.100000)" fill="#ffff00" stroke="none" />
-  <g transform="translate(0.000000,842.000000) scale(0.100000,-0.100000)" fill="#00ff00" stroke="none" />
-  <g transform="translate(0.000000,842.000000) scale(0.100000,-0.100000)" fill="#ff0000" stroke="none" />
-  <g transform="translate(0.000000,842.000000) scale(0.100000,-0.100000)" fill="#c0c0c0" stroke="none" />
-  <g transform="translate(0.000000,842.000000) scale(0.100000,-0.100000)" fill="#808080" stroke="none" />
-  <g transform="translate(0.000000,842.000000) scale(0.100000,-0.100000)" fill="#008080" stroke="none" />
-  <g transform="translate(0.000000,842.000000) scale(0.100000,-0.100000)" fill="#800080" stroke="none" />
-  <g transform="translate(0.000000,842.000000) scale(0.100000,-0.100000)" fill="#000080" stroke="none" />
-  <g transform="translate(0.000000,842.000000) scale(0.100000,-0.100000)" fill="#808000" stroke="none" />
-  <g transform="translate(0.000000,842.000000) scale(0.100000,-0.100000)" fill="#008000" stroke="none" />
-  <g transform="translate(0.000000,842.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none" />
-  <g transform="translate(0.000000,842.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none" />
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
+ "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+ width="202.000000pt" height="202.000000pt" viewBox="0 0 202.000000 202.000000"
+ preserveAspectRatio="xMidYMid meet">
+<metadata>
+Created by potrace 1.14, written by Peter Selinger 2001-2017
+</metadata>
+<g transform="translate(0.000000,202.000000) scale(0.100000,-0.100000)"
+fill="#000000" stroke="none">
+<path d="M2005 1930 c3 -5 8 -10 11 -10 2 0 4 5 4 10 0 6 -5 10 -11 10 -5 0
+-7 -4 -4 -10z"/>
+<path d="M0 1683 c0 -2 228 -232 506 -511 l505 -506 505 505 c277 277 504 507
+504 511 0 4 -455 7 -1010 7 -556 0 -1010 -3 -1010 -6z"/>
+<path d="M0 591 l0 -521 1010 0 1010 0 0 515 c0 283 -2 515 -4 515 -2 0 -75
+-72 -164 -159 -88 -88 -163 -157 -167 -153 -4 4 -5 2 -3 -3 1 -6 -148 -163
+-333 -348 l-336 -337 -507 506 -506 506 0 -521z"/>
+</g>
 </svg>
