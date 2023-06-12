@@ -27,7 +27,7 @@ export default function Pulse() {
       </div>
 
       <div className={pulseButtonIconClasses}>
-        <a className="pulse-button-icon_link" href="https://www.instagram.com/mir_kvartir_ukraine" target="_blank" rel="noreferrer">
+        <a className="pulse-button-icon_link" href="https://www.instagram.com/work.vik" target="_blank" rel="noreferrer">
           <img className="pulse-button-icon_image" src="./img/instagram-color.png" alt="" />
         </a>
         <a className="pulse-button-icon_link" href="https://t.me/Alexey_Omelianenko" target="_blank" rel="noreferrer">
