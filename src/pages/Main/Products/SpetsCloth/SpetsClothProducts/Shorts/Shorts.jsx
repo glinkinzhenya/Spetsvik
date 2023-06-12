@@ -2,6 +2,9 @@ import React from 'react';
 import ProductsMap from '../../../../../../components/ProductsMap';
 import PopularMain from '../../../PopularMain/PopularMain';
 import News from '../../../../News/News';
+// import ProductsMap from '../../../../../../components/ProductsMap';
+// import PopularMain from '../../../PopularMain/PopularMain';
+// import News from '../../../../News/News';
 
 export default function Shorts() {
 
@@ -18,7 +21,7 @@ export default function Shorts() {
             <div className='boxPath-container__arrow'>
               <img className='boxPath-container__arrow-image' src="./img/arrow-right.svg" alt="" />
             </div>
-            <a className='boxPath-container__text' href="/military-equipment">Військова екіпіровка</a>
+            <a className='boxPath-container__text' href="/spets-cloth">Спецодяг</a>
             <div className='boxPath-container__arrow'>
               <img className='boxPath-container__arrow-image' src="./img/arrow-right.svg" alt="" />
             </div>

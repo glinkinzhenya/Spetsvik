@@ -61,7 +61,7 @@ import ThermalUnderwear from './Main/Products/MilitaryEquipment/MilitaryEquipmen
 import Shirts from './Main/Products/MilitaryEquipment/MilitaryEquipmentProducts/Shirts/Shirts';
 import ScarfPipes from './Main/Products/MilitaryEquipment/MilitaryEquipmentProducts/ScarfPipes/ScarfPipes';
 import Socks from './Main/Products/MilitaryEquipment/MilitaryEquipmentProducts/Socks/Socks';
-import Shorts from './Main/Products/MilitaryEquipment/MilitaryEquipmentProducts/Shorts/Shorts';
+// import Shorts from './Main/Products/MilitaryEquipment/MilitaryEquipmentProducts/Shorts/Shorts';
 import PressureHoses from './Main/Products/FireSafety/FireHoses/FireHosesProducts/PressureHoses/PressureHoses';
 import FireBarrels from './Main/Products/FireSafety/FireHoses/FireHosesProducts/FireBarrels/FireBarrels';
 import FireConnectingHeads from './Main/Products/FireSafety/FireHoses/FireHosesProducts/FireConnectingHeads/FireConnectingHeads';
@@ -81,6 +81,7 @@ import HighSpecialShoes from './Main/Products/Shoes/ShoesProducts/SpecialShoes/S
 import NotFound from './NotFound/NotFound';
 import Shevrons from './Main/Products/Shevrons/Shevrons';
 import Contacts from './Main/Contacts/Contacts';
+import Shorts from './Main/Products/SpetsCloth/SpetsClothProducts/Shorts/Shorts';
 
 export default function MainRoute() {
   return (
