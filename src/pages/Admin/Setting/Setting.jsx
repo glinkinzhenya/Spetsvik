@@ -406,14 +406,14 @@ export default function Setting() {
                 placeholder='Ціна' />
             )}
             {editProduct ? (
-              <input
-                className="setting-product__input"
+              <textarea
+                className="setting-product__textarea"
                 name="description" onChange={(e) => handleEditInputChange(e, editProduct)}
                 value={editProduct.description}
                 type="text"
                 placeholder="Опис товару" />
             ) : (
-              <input className="setting-product__input"
+              <textarea className="setting-product__textarea"
                 name="description" onChange={handleInputChange}
                 value={product.description}
                 type="text"
@@ -421,21 +421,35 @@ export default function Setting() {
             )}
 
             {editProduct ? (
-              <input
-                className="setting-product__input"
-                name="characteristic"
-                onChange={(e) => handleEditInputChange(e, editProduct)}
-                value={editProduct.characteristic}
-                type="text"
-                placeholder="характеристика товару" />
+              // <input
+              //   className="setting-product__input"
+              //   name="characteristic"
+              //   onChange={(e) => handleEditInputChange(e, editProduct)}
+              //   value={editProduct.characteristic}
+              //   type="text"
+              //   placeholder="характеристика товару" />
+              <textarea
+              className="setting-product__textarea"
+              name="characteristic"
+              onChange={(e) => handleEditInputChange(e, editProduct)}
+              value={editProduct.characteristic}
+              type="text"
+              placeholder="характеристика товару" />
             ) : (
-              <input
-                className="setting-product__input"
-                name="characteristic"
-                onChange={handleInputChange}
-                value={product.characteristic}
-                type="text"
-                placeholder='характеристика товару' />
+              // <input
+              //   className="setting-product__input"
+              //   name="characteristic"
+              //   onChange={handleInputChange}
+              //   value={product.characteristic}
+              //   type="text"
+              //   placeholder='характеристика товару' />
+              <textarea
+              className="setting-product__textarea"
+              name="characteristic"
+              onChange={handleInputChange}
+              value={product.characteristic}
+              type="text"
+              placeholder='характеристика товару' />
             )}
 
             {editProduct ? (
