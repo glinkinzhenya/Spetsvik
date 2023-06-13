@@ -129,7 +129,17 @@
 
 .setting-product__input {
     outline: none;
+    padding-left: 5px;
+    padding-right: 5px;
 }
+
+.setting-product__textarea {
+    outline: none;
+    padding-left: 5px;
+    padding-right: 5px;
+    max-height: 75px;
+}
+
 
 .setting-product__box-items {
     padding: 2px;

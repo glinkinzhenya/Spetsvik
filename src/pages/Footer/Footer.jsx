@@ -15,7 +15,7 @@ export default function Footer() {
           <div className='footer-left__text'>Спецвік - магазин спецодягу та іншого екіпірування</div>
         </div>
         <div className='footer-catalog'>
-          <a className='footer-catalog__item' href="/products">Каталог</a>
+          <a className='footer-info__title' href="/products">Каталог</a>
           <a className='footer-catalog__item' href="/spets-cloth">Спецодяг</a>
           <a className='footer-catalog__item' href="/shoes">Взуття</a>
           <a className='footer-catalog__item' href="/fire-safety">Пожежна продукція</a>

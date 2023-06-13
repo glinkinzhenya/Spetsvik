@@ -35,33 +35,6 @@ export default function MilitaryEquipment() {
 
           <div className='militaryEquipment-box'>
 
-            <a className='militaryEquipment-box__item' href="/raincoats">
-              <div className='militaryEquipment-box__item-picture'>
-                <img className='militaryEquipment-box__item-image' src="./img/MilitaryEquipment1.png" alt="" />
-              </div>
-              <div className='militaryEquipment-box__item-bg'>
-                <div className='militaryEquipment-box__item-text'>ДОЩОВИКИ</div>
-              </div>
-            </a>
-
-            <a className='militaryEquipment-box__item' href="/vests">
-              <div className='militaryEquipment-box__item-picture'>
-                <img className='militaryEquipment-box__item-image' src="./img/MilitaryEquipment2.png" alt="" />
-              </div>
-              <div className='militaryEquipment-box__item-bg'>
-                <div className='militaryEquipment-box__item-text'>ЖИЛЕТИ</div>
-              </div>
-            </a>
-
-            <a className='militaryEquipment-box__item' href="/weapon-belts">
-              <div className='militaryEquipment-box__item-picture'>
-                <img className='militaryEquipment-box__item-image' src="./img/MilitaryEquipment3.png" alt="" />
-              </div>
-              <div className='militaryEquipment-box__item-bg'>
-                <div className='militaryEquipment-box__item-text'>ЗБРОЙОВІ РЕМЕНІ</div>
-              </div>
-            </a>
-
             <a className='militaryEquipment-box__item' href="/sets-of-uniforms">
               <div className='militaryEquipment-box__item-picture'>
                 <img className='militaryEquipment-box__item-image' src="./img/MilitaryEquipment4.png" alt="" />
@@ -89,57 +62,12 @@ export default function MilitaryEquipment() {
               </div>
             </a>
 
-            <a className='militaryEquipment-box__item' href="/thigh-platforms">
+            <a className='militaryEquipment-box__item' href="/raincoats">
               <div className='militaryEquipment-box__item-picture'>
-                <img className='militaryEquipment-box__item-image' src="./img/MilitaryEquipment7.png" alt="" />
+                <img className='militaryEquipment-box__item-image' src="./img/MilitaryEquipment1.png" alt="" />
               </div>
               <div className='militaryEquipment-box__item-bg'>
-                <div className='militaryEquipment-box__item-text'>НАБЕДРЕНІ ПЛАТФОРМИ</div>
-              </div>
-            </a>
-
-            <a className='militaryEquipment-box__item' href="/knee-pads-and-elbow-pads">
-              <div className='militaryEquipment-box__item-picture'>
-                <img className='militaryEquipment-box__item-image' src="./img/MilitaryEquipment8.jpg" alt="" />
-              </div>
-              <div className='militaryEquipment-box__item-bg'>
-                <div className='militaryEquipment-box__item-text'>НАКОЛІННИКИ ТА НАЛОКІТНИКИ</div>
-              </div>
-            </a>
-
-            <a className='militaryEquipment-box__item' href="/glasses">
-              <div className='militaryEquipment-box__item-picture'>
-                <img className='militaryEquipment-box__item-image' src="./img/MilitaryEquipment9.png" alt="" />
-              </div>
-              <div className='militaryEquipment-box__item-bg'>
-                <div className='militaryEquipment-box__item-text'>ОКУЛЯРИ</div>
-              </div>
-            </a>
-
-            <a className='militaryEquipment-box__item' href="/panami">
-              <div className='militaryEquipment-box__item-picture'>
-                <img className='militaryEquipment-box__item-image' src="./img/MilitaryEquipment10.jpg" alt="" />
-              </div>
-              <div className='militaryEquipment-box__item-bg'>
-                <div className='militaryEquipment-box__item-text'>ПАНАМИ</div>
-              </div>
-            </a>
-
-            <a className='militaryEquipment-box__item' href="/pouches">
-              <div className='militaryEquipment-box__item-picture'>
-                <img className='militaryEquipment-box__item-image' src="./img/MilitaryEquipment11.png" alt="" />
-              </div>
-              <div className='militaryEquipment-box__item-bg'>
-                <div className='militaryEquipment-box__item-text'>ПІДСУМКИ</div>
-              </div>
-            </a>
-
-            <a className='militaryEquipment-box__item' href="/plate-carriers">
-              <div className='militaryEquipment-box__item-picture'>
-                <img className='militaryEquipment-box__item-image' src="./img/MilitaryEquipment12.png" alt="" />
-              </div>
-              <div className='militaryEquipment-box__item-bg'>
-                <div className='militaryEquipment-box__item-text'>ПЛИТОНОСКИ</div>
+                <div className='militaryEquipment-box__item-text'>ДОЩОВИКИ</div>
               </div>
             </a>
 
@@ -152,39 +80,21 @@ export default function MilitaryEquipment() {
               </div>
             </a>
 
-            <a className='militaryEquipment-box__item' href="/belts-braces">
+            <a className='militaryEquipment-box__item' href="/vests">
               <div className='militaryEquipment-box__item-picture'>
-                <img className='militaryEquipment-box__item-image' src="./img/MilitaryEquipment14.png" alt="" />
+                <img className='militaryEquipment-box__item-image' src="./img/MilitaryEquipment2.png" alt="" />
               </div>
               <div className='militaryEquipment-box__item-bg'>
-                <div className='militaryEquipment-box__item-text'>РЕМЕНІ, ПІДТЯЖКИ</div>
+                <div className='militaryEquipment-box__item-text'>ЖИЛЕТИ</div>
               </div>
             </a>
 
-            <a className='militaryEquipment-box__item' href="/unloading-systems">
+            <a className='militaryEquipment-box__item' href="/thermal-underwear">
               <div className='militaryEquipment-box__item-picture'>
-                <img className='militaryEquipment-box__item-image' src="./img/MilitaryEquipment15.JPG" alt="" />
+                <img className='militaryEquipment-box__item-image' src="./img/MilitaryEquipment21.png" alt="" />
               </div>
               <div className='militaryEquipment-box__item-bg'>
-                <div className='militaryEquipment-box__item-text'>РОЗВАНТАЖУВАЛЬНІ СИСТЕМИ</div>
-              </div>
-            </a>
-
-            <a className='militaryEquipment-box__item' href="/gloves">
-              <div className='militaryEquipment-box__item-picture'>
-                <img className='militaryEquipment-box__item-image' src="./img/MilitaryEquipment16.png" alt="" />
-              </div>
-              <div className='militaryEquipment-box__item-bg'>
-                <div className='militaryEquipment-box__item-text'>РУКАВИЦІ</div>
-              </div>
-            </a>
-
-            <a className='militaryEquipment-box__item' href="/backpacks-bags-trunks">
-              <div className='militaryEquipment-box__item-picture'>
-                <img className='militaryEquipment-box__item-image' src="./img/MilitaryEquipment17.png" alt="" />
-              </div>
-              <div className='militaryEquipment-box__item-bg'>
-                <div className='militaryEquipment-box__item-text'>РЮКЗАКИ, СУМКИ, БАУЛИ</div>
+                <div className='militaryEquipment-box__item-text'>ТЕРМОБІЛИЗНА</div>
               </div>
             </a>
 
@@ -197,30 +107,12 @@ export default function MilitaryEquipment() {
               </div>
             </a>
 
-            <a className='militaryEquipment-box__item' href="/military-footwear">
-              <div className='militaryEquipment-box__item-picture'>
-                <img className='militaryEquipment-box__item-image' src="./img/MilitaryEquipment19.png" alt="" />
-              </div>
-              <div className='militaryEquipment-box__item-bg'>
-                <div className='militaryEquipment-box__item-text'>ВІЙСЬКОВЕ ВЗУТТЯ</div>
-              </div>
-            </a>
-
             <a className='militaryEquipment-box__item' href="/shirts-coats">
               <div className='militaryEquipment-box__item-picture'>
                 <img className='militaryEquipment-box__item-image' src="./img/MilitaryEquipment20.png" alt="" />
               </div>
               <div className='militaryEquipment-box__item-bg'>
                 <div className='militaryEquipment-box__item-text'>СОРОЧКИ, КІТЕЛІ</div>
-              </div>
-            </a>
-
-            <a className='militaryEquipment-box__item' href="/thermal-underwear">
-              <div className='militaryEquipment-box__item-picture'>
-                <img className='militaryEquipment-box__item-image' src="./img/MilitaryEquipment21.png" alt="" />
-              </div>
-              <div className='militaryEquipment-box__item-bg'>
-                <div className='militaryEquipment-box__item-text'>ТЕРМОБІЛИЗНА</div>
               </div>
             </a>
 
@@ -251,12 +143,111 @@ export default function MilitaryEquipment() {
               </div>
             </a>
 
-            <a className='militaryEquipment-box__item' href="/shorts">
+            <a className='militaryEquipment-box__item' href="/gloves">
               <div className='militaryEquipment-box__item-picture'>
-                <img className='militaryEquipment-box__item-image' src="./img/MilitaryEquipment25.jpg" alt="" />
+                <img className='militaryEquipment-box__item-image' src="./img/MilitaryEquipment16.png" alt="" />
               </div>
               <div className='militaryEquipment-box__item-bg'>
-                <div className='militaryEquipment-box__item-text'>ШОРТИ</div>
+                <div className='militaryEquipment-box__item-text'>РУКАВИЦІ</div>
+              </div>
+            </a>
+
+            <a className='militaryEquipment-box__item' href="/panami">
+              <div className='militaryEquipment-box__item-picture'>
+                <img className='militaryEquipment-box__item-image' src="./img/MilitaryEquipment10.jpg" alt="" />
+              </div>
+              <div className='militaryEquipment-box__item-bg'>
+                <div className='militaryEquipment-box__item-text'>ПАНАМИ</div>
+              </div>
+            </a>
+
+            <a className='militaryEquipment-box__item' href="/military-footwear">
+              <div className='militaryEquipment-box__item-picture'>
+                <img className='militaryEquipment-box__item-image' src="./img/MilitaryEquipment19.png" alt="" />
+              </div>
+              <div className='militaryEquipment-box__item-bg'>
+                <div className='militaryEquipment-box__item-text'>ВІЙСЬКОВЕ ВЗУТТЯ</div>
+              </div>
+            </a>
+
+            <a className='militaryEquipment-box__item' href="/glasses">
+              <div className='militaryEquipment-box__item-picture'>
+                <img className='militaryEquipment-box__item-image' src="./img/MilitaryEquipment9.png" alt="" />
+              </div>
+              <div className='militaryEquipment-box__item-bg'>
+                <div className='militaryEquipment-box__item-text'>ОКУЛЯРИ</div>
+              </div>
+            </a>
+
+            <a className='militaryEquipment-box__item' href="/thigh-platforms">
+              <div className='militaryEquipment-box__item-picture'>
+                <img className='militaryEquipment-box__item-image' src="./img/MilitaryEquipment7.png" alt="" />
+              </div>
+              <div className='militaryEquipment-box__item-bg'>
+                <div className='militaryEquipment-box__item-text'>НАБЕДРЕНІ ПЛАТФОРМИ</div>
+              </div>
+            </a>
+
+            <a className='militaryEquipment-box__item' href="/knee-pads-and-elbow-pads">
+              <div className='militaryEquipment-box__item-picture'>
+                <img className='militaryEquipment-box__item-image' src="./img/MilitaryEquipment8.jpg" alt="" />
+              </div>
+              <div className='militaryEquipment-box__item-bg'>
+                <div className='militaryEquipment-box__item-text'>НАКОЛІННИКИ ТА НАЛОКІТНИКИ</div>
+              </div>
+            </a>
+
+            <a className='militaryEquipment-box__item' href="/belts-braces">
+              <div className='militaryEquipment-box__item-picture'>
+                <img className='militaryEquipment-box__item-image' src="./img/MilitaryEquipment14.png" alt="" />
+              </div>
+              <div className='militaryEquipment-box__item-bg'>
+                <div className='militaryEquipment-box__item-text'>РЕМЕНІ, ПІДТЯЖКИ</div>
+              </div>
+            </a>
+
+            <a className='militaryEquipment-box__item' href="/backpacks-bags-trunks">
+              <div className='militaryEquipment-box__item-picture'>
+                <img className='militaryEquipment-box__item-image' src="./img/MilitaryEquipment17.png" alt="" />
+              </div>
+              <div className='militaryEquipment-box__item-bg'>
+                <div className='militaryEquipment-box__item-text'>РЮКЗАКИ, СУМКИ, БАУЛИ</div>
+              </div>
+            </a>
+
+            <a className='militaryEquipment-box__item' href="/pouches">
+              <div className='militaryEquipment-box__item-picture'>
+                <img className='militaryEquipment-box__item-image' src="./img/MilitaryEquipment11.png" alt="" />
+              </div>
+              <div className='militaryEquipment-box__item-bg'>
+                <div className='militaryEquipment-box__item-text'>ПІДСУМКИ</div>
+              </div>
+            </a>
+
+            <a className='militaryEquipment-box__item' href="/plate-carriers">
+              <div className='militaryEquipment-box__item-picture'>
+                <img className='militaryEquipment-box__item-image' src="./img/MilitaryEquipment12.png" alt="" />
+              </div>
+              <div className='militaryEquipment-box__item-bg'>
+                <div className='militaryEquipment-box__item-text'>ПЛИТОНОСКИ</div>
+              </div>
+            </a>
+
+            <a className='militaryEquipment-box__item' href="/weapon-belts">
+              <div className='militaryEquipment-box__item-picture'>
+                <img className='militaryEquipment-box__item-image' src="./img/MilitaryEquipment3.png" alt="" />
+              </div>
+              <div className='militaryEquipment-box__item-bg'>
+                <div className='militaryEquipment-box__item-text'>ЗБРОЙОВІ РЕМЕНІ</div>
+              </div>
+            </a>
+
+            <a className='militaryEquipment-box__item' href="/unloading-systems">
+              <div className='militaryEquipment-box__item-picture'>
+                <img className='militaryEquipment-box__item-image' src="./img/MilitaryEquipment15.JPG" alt="" />
+              </div>
+              <div className='militaryEquipment-box__item-bg'>
+                <div className='militaryEquipment-box__item-text'>РОЗВАНТАЖУВАЛЬНІ СИСТЕМИ</div>
               </div>
             </a>
 

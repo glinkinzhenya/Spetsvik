@@ -118,6 +118,26 @@ export default function SpetsCloth() {
               </div>
             </a>
 
+            
+            <a className='spetsCloth-box__item' href="/shorts">
+              <div className='spetsCloth-box__item-picture'>
+                <img className='spetsCloth-box__item-image' src="./img/MilitaryEquipment25.jpg" alt="" />
+              </div>
+              <div className='spetsCloth-box__item-bg'>
+                <div className='spetsCloth-box__item-text'>ШОРТИ</div>
+              </div>
+            </a>
+
+
+            {/* <a className='militaryEquipment-box__item' href="/shorts">
+              <div className='militaryEquipment-box__item-picture'>
+                <img className='militaryEquipment-box__item-image' src="./img/MilitaryEquipment25.jpg" alt="" />
+              </div>
+              <div className='militaryEquipment-box__item-bg'>
+                <div className='militaryEquipment-box__item-text'>ШОРТИ</div>
+              </div>
+            </a> */}
+
           </div>
         </div>
       </div>
