@@ -8,6 +8,7 @@ export function InputText({
   defaultValue = '',
   label,
   rules,
+  color,
   ...props
 }) {
   return (
@@ -21,6 +22,11 @@ export function InputText({
           InputLabelProps={{
             style: {
               color: '#F07C00', // цвет текста метки
+            },
+          }}
+          InputProps={{
+            style: {
+              color: color, // Color of the input text
             },
           }}
           type='text'

@@ -29,6 +29,7 @@ export default function Admin() {
           label='Логін'
           type='text'
           rules={adminRules.login}
+          color='grey'
         />
         <InputText
           control={control}
@@ -36,6 +37,7 @@ export default function Admin() {
           label='Пароль'
           type='password'
           rules={adminRules.password}
+          color='grey'
         />
         <Button
           sx={{ color: '#F07C00' }}

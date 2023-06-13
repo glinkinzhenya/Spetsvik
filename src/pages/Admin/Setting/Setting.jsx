@@ -429,12 +429,12 @@ export default function Setting() {
               //   type="text"
               //   placeholder="характеристика товару" />
               <textarea
-              className="setting-product__textarea"
-              name="characteristic"
-              onChange={(e) => handleEditInputChange(e, editProduct)}
-              value={editProduct.characteristic}
-              type="text"
-              placeholder="характеристика товару" />
+                className="setting-product__textarea"
+                name="characteristic"
+                onChange={(e) => handleEditInputChange(e, editProduct)}
+                value={editProduct.characteristic}
+                type="text"
+                placeholder="характеристика товару" />
             ) : (
               // <input
               //   className="setting-product__input"
@@ -444,12 +444,12 @@ export default function Setting() {
               //   type="text"
               //   placeholder='характеристика товару' />
               <textarea
-              className="setting-product__textarea"
-              name="characteristic"
-              onChange={handleInputChange}
-              value={product.characteristic}
-              type="text"
-              placeholder='характеристика товару' />
+                className="setting-product__textarea"
+                name="characteristic"
+                onChange={handleInputChange}
+                value={product.characteristic}
+                type="text"
+                placeholder='характеристика товару' />
             )}
 
             {editProduct ? (
