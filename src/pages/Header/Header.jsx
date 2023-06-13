@@ -42,8 +42,8 @@ export default function Header() {
 
   useEffect(() => {
     setBusketNumberCorrect(cartItems2.length);
-    setBusketNumber(busketNumber + cartItems2.length - busketNumberCorrect);
-  }, [cartItems2]);
+    setBusketNumber(prevBusketNumber => prevBusketNumber + cartItems2.length - busketNumberCorrect);
+  }, [cartItems2, busketNumber, busketNumberCorrect]);
 
   const [productWindow, setProductWindow] = useState(false);
 
@@ -235,9 +235,9 @@ export default function Header() {
       <div className='header-logo container'>
         <div className='header-logo__telephone'>
           <div className='header-language'>
-            <a className='header-language__active' href="">UA</a>
-            <a className='header-language__en' href="">EN</a>
-            <a className='header-language__en' href="">DE</a>
+            <div className='header-language__active' href="">UA</div>
+            {/* <a className='header-language__en' href="">EN</a>
+            <a className='header-language__en' href="">DE</a> */}
           </div>
         </div>
         <a className='header-logo__picture' href="/">
