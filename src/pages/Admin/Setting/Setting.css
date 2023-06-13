@@ -129,6 +129,8 @@
 
 .setting-product__input {
     outline: none;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .setting-product__textarea {
