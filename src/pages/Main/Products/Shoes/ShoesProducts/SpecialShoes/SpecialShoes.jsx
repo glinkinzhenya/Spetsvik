@@ -56,23 +56,23 @@ export default function SpecialShoes() {
               </div>
             </a>
 
-            <a className='specialShoes-box__item' href="/low-special-shoes">
+            {/* <a className='specialShoes-box__item' href="/low-special-shoes">
               <div className='specialShoes-box__item-picture'>
                 <img className='specialShoes-box__item-image' src="./img/spetsShoespng.png" alt="" />
               </div>
               <div className='specialShoes-box__item-bg'>
                 <div className='specialShoes-box__item-text'>НИЗЬКЕ СПЕЦВЗУТТЯ</div>
               </div>
-            </a>
+            </a> */}
 
-            <a className='specialShoes-box__item' href="/high-special-shoes">
+            {/* <a className='specialShoes-box__item' href="/high-special-shoes">
               <div className='specialShoes-box__item-picture'>
                 <img className='specialShoes-box__item-image' src="./img/spetsShoespng.png" alt="" />
               </div>
               <div className='specialShoes-box__item-bg'>
                 <div className='specialShoes-box__item-text'>ВИСОКЕ СПЕЦВЗУТТЯ</div>
               </div>
-            </a>
+            </a> */}
 
           </div>
         </div>
