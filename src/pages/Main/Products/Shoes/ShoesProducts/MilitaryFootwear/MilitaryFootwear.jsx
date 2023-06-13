@@ -57,23 +57,23 @@ export default function MilitaryFootwear() {
               </div>
             </a>
 
-            <a className='militaryFootwear-box__item' href="/low-military-shoes">
+            {/* <a className='militaryFootwear-box__item' href="/low-military-shoes">
               <div className='militaryFootwear-box__item-picture'>
                 <img className='militaryFootwear-box__item-image' src="./img/militaryShoes2.JPG" alt="" />
               </div>
               <div className='militaryFootwear-box__item-bg'>
                 <div className='militaryFootwear-box__item-text'>НИЗЬКЕ ВІЙСЬКОВЕ ВЗУТТЯ</div>
               </div>
-            </a>
+            </a> */}
 
-            <a className='militaryFootwear-box__item' href="/high-military-shoes">
+            {/* <a className='militaryFootwear-box__item' href="/high-military-shoes">
               <div className='militaryFootwear-box__item-picture'>
                 <img className='militaryFootwear-box__item-image' src="./img/militaryShoes2.JPG" alt="" />
               </div>
               <div className='militaryFootwear-box__item-bg'>
                 <div className='militaryFootwear-box__item-text'>ВИСОКЕ ВІЙСЬКОВЕ ВЗУТТЯ</div>
               </div>
-            </a>
+            </a> */}
 
           </div>
         </div>
