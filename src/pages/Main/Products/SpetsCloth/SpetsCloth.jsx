@@ -36,12 +36,30 @@ export default function SpetsCloth() {
 
           <div className='spetsCloth-box'>
 
-            <a className='spetsCloth-box__item' href="/work-robes">
+            <a className='spetsCloth-box__item' href="/individual-protection">
               <div className='spetsCloth-box__item-picture'>
-                <img className='spetsCloth-box__item-image' src="./img/stock_portrait.jpeg" alt="" />
+                <img className='spetsCloth-box__item-image' src="./img/stock_working.jpeg" alt="" />
               </div>
               <div className='spetsCloth-box__item-bg'>
-                <div className='spetsCloth-box__item-text'>ХАЛАТИ РОБОЧІ</div>
+                <div className='spetsCloth-box__item-text'>ЗАСОБИ ІНДИВІДУАЛЬНОГО ЗАХИСТУ</div>
+              </div>
+            </a>
+
+            <a className='spetsCloth-box__item' href="/insulated-overalls">
+              <div className='spetsCloth-box__item-picture'>
+                <img className='spetsCloth-box__item-image' src="./img/stock_spets.jpg" alt="" />
+              </div>
+              <div className='spetsCloth-box__item-bg'>
+                <div className='spetsCloth-box__item-text'>УТЕПЛЕНИЙ СПЕЦОДЯГ</div>
+              </div>
+            </a>
+
+            <a className='spetsCloth-box__item' href="/protective-overalls">
+              <div className='spetsCloth-box__item-picture'>
+                <img className='spetsCloth-box__item-image' src="./img/spets-cloth1.jpg" alt="" />
+              </div>
+              <div className='spetsCloth-box__item-bg'>
+                <div className='spetsCloth-box__item-text'>ЗАХИСНИЙ СПЕЦОДЯГ</div>
               </div>
             </a>
 
@@ -55,39 +73,12 @@ export default function SpetsCloth() {
               </div>
             </a>
 
-            <a className='spetsCloth-box__item' href="/insulated-overalls">
+            <a className='spetsCloth-box__item' href="/shorts">
               <div className='spetsCloth-box__item-picture'>
-                <img className='spetsCloth-box__item-image' src="./img/stock_spets.jpg" alt="" />
+                <img className='spetsCloth-box__item-image' src="./img/MilitaryEquipment25.jpg" alt="" />
               </div>
               <div className='spetsCloth-box__item-bg'>
-                <div className='spetsCloth-box__item-text'>УТЕПЛЕНИЙ СПЕЦОДЯГ</div>
-              </div>
-            </a>
-
-            <a className='spetsCloth-box__item' href="/work-suits">
-              <div className='spetsCloth-box__item-picture'>
-                <img className='spetsCloth-box__item-image' src="./img/stock_worker.jpeg" alt="" />
-              </div>
-              <div className='spetsCloth-box__item-bg'>
-                <div className='spetsCloth-box__item-text'>КОСТЮМИ РОБОЧІ</div>
-              </div>
-            </a>
-
-            <a className='spetsCloth-box__item' href="/protective-overalls">
-              <div className='spetsCloth-box__item-picture'>
-                <img className='spetsCloth-box__item-image' src="./img/spets-cloth1.jpg" alt="" />
-              </div>
-              <div className='spetsCloth-box__item-bg'>
-                <div className='spetsCloth-box__item-text'>ЗАХИСНИЙ СПЕЦОДЯГ</div>
-              </div>
-            </a>
-
-            <a className='spetsCloth-box__item' href="/work-aprons">
-              <div className='spetsCloth-box__item-picture'>
-                <img className='spetsCloth-box__item-image' src="./img/stock_optimistic.jpeg" alt="" />
-              </div>
-              <div className='spetsCloth-box__item-bg'>
-                <div className='spetsCloth-box__item-text'>ФАРТУХИ РОБОЧІ</div>
+                <div className='spetsCloth-box__item-text'>ШОРТИ</div>
               </div>
             </a>
 
@@ -100,12 +91,30 @@ export default function SpetsCloth() {
               </div>
             </a>
 
-            <a className='spetsCloth-box__item' href="/individual-protection">
+            <a className='spetsCloth-box__item' href="/work-robes">
               <div className='spetsCloth-box__item-picture'>
-                <img className='spetsCloth-box__item-image' src="./img/stock_working.jpeg" alt="" />
+                <img className='spetsCloth-box__item-image' src="./img/stock_portrait.jpeg" alt="" />
               </div>
               <div className='spetsCloth-box__item-bg'>
-                <div className='spetsCloth-box__item-text'>ЗАСОБИ ІНДИВІДУАЛЬНОГО ЗАХИСТУ</div>
+                <div className='spetsCloth-box__item-text'>ХАЛАТИ РОБОЧІ</div>
+              </div>
+            </a>
+
+            <a className='spetsCloth-box__item' href="/work-suits">
+              <div className='spetsCloth-box__item-picture'>
+                <img className='spetsCloth-box__item-image' src="./img/stock_worker.jpeg" alt="" />
+              </div>
+              <div className='spetsCloth-box__item-bg'>
+                <div className='spetsCloth-box__item-text'>КОСТЮМИ РОБОЧІ</div>
+              </div>
+            </a>
+
+            <a className='spetsCloth-box__item' href="/work-aprons">
+              <div className='spetsCloth-box__item-picture'>
+                <img className='spetsCloth-box__item-image' src="./img/stock_optimistic.jpeg" alt="" />
+              </div>
+              <div className='spetsCloth-box__item-bg'>
+                <div className='spetsCloth-box__item-text'>ФАРТУХИ РОБОЧІ</div>
               </div>
             </a>
 
@@ -117,17 +126,6 @@ export default function SpetsCloth() {
                 <div className='spetsCloth-box__item-text'>СПЕЦВЗУТТЯ</div>
               </div>
             </a>
-
-            
-            <a className='spetsCloth-box__item' href="/shorts">
-              <div className='spetsCloth-box__item-picture'>
-                <img className='spetsCloth-box__item-image' src="./img/MilitaryEquipment25.jpg" alt="" />
-              </div>
-              <div className='spetsCloth-box__item-bg'>
-                <div className='spetsCloth-box__item-text'>ШОРТИ</div>
-              </div>
-            </a>
-
 
             {/* <a className='militaryEquipment-box__item' href="/shorts">
               <div className='militaryEquipment-box__item-picture'>
