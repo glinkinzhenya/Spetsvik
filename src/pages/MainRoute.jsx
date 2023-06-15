@@ -82,7 +82,7 @@ import NotFound from './NotFound/NotFound';
 import Shevrons from './Main/Products/Shevrons/Shevrons';
 import Contacts from './Main/Contacts/Contacts';
 import Shorts from './Main/Products/SpetsCloth/SpetsClothProducts/Shorts/Shorts';
-import Trousers from './Main/Products/SpetsCloth/SpetsClothProducts/Trousers/Trousers';
+import Trousers from './Main/Products/MilitaryEquipment/MilitaryEquipmentProducts/Trousers/Trousers';
 
 export default function MainRoute() {
   return (

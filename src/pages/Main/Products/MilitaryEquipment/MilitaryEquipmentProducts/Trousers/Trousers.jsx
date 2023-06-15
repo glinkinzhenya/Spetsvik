@@ -3,7 +3,6 @@ import ProductsMap from '../../../../../../components/ProductsMap';
 import PopularMain from '../../../PopularMain/PopularMain';
 import News from '../../../../News/News';
 
-
 export default function Trousers() {
 
   return (
