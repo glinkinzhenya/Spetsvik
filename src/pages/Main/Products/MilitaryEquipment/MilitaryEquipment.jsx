@@ -90,6 +90,15 @@ export default function MilitaryEquipment() {
               </div>
             </a>
 
+            <a className='militaryEquipment-box__item' href="/trousers">
+              <div className='militaryEquipment-box__item-picture'>
+                <img className='militaryEquipment-box__item-image' src="./img/trousers.jpg" alt="" />
+              </div>
+              <div className='militaryEquipment-box__item-bg'>
+                <div className='militaryEquipment-box__item-text'>ШТАНИ</div>
+              </div>
+            </a>
+
             <a className='militaryEquipment-box__item' href="/thermal-underwear">
               <div className='militaryEquipment-box__item-picture'>
                 <img className='militaryEquipment-box__item-image' src="./img/MilitaryEquipment21.png" alt="" />

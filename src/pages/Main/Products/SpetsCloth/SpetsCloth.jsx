@@ -73,15 +73,6 @@ export default function SpetsCloth() {
               </div>
             </a>
 
-            <a className='spetsCloth-box__item' href="/trousers">
-              <div className='spetsCloth-box__item-picture'>
-                <img className='spetsCloth-box__item-image' src="./img/trousers.jpg" alt="" />
-              </div>
-              <div className='spetsCloth-box__item-bg'>
-                <div className='spetsCloth-box__item-text'>ШТАНИ</div>
-              </div>
-            </a>
-
             <a className='spetsCloth-box__item' href="/shorts">
               <div className='spetsCloth-box__item-picture'>
                 <img className='spetsCloth-box__item-image' src="./img/MilitaryEquipment25.jpg" alt="" />
