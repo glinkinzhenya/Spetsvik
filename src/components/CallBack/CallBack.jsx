@@ -203,7 +203,7 @@ export default function CallBack(props) {
         anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }}
       >
         <MuiAlert sx={{ сolor: 'black' }} elevation={6} variant="filled" onClose={handleSuccessClose} severity="success">
-          Ми отримали повідомлення, скоро з Вам зателефонуємо.
+          Ми отримали повідомлення, скоро Вам зателефонуємо.
         </MuiAlert>
       </Snackbar>
     </div>
