@@ -82,6 +82,7 @@ import NotFound from './NotFound/NotFound';
 import Shevrons from './Main/Products/Shevrons/Shevrons';
 import Contacts from './Main/Contacts/Contacts';
 import Shorts from './Main/Products/SpetsCloth/SpetsClothProducts/Shorts/Shorts';
+import Trousers from './Main/Products/SpetsCloth/SpetsClothProducts/Trousers/Trousers';
 
 export default function MainRoute() {
   return (
@@ -159,6 +160,7 @@ export default function MainRoute() {
         <Route path='/scarf-pipes' element={<ScarfPipes />} />
         <Route path='/socks' element={<Socks />} />
         <Route path='/shorts' element={<Shorts />} />
+        <Route path='/trousers' element={<Trousers />} />
         <Route path='/shevrons' element={<Shevrons />} />
         <Route path='/fabrics' element={<Fabrics />} />
         <Route path='/technical-fabrics' element={<TechnicalFabrics />} />
