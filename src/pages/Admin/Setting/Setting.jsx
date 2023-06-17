@@ -435,7 +435,7 @@ export default function Setting() {
                 onChange={(e) => handleEditInputChange(e, editProduct)}
                 value={editProduct.characteristic}
                 type="text"
-                placeholder="характеристика товару" />
+                placeholder="Характеристика товару" />
             ) : (
               // <input
               //   className="setting-product__input"
