@@ -49,7 +49,7 @@ export default function Burger() {
         >
           <List>
             {pages.map((page, index) => (
-              <Link className='link' key={page} to={links[index]} style={{ textDecoration: 'none'}}>
+              <Link className='link' key={index} to={links[index]} style={{ textDecoration: 'none'}}>
                 <ListItem disablePadding>
                   <ListItemButton>
                     <ListItemText primary={page}/>
