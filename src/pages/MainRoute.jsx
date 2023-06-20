@@ -23,7 +23,7 @@ import InsulatedOveralls from './Main/Products/SpetsCloth/SpetsClothProducts/Ins
 import WorkSuits from './Main/Products/SpetsCloth/SpetsClothProducts/WorkSuits/WorkSuits';
 import ProtectiveOveralls from './Main/Products/SpetsCloth/SpetsClothProducts/ProtectiveOveralls/ProtectiveOveralls';
 import WorkAprons from './Main/Products/SpetsCloth/SpetsClothProducts/WorkAprons/WorkAprons';
-import Hats from './Main/Products/SpetsCloth/SpetsClothProducts/Hats/Hats';
+// import Hats from './Main/Products/SpetsCloth/SpetsClothProducts/Hats/Hats';
 import HandProtectionEquipment from './Main/Products/IndividualProtection/IndividualProducts/HandProtectionEquipment/HandProtectionEquipment';
 import EyeProtection from './Main/Products/IndividualProtection/IndividualProducts/EyeProtection/EyeProtection';
 import RespiratoryProtection from './Main/Products/IndividualProtection/IndividualProducts/RespiratoryProtection/RespiratoryProtection';
@@ -83,6 +83,8 @@ import Shevrons from './Main/Products/Shevrons/Shevrons';
 import Contacts from './Main/Contacts/Contacts';
 import Shorts from './Main/Products/SpetsCloth/SpetsClothProducts/Shorts/Shorts';
 import Trousers from './Main/Products/MilitaryEquipment/MilitaryEquipmentProducts/Trousers/Trousers';
+import Hats from './Main/Products/SpetsCloth/SpetsClothProducts/HatsCategory/HatsProducts/Hats/Hats';
+import HatsCategory from './Main/Products/SpetsCloth/SpetsClothProducts/HatsCategory/HatsCategory';
 
 export default function MainRoute() {
   return (
@@ -101,6 +103,8 @@ export default function MainRoute() {
         <Route path='/protective-overalls' element={<ProtectiveOveralls />} />
         <Route path='/work-aprons' element={<WorkAprons />} />
         <Route path='/hats' element={<Hats />} />
+        <Route path='/hats-category' element={<HatsCategory />} />
+
         <Route path='/individual-protection' element={<IndividualProtection />} />
         <Route path='/hand-protection-equipment' element={<HandProtectionEquipment />} />
         <Route path='/eye-protection' element={<EyeProtection />} />

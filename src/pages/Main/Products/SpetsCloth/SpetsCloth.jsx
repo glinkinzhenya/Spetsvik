@@ -82,7 +82,7 @@ export default function SpetsCloth() {
               </div>
             </a>
 
-            <a className='spetsCloth-box__item' href="/hats">
+            <a className='spetsCloth-box__item' href="/hats-category">
               <div className='spetsCloth-box__item-picture'>
                 <img className='spetsCloth-box__item-image' src="./img/stock_baseball_cap.jpeg" alt="" />
               </div>
