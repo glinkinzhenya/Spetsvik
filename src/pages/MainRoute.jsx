@@ -85,6 +85,8 @@ import Shorts from './Main/Products/SpetsCloth/SpetsClothProducts/Shorts/Shorts'
 import Trousers from './Main/Products/MilitaryEquipment/MilitaryEquipmentProducts/Trousers/Trousers';
 import Hats from './Main/Products/SpetsCloth/SpetsClothProducts/HatsCategory/HatsProducts/Hats/Hats';
 import HatsCategory from './Main/Products/SpetsCloth/SpetsClothProducts/HatsCategory/HatsCategory';
+import Caps from './Main/Products/SpetsCloth/SpetsClothProducts/HatsCategory/HatsProducts/Caps/Caps';
+import Buffs from './Main/Products/SpetsCloth/SpetsClothProducts/HatsCategory/HatsProducts/Buffs/Buffs';
 
 export default function MainRoute() {
   return (
@@ -102,8 +104,11 @@ export default function MainRoute() {
         <Route path='/work-suits' element={<WorkSuits />} />
         <Route path='/protective-overalls' element={<ProtectiveOveralls />} />
         <Route path='/work-aprons' element={<WorkAprons />} />
-        <Route path='/hats' element={<Hats />} />
+
         <Route path='/hats-category' element={<HatsCategory />} />
+        <Route path='/hats' element={<Hats />} />
+        <Route path='/сaps' element={<Caps />} />
+        <Route path='/buffs' element={<Buffs />} />
 
         <Route path='/individual-protection' element={<IndividualProtection />} />
         <Route path='/hand-protection-equipment' element={<HandProtectionEquipment />} />

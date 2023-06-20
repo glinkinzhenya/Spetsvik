@@ -48,7 +48,7 @@ export default function HatsCategory() {
               </div>
             </a>
 
-            <a className='hatsCategory-box__item' href="/">
+            <a className='hatsCategory-box__item' href="/сaps">
               <div className='hatsCategory-box__item-picture'>
                 <img className='hatsCategory-box__item-image' src="./img/stock_baseball_cap.jpeg" alt="" />
               </div>
@@ -57,7 +57,7 @@ export default function HatsCategory() {
               </div>
             </a>
 
-            <a className='hatsCategory-box__item' href="/">
+            <a className='hatsCategory-box__item' href="/buffs">
               <div className='hatsCategory-box__item-picture'>
                 <img className='hatsCategory-box__item-image' src="./img/stock_baseball_cap.jpeg" alt="" />
               </div>

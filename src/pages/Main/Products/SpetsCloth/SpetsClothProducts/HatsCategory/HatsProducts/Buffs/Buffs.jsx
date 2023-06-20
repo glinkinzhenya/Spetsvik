@@ -1,9 +1,9 @@
 import React from 'react';
-import ProductsMap from '../../../../../../components/ProductsMap';
-import News from '../../../../News/News';
-import PopularMain from '../../../PopularMain/PopularMain';
+import ProductsMap from '../../../../../../../../components/ProductsMap';
+import PopularMain from '../../../../../PopularMain/PopularMain';
+import News from '../../../../../../News/News';
 
-export default function Hats2() {
+export default function Buffs() {
 
   return (
     <>
@@ -22,19 +22,23 @@ export default function Hats2() {
             <div className='boxPath-container__arrow'>
               <img className='boxPath-container__arrow-image' src="./img/arrow-right.svg" alt="" />
             </div>
-            <a className='boxPath-container__text' href="/hats">Головні убори</a>
+            <a className='boxPath-container__text' href="/hats-category">Головні убори</a>
+            <div className='boxPath-container__arrow'>
+              <img className='boxPath-container__arrow-image' src="./img/arrow-right.svg" alt="" />
+            </div>
+            <a className='boxPath-container__text' href="/buffs">Бафи</a>
           </div>
         </div>
 
         <div className='workRobes-container container'>
-          <h3 className='workRobes-secondaryTitle'>Головні убори</h3>
+          <h3 className='workRobes-secondaryTitle'>Бафи</h3>
      
-              <ProductsMap category='головні убори' />
+              <ProductsMap category='бафи' />
      
         </div>
       </div>
 
-      <PopularMain category='головні убори' popular={true} />
+      <PopularMain category='бафи' popular={true} />
 
       <News />
     </>
