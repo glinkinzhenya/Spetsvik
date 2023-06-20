@@ -66,6 +66,14 @@ export default function HatsCategory() {
               </div>
             </a>
 
+            <a className='hatsCategory-box__item' href="/balaclavas">
+              <div className='hatsCategory-box__item-picture'>
+                <img className='hatsCategory-box__item-image' src="./img/stock_baseball_cap.jpeg" alt="" />
+              </div>
+              <div className='hatsCategory-box__item-bg'>
+                <div className='hatsCategory-box__item-text'>БАЛАКЛАВИ</div>
+              </div>
+            </a>
 
           </div>
         </div>

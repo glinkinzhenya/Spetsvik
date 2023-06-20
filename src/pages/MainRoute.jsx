@@ -71,13 +71,13 @@ import StandsForHydrants from './Main/Products/FireSafety/FireHoses/FireHosesPro
 import MilitaryFootwear from './Main/Products/Shoes/ShoesProducts/MilitaryFootwear/MilitaryFootwear';
 import WinterMilitaryFootwear from './Main/Products/Shoes/ShoesProducts/MilitaryFootwear/MilitaryFootwearProducts/WinterMilitaryFootwear/WinterMilitaryFootwear';
 import SummerFootwearWinter from './Main/Products/Shoes/ShoesProducts/MilitaryFootwear/MilitaryFootwearProducts/SummerFootwearWinter/SummerFootwearWinter';
-import LowMilitaryShoes from './Main/Products/Shoes/ShoesProducts/MilitaryFootwear/MilitaryFootwearProducts/LowMilitaryShoes/LowMilitaryShoes';
-import HighMilitaryShoes from './Main/Products/Shoes/ShoesProducts/MilitaryFootwear/MilitaryFootwearProducts/HighMilitaryShoes/HighMilitaryShoes';
+// import LowMilitaryShoes from './Main/Products/Shoes/ShoesProducts/MilitaryFootwear/MilitaryFootwearProducts/LowMilitaryShoes/LowMilitaryShoes';
+// import HighMilitaryShoes from './Main/Products/Shoes/ShoesProducts/MilitaryFootwear/MilitaryFootwearProducts/HighMilitaryShoes/HighMilitaryShoes';
 import SpecialShoes from './Main/Products/Shoes/ShoesProducts/SpecialShoes/SpecialShoes';
 import WinterSpecialShoes from './Main/Products/Shoes/ShoesProducts/SpecialShoes/SpecialShoesProducts/WinterSpecialShoes/WinterSpecialShoes';
 import SummerSpecialShoes from './Main/Products/Shoes/ShoesProducts/SpecialShoes/SpecialShoesProducts/SummerSpecialShoes/SummerSpecialShoes';
-import LowSpecialShoes from './Main/Products/Shoes/ShoesProducts/SpecialShoes/SpecialShoesProducts/LowSpecialShoes/LowSpecialShoes';
-import HighSpecialShoes from './Main/Products/Shoes/ShoesProducts/SpecialShoes/SpecialShoesProducts/HighSpecialShoes/HighSpecialShoes';
+// import LowSpecialShoes from './Main/Products/Shoes/ShoesProducts/SpecialShoes/SpecialShoesProducts/LowSpecialShoes/LowSpecialShoes';
+// import HighSpecialShoes from './Main/Products/Shoes/ShoesProducts/SpecialShoes/SpecialShoesProducts/HighSpecialShoes/HighSpecialShoes';
 import NotFound from './NotFound/NotFound';
 import Shevrons from './Main/Products/Shevrons/Shevrons';
 import Contacts from './Main/Contacts/Contacts';
@@ -87,6 +87,8 @@ import Hats from './Main/Products/SpetsCloth/SpetsClothProducts/HatsCategory/Hat
 import HatsCategory from './Main/Products/SpetsCloth/SpetsClothProducts/HatsCategory/HatsCategory';
 import Caps from './Main/Products/SpetsCloth/SpetsClothProducts/HatsCategory/HatsProducts/Caps/Caps';
 import Buffs from './Main/Products/SpetsCloth/SpetsClothProducts/HatsCategory/HatsProducts/Buffs/Buffs';
+import Berts from './Main/Products/Shoes/ShoesProducts/Berts/Berts';
+import Balaclavas from './Main/Products/SpetsCloth/SpetsClothProducts/HatsCategory/HatsProducts/Balaclavas/Balaclavas';
 
 export default function MainRoute() {
   return (
@@ -109,23 +111,27 @@ export default function MainRoute() {
         <Route path='/hats' element={<Hats />} />
         <Route path='/сaps' element={<Caps />} />
         <Route path='/buffs' element={<Buffs />} />
+        <Route path='/balaclavas' element={<Balaclavas />} />
 
         <Route path='/individual-protection' element={<IndividualProtection />} />
         <Route path='/hand-protection-equipment' element={<HandProtectionEquipment />} />
         <Route path='/eye-protection' element={<EyeProtection />} />
         <Route path='/respiratory-protection' element={<RespiratoryProtection />} />
         <Route path='/signaling-products' element={<SignalingProducts />} />
+
         <Route path='/shoes' element={<Shoes />} />
         <Route path='/special-shoes' element={<SpecialShoes />} />
         <Route path='/winter-special-shoes' element={<WinterSpecialShoes />} />
         <Route path='/summer-special-shoes' element={<SummerSpecialShoes />} />
-        <Route path='/low-special-shoes' element={<LowSpecialShoes />} />
-        <Route path='/high-special-shoes' element={<HighSpecialShoes />} />
+        {/* <Route path='/low-special-shoes' element={<LowSpecialShoes />} /> */}
+        {/* <Route path='/high-special-shoes' element={<HighSpecialShoes />} /> */}
         <Route path='/military-footwear' element={<MilitaryFootwear />} />
         <Route path='/winter-military-footwear' element={<WinterMilitaryFootwear />} />
         <Route path='/summer-military-footwear' element={<SummerFootwearWinter />} />
-        <Route path='/low-military-shoes' element={<LowMilitaryShoes />} />
-        <Route path='/high-military-shoes' element={<HighMilitaryShoes />} />
+        <Route path='/berts' element={<Berts />} />
+        {/* <Route path='/low-military-shoes' element={<LowMilitaryShoes />} /> */}
+        {/* <Route path='/high-military-shoes' element={<HighMilitaryShoes />} /> */}
+
         <Route path='/fire-safety' element={<FireSafety />} />
         <Route path='/fire-extinguishers' element={<FireExtinguishers />} />
         <Route path='/powder-fire-extinguishers' element={<PowderFireExtinguishers />} />

@@ -54,6 +54,15 @@ export default function Shoes() {
               </div>
             </a>
 
+            <a className='shoes-box__item' href="/berts">
+              <div className='shoes-box__item-picture'>
+                <img className='shoes-box__item-image' src="./img/militaryShoes2_1.JPG" alt="" />
+              </div>
+              <div className='shoes-box__item-bg'>
+                <div className='shoes-box__item-text'>БЕРЦІ</div>
+              </div>
+            </a>
+
           </div>
         </div>
       </div>
