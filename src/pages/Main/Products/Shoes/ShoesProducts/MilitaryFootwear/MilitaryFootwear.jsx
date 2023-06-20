@@ -41,7 +41,7 @@ export default function MilitaryFootwear() {
 
             <a className='militaryFootwear-box__item' href="/winter-military-footwear">
               <div className='militaryFootwear-box__item-picture'>
-                <img className='militaryFootwear-box__item-image' src="./img/militaryShoes2.JPG" alt="" />
+                <img className='militaryFootwear-box__item-image' src="./img/winter-military-footwear.PNG" alt="" />
               </div>
               <div className='militaryFootwear-box__item-bg'>
                 <div className='militaryFootwear-box__item-text'>ЗИМОВЕ ВІЙСЬКОВЕ ВЗУТТЯ</div>
@@ -50,7 +50,7 @@ export default function MilitaryFootwear() {
 
             <a className='militaryFootwear-box__item' href="/summer-military-footwear">
               <div className='militaryFootwear-box__item-picture'>
-                <img className='militaryFootwear-box__item-image' src="./img/militaryShoes2.JPG" alt="" />
+                <img className='militaryFootwear-box__item-image' src="./img/summer-military-footwear.PNG" alt="" />
               </div>
               <div className='militaryFootwear-box__item-bg'>
                 <div className='militaryFootwear-box__item-text'>ЛІТНЄ ВІЙСЬКОВЕ ВЗУТТЯ</div>
