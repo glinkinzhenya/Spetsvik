@@ -41,7 +41,7 @@ export default function HatsCategory() {
 
             <a className='hatsCategory-box__item' href="/hats">
               <div className='hatsCategory-box__item-picture'>
-                <img className='hatsCategory-box__item-image' src="./img/stock_baseball_cap.jpeg" alt="" />
+                <img className='hatsCategory-box__item-image' src="./img/hats.JPG" alt="" />
               </div>
               <div className='hatsCategory-box__item-bg'>
                 <div className='hatsCategory-box__item-text'>ШАПКИ</div>
@@ -50,7 +50,7 @@ export default function HatsCategory() {
 
             <a className='hatsCategory-box__item' href="/сaps">
               <div className='hatsCategory-box__item-picture'>
-                <img className='hatsCategory-box__item-image' src="./img/stock_baseball_cap.jpeg" alt="" />
+                <img className='hatsCategory-box__item-image' src="./img/сaps.jpg" alt="" />
               </div>
               <div className='hatsCategory-box__item-bg'>
                 <div className='hatsCategory-box__item-text'>КЕПКИ</div>
@@ -59,7 +59,7 @@ export default function HatsCategory() {
 
             <a className='hatsCategory-box__item' href="/buffs">
               <div className='hatsCategory-box__item-picture'>
-                <img className='hatsCategory-box__item-image' src="./img/stock_baseball_cap.jpeg" alt="" />
+                <img className='hatsCategory-box__item-image' src="./img/buffs.JPG" alt="" />
               </div>
               <div className='hatsCategory-box__item-bg'>
                 <div className='hatsCategory-box__item-text'>БАФИ</div>
@@ -68,7 +68,7 @@ export default function HatsCategory() {
 
             <a className='hatsCategory-box__item' href="/balaclavas">
               <div className='hatsCategory-box__item-picture'>
-                <img className='hatsCategory-box__item-image' src="./img/stock_baseball_cap.jpeg" alt="" />
+                <img className='hatsCategory-box__item-image' src="./img/balaclavas.jpg" alt="" />
               </div>
               <div className='hatsCategory-box__item-bg'>
                 <div className='hatsCategory-box__item-text'>БАЛАКЛАВИ</div>
