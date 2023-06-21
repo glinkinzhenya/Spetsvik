@@ -50,7 +50,8 @@ export default function HatsCategory() {
 
             <a className='hatsCategory-box__item' href="/сaps">
               <div className='hatsCategory-box__item-picture'>
-                <img className='hatsCategory-box__item-image' src="./img/сaps.jpg" alt="" />
+                {/* <img className='hatsCategory-box__item-image' src="./img/сaps.jpg" alt="" /> */}
+                <img className='hatsCategory-box__item-image' src="./img/stock_baseball_cap.jpeg" alt="" />
               </div>
               <div className='hatsCategory-box__item-bg'>
                 <div className='hatsCategory-box__item-text'>КЕПКИ</div>
