@@ -30,12 +30,10 @@ export default function Pulse() {
         <a className="pulse-button-icon_link" href="https://www.instagram.com/work.vik" target="_blank" rel="noreferrer">
           <img className="pulse-button-icon_image" src="./img/instagram-color.png" alt="" />
         </a>
-        {/* <a className="pulse-button-icon_link" href="https://t.me/Alexey_Omelianenko" target="_blank" rel="noreferrer"> */}
-        <a className="pulse-button-icon_link" href="https://www.instagram.com/work.vik" target="_blank" rel="noreferrer">
+        <a className="pulse-button-icon_link" href="https://t.me/+4fe1u2V2-dJhMjFi" target="_blank" rel="noreferrer">
           <img className="pulse-button-icon_image" src="./img/telegram-color.svg" alt="" />
         </a>
-        {/* <a className="pulse-button-icon_link" href="viber://add?number=380505258880" target="_blank" rel="noreferrer"> */}
-        <a className="pulse-button-icon_link" href="https://www.instagram.com/work.vik" target="_blank" rel="noreferrer">
+        <a className="pulse-button-icon_link" href="https://invite.viber.com/?g2=AQB4XYVB5JFyjU46udDYJ10IuIaxIlL%2BY64I51pBAJfQmBB3k6pDPnH%2Bj31w9hmh" target="_blank" rel="noreferrer">
           <img className="pulse-button-icon_image" src="./img/viber-color.svg" alt="" />
         </a>
       </div>
