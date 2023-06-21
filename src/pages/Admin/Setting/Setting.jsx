@@ -329,7 +329,7 @@ export default function Setting() {
     <RequireAdminAuth>
       <div className="setting">
         <div className="setting-carusel container">
-          <p className="setting-carusel__title">Зображення на головній сторінці</p>
+          <p className="setting-carusel__title">Зображення на головній сторінці.  Рекомендований розмір забражень 1400px * 800px</p>
           <div className="setting-carusel__box">
             {arrayCarousel.map((item, index) => (
               <div key={index} className="setting-carusel__item">
@@ -427,13 +427,6 @@ export default function Setting() {
             )}
 
             {editProduct ? (
-              // <input
-              //   className="setting-product__input"
-              //   name="characteristic"
-              //   onChange={(e) => handleEditInputChange(e, editProduct)}
-              //   value={editProduct.characteristic}
-              //   type="text"
-              //   placeholder="характеристика товару" />
               <textarea
                 className="setting-product__textarea"
                 name="characteristic"
@@ -442,20 +435,13 @@ export default function Setting() {
                 type="text"
                 placeholder="Характеристика товару" />
             ) : (
-              // <input
-              //   className="setting-product__input"
-              //   name="characteristic"
-              //   onChange={handleInputChange}
-              //   value={product.characteristic}
-              //   type="text"
-              //   placeholder='характеристика товару' />
               <textarea
                 className="setting-product__textarea"
                 name="characteristic"
                 onChange={handleInputChange}
                 value={product.characteristic}
                 type="text"
-                placeholder='характеристика товару' />
+                placeholder='Характеристика товару' />
             )}
 
             {editProduct ? (
