@@ -29,7 +29,7 @@ export default function Services() {
                 dialogTitle="Введіть Ваш номер телефону та коментар"
                 dialogText="Ми зателефонуємо як найшвідше та відповемо на всі ваші питання"
                 confirmText="Надіслати"
-                cancelText="Відміна"
+                cancelText="Скасувати"
                 from="звідки - 'Пошив спецодягу'"
                 fontSize="18px" />
             </div>
@@ -62,7 +62,7 @@ export default function Services() {
                 dialogTitle="Введіть Ваш номер телефону та коментар"
                 dialogText="Ми зателефонуємо як найшвідше та відповемо на всі ваші питання"
                 confirmText="Надіслати"
-                cancelText="Відміна"
+                cancelText="Скасувати"
                 from="звідки - 'Нанесення логотипів'"
                 fontSize="18px" />
             </div>

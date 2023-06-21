@@ -102,7 +102,7 @@ export default function Footer() {
             buttonText="Ми Вам зателефонуємо"
             dialogTitle="Введіть Ваш номер телефону та коментар"
             dialogText="Ми зателефонуємо якнайшвидше та відповемо на всі ваші питання"
-            confirmText="Надіслати" cancelText="Відміна" from="звідки - 'Головна сторінка'"
+            confirmText="Надіслати" cancelText="Скасувати" from="звідки - 'Головна сторінка'"
             fontSize="12px"
           />
           <div className='footer-secondary__telephone-grafic'>Працюємо: Пн-Пт: 8:30-15:30</div>
