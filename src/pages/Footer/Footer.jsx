@@ -84,10 +84,10 @@ export default function Footer() {
 
       <div className='footer-secondary'>
         <div className='footer-secondary__social'>
-          <a href='https://www.instagram.com/work.vik' target="_blank" rel="noreferrer">
+          <a className='footer-secondary__social-link' href='https://www.instagram.com/work.vik' target="_blank" rel="noreferrer">
             <img className='footer-secondary__social-image' src='./img/facebook.png' alt='' />
           </a>
-          <a href='https://www.instagram.com/work.vik' target="_blank" rel="noreferrer">
+          <a className='footer-secondary__social-link' href='https://www.instagram.com/work.vik' target="_blank" rel="noreferrer">
             <img className='footer-secondary__social-image' src='./img/instagram.png' alt='' />
           </a>
         </div>
