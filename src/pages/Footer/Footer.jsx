@@ -44,7 +44,6 @@ export default function Footer() {
             <a className='footer-right__item-address' href="https://goo.gl/maps/ci2DPZvv62PQytH9A" target="_blank" rel="noreferrer">м. Запоріжжя, вул. Поштова 141-Е</a>
             <a className='footer-right__item-telephone' href="tel:+380676120366">
             <FontAwesomeIcon icon={faPhone} className='footer-right__item-image' />
-              {/* <img className='footer-right__item-image' src="./img/logo-telephone.svg" alt="" /> */}
               +38 (067) 612 03 66</a>
           </div>
 
@@ -52,7 +51,6 @@ export default function Footer() {
             <a className='footer-right__item-address' href="https://goo.gl/maps/untzH82HCHdjzH4i7" target="_blank" rel="noreferrer">м. Запоріжжя, Бульвар Шевченка 16</a>
             <a className='footer-right__item-telephone' href="tel:+380981807080">
             <FontAwesomeIcon icon={faPhone} className='footer-right__item-image' />
-              {/* <img className='footer-right__item-image' src="./img/logo-telephone.svg" alt="" /> */}
               +38 (098) 180 70 80</a>
           </div>
 
@@ -61,7 +59,6 @@ export default function Footer() {
               (біля магазину СПАР)</a>
             <a className='footer-right__item-telephone' href="tel:+380676132880">
             <FontAwesomeIcon icon={faPhone} className='footer-right__item-image' />
-              {/* <img className='footer-right__item-image' src="./img/logo-telephone.svg" alt="" /> */}
               +38 (067) 613 28 80</a>
           </div>
 
@@ -70,7 +67,6 @@ export default function Footer() {
               <a className='footer-right__item-address' href="https://goo.gl/maps/3bmo4t72UDWPVEzW7" target="_blank" rel="noreferrer">м. Харків, вул. Різдвяна 21</a>
               <a className='footer-right__item-telephone' href="tel:+380676121958">
               <FontAwesomeIcon icon={faPhone} className='footer-right__item-image' />
-                {/* <img className='footer-right__item-image' src="./img/logo-telephone.svg" alt="" /> */}
                 +38 (067) 612 19 58</a>
             </div>
           </div>
@@ -80,7 +76,6 @@ export default function Footer() {
               <a className='footer-right__item-address' href="https://goo.gl/maps/pmMV6SjztNN585nq9" target="_blank" rel="noreferrer">м. Городок (Хмельницька область), вул. Грушевського 84/2</a>
               <a className='footer-right__item-telephone' href="tel:+380974058748">
               <FontAwesomeIcon icon={faPhone} className='footer-right__item-image' />
-                {/* <img className='footer-right__item-image' src="./img/logo-telephone.svg" alt="" /> */}
                 +38 (098) 405 87 48</a>
             </div>
           </div>
