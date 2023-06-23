@@ -42,7 +42,9 @@ export default function Contacts() {
 
           <div className='contacts-box__item'>
             <div className='contacts-box__item-info'>
-              <a className='contacts-box__item-address' rel="noreferrer" target='_blank' href="https://goo.gl/maps/hT7zgvGWuNVq3gEY8">м. Лозова (Харківська область), вул. Богданівська 35
+              {/* <a className='contacts-box__item-address' rel="noreferrer" target='_blank' href="https://goo.gl/maps/hT7zgvGWuNVq3gEY8">м. Лозова (Харківська область), вул. Богданівська 35
+                (біля магазину СПАР)</a> */}
+              <a className='contacts-box__item-address' rel="noreferrer" target='_blank' href="https://goo.gl/maps/UC4htumX1gMiuUuZ7">м. Лозова (Харківська область), вул. Богданівська 35
                 (біля магазину СПАР)</a>
               <a className='contacts-box__item-telephone' href="tel:+380676132880">
               <FontAwesomeIcon icon={faPhone} className='contacts-box__item-image' />
@@ -50,7 +52,9 @@ export default function Contacts() {
             </div>
             <div className='contacts-box__item-map'>
               {/* eslint-disable-next-line */}
-              <iframe className='contacts-box__item-map-iframe' src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3337.2665422252894!2d36.3132343!3d48.8895153!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40df2f6402372c35%3A0x370f9b8052f9f433!2sSPAR%20Express!5e1!3m2!1sru!2sde!4v1686502040057!5m2!1sru!2sde" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              {/* <iframe className='contacts-box__item-map-iframe' src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3337.2665422252894!2d36.3132343!3d48.8895153!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40df2f6402372c35%3A0x370f9b8052f9f433!2sSPAR%20Express!5e1!3m2!1sru!2sde!4v1686502040057!5m2!1sru!2sde" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> */}
+              <iframe className='contacts-box__item-map-iframe' src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3122.066695107163!2d36.314583299999995!3d48.88955560000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDjCsDUzJzIyLjQiTiAzNsKwMTgnNTIuNSJF!5e1!3m2!1sru!2sde!4v1687513114353!5m2!1sru!2sde" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              {/* <iframe src="" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> */}
             </div>
           </div>
 

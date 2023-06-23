@@ -56,7 +56,9 @@ export default function Footer() {
           </div>
 
           <div className='footer-right__item'>
-            <a className='footer-right__item-address' href="https://goo.gl/maps/hT7zgvGWuNVq3gEY8" target="_blank" rel="noreferrer">м. Лозова (Харківська область), вул. Богданівська 35
+            {/* <a className='footer-right__item-address' href="https://goo.gl/maps/hT7zgvGWuNVq3gEY8" target="_blank" rel="noreferrer">м. Лозова (Харківська область), вул. Богданівська 35
+              (біля магазину СПАР)</a> */}
+            <a className='footer-right__item-address' href="https://goo.gl/maps/UC4htumX1gMiuUuZ7" target="_blank" rel="noreferrer">м. Лозова (Харківська область), вул. Богданівська 35
               (біля магазину СПАР)</a>
             <a className='footer-right__item-telephone' href="tel:+380676132880">
             <FontAwesomeIcon icon={faPhone} className='footer-right__item-image' />
