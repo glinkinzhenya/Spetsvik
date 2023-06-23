@@ -41,7 +41,8 @@ export default function Footer() {
         <div className='footer-right'>
           <div className='footer-right__title'>Адреси магазинів</div>
           <div className='footer-right__item'>
-            <a className='footer-right__item-address' href="https://goo.gl/maps/ci2DPZvv62PQytH9A" target="_blank" rel="noreferrer">м. Запоріжжя, вул. Поштова 141-Е</a>
+            {/* <a className='footer-right__item-address' href="https://goo.gl/maps/ci2DPZvv62PQytH9A" target="_blank" rel="noreferrer">м. Запоріжжя, вул. Поштова 141-Е</a> */}
+            <a className='footer-right__item-address' href="https://goo.gl/maps/TchqNzEpc354HQuP9" target="_blank" rel="noreferrer">м. Запоріжжя, вул. Поштова 141-Е</a>
             <a className='footer-right__item-telephone' href="tel:+380676120366">
             <FontAwesomeIcon icon={faPhone} className='footer-right__item-image' />
               +38 (067) 612 03 66</a>
@@ -73,7 +74,8 @@ export default function Footer() {
 
           <div className='footer-right__item'>
             <div className='footer-right__item'>
-              <a className='footer-right__item-address' href="https://goo.gl/maps/pmMV6SjztNN585nq9" target="_blank" rel="noreferrer">м. Городок (Хмельницька область), вул. Грушевського 84/2</a>
+              {/* <a className='footer-right__item-address' href="https://goo.gl/maps/pmMV6SjztNN585nq9" target="_blank" rel="noreferrer">м. Городок (Хмельницька область), вул. Грушевського 84/2</a> */}
+              <a className='footer-right__item-address' href="https://goo.gl/maps/F2C3dVxQetnHiMwm8" target="_blank" rel="noreferrer">м. Городок (Хмельницька область), вул. Грушевського 84/2</a>
               <a className='footer-right__item-telephone' href="tel:+380974058748">
               <FontAwesomeIcon icon={faPhone} className='footer-right__item-image' />
                 +38 (098) 405 87 48</a>
