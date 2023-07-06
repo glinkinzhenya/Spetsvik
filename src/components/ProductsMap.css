@@ -242,6 +242,7 @@
 
 .accordion-button:focus {
     border-color: none;
+    box-shadow: none !important;
 }
 
 .accordion-item__button {
