@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d3c4fb81.css",
+    "main.js": "/static/js/main.437361af.js",
+    "static/media/shevrons.JPG": "/static/media/shevrons.ff8c9507d0bd46fcfb75.JPG",
+    "static/media/militaryShoes2.JPG": "/static/media/militaryShoes2.58365e8004cbb5badf3a.JPG",
+    "static/media/services.png": "/static/media/services.67e1d2ad290568259cef.png",
+    "static/media/backpack.jpg": "/static/media/backpack.8b975c0d9f715fdb8782.jpg",
+    "static/media/compass.png": "/static/media/compass.3f1569f05178a1135787.png",
+    "static/media/fire-extinguisher.png": "/static/media/fire-extinguisher.ab2ee417027f8193533e.png",
+    "static/media/jackets.jpg": "/static/media/jackets.fa2c1381f0b6bd9efed0.jpg",
+    "static/media/blanket.png": "/static/media/blanket.84093da342a5695c5401.png",
+    "index.html": "/index.html",
+    "static/media/arrow-left.svg": "/static/media/arrow-left.495eb47f5e3f31869b3a.svg",
+    "static/media/arrow-right.svg": "/static/media/arrow-right.c48c8f7766aa1c46cfa3.svg",
+    "main.d3c4fb81.css.map": "/static/css/main.d3c4fb81.css.map",
+    "main.437361af.js.map": "/static/js/main.437361af.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d3c4fb81.css",
+    "static/js/main.437361af.js"
+  ]
+}
