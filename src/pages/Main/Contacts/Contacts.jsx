@@ -21,8 +21,8 @@ export default function Contacts() {
                 +38 (067) 612 03 66</a>
             </div>
             <div className='contacts-box__item-map'>
-            {/* eslint-disable-next-line */}
               {/* <iframe className='contacts-box__item-map-iframe' src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3407.7659558284136!2d35.1636649!3d47.8245562!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dc5e00bfbf3c7b%3A0x8d0104b1351bb0c4!2z0YPQuy4g0J_QvtGH0YLQvtCy0LDRjywgMTQxLCDQl9Cw0L_QvtGA0L7QttGM0LUsINCX0LDQv9C-0YDQvtC20YHQutCw0Y8g0L7QsdC70LDRgdGC0YwsINCj0LrRgNCw0LjQvdCwLCA2OTAwMA!5e1!3m2!1sru!2sde!4v1686500688771!5m2!1sru!2sde" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> */}
+            {/* eslint-disable-next-line */}
               <iframe className='contacts-box__item-map-iframe' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3188.0005302142113!2d35.1648642!3d47.8249156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dc5f78927ba847%3A0xebdecfb0393fb2c9!2z0KHQn9CV0KbQntCU0K_Qkw!5e1!3m2!1sru!2sde!4v1687512279624!5m2!1sru!2sde" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
           </div>
@@ -51,8 +51,8 @@ export default function Contacts() {
                 +38 (067) 613 28 80</a>
             </div>
             <div className='contacts-box__item-map'>
-              {/* eslint-disable-next-line */}
               {/* <iframe className='contacts-box__item-map-iframe' src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3337.2665422252894!2d36.3132343!3d48.8895153!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40df2f6402372c35%3A0x370f9b8052f9f433!2sSPAR%20Express!5e1!3m2!1sru!2sde!4v1686502040057!5m2!1sru!2sde" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> */}
+              {/* eslint-disable-next-line */}
               <iframe className='contacts-box__item-map-iframe' src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3122.066695107163!2d36.314583299999995!3d48.88955560000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDjCsDUzJzIyLjQiTiAzNsKwMTgnNTIuNSJF!5e1!3m2!1sru!2sde!4v1687513114353!5m2!1sru!2sde" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
               {/* <iframe src="" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> */}
             </div>
@@ -80,8 +80,8 @@ export default function Contacts() {
                 +38 (098) 405 87 48</a>
             </div>
             <div className='contacts-box__item-map'>
-              {/* eslint-disable-next-line */}
             {/* <iframe className='contacts-box__item-map-iframe' src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3318.3985083149764!2d26.5617161!3d49.1716017!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473221f125d2a213%3A0x4b0a79877a73fba4!2z0JrQuNGX0LLRgdGC0LDRgA!5e1!3m2!1sru!2sde!4v1686502371089!5m2!1sru!2sde" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> */}
+              {/* eslint-disable-next-line */}
             <iframe className='contacts-box__item-map-iframe' src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3298.039096803987!2d26.563903!3d49.171306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDnCsDEwJzE2LjciTiAyNsKwMzMnNTAuMSJF!5e1!3m2!1sru!2sde!4v1687509184800!5m2!1sru!2sde" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
           </div>
