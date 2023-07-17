@@ -129,8 +129,20 @@
     gap: 15px;
 }
 
+.footer-secondary__social-link {
+    height: 40px;
+    transform: 0.5s !important;
+}
+
+.footer-secondary__social-link:hover {
+    scale: 1.1;
+}
+
 .footer-secondary__social-image {
-    width: 40px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
 }
 
 .footer-secondary__telephone {
